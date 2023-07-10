@@ -114,4 +114,4 @@ function cm_shortcode_speaker_grid( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'speaker-grid', 'cm_shortcode_speaker_grid' );
+add_shortcode( 'speaker-grid', __NAMESPACE__ . '\cm_shortcode_speaker_grid' );

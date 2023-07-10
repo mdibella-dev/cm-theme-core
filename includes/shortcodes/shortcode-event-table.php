@@ -208,4 +208,4 @@ function cm_shortcode_event_table( $atts, $content = null )
     return $output;
 }
 
-add_shortcode( 'event-table', 'cm_shortcode_event_table' );
+add_shortcode( 'event-table', __NAMESPACE__ . '\cm_shortcode_event_table' );

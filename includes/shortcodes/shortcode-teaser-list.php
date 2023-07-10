@@ -156,7 +156,7 @@ function cm_shortcode_teaser_list( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'teaser-list', 'cm_shortcode_teaser_list' );
+add_shortcode( 'teaser-list', __NAMESPACE__ . '\cm_shortcode_teaser_list' );
 
 
 

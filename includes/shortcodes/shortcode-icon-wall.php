@@ -150,4 +150,4 @@ function cm_shortcode_icon_wall( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'icon-wall', 'cm_shortcode_icon_wall' );
+add_shortcode( 'icon-wall', __NAMESPACE__ . '\cm_shortcode_icon_wall' );

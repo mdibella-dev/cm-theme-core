@@ -203,4 +203,4 @@ function cm_shortcode_partner_table( $atts, $content = null )
     return $output;
 }
 
-add_shortcode( 'partner-table', 'cm_shortcode_partner_table' );
+add_shortcode( 'partner-table', __NAMESPACE__ . '\cm_shortcode_partner_table' );

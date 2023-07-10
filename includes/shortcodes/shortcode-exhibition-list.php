@@ -140,4 +140,4 @@ function cm_shortcode_exhibition_list( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'exhibition-list', 'cm_shortcode_exhibition_list' );
+add_shortcode( 'exhibition-list', __NAMESPACE__ . '\cm_shortcode_exhibition_list' );
