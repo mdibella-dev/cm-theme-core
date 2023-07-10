@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function cm_shortcode_exhibition_list( $atts, $content = null )
+function shortcode_exhibition_list( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
@@ -140,4 +140,4 @@ function cm_shortcode_exhibition_list( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'exhibition-list', __NAMESPACE__ . '\cm_shortcode_exhibition_list' );
+add_shortcode( 'exhibition-list', __NAMESPACE__ . '\shortcode_exhibition_list' );

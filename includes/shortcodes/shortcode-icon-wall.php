@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function cm_shortcode_icon_wall( $atts, $content = null )
+function shortcode_icon_wall( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
@@ -150,4 +150,4 @@ function cm_shortcode_icon_wall( $atts, $content = null )
     return null;
 }
 
-add_shortcode( 'icon-wall', __NAMESPACE__ . '\cm_shortcode_icon_wall' );
+add_shortcode( 'icon-wall', __NAMESPACE__ . '\shortcode_icon_wall' );

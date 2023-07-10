@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function cm_shortcode_partner_table( $atts, $content = null )
+function shortcode_partner_table( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
@@ -203,4 +203,4 @@ function cm_shortcode_partner_table( $atts, $content = null )
     return $output;
 }
 
-add_shortcode( 'partner-table', __NAMESPACE__ . '\cm_shortcode_partner_table' );
+add_shortcode( 'partner-table', __NAMESPACE__ . '\shortcode_partner_table' );
