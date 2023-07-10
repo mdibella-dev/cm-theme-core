@@ -36,7 +36,7 @@ function cm_post_type_exhibition_space__manage_posts_columns( $default )
     return $columns;
 }
 
-add_filter( 'manage_exhibition_space_posts_columns', 'cm_post_type_exhibition_space__manage_posts_columns', 10 );
+add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\cm_post_type_exhibition_space__manage_posts_columns', 10 );
 
 
 
@@ -64,7 +64,7 @@ function cm_post_type_exhibition_space__manage_posts_custom_column( $column_name
     endswitch;
 }
 
-add_action( 'manage_exhibition_space_posts_custom_column', 'cm_post_type_exhibition_space__manage_posts_custom_column', 9999, 2 );
+add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\cm_post_type_exhibition_space__manage_posts_custom_column', 9999, 2 );
 
 
 
@@ -87,7 +87,7 @@ function cm_post_type_exhibition_space__manage_sortable_columns( $columns )
     return $columns;
 }
 
-add_filter( 'manage_edit-exhibition_space_sortable_columns', 'cm_post_type_exhibition_space__manage_sortable_columns' );
+add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\cm_post_type_exhibition_space__manage_sortable_columns' );
 
 
 
@@ -121,4 +121,4 @@ function cm_post_type_exhibition_space__pre_get_posts( $query )
     endif;
 }
 
-add_action( 'pre_get_posts', 'cm_post_type_exhibition_space__pre_get_posts', 1 );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\cm_post_type_exhibition_space__pre_get_posts', 1 );
