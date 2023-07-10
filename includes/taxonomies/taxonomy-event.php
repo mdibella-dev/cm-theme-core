@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 2.5.0
  */
 
-function cm_set_event_columns( $default )
+function taxonomy_event__manage_edit_columns( $default )
 {
     $columns = array(
         'cb'            => $default['cb'],
@@ -34,7 +34,7 @@ function cm_set_event_columns( $default )
     );
     return $columns;
 }
-add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\cm_set_event_columns' );
+add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\taxonomy_event__manage_edit_columns' );
 
 
 
@@ -44,7 +44,7 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\cm_set_event_columns'
  * @since 2.5.0
  */
 
-function cm_manage_event_custom_column( $content, $column_name, $term_id )
+function taxonomy_event__manage_custom_column( $content, $column_name, $term_id )
 {
     switch ($column_name) {
         case 'id':
@@ -66,4 +66,4 @@ function cm_manage_event_custom_column( $content, $column_name, $term_id )
     }
     return $content;
 }
-add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\cm_manage_event_custom_column', 10, 3 );
+add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\taxonomy_event__manage_custom_column', 10, 3 );

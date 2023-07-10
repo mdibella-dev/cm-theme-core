@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 2.5.0
  */
 
-function cm_set_exhibition_package_columns( $default )
+function taxonomy_exhibition_package__manage_edit_columns( $default )
 {
     $columns = array(
         'cb'            => $default['cb'],
@@ -33,7 +33,7 @@ function cm_set_exhibition_package_columns( $default )
     );
     return $columns;
 }
-add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\cm_set_exhibition_package_columns' );
+add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\taxonomy_exhibition_package__manage_edit_columns' );
 
 
 
@@ -43,7 +43,7 @@ add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\cm_set_e
  * @since 2.5.0
  */
 
-function cm_manage_exhibition_package_custom_column( $content, $column_name, $term_id )
+function taxonomy_exhibition_package__manage_custom_column( $content, $column_name, $term_id )
 {
     switch ($column_name) {
         case 'id':
@@ -74,4 +74,4 @@ function cm_manage_exhibition_package_custom_column( $content, $column_name, $te
     }
     return $content;
 }
-add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\cm_manage_exhibition_package_custom_column', 10, 3 );
+add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\taxonomy_exhibition_package__manage_custom_column', 10, 3 );
