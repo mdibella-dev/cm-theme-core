@@ -3,7 +3,7 @@
  * Shortcode [teaser-list].
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

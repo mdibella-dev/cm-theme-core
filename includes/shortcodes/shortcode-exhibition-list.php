@@ -3,7 +3,7 @@
  * Shortcode [exhibition-list].
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

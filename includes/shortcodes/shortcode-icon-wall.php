@@ -3,7 +3,7 @@
  * Shortcode [icon-wall].
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 
