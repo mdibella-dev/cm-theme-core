@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return $array An associative array describing the columns to use.
  */
 
-function cm_post_type_session__manage_posts_columns( $default )
+function session__manage_posts_columns( $default )
 {
     $columns['cb']                = $default['cb'];
     $columns['title']             = $default['title'];
@@ -39,7 +39,7 @@ function cm_post_type_session__manage_posts_columns( $default )
     return $columns;
 }
 
-add_filter( 'manage_session_posts_columns', __NAMESPACE__ . '\cm_post_type_session__manage_posts_columns', 10 );
+add_filter( 'manage_session_posts_columns', __NAMESPACE__ . '\session__manage_posts_columns', 10 );
 
 
 
@@ -52,7 +52,7 @@ add_filter( 'manage_session_posts_columns', __NAMESPACE__ . '\cm_post_type_sessi
  * @param int    $post_id     ID of the post (aka record) to be output.
  */
 
-function cm_post_type_session__manage_posts_custom_column( $column_name, $post_id )
+function session__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
 
@@ -107,7 +107,7 @@ function cm_post_type_session__manage_posts_custom_column( $column_name, $post_i
     endswitch;
 }
 
-add_action( 'manage_session_posts_custom_column', __NAMESPACE__ . '\cm_post_type_session__manage_posts_custom_column', 9999, 2 );
+add_action( 'manage_session_posts_custom_column', __NAMESPACE__ . '\session__manage_posts_custom_column', 9999, 2 );
 
 
 
@@ -121,7 +121,7 @@ add_action( 'manage_session_posts_custom_column', __NAMESPACE__ . '\cm_post_type
  * @return $array An associative array.
  */
 
-function cm_post_type_session__manage_sortable_columns( $columns )
+function session__manage_sortable_columns( $columns )
 {
     $columns['title']             = 'title';
     $columns['taxonomy-event']    = 'taxonomy-event';
@@ -131,7 +131,7 @@ function cm_post_type_session__manage_sortable_columns( $columns )
     return $columns;
 }
 
-add_filter( 'manage_edit-session_sortable_columns', __NAMESPACE__ . '\cm_post_type_session__manage_sortable_columns' );
+add_filter( 'manage_edit-session_sortable_columns', __NAMESPACE__ . '\session__manage_sortable_columns' );
 
 
 
@@ -143,7 +143,7 @@ add_filter( 'manage_edit-session_sortable_columns', __NAMESPACE__ . '\cm_post_ty
  * @param WP_Query $query A data object of the last query made.
  */
 
-function cm_post_type_session__pre_get_posts( $query )
+function session__pre_get_posts( $query )
 {
     if( $query->is_main_query() and is_admin() ) :
 
@@ -164,4 +164,4 @@ function cm_post_type_session__pre_get_posts( $query )
     endif;
 }
 
-add_action( 'pre_get_posts', __NAMESPACE__ . '\cm_post_type_session__pre_get_posts', 1 );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\session__pre_get_posts', 1 );
