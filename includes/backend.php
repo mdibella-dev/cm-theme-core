@@ -3,10 +3,10 @@
  * Functions to handle the backend.
  *
  * @author  Marco Di Bella
- * @package ph_PLUGIN-PACKAGE
+ * @package cm-theme-core
  */
 
-namespace ph_PLUGIN_NAMESPACE;
+namespace cm_theme_core;
 
 
 /** Prevent direct access */

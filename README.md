@@ -1,4 +1,4 @@
-# ph_PLUGIN-TITLE
+# CM &mdash; Theme Core
 ph_PLUGIN-DESCRIPTION
 
 <br>
@@ -13,11 +13,11 @@ ph_PLUGIN-DESCRIPTION
 
 ### Requires at least
 
-* WordPress ph_WORDPRESS-MINIMUM-VERSION
+* WordPress 6.2
 
 ### Tested up to
 
-* WordPress ph_WORDPRESS-VERSION
+* WordPress 6.2
 
 <br>
 
@@ -28,10 +28,10 @@ ph_PLUGIN-DESCRIPTION
 
 ### Previous changes
 
-See [CHANGELOG.md](https://github.com/mdibella-dev/plugin-template/blob/main/CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/mdibella-dev/cm-theme-core/blob/main/CHANGELOG.md).
 
 <br>
 
 ## License
 
-This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/plugin-template/blob/main/LICENSE.md) for further details.
+This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/cm-theme-core/blob/main/LICENSE.md) for further details.

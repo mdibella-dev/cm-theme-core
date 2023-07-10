@@ -1,23 +1,23 @@
 <?php
 /**
- * Plugin Name:         ph_PLUGIN-TITLE
- * Plugin URI:          ph_PLUGIN-URI
- * Description:         ph_PLUGIN-DESCRIPTION.
+ * Plugin Name:         CM &mdash; Theme Core
+ * Plugin URI:          https://github.com/mdibella-dev/cm-theme-core
+ * Description:         Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin.
  * Author:              Marco Di Bella
  * Author URI:          https://www.marcodibella.de
  * License:             MIT License
- * Requires at least:   ph_WORDPRESS-MINIMUM-VERSION
- * Tested up to:        ph_WORDPRESS-VERSION
- * Requires PHP:        ph_PHP-VERSION
- * Version:             ph_PLUGIN-SEMANTIC-VERSION
- * Text Domain:         ph_PLUGIN-TEXTDOMAIN
+ * Requires at least:   6.2
+ * Tested up to:        6.2
+ * Requires PHP:        7
+ * Version:             1.0.0
+ * Text Domain:         cm-theme-core
  * Domain Path:         /languages
  *
  * @author  Marco Di Bella
- * @package ph_PLUGIN-PACKAGE
+ * @package cm-theme-core
  */
 
-namespace ph_PLUGIN_NAMESPACE;
+namespace cm_theme_core;
 
 
 /** Prevent direct access */
@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) or exit;
 
 /** Variables and definitions */
 
-define( __NAMESPACE__ . '\PLUGIN_VERSION', 'ph_PLUGIN-SEMANTIC-VERSION' );
+define( __NAMESPACE__ . '\PLUGIN_VERSION', '1.0.0' );
 define( __NAMESPACE__ . '\PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
