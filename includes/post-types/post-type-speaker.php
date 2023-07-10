@@ -3,7 +3,7 @@
  * Custom post type: speaker ('referent').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

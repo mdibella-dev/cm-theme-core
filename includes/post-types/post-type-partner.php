@@ -3,7 +3,7 @@
  * Custom post type: partner ('Kongresspartner').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

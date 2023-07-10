@@ -3,7 +3,7 @@
  * Custom post type: session ('Programmpunkte').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

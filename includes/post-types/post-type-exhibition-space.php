@@ -3,7 +3,7 @@
  * Custom post type: exhibition_space ('Ausstellungsfläche').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 
