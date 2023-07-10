@@ -33,7 +33,7 @@ function cm_set_exhibition_package_columns( $default )
     );
     return $columns;
 }
-add_filter( 'manage_edit-exhibition_package_columns', 'cm_set_exhibition_package_columns' );
+add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\cm_set_exhibition_package_columns' );
 
 
 
@@ -74,4 +74,4 @@ function cm_manage_exhibition_package_custom_column( $content, $column_name, $te
     }
     return $content;
 }
-add_filter( 'manage_exhibition_package_custom_column', 'cm_manage_exhibition_package_custom_column', 10, 3 );
+add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\cm_manage_exhibition_package_custom_column', 10, 3 );

@@ -35,7 +35,7 @@ function cm_set_location_columns( $default )
     );
     return $columns;
 }
-add_filter( 'manage_edit-location_columns', 'cm_set_location_columns' );
+add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\cm_set_location_columns' );
 
 
 
@@ -106,4 +106,4 @@ function cm_manage_location_custom_column( $content, $column_name, $term_id )
     }
     return $content;
 }
-add_filter( 'manage_location_custom_column', 'cm_manage_location_custom_column', 10, 3 );
+add_filter( 'manage_location_custom_column', __NAMESPACE__ . '\cm_manage_location_custom_column', 10, 3 );

@@ -34,7 +34,7 @@ function cm_set_event_columns( $default )
     );
     return $columns;
 }
-add_filter( 'manage_edit-event_columns', 'cm_set_event_columns' );
+add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\cm_set_event_columns' );
 
 
 
@@ -66,4 +66,4 @@ function cm_manage_event_custom_column( $content, $column_name, $term_id )
     }
     return $content;
 }
-add_filter( 'manage_event_custom_column', 'cm_manage_event_custom_column', 10, 3 );
+add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\cm_manage_event_custom_column', 10, 3 );
