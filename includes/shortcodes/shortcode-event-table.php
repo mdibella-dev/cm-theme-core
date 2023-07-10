@@ -166,7 +166,7 @@ function shortcode_event_table( $atts, $content = null )
                                         '<a href="%1$s" title="%2$s">%3$s</a>',
                                         $speaker_dataset[ 'permalink' ],
                                         sprintf(
-                                            __( 'Mehr über %1$s erfahren', 'cm' ),
+                                            __( 'Mehr über %1$s erfahren', 'cm-theme-core' ),
                                             $speaker_dataset[ 'title_name' ]
                                         ),
                                         get_the_post_thumbnail( $speaker_dataset[ 'id' ], 'full' ) );

@@ -102,7 +102,7 @@ function shortcode_icon_wall( $atts, $content = null )
                 echo sprintf(
                     '<a href="%1$s" target="_self" title="%2$s">',
                     $data[ 'permalink' ],
-                    __( 'Detailsseite aufrufen', 'cm' ),
+                    __( 'Detailseite aufrufen', 'cm-theme-core' ),
                 );
             break;
 
@@ -111,7 +111,7 @@ function shortcode_icon_wall( $atts, $content = null )
                     echo sprintf(
                         '<a href="%1$s" target="blank" title="%2$s">',
                         $data[ 'website' ],
-                        __( 'Webseite aufrufen', 'cm' ),
+                        __( 'Webseite aufrufen', 'cm-theme-core' ),
                     );
                 endif;
             break;

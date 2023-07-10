@@ -90,7 +90,7 @@ function shortcode_partner_table( $atts, $content = null )
                             $cells[ 'partner-logo' ] = sprintf(
                                 '<a href="%1$s" target="_blank" title="%2$s" rel="external">%3$s</a>',
                                 $link,
-                                __( 'Externen Link aufrufen', 'cm' ),
+                                __( 'Externen Link aufrufen', 'cm-theme-core' ),
                                 $image
                             );
                         else :
@@ -125,7 +125,7 @@ function shortcode_partner_table( $atts, $content = null )
                                 sprintf(
                                     '<a href="%1$s" target="_blank" title="%2$s" rel="external">%3$s</a>',
                                     $link,
-                                    __( 'Externen Link aufrufen', 'cm' ),
+                                    __( 'Externen Link aufrufen', 'cm-theme-core' ),
                                     $url['host']
                                 )
                             );
@@ -143,7 +143,7 @@ function shortcode_partner_table( $atts, $content = null )
 
                             if( ! empty( $number ) ) :
                                 $strings[] = sprintf(
-                                    __( 'Stand %1$s', 'cm' ),
+                                    __( 'Stand %1$s', 'cm-theme-core' ),
                                     $number
                                 );
                             endif;
