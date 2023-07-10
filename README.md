@@ -1,5 +1,5 @@
 # CM &mdash; Theme Core
-ph_PLUGIN-DESCRIPTION
+Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin.
 
 <br>
 
