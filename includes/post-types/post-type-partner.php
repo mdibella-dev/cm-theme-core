@@ -28,11 +28,11 @@ defined( 'ABSPATH' ) or exit;
 function post_type_partner__manage_posts_columns( $default )
 {
     $columns['cb']                   = $default['cb'];
-    $columns['image']                = __( 'Bild', 'mdb' );
-    $columns['title']                = __( 'Kooperationspartner', 'cm' );
-    $columns['taxonomy-partnership'] = __( 'Kooperationsformen', 'cm' );
-    $columns['exhibition']           = __( 'Ausstellungsflächen', 'cm' );
-    $columns['update']               = __( 'Zuletzt aktualisiert', 'cm' );
+    $columns['image']                = __( 'Bild', 'cm-theme-core' );
+    $columns['title']                = __( 'Kooperationspartner', 'cm-theme-core' );
+    $columns['taxonomy-partnership'] = __( 'Kooperationsformen', 'cm-theme-core' );
+    $columns['exhibition']           = __( 'Ausstellungsflächen', 'cm-theme-core' );
+    $columns['update']               = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
 
     return $columns;
 }
@@ -61,7 +61,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                     '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
-                    __( 'Bearbeiten', 'cm' )
+                    __( 'Bearbeiten', 'cm-theme-core' )
                 );
             else :
                 echo '&mdash;';
@@ -97,7 +97,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                '%1$s um %2$s Uhr',
+                __( '%1$s um %2$s Uhr', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );

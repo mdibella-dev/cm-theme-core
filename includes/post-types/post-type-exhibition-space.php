@@ -28,10 +28,10 @@ defined( 'ABSPATH' ) or exit;
 function post_type_exhibition_space__manage_posts_columns( $default )
 {
     $columns['cb']                          = $default['cb'];
-    $columns['title']                       = __( 'Ausstellungsfläche', 'cm' );
-    $columns['taxonomy-location']           = __( 'Standort', 'cm' );
-    $columns['taxonomy-exhibition_package'] = __( 'Ausstellungspaket', 'cm' );
-    $columns['update']                      = __( 'Zuletzt aktualisiert', 'cm' );
+    $columns['title']                       = __( 'Ausstellungsfläche', 'cm-theme-core' );
+    $columns['taxonomy-location']           = __( 'Standort', 'cm-theme-core' );
+    $columns['taxonomy-exhibition_package'] = __( 'Ausstellungspaket', 'cm-theme-core' );
+    $columns['update']                      = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
 
     return $columns;
 }

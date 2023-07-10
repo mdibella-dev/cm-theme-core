@@ -29,12 +29,12 @@ function post_type_session__manage_posts_columns( $default )
 {
     $columns['cb']                = $default['cb'];
     $columns['title']             = $default['title'];
-    $columns['taxonomy-event']    = __( 'Veranstaltung', 'cm' );
-    $columns['taxonomy-location'] = __( 'Örtlichkeit', 'cm' );
-    $columns['event-date']        = __( 'Datum', 'cm' );
-    $columns['event-time']        = __( 'Zeitraum', 'cm' );
-    $columns['speaker']           = __( 'Referenten', 'cm' );
-    $columns['update']            = __( 'Zuletzt aktualisiert', 'cm' );
+    $columns['taxonomy-event']    = __( 'Veranstaltung', 'cm-theme-core' );
+    $columns['taxonomy-location'] = __( 'Örtlichkeit', 'cm-theme-core' );
+    $columns['event-date']        = __( 'Datum', 'cm-theme-core' );
+    $columns['event-time']        = __( 'Zeitraum', 'cm-theme-core' );
+    $columns['speaker']           = __( 'Referenten', 'cm-theme-core' );
+    $columns['update']            = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
 
     return $columns;
 }
@@ -68,7 +68,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
                         $speaker_dataset[ 'id' ],
                         get_the_post_thumbnail( $speaker_dataset[ 'id' ], array( 100, 0 ) ),
                         sprintf(
-                            __( 'Bearbeiten von %1$s', 'cm' ),
+                            __( 'Bearbeiten von %1$s', 'cm-theme-corecm' ),
                             $speaker_dataset[ 'name' ],
                         ),
                     );
@@ -98,7 +98,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                '%1$s um %2$s Uhr',
+                __( '%1$s um %2$s Uhr', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
