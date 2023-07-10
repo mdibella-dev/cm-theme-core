@@ -3,7 +3,7 @@
  * Custom taxonomy: event ('veranstaltung')
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

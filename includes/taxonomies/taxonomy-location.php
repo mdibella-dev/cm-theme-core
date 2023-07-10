@@ -3,7 +3,7 @@
  * Custom taxonomy: location ('Örtlichkeiten').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

@@ -3,7 +3,7 @@
  * Custom taxonomy: exhibition_package ('Ausstellungspaket').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 

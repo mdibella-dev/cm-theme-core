@@ -3,7 +3,7 @@
  * Custom taxonomy: partnership ('Kooperationsformen').
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 
