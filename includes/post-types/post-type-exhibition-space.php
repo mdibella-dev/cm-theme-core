@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return $array An associative array describing the columns to use.
  */
 
-function exhibition_space__manage_posts_columns( $default )
+function post_type_exhibition_space__manage_posts_columns( $default )
 {
     $columns['cb']                          = $default['cb'];
     $columns['title']                       = __( 'Ausstellungsfläche', 'cm' );
@@ -36,7 +36,7 @@ function exhibition_space__manage_posts_columns( $default )
     return $columns;
 }
 
-add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\exhibition_space__manage_posts_columns', 10 );
+add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\post_type_exhibition_space__manage_posts_columns', 10 );
 
 
 
@@ -49,7 +49,7 @@ add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\exhibitio
  * @param int    $post_id     ID of the post (aka record) to be output.
  */
 
-function exhibition_space__manage_posts_custom_column( $column_name, $post_id )
+function post_type_exhibition_space__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
 
@@ -64,7 +64,7 @@ function exhibition_space__manage_posts_custom_column( $column_name, $post_id )
     endswitch;
 }
 
-add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\exhibition_space__manage_posts_custom_column', 9999, 2 );
+add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\post_type_exhibition_space__manage_posts_custom_column', 9999, 2 );
 
 
 
@@ -78,7 +78,7 @@ add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\exh
  * @return $array An associative array.
  */
 
-function exhibition_space__manage_sortable_columns( $columns )
+function post_type_exhibition_space__manage_sortable_columns( $columns )
 {
     $columns['title']                       = 'title';
     //$columns['taxonomy-exhibition_package'] = 'taxonomy-exhibition_package';
@@ -87,7 +87,7 @@ function exhibition_space__manage_sortable_columns( $columns )
     return $columns;
 }
 
-add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\exhibition_space__manage_sortable_columns' );
+add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\post_type_exhibition_space__manage_sortable_columns' );
 
 
 
@@ -99,7 +99,7 @@ add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\e
  * @param WP_Query $query A data object of the last query made.
  */
 
-function exhibition_space__pre_get_posts( $query )
+function post_type_exhibition_space__pre_get_posts( $query )
 {
     if( $query->is_main_query() and is_admin() ) :
 
@@ -121,4 +121,4 @@ function exhibition_space__pre_get_posts( $query )
     endif;
 }
 
-add_action( 'pre_get_posts', __NAMESPACE__ . '\exhibition_space__pre_get_posts', 1 );
+add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_exhibition_space__pre_get_posts', 1 );
