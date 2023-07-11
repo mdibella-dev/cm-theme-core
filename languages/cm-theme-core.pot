@@ -1,0 +1,224 @@
+# Copyright (C) 2023 Marco Di Bella
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-11T09:56:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.0-alpha-b6eec08\n"
+"X-Domain: cm-theme-core\n"
+
+#. Plugin Name of the plugin
+msgid "CM Theme &mdash; Core Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/mdibella-dev/cm-theme-core"
+msgstr ""
+
+#. Description of the plugin
+msgid "Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin."
+msgstr ""
+
+#. Author of the plugin
+msgid "Marco Di Bella"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.marcodibella.de"
+msgstr ""
+
+#: includes/backend.php:52
+#: includes/backend.php:53
+msgid "Congress Management"
+msgstr ""
+
+#: includes/backend.php:63
+#: includes/backend.php:64
+#: includes/backend.php:119
+#: includes/taxonomies/taxonomy-event.php:33
+msgid "Events"
+msgstr ""
+
+#: includes/backend.php:73
+#: includes/backend.php:74
+#: includes/backend.php:120
+msgid "Locations"
+msgstr ""
+
+#: includes/backend.php:83
+#: includes/backend.php:84
+#: includes/post-types/post-type-partner.php:33
+msgid "Partnership"
+msgstr ""
+
+#: includes/backend.php:93
+#: includes/backend.php:94
+#: includes/backend.php:125
+#: includes/backend.php:259
+#: includes/taxonomies/taxonomy-location.php:34
+msgid "Exhibition spaces"
+msgstr ""
+
+#: includes/backend.php:121
+#: includes/post-types/post-type-session.php:36
+msgid "Speakers"
+msgstr ""
+
+#: includes/backend.php:122
+#: includes/backend.php:233
+#: includes/taxonomies/taxonomy-location.php:33
+msgid "Sessions"
+msgstr ""
+
+#: includes/backend.php:123
+#: includes/backend.php:245
+msgid "Partners"
+msgstr ""
+
+#: includes/backend.php:124
+msgid "Partnerships"
+msgstr ""
+
+#: includes/backend.php:126
+msgid "Exhibition packages"
+msgstr ""
+
+#: includes/backend.php:271
+msgid "Create"
+msgstr ""
+
+#: includes/post-types/post-type-exhibition-space.php:31
+#: includes/post-types/post-type-partner.php:34
+msgid "Exhibition space"
+msgstr ""
+
+#: includes/post-types/post-type-exhibition-space.php:32
+#: includes/post-types/post-type-session.php:33
+msgid "Location"
+msgstr ""
+
+#: includes/post-types/post-type-exhibition-space.php:33
+msgid "Exhibition package"
+msgstr ""
+
+#: includes/post-types/post-type-exhibition-space.php:34
+#: includes/post-types/post-type-partner.php:35
+#: includes/post-types/post-type-session.php:37
+#: includes/post-types/post-type-speaker.php:34
+msgid "Last updated"
+msgstr ""
+
+#: includes/post-types/post-type-partner.php:31
+#: includes/post-types/post-type-speaker.php:31
+#: includes/taxonomies/taxonomy-location.php:29
+msgid "Image"
+msgstr ""
+
+#: includes/post-types/post-type-partner.php:32
+msgid "Partner"
+msgstr ""
+
+#: includes/post-types/post-type-partner.php:64
+#: includes/post-types/post-type-speaker.php:63
+msgid "Edit"
+msgstr ""
+
+#: includes/post-types/post-type-partner.php:100
+#: includes/post-types/post-type-session.php:101
+#: includes/post-types/post-type-speaker.php:86
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:32
+msgid "Event"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:34
+msgid "Date"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:35
+msgid "Time period"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:71
+msgid "Edit %1$s"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:32
+msgid "Speaker"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:33
+msgid "Short description"
+msgstr ""
+
+#: includes/shortcodes/shortcode-event-table.php:107
+msgid "from %1$s to %2$s"
+msgstr ""
+
+#: includes/shortcodes/shortcode-event-table.php:169
+#: includes/shortcodes/shortcode-speaker-grid.php:91
+msgid "Learn more about %1$s"
+msgstr ""
+
+#: includes/shortcodes/shortcode-exhibition-list.php:103
+msgid "Area"
+msgstr ""
+
+#: includes/shortcodes/shortcode-exhibition-list.php:104
+msgid "Booth"
+msgstr ""
+
+#: includes/shortcodes/shortcode-icon-wall.php:105
+msgid "View details page"
+msgstr ""
+
+#: includes/shortcodes/shortcode-icon-wall.php:114
+msgid "View website"
+msgstr ""
+
+#: includes/shortcodes/shortcode-partner-table.php:93
+#: includes/shortcodes/shortcode-partner-table.php:128
+msgid "Open external link"
+msgstr ""
+
+#: includes/shortcodes/shortcode-partner-table.php:146
+msgid "Booth %1$s"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-event.php:32
+msgid "Status"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-event.php:60
+msgid "inactive"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-exhibition-package.php:32
+#: includes/taxonomies/taxonomy-partnership.php:32
+msgid "Count"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-exhibition-package.php:68
+msgid "Show all exhibition spaces with this exhibition package"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-location.php:81
+msgid "View all sessions at this location"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-location.php:100
+msgid "View all exhibition spaces in this location"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-partnership.php:68
+msgid "Show all partners cooperating in this way"
+msgstr ""
