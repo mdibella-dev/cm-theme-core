@@ -104,7 +104,7 @@ function shortcode_event_table( $atts, $content = null )
 
                             if( empty( $data ) ) :
                                 $data = sprintf(
-                                    __( '%1$s bis %2$s', 'cm-theme-core' ),
+                                    __( 'from %1$s to %2$s', 'cm-theme-core' ),
                                     get_field( 'programmpunkt-von', $session->ID ),
                                     get_field( 'programmpunkt-bis', $session->ID ) );
                             endif;
@@ -166,7 +166,7 @@ function shortcode_event_table( $atts, $content = null )
                                         '<a href="%1$s" title="%2$s">%3$s</a>',
                                         $speaker_dataset[ 'permalink' ],
                                         sprintf(
-                                            __( 'Mehr über %1$s erfahren', 'cm-theme-core' ),
+                                            __( 'Learn more about %1$s', 'cm-theme-core' ),
                                             $speaker_dataset[ 'title_name' ]
                                         ),
                                         get_the_post_thumbnail( $speaker_dataset[ 'id' ], 'full' ) );
