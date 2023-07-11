@@ -28,11 +28,11 @@ defined( 'ABSPATH' ) or exit;
 function post_type_partner__manage_posts_columns( $default )
 {
     $columns['cb']                   = $default['cb'];
-    $columns['image']                = __( 'Bild', 'cm-theme-core' );
-    $columns['title']                = __( 'Kooperationspartner', 'cm-theme-core' );
-    $columns['taxonomy-partnership'] = __( 'Kooperationsformen', 'cm-theme-core' );
-    $columns['exhibition']           = __( 'Ausstellungsflächen', 'cm-theme-core' );
-    $columns['update']               = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
+    $columns['image']                = __( 'Image', 'cm-theme-core' );
+    $columns['title']                = __( 'Partner', 'cm-theme-core' );
+    $columns['taxonomy-partnership'] = __( 'Partnership', 'cm-theme-core' );
+    $columns['exhibition']           = __( 'Exhibition space', 'cm-theme-core' );
+    $columns['update']               = __( 'Last updated', 'cm-theme-core' );
 
     return $columns;
 }
@@ -97,7 +97,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                __( '%1$s um %2$s Uhr', 'cm-theme-core' ),
+                __( '%1$s at %2$s Uhr', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
