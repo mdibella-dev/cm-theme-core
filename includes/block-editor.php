@@ -39,8 +39,8 @@ function cm_disable_block_editor( $current_status, $post_type )
     return $current_status;
 }
 
-add_filter( 'gutenberg_can_edit_post_type', 'cm_disable_block_editor' );
-add_filter( 'use_block_editor_for_post_type', 'cm_disable_block_editor', 10, 2);
+add_filter( 'gutenberg_can_edit_post_type', __NAMESPACE__ . '\cm_disable_block_editor' );
+add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\cm_disable_block_editor', 10, 2);
 
 
 
@@ -71,4 +71,4 @@ function cm_add_block_editor_assets()
     );
 }
 
-add_action( 'enqueue_block_editor_assets', 'cm_add_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\cm_add_block_editor_assets' );
