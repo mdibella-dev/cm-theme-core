@@ -125,7 +125,7 @@ function shortcode_partner_table( $atts, $content = null )
                                 sprintf(
                                     '<a href="%1$s" target="_blank" title="%2$s" rel="external">%3$s</a>',
                                     $link,
-                                    __( 'Externen Link aufrufen', 'cm-theme-core' ),
+                                    __( 'Open external link', 'cm-theme-core' ),
                                     $url['host']
                                 )
                             );
