@@ -161,7 +161,7 @@ function adjust_acf_dialog()
     (function($) {
         $(document).ready(function(){
 <?php /* -- CPT Session -- */ ?>
-            $('.acf-field-5d81eec13261d .acf-input').append( $('#title') );
+            $( '.acf-field-5d81eec13261d .acf-input' ).append( $( '#title' ) );
             $( '#title-prompt-text' ).remove();
         });
     })(jQuery);
