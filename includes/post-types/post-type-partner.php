@@ -61,7 +61,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                     '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
-                    __( 'Bearbeiten', 'cm-theme-core' )
+                    __( 'Edit', 'cm-theme-core' )
                 );
             else :
                 echo '&mdash;';
@@ -97,7 +97,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                __( '%1$s at %2$s Uhr', 'cm-theme-core' ),
+                __( '%1$s at %2$s', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
