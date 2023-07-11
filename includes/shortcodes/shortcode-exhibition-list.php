@@ -100,8 +100,8 @@ function shortcode_exhibition_list( $atts, $content = null )
                     ?>
                         <div>
                             <div>
-                                <div><?php echo __( 'Bereich', 'cm-theme-core' ); ?></div>
-                                <div><?php echo __( 'Stand', 'cm-theme-core' ); ?></div>
+                                <div><?php echo __( 'Area', 'cm-theme-core' ); ?></div>
+                                <div><?php echo __( 'Booth', 'cm-theme-core' ); ?></div>
                             </div>
                         <?php
                         foreach( $spaces as $space ) :
