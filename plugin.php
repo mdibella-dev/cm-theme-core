@@ -41,6 +41,7 @@ require_once( PLUGIN_DIR . 'includes/setup.php' );
 require_once( PLUGIN_DIR . 'includes/backend.php' );
 require_once( PLUGIN_DIR . 'includes/block-editor.php' );
 
+require_once( PLUGIN_DIR . 'includes/core/index.php' );
 require_once( PLUGIN_DIR . 'includes/post-types/index.php' );
 require_once( PLUGIN_DIR . 'includes/taxonomies/index.php' );
 require_once( PLUGIN_DIR . 'includes/shortcodes/index.php' );
