@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) or exit;
  * @return bool The outcome: true if the blockeditor is allowed, otherwise false
  */
 
-function cm_disable_block_editor( $current_status, $post_type )
+function disable_block_editor( $current_status, $post_type )
 {
     if( ( 'session' === $post_type  ) or ( 'exhibitor' === $post_type ) or ( 'speaker'  === $post_type ) ) :
         return false;
@@ -39,8 +39,8 @@ function cm_disable_block_editor( $current_status, $post_type )
     return $current_status;
 }
 
-add_filter( 'gutenberg_can_edit_post_type', __NAMESPACE__ . '\cm_disable_block_editor' );
-add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\cm_disable_block_editor', 10, 2);
+add_filter( 'gutenberg_can_edit_post_type', __NAMESPACE__ . '\disable_block_editor' );
+add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\disable_block_editor', 10, 2);
 
 
 
@@ -53,22 +53,22 @@ add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\cm_disable_block
  * @see https://www.billerickson.net/block-styles-in-gutenberg/
  */
 
-function cm_add_block_editor_assets()
+function add_block_editor_assets()
 {
     wp_enqueue_style(
         'block-editor',
-        get_template_directory_uri() . '/assets/build/css/block-editor.min.css',
+        PLUGIN_DIR . '/assets/build/css/block-editor.min.css',
         array(),
-        THEME_VERSION,
+        PLUGIN_VERSION,
         'all'
     );
     wp_enqueue_script(
         'block-editor',
-        get_template_directory_uri() . '/assets/build/js/block-editor.js',
+        PLUGIN_DIR . '/assets/build/js/block-editor.js',
         array( 'wp-blocks', 'wp-dom' ),
-        THEME_VERSION,
+        PLUGIN_VERSION,
         true
     );
 }
 
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\cm_add_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_block_editor_assets' );
