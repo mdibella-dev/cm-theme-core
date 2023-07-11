@@ -57,7 +57,7 @@ function taxonomy_event__manage_custom_column( $content, $column_name, $term_id 
             $content  = sprintf(
                 '<span class="status-icon %1$s" title="%2$s"></span>',
                 (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
-                (1 == $status)? __( 'active', 'cm' ) : __( 'inactive', 'cm-theme-core' ),
+                (1 == $status)? __( 'active', 'cm-theme-core' ) : __( 'inactive', 'cm-theme-core' ),
             );
         break;
 
