@@ -28,10 +28,10 @@ defined( 'ABSPATH' ) or exit;
 function post_type_exhibition_space__manage_posts_columns( $default )
 {
     $columns['cb']                          = $default['cb'];
-    $columns['title']                       = __( 'Ausstellungsfläche', 'cm-theme-core' );
-    $columns['taxonomy-location']           = __( 'Standort', 'cm-theme-core' );
-    $columns['taxonomy-exhibition_package'] = __( 'Ausstellungspaket', 'cm-theme-core' );
-    $columns['update']                      = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
+    $columns['title']                       = __( 'Exhibition space', 'cm-theme-core' );
+    $columns['taxonomy-location']           = __( 'Location', 'cm-theme-core' );
+    $columns['taxonomy-exhibition_package'] = __( 'Exhibition package', 'cm-theme-core' );
+    $columns['update']                      = __( 'Last updated', 'cm-theme-core' );
 
     return $columns;
 }
@@ -55,7 +55,7 @@ function post_type_exhibition_space__manage_posts_custom_column( $column_name, $
 
         case 'update':
             echo sprintf(
-                '%1$s um %2$s Uhr',
+                '%1$s at %2$s Uhr',
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
