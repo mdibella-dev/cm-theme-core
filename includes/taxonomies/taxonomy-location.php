@@ -30,8 +30,8 @@ function taxonomy_location__manage_edit_columns( $default )
         'name'          => $default['name'],
         'description'   => $default['description'],
         'slug'          => $default['slug'],
-        'count-session' => __( 'Programmpunkte', 'cm-theme-core' ),
-        'count-space'   => __( 'Ausstellungsflächen', 'cm-theme-corecm' ),
+        'count-session' => __( 'Sessions', 'cm-theme-core' ),
+        'count-space'   => __( 'Exhibition spaces', 'cm-theme-core' ),
     );
     return $columns;
 }
@@ -78,7 +78,7 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
                 '<a href="/wp-admin/edit.php?location=%2$s&post_type=session" title="%3$s">%1$s</a>',
                 sizeof( $posts ),
                 $term->slug,
-                __( 'Alle Programmpunkte an diesem Ort anzeigen', 'cm-theme-core' )
+                __( 'View all sessions at this location', 'cm-theme-core' )
             );
         break;
 
@@ -97,7 +97,7 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
                 '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
                 sizeof( $posts ),
                 $term->slug,
-                __( 'Alle Ausstellungsflächen an diesem Ort anzeigen', 'cm-theme-core' )
+                __( 'View all exhibition spaces in this location', 'cm-theme-core' )
             );
         break;
 
