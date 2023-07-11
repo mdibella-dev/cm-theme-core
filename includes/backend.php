@@ -49,8 +49,8 @@ function admin_menu()
     $admin_menu_slug = 'edit.php?post_type=session';
 
     add_menu_page(
-        __( 'Congress-Management', 'cm-theme-core' ),
-        __( 'Congress-Management', 'cm-theme-core' ),
+        __( 'Congress Management', 'cm-theme-core' ),
+        __( 'Congress Management', 'cm-theme-core' ),
         'manage_options',
         $admin_menu_slug,
         '',
@@ -60,8 +60,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Veranstaltungen', 'cm-theme-core' ),
-        __( 'Veranstaltungen', 'cm-theme-core' ),
+        __( 'Events', 'cm-theme-core' ),
+        __( 'Events', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=event&post_type=session',
         '',
@@ -70,8 +70,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Örtlichkeiten', 'cm-theme-core' ),
-        __( 'Örtlichkeiten', 'cm-theme-core' ),
+        __( 'Locations', 'cm-theme-core' ),
+        __( 'Locations', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=location&post_type=session',
         '',
@@ -80,8 +80,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Kooperationsformen', 'cm-theme-core' ),
-        __( 'Kooperationsformen', 'cm-theme-core' ),
+        __( 'Partnership', 'cm-theme-core' ),
+        __( 'Partnership', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
         '',
@@ -90,8 +90,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Ausstellungspakete', 'cm-theme-core' ),
-        __( 'Ausstellungspakete', 'cm-theme-core' ),
+        __( 'Exhibition spaces', 'cm-theme-core' ),
+        __( 'Exhibition spaces', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
@@ -116,14 +116,14 @@ function admin_menu_order( $menu_order )
            $sorted          = array();
 
     $sort_order = array(
-        'Veranstaltungen',
-        'Örtlichkeiten',
-        'Referenten',
-        'Programmpunkte',
-        'Kooperationspartner',
-        'Kooperationsformen',
-        'Ausstellungsflächen',
-        'Ausstellungspakete',
+        __( 'Events', 'cm-theme-core' ),
+        __( 'Locations', 'cm-theme-core' ),
+        __( 'Speakers', 'cm-theme-core' ),
+        __( 'Sessions', 'cm-theme-core' ),
+        __( 'Partners', 'cm-theme-core' ),
+        __( 'Partnerships', 'cm-theme-core' ),
+        __( 'Exhibition spaces', 'cm-theme-core' ),
+        __( 'Exhibition packages', 'cm-theme-core' ),
     );
 
     for( $i = 0; $i != sizeof( $sort_order ); $i++ ) :
