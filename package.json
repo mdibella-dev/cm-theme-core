@@ -1,11 +1,11 @@
 {
-    "name": "CM - Theme Core",
+    "name": "CM Theme - Core Plugin",
     "version": "1.0.0",
     "description": "Development Scripts",
     "config" : {
         "SASS_SRC": "./assets/src/css",
         "SASS_BLD": "./assets/build/css",
-        "PLUGIN_NAME": ""
+        "PLUGIN_NAME": "cm-theme-core"
     },
     "scripts": {
         "sass:front": "sass --style=compressed --no-source-map $npm_package_config_SASS_SRC/frontend.scss $npm_package_config_SASS_BLD/frontend.min.css",
