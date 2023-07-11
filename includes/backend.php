@@ -271,7 +271,7 @@ function rewrite_header()
      <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Erstellen', 'cm-theme-core' );?></a>
 </div>
 <style id="modify">
-    .wp-heading-inline:not(.show), .page-title-action:not(.show) { display:none !important;}
+    .wp-heading-inline:not(.show),.page-title-action:not(.show){display:none!important;}
 </style>
 <?php
     endif;
