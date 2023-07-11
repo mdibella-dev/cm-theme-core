@@ -28,10 +28,10 @@ defined( 'ABSPATH' ) or exit;
 function post_type_speaker__manage_posts_columns( $default )
 {
     $columns['cb']               = $default['cb'];
-    $columns['image']            = __( 'Bild', 'cm-theme-core' );
-    $columns['title']            = __( 'Referent/in', 'cm-theme-core' );
-    $columns['shortdescription'] = __( 'Kurzbeschreibung', 'cm-theme-core' );
-    $columns['update']           = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
+    $columns['image']            = __( 'Image', 'cm-theme-core' );
+    $columns['title']            = __( 'Speaker', 'cm-theme-core' );
+    $columns['shortdescription'] = __( 'Short description', 'cm-theme-core' );
+    $columns['update']           = __( 'Last updated', 'cm-theme-core' );
 
     return $columns;
 }
@@ -60,7 +60,7 @@ function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
                     '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
-                    __( 'Bearbeiten', 'cm-theme-core' )
+                    __( 'Edit', 'cm-theme-core' )
                 );
             else :
                 echo '&mdash;';
@@ -83,7 +83,7 @@ function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                __( '%1$s um %2$s Uhr','cm-theme-core' ),
+                __( '%1$s at %2$s','cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
