@@ -230,7 +230,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Programmpunkte', 'cm-theme-core' );
+                    $title     = __( 'Sessions', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
@@ -242,7 +242,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Kooperationspartner', 'cm-theme-core' );
+                    $title     = __( 'Partners', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
@@ -256,7 +256,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Ausstellungsflächen', 'cm-theme-core' );
+                    $title     = __( 'Exhibition spaces', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
