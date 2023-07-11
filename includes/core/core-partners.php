@@ -6,6 +6,8 @@
  * @package cm
  */
 
+namespace cm_theme_core;
+
 
 /** Prevent direct access */
 
