@@ -49,8 +49,8 @@ function admin_menu()
     $admin_menu_slug = 'edit.php?post_type=session';
 
     add_menu_page(
-        __( 'Congress-Management', 'cm' ),
-        __( 'Congress-Management', 'cm' ),
+        __( 'Congress-Management', 'cm-theme-core' ),
+        __( 'Congress-Management', 'cm-theme-core' ),
         'manage_options',
         $admin_menu_slug,
         '',
@@ -60,8 +60,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Veranstaltungen', 'cm' ),
-        __( 'Veranstaltungen', 'cm' ),
+        __( 'Veranstaltungen', 'cm-theme-core' ),
+        __( 'Veranstaltungen', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=event&post_type=session',
         '',
@@ -70,8 +70,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Örtlichkeiten', 'cm' ),
-        __( 'Örtlichkeiten', 'cm' ),
+        __( 'Örtlichkeiten', 'cm-theme-core' ),
+        __( 'Örtlichkeiten', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=location&post_type=session',
         '',
@@ -80,8 +80,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Kooperationsformen', 'cm' ),
-        __( 'Kooperationsformen', 'cm' ),
+        __( 'Kooperationsformen', 'cm-theme-core' ),
+        __( 'Kooperationsformen', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
         '',
@@ -90,8 +90,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Ausstellungspakete', 'cm' ),
-        __( 'Ausstellungspakete', 'cm' ),
+        __( 'Ausstellungspakete', 'cm-theme-core' ),
+        __( 'Ausstellungspakete', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
@@ -230,7 +230,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Programmpunkte', 'cm' );
+                    $title     = __( 'Programmpunkte', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
@@ -242,7 +242,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Kooperationspartner', 'cm' );
+                    $title     = __( 'Kooperationspartner', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
@@ -256,7 +256,7 @@ function rewrite_header()
 
                 if( false !== $term ) :
                     $do_modify = true;
-                    $title     = __( 'Ausstellungsflächen', 'cm' );
+                    $title     = __( 'Ausstellungsflächen', 'cm-theme-core' );
                     $subtitle  = $term->name;
                 endif;
             break;
@@ -268,7 +268,7 @@ function rewrite_header()
      ?>
 <div class="wrap">
     <h1 class="wp-heading-inline show" style="display:inline-block;"><?php echo $title . ' (' . $subtitle . ')';?></h1>
-     <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Erstellen', 'cm' );?></a>
+     <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Erstellen', 'cm-theme-core' );?></a>
 </div>
 <style id="modify">
     .wp-heading-inline:not(.show), .page-title-action:not(.show) { display:none !important;}
