@@ -3,7 +3,7 @@
  * Block Editor (aka Gutenberg).
  *
  * @author  Marco Di Bella
- * @package cm
+ * @package cm-theme-core
  */
 
 namespace cm_theme_core;
