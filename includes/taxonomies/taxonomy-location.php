@@ -26,7 +26,7 @@ function taxonomy_location__manage_edit_columns( $default )
     $columns = array(
         'cb'            => $default['cb'],
         'id'            => 'ID',
-        'image'         => __( 'Bild', 'cm-theme-core' ),
+        'image'         => __( 'Image', 'cm-theme-core' ),
         'name'          => $default['name'],
         'description'   => $default['description'],
         'slug'          => $default['slug'],
