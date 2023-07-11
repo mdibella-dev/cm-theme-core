@@ -49,7 +49,7 @@ function cm_shortcode_speaker_grid( $atts, $content = null )
 
     /** Retrieve and prepare data. */
 
-    $speakers = cm_get_speaker_datasets( ( $event == '-1' )? implode( ',', cm_get_active_events() ) : $event );
+    $speakers = core__get_speaker_datasets( ( $event == '-1' )? implode( ',', core__get_active_events() ) : $event );
 
     if( $speakers ) :
 
@@ -70,7 +70,7 @@ function cm_shortcode_speaker_grid( $atts, $content = null )
             if( 1 == $shuffle ) :
                 shuffle( $speaker_list );
                 $speaker_list = array_slice( $speaker_list, 0, $show );
-                $speaker_list = cm_sort_speaker_datasets( $speaker_list );
+                $speaker_list = core__sort_speaker_datasets( $speaker_list );
             else :
                 $speaker_list = array_slice( $speaker_list, 0, $show );
             endif;

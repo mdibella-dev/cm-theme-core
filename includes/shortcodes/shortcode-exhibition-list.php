@@ -68,7 +68,7 @@ function shortcode_exhibition_list( $atts, $content = null )
 <ul class="exhibition-list">
     <?php
     foreach( $partners as $partner ) :
-        $data = cm_get_partner_dataset( $partner->ID );
+        $data = core__get_partner_dataset( $partner->ID );
     ?>
 
     <li class="exhibition-list-element">

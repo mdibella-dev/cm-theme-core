@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function cm_get_active_events()
+function core__get_active_events()
 {
     $events = array();
     $terms  = get_terms( array(
@@ -54,7 +54,7 @@ function cm_get_active_events()
  * @return array
  */
 
-function cm_get_speaker_datasets( $event_list_string = '' )
+function core__get_speaker_datasets( $event_list_string = '' )
 {
     // Construction and implementation of the data query.
     // If no events have been specified (i.e. $event_list_string is empty), the active events will be used as a basis.
@@ -72,7 +72,7 @@ function cm_get_speaker_datasets( $event_list_string = '' )
     if( ! empty( $event_list_string ) ) :
         $event_list = explode( ',', str_replace(" ", "", $event_list_string ) );
     else :
-        $event_list = cm_get_active_events();
+        $event_list = core__get_active_events();
     endif;
 
     foreach( $event_list as $event ) :
@@ -99,7 +99,7 @@ function cm_get_speaker_datasets( $event_list_string = '' )
                     // Do not add if already in the list.
                     if( false == in_array( $speaker, $finds_list ) ) :
                         $finds_list[]   = $speaker;
-                        $speaker_list[] = cm_get_speaker_dataset( $speaker );
+                        $speaker_list[] = core__get_speaker_dataset( $speaker );
                     endif;
                 endforeach;
             endif;
@@ -107,7 +107,7 @@ function cm_get_speaker_datasets( $event_list_string = '' )
 
 
         // Sorting the found speakers by first and last name.
-        return cm_sort_speaker_datasets( $speaker_list );
+        return core__sort_speaker_datasets( $speaker_list );
     endif;
 
     return null;
@@ -124,7 +124,7 @@ function cm_get_speaker_datasets( $event_list_string = '' )
  * @return string
  */
 
-function cm_get_event( $event )
+function core__get_event( $event )
 {
     if( ! empty( $event ) ) :
         $term = get_term_by( 'term_taxonomy_id', $event, 'event' );

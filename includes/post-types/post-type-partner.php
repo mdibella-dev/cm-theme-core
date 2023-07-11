@@ -69,7 +69,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
         break;
 
         case 'exhibition':
-            $data = cm_get_partner_dataset( $post_id );
+            $data = core__get_partner_dataset( $post_id );
 
             if( ! empty( $data['exhibition-spaces'] ) ) :
                 $spaces = array();

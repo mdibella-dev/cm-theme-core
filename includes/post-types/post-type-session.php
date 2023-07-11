@@ -62,7 +62,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
             if( null != $speakers ) :
 
                 foreach( $speakers as $speaker ) :
-                    $speaker_dataset = cm_get_speaker_dataset( $speaker );
+                    $speaker_dataset = core__get_speaker_dataset( $speaker );
                     echo sprintf(
                         '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                         $speaker_dataset[ 'id' ],

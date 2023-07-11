@@ -135,7 +135,7 @@ function shortcode_partner_table( $atts, $content = null )
 
                     case 'MESSESTAND':
                         $exhibition = get_field( 'messestand', $partner->ID );
-                        $location   = cm_get_location( $exhibition['partner-messestand-ort'] );
+                        $location   = core__get_location( $exhibition['partner-messestand-ort'] );
                         $number     = $exhibition['partner-messestand-nummer'];
 
                         if( ! empty( $number ) or !empty( $location ) ) :

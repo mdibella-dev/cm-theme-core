@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function cm_get_partner_dataset( $partner )
+function core__get_partner_dataset( $partner )
 {
     $partner_post = get_post( $partner );
 

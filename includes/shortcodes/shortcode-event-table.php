@@ -56,9 +56,9 @@ function shortcode_event_table( $atts, $content = null )
         // Either search for (active) sessions of the specified speaker (variant 1)
         // or search for the sessions of the specified event (variant 2)
         if( !empty( $speaker) ) :
-            $sessions = cm_get_sessions_by_speaker( $speaker );
+            $sessions = core__get_sessions_by_speaker( $speaker );
         elseif( !empty( $event ) ) :
-            $sessions = cm_get_sessions_by_event( $event, $date );
+            $sessions = core__get_sessions_by_event( $event, $date );
         else :
             $sessions = null;
         endif;
@@ -119,7 +119,7 @@ function shortcode_event_table( $atts, $content = null )
                             $output .= sprintf(
                                 '<div data-type="%1$s">%2$s</div>',
                                 $data_key,
-                                cm_get_location( get_field( 'programmpunkt-location', $session->ID ) )
+                                core__get_location( get_field( 'programmpunkt-location', $session->ID ) )
                             );
                         break;
 
@@ -161,7 +161,7 @@ function shortcode_event_table( $atts, $content = null )
                                 unset( $speakers_list );
 
                                 foreach( $speakers as $speaker ) :
-                                    $speaker_dataset = cm_get_speaker_dataset( $speaker );
+                                    $speaker_dataset = core__get_speaker_dataset( $speaker );
                                     $speakers_list[] = sprintf(
                                         '<a href="%1$s" title="%2$s">%3$s</a>',
                                         $speaker_dataset[ 'permalink' ],

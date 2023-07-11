@@ -84,7 +84,7 @@ function shortcode_icon_wall( $atts, $content = null )
     <?php
     foreach( $partners as $partner ) :
 
-        $data = cm_get_partner_dataset( $partner->ID );
+        $data = core__get_partner_dataset( $partner->ID );
 
 
         // Squared logos?

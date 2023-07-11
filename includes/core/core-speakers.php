@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function cm_get_speaker_dataset( $speaker )
+function core__get_speaker_dataset( $speaker )
 {
     $speaker_post = get_post( $speaker );
 
@@ -53,7 +53,7 @@ function cm_get_speaker_dataset( $speaker )
  * @return array The sorted list.
  */
 
-function cm_sort_speaker_datasets( $speaker_list )
+function core__sort_speaker_datasets( $speaker_list )
 {
     foreach( $speaker_list as $key => $row ) :
         $forename[ $key ] = $row['firstname'];
