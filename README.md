@@ -1,4 +1,4 @@
-# CM &mdash; Theme Core
+# CM Theme &mdash; Core Plugin
 Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin.
 
 <br>
