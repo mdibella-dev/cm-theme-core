@@ -9,7 +9,7 @@ Core functions of CM theme. Originally an integral part of the theme, now outsou
 [Marco Di Bella ](https://github.com/mdibella-dev)
 
 ### Tags
-...
+translation-ready, custom-post-types, custom-taxonomies, shortcodes
 
 ### Requires at least
 
