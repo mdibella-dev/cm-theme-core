@@ -29,7 +29,7 @@ function taxonomy_exhibition_package__manage_edit_columns( $default )
         'name'          => $default['name'],
         'description'   => $default['description'],
         'slug'          => $default['slug'],
-        'count'         => __( 'Anzahl', 'cm' ),
+        'count'         => __( 'Anzahl', 'cm-theme-core' ),
     );
     return $columns;
 }
@@ -65,7 +65,7 @@ function taxonomy_exhibition_package__manage_custom_column( $content, $column_na
                 '<a href="/wp-admin/edit.php?exhibition_package=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
                 sizeof( $posts ),
                 $term->slug,
-                __( 'Alle Ausstellungsflächen mit diesem Austellungspaket anzeigen', 'cm' )
+                __( 'Alle Ausstellungsflächen mit diesem Austellungspaket anzeigen', 'cm-theme-core' )
             );
         break;
 

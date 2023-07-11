@@ -29,8 +29,8 @@ function taxonomy_event__manage_edit_columns( $default )
         'name'          => $default['name'],
         'description'   => $default['description'],
         'slug'          => $default['slug'],
-        'status'        => __( 'Status', 'cm' ),
-        'posts'         => __( 'Programmpunkte', 'cm' ),
+        'status'        => __( 'Status', 'cm-theme-core' ),
+        'posts'         => __( 'Programmpunkte', 'cm-theme-core' ),
     );
     return $columns;
 }
@@ -57,7 +57,7 @@ function taxonomy_event__manage_custom_column( $content, $column_name, $term_id 
             $content  = sprintf(
                 '<span class="status-icon %1$s" title="%2$s"></span>',
                 (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
-                (1 == $status)? __( 'aktiv', 'cm' ) : __( 'nicht aktiv', 'cm' ),
+                (1 == $status)? __( 'aktiv', 'cm' ) : __( 'nicht aktiv', 'cm-theme-core' ),
             );
         break;
 

@@ -29,7 +29,7 @@ function taxonomy_partnership__manage_edit_columns( $default )
         'name'          => $default['name'],
         'description'   => $default['description'],
         'slug'          => $default['slug'],
-        'count'         => __( 'Anzahl', 'cm' ),
+        'count'         => __( 'Anzahl', 'cm-theme-core' ),
     );
     return $columns;
 }
@@ -65,7 +65,7 @@ function taxonomy_partnership__manage_custom_column( $content, $column_name, $te
                 '<a href="/wp-admin/edit.php?partnership=%2$s&post_type=partner" title="%3$s">%1$s</a>',
                 sizeof( $posts ),
                 $term->slug,
-                __( 'Alle in dieser Form kooperienden Partner anzeigen', 'cm' )
+                __( 'Alle in dieser Form kooperienden Partner anzeigen', 'cm-theme-core' )
             );
         break;
 
