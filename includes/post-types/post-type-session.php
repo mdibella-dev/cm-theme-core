@@ -29,12 +29,12 @@ function post_type_session__manage_posts_columns( $default )
 {
     $columns['cb']                = $default['cb'];
     $columns['title']             = $default['title'];
-    $columns['taxonomy-event']    = __( 'Veranstaltung', 'cm-theme-core' );
-    $columns['taxonomy-location'] = __( 'Örtlichkeit', 'cm-theme-core' );
-    $columns['event-date']        = __( 'Datum', 'cm-theme-core' );
-    $columns['event-time']        = __( 'Zeitraum', 'cm-theme-core' );
-    $columns['speaker']           = __( 'Referenten', 'cm-theme-core' );
-    $columns['update']            = __( 'Zuletzt aktualisiert', 'cm-theme-core' );
+    $columns['taxonomy-event']    = __( 'Event', 'cm-theme-core' );
+    $columns['taxonomy-location'] = __( 'Location', 'cm-theme-core' );
+    $columns['event-date']        = __( 'Date', 'cm-theme-core' );
+    $columns['event-time']        = __( 'Time period', 'cm-theme-core' );
+    $columns['speaker']           = __( 'Speakers', 'cm-theme-core' );
+    $columns['update']            = __( 'Last updated', 'cm-theme-core' );
 
     return $columns;
 }
@@ -68,7 +68,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
                         $speaker_dataset[ 'id' ],
                         get_the_post_thumbnail( $speaker_dataset[ 'id' ], array( 100, 0 ) ),
                         sprintf(
-                            __( 'Bearbeiten von %1$s', 'cm-theme-corecm' ),
+                            __( 'Edit %1$s', 'cm-theme-core' ),
                             $speaker_dataset[ 'name' ],
                         ),
                     );
@@ -87,7 +87,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
 
             if( empty( $time ) ) :
                 $time = sprintf(
-                    '%1$s bis %2$s Uhr',
+                    'from %1$s to %2$s',
                     get_field( 'programmpunkt-von', $post_id ),
                     get_field( 'programmpunkt-bis', $post_id )
                 );
@@ -98,7 +98,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
 
         case 'update':
             echo sprintf(
-                __( '%1$s um %2$s Uhr', 'cm-theme-core' ),
+                __( '%1$s at %2$s', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
