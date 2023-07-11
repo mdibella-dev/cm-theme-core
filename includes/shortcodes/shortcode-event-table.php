@@ -104,7 +104,7 @@ function shortcode_event_table( $atts, $content = null )
 
                             if( empty( $data ) ) :
                                 $data = sprintf(
-                                    '%1$s bis %2$s',
+                                    __( '%1$s bis %2$s', 'cm-theme-core' ),
                                     get_field( 'programmpunkt-von', $session->ID ),
                                     get_field( 'programmpunkt-bis', $session->ID ) );
                             endif;
