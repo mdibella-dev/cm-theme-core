@@ -142,3 +142,62 @@ function post_type_speaker__pre_get_posts( $query )
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_speaker__pre_get_posts', 1 );
+
+
+
+function cptui_register_my_cpts() {
+
+
+	/**
+	 * Post Type: Referenten.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Referenten", "cm-iwc" ),
+		"singular_name" => esc_html__( "Referent", "cm-iwc" ),
+		"menu_name" => esc_html__( "Referenten", "cm-iwc" ),
+		"all_items" => esc_html__( "Referenten", "cm-iwc" ),
+		"add_new" => esc_html__( "Erstellen", "cm-iwc" ),
+		"search_items" => esc_html__( "Referent suchen", "cm-iwc" ),
+		"not_found" => esc_html__( "Keine Referenten gefunden", "cm-iwc" ),
+		"not_found_in_trash" => esc_html__( "Keine Referenten im Papierkorb", "cm-iwc" ),
+		"featured_image" => esc_html__( "Referentenbild", "cm-iwc" ),
+		"set_featured_image" => esc_html__( "Referentenbild festlegen", "cm-iwc" ),
+		"remove_featured_image" => esc_html__( "Referentenbild entfernen", "cm-iwc" ),
+		"use_featured_image" => esc_html__( "Als Referentenbild verwenden", "cm-iwc" ),
+		"archives" => esc_html__( "Übersicht aller Referenten", "cm-iwc" ),
+		"name_admin_bar" => esc_html__( "Referent", "cm-iwc" ),
+	];
+
+	$args = [
+		"label" => esc_html__( "Referenten", "cm-iwc" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => false,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => "edit.php?post_type=session",
+		"show_in_nav_menus" => false,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => true,
+		"rewrite" => [ "slug" => "speaker", "with_front" => true ],
+		"query_var" => true,
+		"menu_position" => 20,
+		"supports" => [ "title", "thumbnail", "custom-fields" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "speaker", $args );
+
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );

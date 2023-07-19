@@ -122,3 +122,50 @@ function post_type_exhibition_space__pre_get_posts( $query )
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_exhibition_space__pre_get_posts', 1 );
+
+
+
+function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: Ausstellungsflächen.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+		"singular_name" => esc_html__( "Ausstellungsfläche", "cm-iwc" ),
+		"menu_name" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+		"all_items" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+	];
+
+	$args = [
+		"label" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => false,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => "edit.php?post_type=session",
+		"show_in_nav_menus" => false,
+		"delete_with_user" => false,
+		"exclude_from_search" => true,
+		"capability_type" => "page",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => true,
+		"rewrite" => [ "slug" => "exhibition_space", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title" ],
+		"taxonomies" => [ "location", "exhibition_package" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "exhibition_space", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );

@@ -165,3 +165,54 @@ function post_type_session__pre_get_posts( $query )
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_session__pre_get_posts', 1 );
+
+
+
+function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: Programmpunkte.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Programmpunkte", "cm-iwc" ),
+		"singular_name" => esc_html__( "Programmpunkt", "cm-iwc" ),
+		"menu_name" => esc_html__( "Programm", "cm-iwc" ),
+		"all_items" => esc_html__( "Programmpunkte", "cm-iwc" ),
+		"add_new" => esc_html__( "Erstellen", "cm-iwc" ),
+		"add_new_item" => esc_html__( "Neuen Programmpunkt erstellen", "cm-iwc" ),
+		"name_admin_bar" => esc_html__( "Programmpunkt", "cm-iwc" ),
+	];
+
+	$args = [
+		"label" => esc_html__( "Programmpunkte", "cm-iwc" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => "edit.php?post_type=session",
+		"show_in_nav_menus" => false,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "page",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => true,
+		"rewrite" => [ "slug" => "session", "with_front" => true ],
+		"query_var" => true,
+		"menu_position" => 20,
+		"supports" => [ "title", "thumbnail" ],
+		"taxonomies" => [ "location", "event" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "session", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );
