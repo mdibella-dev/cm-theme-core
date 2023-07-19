@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function cm_shortcode_speaker_grid( $atts, $content = null )
+function shortcode_speaker_grid( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
