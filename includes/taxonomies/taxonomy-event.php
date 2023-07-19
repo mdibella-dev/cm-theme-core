@@ -24,13 +24,13 @@ defined( 'ABSPATH' ) or exit;
 function taxonomy_event__manage_edit_columns( $default )
 {
     $columns = array(
-        'cb'            => $default['cb'],
-        'id'            => 'ID',
-        'name'          => $default['name'],
-        'description'   => $default['description'],
-        'slug'          => $default['slug'],
-        'status'        => __( 'Status', 'cm-theme-core' ),
-        'posts'         => __( 'Events', 'cm-theme-core' ),
+        'cb'          => $default['cb'],
+        'id'          => 'ID',
+        'name'        => $default['name'],
+        'description' => $default['description'],
+        'slug'        => $default['slug'],
+        'status'      => __( 'Status', 'cm-theme-core' ),
+        'posts'       => __( 'Events', 'cm-theme-core' ),
     );
     return $columns;
 }

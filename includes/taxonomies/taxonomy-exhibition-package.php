@@ -24,12 +24,12 @@ defined( 'ABSPATH' ) or exit;
 function taxonomy_exhibition_package__manage_edit_columns( $default )
 {
     $columns = array(
-        'cb'            => $default['cb'],
-        'id'            => 'ID',
-        'name'          => $default['name'],
-        'description'   => $default['description'],
-        'slug'          => $default['slug'],
-        'count'         => __( 'Count', 'cm-theme-core' ),
+        'cb'          => $default['cb'],
+        'id'          => 'ID',
+        'name'        => $default['name'],
+        'description' => $default['description'],
+        'slug'        => $default['slug'],
+        'count'       => __( 'Count', 'cm-theme-core' ),
     );
     return $columns;
 }
