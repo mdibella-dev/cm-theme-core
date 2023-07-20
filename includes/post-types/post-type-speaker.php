@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Determines the columns of the post list (backend).
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param array $default The defaults for columns.
  *
@@ -43,7 +43,7 @@ add_filter( 'manage_speaker_posts_columns', __NAMESPACE__ . '\post_type_speaker_
 /**
  * Generates the column output.
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param string $column_name Designation of the column to be output.
  * @param int    $post_id     ID of the post (aka record) to be output.
@@ -59,7 +59,7 @@ function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
                 echo sprintf(
                     '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
                     $post_id,
-                    get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
+                    get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                     __( 'Edit', 'cm-theme-core' )
                 );
             else :
@@ -99,7 +99,7 @@ add_action( 'manage_speaker_posts_custom_column', __NAMESPACE__ . '\post_type_sp
 /**
  * Registers sortable columns (by assigning appropriate orderby parameters).
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param array $columns The columns.
  *
@@ -120,7 +120,7 @@ add_filter( 'manage_edit-speaker_sortable_columns', __NAMESPACE__ . '\post_type_
 /**
  * Produces sorted output.
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param WP_Query $query A data object of the last query made.
  */
