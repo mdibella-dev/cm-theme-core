@@ -161,47 +161,47 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_partner__pre_get_posts'
 
 function cptui_register_my_cpts() {
 
-	/**
-	 * Post Type: Kooperationspartner.
-	 */
+    /**
+     * Post Type: Kooperationspartner.
+     */
 
-	$labels = [
-		"name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-		"singular_name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-		"menu_name" => esc_html__( "Kooperationen", 'cm-theme-core' ),
-		"all_items" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-	];
+    $labels = [
+        "name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+        "singular_name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+        "menu_name" => esc_html__( "Kooperationen", 'cm-theme-core' ),
+        "all_items" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+    ];
 
-	$args = [
-		"label" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-		"labels" => $labels,
-		"description" => "",
-		"public" => true,
-		"publicly_queryable" => true,
-		"show_ui" => true,
-		"show_in_rest" => true,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
-		"has_archive" => false,
-		"show_in_menu" => "edit.php?post_type=session",
-		"show_in_nav_menus" => true,
-		"delete_with_user" => false,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"can_export" => false,
-		"rewrite" => [ "slug" => "partner", "with_front" => true ],
-		"query_var" => true,
-		"menu_position" => 5,
-		"menu_icon" => "dashicons-groups",
-		"supports" => [ "title", "thumbnail" ],
-		"taxonomies" => [ "partnership" ],
-		"show_in_graphql" => false,
-	];
+    $args = [
+        "label" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "rest_namespace" => "wp/v2",
+        "has_archive" => false,
+        "show_in_menu" => "edit.php?post_type=session",
+        "show_in_nav_menus" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "can_export" => false,
+        "rewrite" => [ "slug" => "partner", "with_front" => true ],
+        "query_var" => true,
+        "menu_position" => 5,
+        "menu_icon" => "dashicons-groups",
+        "supports" => [ "title", "thumbnail" ],
+        "taxonomies" => [ "partnership" ],
+        "show_in_graphql" => false,
+    ];
 
-	register_post_type( "partner", $args );
+    register_post_type( "partner", $args );
 
 }
 
