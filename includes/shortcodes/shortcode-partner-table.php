@@ -35,30 +35,30 @@ function shortcode_partner_table( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
-    $default_atts = array(
+    $default_atts = [
         'partnership' => '',
         'fieldset'    => '',
-    );
+    ];
     extract( shortcode_atts( $default_atts, $atts ) );
 
 
     /** Retrieve and prepare data. */
 
-    $query = array(
+    $query = [
         'post_type'      => 'partner',
         'post_status'    => 'publish',
         'posts_per_page' => '-1',
         'order'          => 'ASC',
         'orderby'        => 'title'
-    );
+    ];
 
     // Optionally, you can filter by type of partnership
     if( ! empty( $partnership ) ) :
-        $query[ 'tax_query' ] = array( array(
+        $query[ 'tax_query' ] = [ [
             'taxonomy' => 'partnership',
             'field'    => 'term_id',
             'terms'    => explode(',', $partnership )
-        ) );
+        ] ];
     endif;
 
     $partners = get_posts( $query );
@@ -70,7 +70,7 @@ function shortcode_partner_table( $atts, $content = null )
 
     if( $partners ) :
         $rows       = array();
-        $field_keys = explode( ',', strtoupper( str_replace(" ", "", $fieldset ) ) );
+        $field_keys = explode( ',', strtoupper( str_replace( " ", "", $fieldset ) ) );
 
 
         /** Loop through all partners found and generate corresponding table rows. */
@@ -86,15 +86,15 @@ function shortcode_partner_table( $atts, $content = null )
                         $link  = get_field( 'partner-webseite', $partner->ID );
                         $image = get_the_post_thumbnail( $partner->ID, 'full' );
 
-                        if( !empty( $link ) ) :
-                            $cells[ 'partner-logo' ] = sprintf(
+                        if( ! empty( $link ) ) :
+                            $cells['partner-logo'] = sprintf(
                                 '<a href="%1$s" target="_blank" title="%2$s" rel="external">%3$s</a>',
                                 $link,
                                 __( 'Open external link', 'cm-theme-core' ),
                                 $image
                             );
                         else :
-                            $cells[ 'partner-logo' ] = $image;
+                            $cells['partner-logo'] = $image;
                         endif;
 
                     break;
@@ -139,7 +139,7 @@ function shortcode_partner_table( $atts, $content = null )
                         $number     = $exhibition['partner-messestand-nummer'];
 
                         if( ! empty( $number ) or !empty( $location ) ) :
-                            $strings = array();
+                            $strings = [];
 
                             if( ! empty( $number ) ) :
                                 $strings[] = sprintf(
