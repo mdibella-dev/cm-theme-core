@@ -86,9 +86,9 @@ function shortcode_speaker_grid( $atts, $content = null )
     <ul>
         <?php foreach( $speaker_list as $speaker ) : ?>
         <li>
-            <a  class="speaker-grid-element"
-                href="<?php echo $speaker['permalink']; ?>"
-                title="<?php echo sprintf( __( 'Learn more about %1$s', 'cm-theme-core' ), $speaker['title_name'] ); ?>">
+            <a class="speaker-grid-element"
+               href="<?php echo $speaker['permalink']; ?>"
+               title="<?php echo sprintf( __( 'Learn more about %1$s', 'cm-theme-core' ), $speaker['title_name'] ); ?>">
 
                 <figure>
                     <?php echo get_the_post_thumbnail( $speaker['id'], 'full', array( 'class' => 'speaker-image' ) ); ?>
