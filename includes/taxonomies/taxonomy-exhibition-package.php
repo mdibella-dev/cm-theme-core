@@ -45,7 +45,7 @@ add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\taxonomy
 
 function taxonomy_exhibition_package__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name) :
+    switch( $column_name ) :
         case 'id':
             $content = $term_id;
         break;
