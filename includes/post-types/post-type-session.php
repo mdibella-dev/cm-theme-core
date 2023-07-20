@@ -64,7 +64,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
                 foreach( $speakers as $speaker ) :
                     $speaker_dataset = core__get_speaker_dataset( $speaker );
                     echo sprintf(
-                        '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
+                        '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
                         $speaker_dataset[ 'id' ],
                         get_the_post_thumbnail( $speaker_dataset[ 'id' ], array( 100, 0 ) ),
                         sprintf(
@@ -177,50 +177,50 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_session__pre_get_posts'
 function post_type_session__register()
 {
     $labels = [
-        "name"           => esc_html__( "Sessions", 'cm-theme-core' ),
-        "singular_name"  => esc_html__( "Session", 'cm-theme-core' ),
-        "menu_name"      => esc_html__( "Sessions", 'cm-theme-core' ),
-        "all_items"      => esc_html__( "Sessions", 'cm-theme-core' ),
-        "add_new"        => esc_html__( "Add new", 'cm-theme-core' ),
-        "add_new_item"   => esc_html__( "New session", 'cm-theme-core' ),
-        "name_admin_bar" => esc_html__( "Session", 'cm-theme-core' ),
+        'name'           => esc_html__( 'Sessions', 'cm-theme-core' ),
+        'singular_name'  => esc_html__( 'Session', 'cm-theme-core' ),
+        'menu_name'      => esc_html__( 'Sessions', 'cm-theme-core' ),
+        'all_items'      => esc_html__( 'Sessions', 'cm-theme-core' ),
+        'add_new'        => esc_html__( 'Add new', 'cm-theme-core' ),
+        'add_new_item'   => esc_html__( 'New session', 'cm-theme-core' ),
+        'name_admin_bar' => esc_html__( 'Session', 'cm-theme-core' ),
     ];
 
     $args = [
-        "label"                 => esc_html__( "Sessions", 'cm-theme-core' ),
-        "labels"                => $labels,
-        "description"           => "",
-        "public"                => true,
-        "publicly_queryable"    => true,
-        "show_ui"               => true,
-        "show_in_rest"          => true,
-        "rest_base"             => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace"        => "wp/v2",
-        "has_archive"           => false,
-        "show_in_menu"          => "edit.php?post_type=session",
-        "show_in_nav_menus"     => false,
-        "delete_with_user"      => false,
-        "exclude_from_search"   => false,
-        "capability_type"       => "page",
-        "map_meta_cap"          => true,
-        "hierarchical"          => false,
-        "can_export"            => true,
-        "rewrite"               => [
-            "slug"       => "session",
-            "with_front" => true
+        'label'                 => esc_html__( 'Sessions', 'cm-theme-core' ),
+        'labels'                => $labels,
+        'description'           => '',
+        'public'                => true,
+        'publicly_queryable'    => true,
+        'show_ui'               => true,
+        'show_in_rest'          => true,
+        'rest_base'             => '',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'rest_namespace'        => 'wp/v2',
+        'has_archive'           => false,
+        'show_in_menu'          => 'edit.php?post_type=session',
+        'show_in_nav_menus'     => false,
+        'delete_with_user'      => false,
+        'exclude_from_search'   => false,
+        'capability_type'       => 'page',
+        'map_meta_cap'          => true,
+        'hierarchical'          => false,
+        'can_export'            => true,
+        'rewrite'               => [
+            'slug'       => 'session',
+            'with_front' => true
         ],
-        "query_var"             => true,
-        "menu_position"         => 20,
-        "supports"              => [
-            "title",
-            "thumbnail"
+        'query_var'             => true,
+        'menu_position'         => 20,
+        'supports'              => [
+            'title',
+            'thumbnail'
         ],
-        "taxonomies"            => [
-            "location",
-            "event"
+        'taxonomies'            => [
+            'location',
+            'event'
         ],
-        "show_in_graphql"       => false,
+        'show_in_graphql'       => false,
     ];
 
     register_post_type( 'session', $args );

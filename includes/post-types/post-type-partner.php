@@ -58,7 +58,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
             if( true === has_post_thumbnail( $post_id ) ) :
                 // alternatively: admin_url?
                 echo sprintf(
-                    '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
+                    '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
                     __( 'Edit', 'cm-theme-core' )
@@ -77,7 +77,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                 foreach( $data[ 'exhibition-spaces' ] as $space ) :
                     if( ! empty( $space[ 'location' ] ) and ! empty( $space[ 'signature' ] ) ) :
                         $spaces[] = sprintf(
-                            '<a href="post.php?post=%1$s&action=edit">%2$s</a>%3$s',
+                            '<a href='post.php?post=%1$s&action=edit'>%2$s</a>%3$s',
                             $space['id'],
                             $space['signature'],
                             ( ! empty( $space['package'] ) )? ' (' . $space['package'] . ')' : '',
@@ -168,47 +168,47 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_partner__pre_get_posts'
 function post_type_partner__register()
 {
     $labels = [
-        "name"          => esc_html__( "Partners", 'cm-theme-core' ),
-        "singular_name" => esc_html__( "Partner", 'cm-theme-core' ),
-        "menu_name"     => esc_html__( "Partnerships", 'cm-theme-core' ),
-        "all_items"     => esc_html__( "Partners", 'cm-theme-core' ),
+        'name'          => esc_html__( 'Partners', 'cm-theme-core' ),
+        'singular_name' => esc_html__( 'Partner', 'cm-theme-core' ),
+        'menu_name'     => esc_html__( 'Partnerships', 'cm-theme-core' ),
+        'all_items'     => esc_html__( 'Partners', 'cm-theme-core' ),
     ];
 
     $args = [
-        "label"                 => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-        "labels"                => $labels,
-        "description"           => "",
-        "public"                => true,
-        "publicly_queryable"    => true,
-        "show_ui"               => true,
-        "show_in_rest"          => true,
-        "rest_base"             => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace"        => "wp/v2",
-        "has_archive"           => false,
-        "show_in_menu"          => "edit.php?post_type=session",
-        "show_in_nav_menus"     => true,
-        "delete_with_user"      => false,
-        "exclude_from_search"   => false,
-        "capability_type"       => "post",
-        "map_meta_cap"          => true,
-        "hierarchical"          => false,
-        "can_export"            => false,
-        "rewrite"               => [
-            "slug"       => "partner",
-            "with_front" => true
+        'label'                 => esc_html__( 'Kooperationspartner', 'cm-theme-core' ),
+        'labels'                => $labels,
+        'description'           => '',
+        'public'                => true,
+        'publicly_queryable'    => true,
+        'show_ui'               => true,
+        'show_in_rest'          => true,
+        'rest_base'             => '',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'rest_namespace'        => 'wp/v2',
+        'has_archive'           => false,
+        'show_in_menu'          => 'edit.php?post_type=session',
+        'show_in_nav_menus'     => true,
+        'delete_with_user'      => false,
+        'exclude_from_search'   => false,
+        'capability_type'       => 'post',
+        'map_meta_cap'          => true,
+        'hierarchical'          => false,
+        'can_export'            => false,
+        'rewrite'               => [
+            'slug'       => 'partner',
+            'with_front' => true
         ],
-        "query_var"             => true,
-        "menu_position"         => 5,
-        "menu_icon"             => "dashicons-groups",
-        "supports"              => [
-            "title",
-            "thumbnail"
+        'query_var'             => true,
+        'menu_position'         => 5,
+        'menu_icon'             => 'dashicons-groups',
+        'supports'              => [
+            'title',
+            'thumbnail'
         ],
-        "taxonomies"            => [
-            "partnership"
+        'taxonomies'            => [
+            'partnership'
         ],
-        "show_in_graphql"       => false,
+        'show_in_graphql'       => false,
     ];
 
     register_post_type( 'partner', $args );

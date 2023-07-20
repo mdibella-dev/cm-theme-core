@@ -134,45 +134,45 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_exhibition_space__pre_g
 function post_type_exhibition_space__register()
 {
     $labels = [
-        "name"          => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
-        "singular_name" => esc_html__( 'Exhibition space', 'cm-theme-core' ),
-        "menu_name"     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
-        "all_items"     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'name'          => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'singular_name' => esc_html__( 'Exhibition space', 'cm-theme-core' ),
+        'menu_name'     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'all_items'     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
     ];
 
     $args = [
-        "label"                 => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
-        "labels"                => $labels,
-        "description"           => "",
-        "public"                => true,
-        "publicly_queryable"    => false,
-        "show_ui"               => true,
-        "show_in_rest"          => true,
-        "rest_base"             => "",
-        "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace"        => "wp/v2",
-        "has_archive"           => false,
-        "show_in_menu"          => "edit.php?post_type=session",
-        "show_in_nav_menus"     => false,
-        "delete_with_user"      => false,
-        "exclude_from_search"   => true,
-        "capability_type"       => "page",
-        "map_meta_cap"          => true,
-        "hierarchical"          => false,
-        "can_export"            => true,
-        "rewrite"               => [
-            "slug"       => 'exhibition_space',
-            "with_front" => true
+        'label'                 => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'labels'                => $labels,
+        'description'           => '',
+        'public'                => true,
+        'publicly_queryable'    => false,
+        'show_ui'               => true,
+        'show_in_rest'          => true,
+        'rest_base'             => '',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'rest_namespace'        => 'wp/v2',
+        'has_archive'           => false,
+        'show_in_menu'          => 'edit.php?post_type=session',
+        'show_in_nav_menus'     => false,
+        'delete_with_user'      => false,
+        'exclude_from_search'   => true,
+        'capability_type'       => 'page',
+        'map_meta_cap'          => true,
+        'hierarchical'          => false,
+        'can_export'            => true,
+        'rewrite'               => [
+            'slug'       => 'exhibition_space',
+            'with_front' => true
         ],
-        "query_var"             => true,
-        "supports"              => [
-            "title"
+        'query_var'             => true,
+        'supports'              => [
+            'title'
         ],
-        "taxonomies"            => [
-            "location",
-            "exhibition_package"
+        'taxonomies'            => [
+            'location',
+            'exhibition_package'
         ],
-        "show_in_graphql"       => false,
+        'show_in_graphql'       => false,
     ];
 
     register_post_type( 'exhibition_space', $args );
