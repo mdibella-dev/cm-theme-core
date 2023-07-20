@@ -53,7 +53,6 @@ add_filter( 'manage_partner_posts_columns', __NAMESPACE__ . '\post_type_partner_
 function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
-
         case 'image':
             if( true === has_post_thumbnail( $post_id ) ) :
                 // alternatively: admin_url?
@@ -102,7 +101,6 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                 get_the_modified_date( 'H:i', $post_id ),
             );
         break;
-
     endswitch;
 }
 
@@ -146,12 +144,11 @@ function post_type_partner__pre_get_posts( $query )
         $orderby = $query->get( 'orderby' );
 
         switch( $orderby ) :
-
             case 'update':
                 $query->set( 'orderby', 'modified' );
             break;
-
         endswitch;
+        
     endif;
 }
 
