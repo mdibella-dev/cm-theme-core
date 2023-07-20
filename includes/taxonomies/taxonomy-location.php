@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 function taxonomy_location__manage_edit_columns( $default )
 {
-    $columns = array(
+    $columns = [
         'cb'            => $default['cb'],
         'id'            => 'ID',
         'image'         => __( 'Image', 'cm-theme-core' ),
@@ -32,7 +32,7 @@ function taxonomy_location__manage_edit_columns( $default )
         'slug'          => $default['slug'],
         'count-session' => __( 'Sessions', 'cm-theme-core' ),
         'count-space'   => __( 'Exhibition spaces', 'cm-theme-core' ),
-    );
+    ];
     return $columns;
 }
 add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\taxonomy_location__manage_edit_columns' );
@@ -54,7 +54,7 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
 
         case 'image':
             $image_id = get_field( 'location-image', 'location_' . $term_id );
-            $image    = wp_get_attachment_image( $image_id, array( '150', '9999' ) );
+            $image    = wp_get_attachment_image( $image_id, [ '150', '9999' ] );
 
             if( ! empty( $image ) ) :
                 echo $image;
@@ -64,15 +64,15 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
         break;
 
         case 'count-session':
-            $posts = get_posts( array(
+            $posts = get_posts( [
                 'post_type'   => 'session',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => array( array(
+                'tax_query'   => [ [
                     'taxonomy' => 'location',
                     'terms'    => $term_id,
-                ) ),
-            ) );
+                ] ],
+            ] );
             $term    = get_term( $term_id, 'location' );
             $content = sprintf(
                 '<a href="/wp-admin/edit.php?location=%2$s&post_type=session" title="%3$s">%1$s</a>',
@@ -83,15 +83,15 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
         break;
 
         case 'count-space':
-            $posts = get_posts( array(
+            $posts = get_posts( [
                 'post_type'   => 'exhibition_space',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => array( array(
+                'tax_query'   => [ [
                     'taxonomy' => 'location',
                     'terms'    => $term_id,
-                ) ),
-            ) );
+                ] ],
+            ] );
             $term    = get_term( $term_id, 'location' );
             $content = sprintf(
                 '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
