@@ -55,7 +55,6 @@ add_filter( 'manage_session_posts_columns', __NAMESPACE__ . '\post_type_session_
 function post_type_session__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
-
         case 'speaker':
             $speakers = get_field( 'programmpunkt-referenten', $post_id );
 
@@ -103,7 +102,6 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
                 get_the_modified_date( 'H:i', $post_id ),
             );
         break;
-
     endswitch;
 }
 
@@ -150,7 +148,6 @@ function post_type_session__pre_get_posts( $query )
         $orderby = $query->get( 'orderby' );
 
         switch( $orderby ) :
-
             case 'event-date':
                 $query->set( 'orderby', 'meta_value' );
                 $query->set( 'meta_key', 'programmpunkt-datum' );
@@ -159,8 +156,8 @@ function post_type_session__pre_get_posts( $query )
             case 'update':
                 $query->set( 'orderby', 'modified' );
             break;
-
         endswitch;
+        
     endif;
 }
 
