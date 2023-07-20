@@ -23,14 +23,14 @@ defined( 'ABSPATH' ) or exit;
 
 function taxonomy_partnership__manage_edit_columns( $default )
 {
-    $columns = array(
+    $columns = [
         'cb'          => $default['cb'],
         'id'          => 'ID',
         'name'        => $default['name'],
         'description' => $default['description'],
         'slug'        => $default['slug'],
         'count'       => __( 'Count', 'cm-theme-core' ),
-    );
+    ];
     return $columns;
 }
 add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\taxonomy_partnership__manage_edit_columns' );
@@ -51,15 +51,15 @@ function taxonomy_partnership__manage_custom_column( $content, $column_name, $te
         break;
 
         case 'count':
-            $posts = get_posts( array(
+            $posts = get_posts( [
                 'post_type'   => 'partner',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => array( array(
+                'tax_query'   => [ [
                     'taxonomy' => 'partnership',
                     'terms'    => $term_id,
-                ) ),
-            ) );
+                ] ],
+            ] );
             $term    = get_term( $term_id, 'partnership' );
             $content = sprintf(
                 '<a href="/wp-admin/edit.php?partnership=%2$s&post_type=partner" title="%3$s">%1$s</a>',
