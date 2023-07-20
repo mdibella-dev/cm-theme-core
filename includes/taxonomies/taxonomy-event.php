@@ -46,7 +46,7 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\taxonomy_event__manag
 
 function taxonomy_event__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name) :
+    switch( $column_name ) :
         case 'id':
             $content = $term_id;
         break;
@@ -54,7 +54,7 @@ function taxonomy_event__manage_custom_column( $content, $column_name, $term_id 
         case 'status':
             $status = get_field( 'event-status', 'term_' . $term_id );
 
-            $content  = sprintf(
+            $content = sprintf(
                 '<span class="status-icon %1$s" title="%2$s"></span>',
                 (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
                 (1 == $status)? __( 'active', 'cm-theme-core' ) : __( 'inactive', 'cm-theme-core' ),
@@ -62,7 +62,7 @@ function taxonomy_event__manage_custom_column( $content, $column_name, $term_id 
         break;
 
         default:
-        break;    
+        break;
     endswitch;
 
     return $content;
