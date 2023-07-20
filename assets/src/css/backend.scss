@@ -1,0 +1,192 @@
+/**
+ * Backend styles
+ *
+* @author  Marco Di Bella
+* @package cm-theme-core
+*/
+
+
+
+/**
+ * General settings
+ */
+
+.widefat {
+
+    td,
+    th,
+    th.sortable,
+    th.sorted  {
+        padding: 1rem;
+    }
+
+
+    th.sortable a,
+    th.sorted a {
+        padding: 0;
+    }
+
+    th.sorted a span:not(.sorting-indicator) {
+        font-weight: bold;
+    }
+}
+
+
+
+/**
+ * Overview of the speakers
+ * wp-admin/edit.php?post_type=speaker
+ */
+
+.post-type-speaker .wp-list-table {
+
+    .column-image {
+        width: 10%;
+
+        a {
+            display: inline-block;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            line-height: 0;
+            font-size: 0;
+        }
+
+    }
+
+}
+
+
+/**
+ * Overview of the sessions
+ * wp-admin/edit.php?post_type=session
+ */
+
+.post-type-session .wp-list-table {
+
+    .column-speaker {
+
+        a {
+            display: inline-block;
+            margin: 8px;
+        }
+
+        a img {
+            width: 40px;
+            height: 40px;
+            line-height: 0;
+            font-size: 0;
+        }
+
+    }
+
+}
+
+
+/**
+ * Overview of the partners
+ * wp-admin/edit.php?post_type=partner
+ */
+
+.post-type-partner .wp-list-table {
+
+    .column-image {
+        width: 10%;
+
+        a {
+            display: inline-block;
+        }
+
+        img {
+            width: 80px;
+            height: auto;
+            line-height: 0;
+            font-size: 0;
+        }
+
+    }
+
+}
+
+
+/**
+ * Miscellaneous overviews - common settings
+ */
+
+.taxonomy-location .wp-list-table,
+.taxonomy-event .wp-list-table,
+.taxonomy-exhibition_package .wp-list-table,
+.taxonomy-partnership .wp-list-table {
+
+    .column-id {
+        width: 5%;
+    }
+
+    .column-posts,
+    .column-count {
+        width: 15%;
+        text-align: left;
+    }
+
+}
+
+
+
+/**
+ * Overview of the events
+ * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
+ */
+
+.taxonomy-event .wp-list-table {
+
+    .column-status {
+        width: 5%;
+        text-align: center;
+
+        .status-icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+
+            &.status-icon-active {
+                background-color: #7ad03a;
+            }
+
+            &.status-icon-inactive {
+                background-color: #dc3232;
+            }
+        }
+    }
+
+}
+
+
+/**
+ * Overview of the locations
+ * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
+ */
+
+.taxonomy-location .wp-list-table {
+
+    .column-image {
+        width: 150px;
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+}
+
+
+/**
+ * CM menu
+ */
+
+#adminmenu #toplevel_page_edit-post_type-session ul.wp-submenu li a[href$="edit.php?post_type=session"],
+#adminmenu #toplevel_page_edit-post_type-session ul.wp-submenu li a[href$="edit-tags.php?taxonomy=partnership&post_type=session"] {
+    border-bottom: 1px solid hsla(0,0%,100%,.2)
+}
