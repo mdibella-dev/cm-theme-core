@@ -192,7 +192,7 @@ function shortcode_event_table( $atts, $content = null )
 
                 $details = apply_filters( 'the_content', get_field( 'programmpunkt-beschreibung', $session->ID ) );
 
-                if( ( $show_details == true ) and !empty( $details ) ):
+                if( ( true == $show_details ) and ! empty( $details ) ):
                     $output .= '<div class="event-table__session-toggle"><span><i class="far fa-angle-down"></i></span></div>';
                     $output .= sprintf ('<div class="event-table__session-details">%1$s</div>', $details );
                 endif;
