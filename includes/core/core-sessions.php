@@ -28,22 +28,22 @@ defined( 'ABSPATH' ) or exit;
 function core__get_sessions( $args )
 {
     // Determination of the passed parameters
-    $default_args = array(
+    $default_args = [
         'event'          => '',
         'event_filter'   => 'ACTIVE',
         'speaker'        => '',
         'posts_per_page' => -1,
         'date'           => '',
-    );
+    ];
     extract( wp_parse_args( $args, $default_args ) );
 
 
     // Data query construction
-    $query = array(
+    $query = [
         'posts_per_page' => $posts_per_page,
         'post_status'    => 'publish',
         'post_type'      => 'session',
-    );
+    ];
 
 
     // Handling event/event_filter
@@ -51,31 +51,31 @@ function core__get_sessions( $args )
     // or filtering by active or inactive sessions (variant 2).
     if( null !== core__get_event( $event ) ) :
 
-        $query[ 'tax_query' ] = array( array(
+        $query['tax_query'] = [ [
             'taxonomy' => 'event',
             'field'    => 'term_id',
             'terms'    => $event,
-        ) );
+        ] ];
     else :
         $event_list   = core__get_active_events();
         $event_filter = strtoupper( trim( $event_filter ) );
 
         if( 'INACTIVE' === $event_filter ) :
 
-            $query['tax_query'] = array( array(
+            $query['tax_query'] = [ [
                 'taxonomy' => 'event',
                 'field'    => 'term_id',
                 'terms'    => $event_list,
                 'operator' => 'NOT IN',
-            ) );
+            ] ];
         elseif( 'ACTIVE' === $event_filter ) :
 
-            $query['tax_query'] = array( array(
+            $query['tax_query'] = [ [
                 'taxonomy' => 'event',
                 'field'    => 'term_id',
                 'terms'    => $event_list,
                 'operator' => 'IN',
-            ) );
+            ] ];
         endif;
 
     endif;
@@ -84,15 +84,15 @@ function core__get_sessions( $args )
     // Handling of speaker/date
     // Adds the search for the sessions of a specific speaker and/or the search for the session taking place on a specific date.
     if( ! empty( $speaker ) or ! empty( $date ) ) :
-        $query['meta_query'] = array();
+        $query['meta_query'] = [];
 
         if( ! empty( $speaker ) and is_numeric( $speaker ) ) :
 
-            $query['meta_query'][] = array(
+            $query['meta_query'][] = [
                 'key'     => 'programmpunkt-referenten',
                 'value'   => $speaker,
                 'compare' => 'LIKE',
-            );
+            ];
 
         endif;
 
@@ -102,10 +102,10 @@ function core__get_sessions( $args )
             $date = str_replace( '.', '-', $date );
 
             if( false !== ( $timestamp = strtotime( $date) ) ) :
-                $query['meta_query'][] = array(
+                $query['meta_query'][] = [
                     'key'   => 'programmpunkt-datum',
                     'value' => date( 'Ymd', $timestamp ),
-                );
+                ];
             endif;
 
         endif;
@@ -132,10 +132,10 @@ function core__get_sessions( $args )
 
 function core__get_sessions_by_event( $event, $date = '' )
 {
-    return core__get_sessions( array(
+    return core__get_sessions( [
         'event' => $event,
         'date'  => $date,
-    ) );
+    ] );
 }
 
 
@@ -154,10 +154,10 @@ function core__get_sessions_by_event( $event, $date = '' )
 
 function core__get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
 {
-    return core__get_sessions( array(
+    return core__get_sessions( [
         'speaker'      => $speaker,
         'event_filter' => $event_filter,
-    ) );
+    ] );
 }
 
 
@@ -176,7 +176,7 @@ function core__sort_sessions_by_timestamp( $sessions )
 {
     if( true == is_array( $sessions ) ) :
         $unable_to_sort = false;
-        $sort           = array();
+        $sort           = [];
 
         // Creation of a sortable array
         foreach( $sessions as $session ) :
