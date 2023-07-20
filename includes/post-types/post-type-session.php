@@ -175,17 +175,17 @@ function cptui_register_my_cpts() {
 	 */
 
 	$labels = [
-		"name" => esc_html__( "Programmpunkte", "cm-iwc" ),
-		"singular_name" => esc_html__( "Programmpunkt", "cm-iwc" ),
-		"menu_name" => esc_html__( "Programm", "cm-iwc" ),
-		"all_items" => esc_html__( "Programmpunkte", "cm-iwc" ),
-		"add_new" => esc_html__( "Erstellen", "cm-iwc" ),
-		"add_new_item" => esc_html__( "Neuen Programmpunkt erstellen", "cm-iwc" ),
-		"name_admin_bar" => esc_html__( "Programmpunkt", "cm-iwc" ),
+		"name" => esc_html__( "Programmpunkte", 'cm-theme-core' ),
+		"singular_name" => esc_html__( "Programmpunkt", 'cm-theme-core' ),
+		"menu_name" => esc_html__( "Programm", 'cm-theme-core' ),
+		"all_items" => esc_html__( "Programmpunkte", 'cm-theme-core' ),
+		"add_new" => esc_html__( "Erstellen", 'cm-theme-core' ),
+		"add_new_item" => esc_html__( "Neuen Programmpunkt erstellen", 'cm-theme-core' ),
+		"name_admin_bar" => esc_html__( "Programmpunkt", 'cm-theme-core' ),
 	];
 
 	$args = [
-		"label" => esc_html__( "Programmpunkte", "cm-iwc" ),
+		"label" => esc_html__( "Programmpunkte", 'cm-theme-core' ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,

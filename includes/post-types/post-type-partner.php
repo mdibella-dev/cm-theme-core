@@ -166,14 +166,14 @@ function cptui_register_my_cpts() {
 	 */
 
 	$labels = [
-		"name" => esc_html__( "Kooperationspartner", "cm-iwc" ),
-		"singular_name" => esc_html__( "Kooperationspartner", "cm-iwc" ),
-		"menu_name" => esc_html__( "Kooperationen", "cm-iwc" ),
-		"all_items" => esc_html__( "Kooperationspartner", "cm-iwc" ),
+		"name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+		"singular_name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+		"menu_name" => esc_html__( "Kooperationen", 'cm-theme-core' ),
+		"all_items" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
 	];
 
 	$args = [
-		"label" => esc_html__( "Kooperationspartner", "cm-iwc" ),
+		"label" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,

@@ -132,14 +132,14 @@ function cptui_register_my_cpts() {
 	 */
 
 	$labels = [
-		"name" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
-		"singular_name" => esc_html__( "Ausstellungsfläche", "cm-iwc" ),
-		"menu_name" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
-		"all_items" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+		"name" => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
+		"singular_name" => esc_html__( "Ausstellungsfläche", 'cm-theme-core' ),
+		"menu_name" => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
+		"all_items" => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
 	];
 
 	$args = [
-		"label" => esc_html__( "Ausstellungsflächen", "cm-iwc" ),
+		"label" => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
