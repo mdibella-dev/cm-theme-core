@@ -131,7 +131,8 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_exhibition_space__pre_g
  * @since 1.0.0
  */
 
-function cptui_register_my_cpts() {
+function post_type_exhibition_space__register()
+{
 
     /**
      * Post Type: Ausstellungsflächen.
@@ -174,4 +175,4 @@ function cptui_register_my_cpts() {
     register_post_type( "exhibition_space", $args );
 }
 
-add_action( 'init', __NAMESPACE__ . '\cptui_register_my_cpts' );
+add_action( 'init', __NAMESPACE__ . '\post_type_exhibition_space__register' );

@@ -164,8 +164,9 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_partner__pre_get_posts'
  *
  * @since 1.0.0
  */
- 
-function cptui_register_my_cpts() {
+
+function post_type_partner__register()
+{
 
     /**
      * Post Type: Kooperationspartner.
@@ -211,4 +212,4 @@ function cptui_register_my_cpts() {
 
 }
 
-add_action( 'init', __NAMESPACE__ . '\cptui_register_my_cpts' );
+add_action( 'init', __NAMESPACE__ . '\post_type_partner__register' );
