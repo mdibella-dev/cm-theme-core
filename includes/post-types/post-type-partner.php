@@ -175,7 +175,7 @@ function post_type_partner__register()
     ];
 
     $args = [
-        'label'                 => esc_html__( 'Kooperationspartner', 'cm-theme-core' ),
+        'label'                 => esc_html__( 'Partner', 'cm-theme-core' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,
