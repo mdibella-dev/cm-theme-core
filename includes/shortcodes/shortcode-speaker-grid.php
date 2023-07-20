@@ -38,12 +38,12 @@ function shortcode_speaker_grid( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
-    $default_atts = array(
+    $default_atts = [
         'event'   => '-1', // only active events
         'exclude' => '',
         'show'    => 0,
         'shuffle' => 0,
-    );
+    ];
     extract( shortcode_atts( $default_atts, $atts ) );
 
 
