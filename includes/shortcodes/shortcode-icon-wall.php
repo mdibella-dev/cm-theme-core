@@ -34,18 +34,18 @@ function shortcode_icon_wall( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
-    $default_atts = array(
+    $default_atts = array[
         'partnership' => '',
         'link'        => 'none',
-    );
+    ];
     extract( shortcode_atts( $default_atts, $atts ) );
 
     $link         = strtolower( trim( $link ) );
-    $link_options = array(
+    $link_options = [
         'none',
         'internal',
         'external',
-    );
+    ];
 
     if( ! in_array( $link, $link_options ) ) :
         $link = 'none';
@@ -54,21 +54,21 @@ function shortcode_icon_wall( $atts, $content = null )
 
     /** Retrieve and prepare data. */
 
-    $query = array(
+    $query = [
         'post_type'      => 'partner',
         'post_status'    => 'publish',
         'posts_per_page' => '-1',
         'order'          => 'ASC',
         'orderby'        => 'title',
-    );
+    ];
 
     // Optionally, you can filter by type of partnership.
     if( ! empty( $partnership ) ) :
-        $query[ 'tax_query' ] = array( array(
+        $query['tax_query'] = [ [
             'taxonomy' => 'partnership',
             'field'    => 'term_id',
             'terms'    => explode(',', $partnership ),
-        ) );
+        ] ];
     endif;
 
     $partners = get_posts( $query );
@@ -89,9 +89,9 @@ function shortcode_icon_wall( $atts, $content = null )
 
         // Squared logos?
         $li_class = '';
-        $thumb    = wp_get_attachment_metadata( get_post_thumbnail_id( $data[ 'id' ] ) );
+        $thumb    = wp_get_attachment_metadata( get_post_thumbnail_id( $data['id'] ) );
 
-        if( $thumb[ 'width' ] == $thumb[ 'height' ] ) :
+        if( $thumb['width'] == $thumb['height'] ) :
             $li_class = ' class="is-squared"';
         endif;
     ?>
@@ -101,16 +101,16 @@ function shortcode_icon_wall( $atts, $content = null )
             case 'internal' :
                 echo sprintf(
                     '<a href="%1$s" target="_self" title="%2$s">',
-                    $data[ 'permalink' ],
+                    $data['permalink'],
                     __( 'View details page', 'cm-theme-core' ),
                 );
             break;
 
             case 'external' :
-                if( ! empty( $data[ 'website' ] ) ) :
+                if( ! empty( $data['website'] ) ) :
                     echo sprintf(
                         '<a href="%1$s" target="blank" title="%2$s">',
-                        $data[ 'website' ],
+                        $data['website'],
                         __( 'View website', 'cm-theme-core' ),
                     );
                 endif;
@@ -120,7 +120,7 @@ function shortcode_icon_wall( $atts, $content = null )
             break;
         endswitch;
 
-        echo get_the_post_thumbnail( $data[ 'id' ], 'full' );
+        echo get_the_post_thumbnail( $data['id'], 'full' );
 
         switch( $link ) :
             case 'internal' :
@@ -128,7 +128,7 @@ function shortcode_icon_wall( $atts, $content = null )
             break;
 
             case 'external' :
-                if( ! empty( $data[ 'website' ] ) ) :
+                if( ! empty( $data['website'] ) ) :
                     echo '</a>';
                 endif;
             break;
