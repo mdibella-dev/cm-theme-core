@@ -52,7 +52,6 @@ add_filter( 'manage_speaker_posts_columns', __NAMESPACE__ . '\post_type_speaker_
 function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
-
         case 'image':
             if( true === has_post_thumbnail( $post_id ) ) :
                 // alternativ: admin_url?
@@ -88,7 +87,6 @@ function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
                 get_the_modified_date( 'H:i', $post_id ),
             );
         break;
-
     endswitch;
 }
 
@@ -132,12 +130,11 @@ function post_type_speaker__pre_get_posts( $query )
         $orderby = $query->get( 'orderby' );
 
         switch( $orderby ) :
-
             case 'update':
                 $query->set( 'orderby', 'modified' );
             break;
-
         endswitch;
+        
     endif;
 }
 
