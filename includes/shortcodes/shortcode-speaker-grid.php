@@ -49,12 +49,12 @@ function shortcode_speaker_grid( $atts, $content = null )
 
     /** Retrieve and prepare data. */
 
-    $speakers = core__get_speaker_datasets( ( $event == '-1' )? implode( ',', core__get_active_events() ) : $event );
+    $speakers = core__get_speaker_datasets( ( '-1' == $event )? implode( ',', core__get_active_events() ) : $event );
 
     if( $speakers ) :
 
         // Optional: exclusion of certain speakers
-        $exclude_ids = explode( ',', str_replace(" ", "", $exclude ) );
+        $exclude_ids = explode( ',', str_replace( " ", "", $exclude ) );
 
         foreach( $speakers as $speaker ) :
             if( false == in_array( $speaker['id'], $exclude_ids ) ) :
