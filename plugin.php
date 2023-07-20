@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:         CM Theme &mdash; Core Plugin
+ * Plugin Name:         CM Theme &mdash; Core
  * Plugin URI:          https://github.com/mdibella-dev/cm-theme-core
  * Description:         Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin.
  * Author:              Marco Di Bella
