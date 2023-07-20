@@ -47,7 +47,7 @@ add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\taxonomy_location_
 
 function taxonomy_location__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name) {
+    switch ($column_name) :
         case 'id':
             $content = $term_id;
         break;
@@ -103,7 +103,8 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
 
         default:
         break;
-    }
+    endswitch;
+
     return $content;
 }
 add_filter( 'manage_location_custom_column', __NAMESPACE__ . '\taxonomy_location__manage_custom_column', 10, 3 );

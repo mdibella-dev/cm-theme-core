@@ -46,8 +46,7 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\taxonomy_event__manag
 
 function taxonomy_event__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name)
-    {
+    switch ($column_name) :
         case 'id':
             $content = $term_id;
         break;
@@ -63,8 +62,9 @@ function taxonomy_event__manage_custom_column( $content, $column_name, $term_id 
         break;
 
         default:
-        break;
-    }
+        break;    
+    endswitch;
+
     return $content;
 }
 add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\taxonomy_event__manage_custom_column', 10, 3 );

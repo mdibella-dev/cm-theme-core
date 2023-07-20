@@ -45,7 +45,7 @@ add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\taxonomy_partne
 
 function taxonomy_partnership__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name) {
+    switch ($column_name) :
         case 'id':
             $content = $term_id;
         break;
@@ -71,7 +71,8 @@ function taxonomy_partnership__manage_custom_column( $content, $column_name, $te
 
         default:
         break;
-    }
+    endswitch;
+
     return $content;
 }
 add_filter( 'manage_partnership_custom_column', __NAMESPACE__ . '\taxonomy_partnership__manage_custom_column', 10, 3 );

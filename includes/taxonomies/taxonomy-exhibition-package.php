@@ -45,8 +45,7 @@ add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\taxonomy
 
 function taxonomy_exhibition_package__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name)
-    {
+    switch ($column_name) :
         case 'id':
             $content = $term_id;
         break;
@@ -72,7 +71,8 @@ function taxonomy_exhibition_package__manage_custom_column( $content, $column_na
 
         default:
         break;
-    }
+    endswitch;
+
     return $content;
 }
 add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\taxonomy_exhibition_package__manage_custom_column', 10, 3 );
