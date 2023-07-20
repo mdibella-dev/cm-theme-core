@@ -80,10 +80,9 @@ add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\pos
 
 function post_type_exhibition_space__manage_sortable_columns( $columns )
 {
-    $columns['title']                       = 'title';
-    //$columns['taxonomy-exhibition_package'] = 'taxonomy-exhibition_package';
-    $columns['taxonomy-location']           = 'taxonomy-location';
-    $columns['update']                      = 'update';
+    $columns['title']             = 'title';
+    $columns['taxonomy-location'] = 'taxonomy-location';
+    $columns['update']            = 'update';
     return $columns;
 }
 
