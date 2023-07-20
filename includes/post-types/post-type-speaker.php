@@ -153,54 +153,55 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_speaker__pre_get_posts'
 
 function post_type_speaker__register()
 {
-
-
-    /**
-     * Post Type: Referenten.
-     */
-
     $labels = [
-        "name" => esc_html__( "Referenten", 'cm-theme-core' ),
-        "singular_name" => esc_html__( "Referent", 'cm-theme-core' ),
-        "menu_name" => esc_html__( "Referenten", 'cm-theme-core' ),
-        "all_items" => esc_html__( "Referenten", 'cm-theme-core' ),
-        "add_new" => esc_html__( "Erstellen", 'cm-theme-core' ),
-        "search_items" => esc_html__( "Referent suchen", 'cm-theme-core' ),
-        "not_found" => esc_html__( "Keine Referenten gefunden", 'cm-theme-core' ),
-        "not_found_in_trash" => esc_html__( "Keine Referenten im Papierkorb", 'cm-theme-core' ),
-        "featured_image" => esc_html__( "Referentenbild", 'cm-theme-core' ),
-        "set_featured_image" => esc_html__( "Referentenbild festlegen", 'cm-theme-core' ),
+        "name"                  => esc_html__( "Referenten", 'cm-theme-core' ),
+        "singular_name"         => esc_html__( "Referent", 'cm-theme-core' ),
+        "menu_name"             => esc_html__( "Referenten", 'cm-theme-core' ),
+        "all_items"             => esc_html__( "Referenten", 'cm-theme-core' ),
+        "add_new"               => esc_html__( "Erstellen", 'cm-theme-core' ),
+        "search_items"          => esc_html__( "Referent suchen", 'cm-theme-core' ),
+        "not_found"             => esc_html__( "Keine Referenten gefunden", 'cm-theme-core' ),
+        "not_found_in_trash"    => esc_html__( "Keine Referenten im Papierkorb", 'cm-theme-core' ),
+        "featured_image"        => esc_html__( "Referentenbild", 'cm-theme-core' ),
+        "set_featured_image"    => esc_html__( "Referentenbild festlegen", 'cm-theme-core' ),
         "remove_featured_image" => esc_html__( "Referentenbild entfernen", 'cm-theme-core' ),
-        "use_featured_image" => esc_html__( "Als Referentenbild verwenden", 'cm-theme-core' ),
-        "archives" => esc_html__( "Übersicht aller Referenten", 'cm-theme-core' ),
-        "name_admin_bar" => esc_html__( "Referent", 'cm-theme-core' ),
+        "use_featured_image"    => esc_html__( "Als Referentenbild verwenden", 'cm-theme-core' ),
+        "archives"              => esc_html__( "Übersicht aller Referenten", 'cm-theme-core' ),
+        "name_admin_bar"        => esc_html__( "Referent", 'cm-theme-core' ),
     ];
 
     $args = [
-        "label" => esc_html__( "Referenten", 'cm-theme-core' ),
-        "labels" => $labels,
-        "description" => "",
-        "public" => false,
-        "publicly_queryable" => true,
-        "show_ui" => true,
-        "show_in_rest" => true,
-        "rest_base" => "",
+        "label"                 => esc_html__( "Referenten", 'cm-theme-core' ),
+        "labels"                => $labels,
+        "description"           => "",
+        "public"                => false,
+        "publicly_queryable"    => true,
+        "show_ui"               => true,
+        "show_in_rest"          => true,
+        "rest_base"             => "",
         "rest_controller_class" => "WP_REST_Posts_Controller",
-        "rest_namespace" => "wp/v2",
-        "has_archive" => false,
-        "show_in_menu" => "edit.php?post_type=session",
-        "show_in_nav_menus" => false,
-        "delete_with_user" => false,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "can_export" => true,
-        "rewrite" => [ "slug" => "speaker", "with_front" => true ],
-        "query_var" => true,
-        "menu_position" => 20,
-        "supports" => [ "title", "thumbnail", "custom-fields" ],
-        "show_in_graphql" => false,
+        "rest_namespace"        => "wp/v2",
+        "has_archive"           => false,
+        "show_in_menu"          => "edit.php?post_type=session",
+        "show_in_nav_menus"     => false,
+        "delete_with_user"      => false,
+        "exclude_from_search"   => false,
+        "capability_type"       => "post",
+        "map_meta_cap"          => true,
+        "hierarchical"          => false,
+        "can_export"            => true,
+        "rewrite"               => [
+            "slug"       => "speaker",
+            "with_front" => true
+        ],
+        "query_var"             => true,
+        "menu_position"         => 20,
+        "supports"              => [
+            "title",
+            "thumbnail",
+            "custom-fields"
+        ],
+        "show_in_graphql"       => false,
     ];
 
     register_post_type( "speaker", $args );
