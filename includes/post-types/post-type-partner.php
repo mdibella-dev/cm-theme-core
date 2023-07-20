@@ -60,7 +60,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                 echo sprintf(
                     '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
                     $post_id,
-                    get_the_post_thumbnail( $post_id, array( 100, 0 ) ),
+                    get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                     __( 'Edit', 'cm-theme-core' )
                 );
             else :
@@ -72,7 +72,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
             $data = core__get_partner_dataset( $post_id );
 
             if( ! empty( $data['exhibition-spaces'] ) ) :
-                $spaces = array();
+                $spaces = [];
 
                 foreach( $data[ 'exhibition-spaces' ] as $space ) :
                     if( ! empty( $space[ 'location' ] ) and ! empty( $space[ 'signature' ] ) ) :
