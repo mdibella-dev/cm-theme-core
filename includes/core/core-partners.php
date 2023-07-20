@@ -38,7 +38,7 @@ function core__get_partner_dataset( $partner )
     $data['mail']              = get_field( 'partner-mail', $partner_post );
     $data['website']           = get_field( 'partner-webseite', $partner_post );
     $data['description']       = get_field( 'partner-beschreibung', $partner_post );
-    $data['exhibition-spaces'] = array();
+    $data['exhibition-spaces'] = [];
 
     while( have_rows( 'partner-exhibition-spaces', $partner_post ) ) :
         the_row();
@@ -48,12 +48,12 @@ function core__get_partner_dataset( $partner )
         $space_location = get_term( get_field( 'exhibition-space-location', $space_post ),'location' );
         $space_package  = get_term( get_field( 'exhibition-space-package', $space_post ), 'exhibition_package' );
 
-        $data['exhibition-spaces'][] = array(
+        $data['exhibition-spaces'][] = [
             'signature' => get_the_title( $space_post ),
             'location'  => $space_location->name,
             'package'   => $space_package->name,
             'id'        => $space_post->ID,
-        );
+        ];
     endwhile;
 
     return $data;
