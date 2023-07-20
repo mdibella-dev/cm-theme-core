@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 function taxonomy_event__manage_edit_columns( $default )
 {
-    $columns = array(
+    $columns = [
         'cb'          => $default['cb'],
         'id'          => 'ID',
         'name'        => $default['name'],
@@ -31,7 +31,7 @@ function taxonomy_event__manage_edit_columns( $default )
         'slug'        => $default['slug'],
         'status'      => __( 'Status', 'cm-theme-core' ),
         'posts'       => __( 'Events', 'cm-theme-core' ),
-    );
+    ];
     return $columns;
 }
 add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\taxonomy_event__manage_edit_columns' );
@@ -46,7 +46,8 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\taxonomy_event__manag
 
 function taxonomy_event__manage_custom_column( $content, $column_name, $term_id )
 {
-    switch ($column_name) {
+    switch ($column_name)
+    {
         case 'id':
             $content = $term_id;
         break;
