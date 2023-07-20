@@ -24,13 +24,13 @@ defined( 'ABSPATH' ) or exit;
 
 function core__get_active_events()
 {
-    $events = array();
-    $terms  = get_terms( array(
+    $events = [];
+    $terms  = get_terms( [
         'taxonomy'   => 'event',
         'hide_empty' => 'false',
         'meta_key'   => 'event-status',
         'meta_value' => '1',
-    ) );
+    ] );
 
     if( false === $terms ) :
         return null;
@@ -58,15 +58,17 @@ function core__get_speaker_datasets( $event_list_string = '' )
 {
     // Construction and implementation of the data query.
     // If no events have been specified (i.e. $event_list_string is empty), the active events will be used as a basis.
-    $query = array(
+    $query = [
         'posts_per_page' => -1,
         'post_status'    => 'publish',
         'post_type'      => 'session',
-        'meta_query'     => array( array(
+        'meta_query'     => [ [
             'key'     => 'programmpunkt-referenten',
             'compare' => 'EXISTS',
-        ) ),
-        'tax_query'      => array( 'relation' => 'OR' )
+        ] ],
+        'tax_query'      => [
+            'relation' => 'OR'
+        ]
     );
 
     if( ! empty( $event_list_string ) ) :
@@ -76,11 +78,11 @@ function core__get_speaker_datasets( $event_list_string = '' )
     endif;
 
     foreach( $event_list as $event ) :
-        $query[ 'tax_query' ][] = array(
+        $query['tax_query'][] = [
             'taxonomy' => 'event',
             'field'    => 'term_id',
             'terms'    => $event,
-        );
+        ];
     endforeach;
 
     $sessions = get_posts( $query );
@@ -88,8 +90,8 @@ function core__get_speaker_datasets( $event_list_string = '' )
 
     // Identification of the affected speakers.
     if( $sessions ) :
-        $finds_list   = array();
-        $speaker_list = array();
+        $finds_list   = [];
+        $speaker_list = [];
 
         foreach( $sessions as $session ) :
             $speakers = get_field( 'programmpunkt-referenten', $session->ID );
