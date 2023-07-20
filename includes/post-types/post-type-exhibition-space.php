@@ -168,4 +168,4 @@ function cptui_register_my_cpts() {
 	register_post_type( "exhibition_space", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts' );
+add_action( 'init', __NAMESPACE__ . '\cptui_register_my_cpts' );
