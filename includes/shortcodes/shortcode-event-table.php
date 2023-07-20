@@ -37,13 +37,13 @@ function shortcode_event_table( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
-    $default_atts = array(
+    $default_atts = [
         'set'          => '1',
         'speaker'      => '',
         'event'        => '',
         'date'         => '',
         'show_details' => 'false',
-    );
+    ];
     extract( shortcode_atts( $default_atts, $atts ) );
 
 
@@ -55,7 +55,7 @@ function shortcode_event_table( $atts, $content = null )
 
         // Either search for (active) sessions of the specified speaker (variant 1)
         // or search for the sessions of the specified event (variant 2)
-        if( !empty( $speaker) ) :
+        if( ! empty( $speaker) ) :
             $sessions = core__get_sessions_by_speaker( $speaker );
         elseif( !empty( $event ) ) :
             $sessions = core__get_sessions_by_event( $event, $date );
