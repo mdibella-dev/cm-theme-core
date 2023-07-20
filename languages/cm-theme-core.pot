@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2023-07-11 12:15+0200\n"
+"POT-Creation-Date: 2023-07-20 09:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,23 +41,31 @@ msgid "Partnership"
 msgstr ""
 
 #: includes/backend.php:93 includes/backend.php:94 includes/backend.php:125 includes/backend.php:259
-#: includes/taxonomies/taxonomy-location.php:34
+#: includes/post-types/post-type-exhibition-space.php:137
+#: includes/post-types/post-type-exhibition-space.php:139
+#: includes/post-types/post-type-exhibition-space.php:140
+#: includes/post-types/post-type-exhibition-space.php:144 includes/taxonomies/taxonomy-location.php:34
 msgid "Exhibition spaces"
 msgstr ""
 
 #: includes/backend.php:121 includes/post-types/post-type-session.php:36
+#: includes/post-types/post-type-speaker.php:157 includes/post-types/post-type-speaker.php:159
+#: includes/post-types/post-type-speaker.php:160 includes/post-types/post-type-speaker.php:174
 msgid "Speakers"
 msgstr ""
 
-#: includes/backend.php:122 includes/backend.php:233 includes/taxonomies/taxonomy-location.php:33
+#: includes/backend.php:122 includes/backend.php:233 includes/post-types/post-type-session.php:180
+#: includes/post-types/post-type-session.php:182 includes/post-types/post-type-session.php:183
+#: includes/post-types/post-type-session.php:190 includes/taxonomies/taxonomy-location.php:33
 msgid "Sessions"
 msgstr ""
 
-#: includes/backend.php:123 includes/backend.php:245
+#: includes/backend.php:123 includes/backend.php:245 includes/post-types/post-type-partner.php:171
+#: includes/post-types/post-type-partner.php:174
 msgid "Partners"
 msgstr ""
 
-#: includes/backend.php:124
+#: includes/backend.php:124 includes/post-types/post-type-partner.php:173
 msgid "Partnerships"
 msgstr ""
 
@@ -69,7 +77,8 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: includes/post-types/post-type-exhibition-space.php:31 includes/post-types/post-type-partner.php:34
+#: includes/post-types/post-type-exhibition-space.php:31
+#: includes/post-types/post-type-exhibition-space.php:138 includes/post-types/post-type-partner.php:34
 msgid "Exhibition space"
 msgstr ""
 
@@ -91,7 +100,8 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: includes/post-types/post-type-partner.php:32
+#: includes/post-types/post-type-partner.php:32 includes/post-types/post-type-partner.php:172
+#: includes/post-types/post-type-partner.php:178
 msgid "Partner"
 msgstr ""
 
@@ -122,12 +132,57 @@ msgstr ""
 msgid "Edit %1$s"
 msgstr ""
 
-#: includes/post-types/post-type-speaker.php:32
+#: includes/post-types/post-type-session.php:181 includes/post-types/post-type-session.php:186
+msgid "Session"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:184 includes/post-types/post-type-speaker.php:161
+msgid "Add new"
+msgstr ""
+
+#: includes/post-types/post-type-session.php:185
+msgid "New session"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:32 includes/post-types/post-type-speaker.php:158
+#: includes/post-types/post-type-speaker.php:170
 msgid "Speaker"
 msgstr ""
 
 #: includes/post-types/post-type-speaker.php:33
 msgid "Short description"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:162
+msgid "Search speaker"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:163
+msgid "No speaker found"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:164
+msgid "No deleted speaker found"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:165
+msgid "Speaker image"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:166
+msgid "Set speaker image"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:167
+msgid "Remove speaker image"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:168
+msgid "Use as speaker image"
+msgstr ""
+
+#: includes/post-types/post-type-speaker.php:169
+msgid "All speakers"
 msgstr ""
 
 #: includes/shortcodes/shortcode-event-table.php:107
