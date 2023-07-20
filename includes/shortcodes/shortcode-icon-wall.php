@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Creates a "wall" with the logos of the cooperation partners.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @param array $atts The attributes (parameters) of the shorcode.
  *                    - partnership (optional)

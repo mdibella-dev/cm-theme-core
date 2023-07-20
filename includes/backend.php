@@ -106,7 +106,7 @@ add_action( 'admin_menu', __NAMESPACE__ . '\admin_menu', 999 );
 /**
  * Sorts the Congressomat menu.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
 
 function admin_menu_order( $menu_order )
@@ -176,7 +176,7 @@ add_action( 'acf/input/admin_head', __NAMESPACE__ . '\adjust_acf_dialog' );
 /**
  * Hides various columns in the admin overview by default.
  *
- * @since 2.5.0
+ * @since 1.0.0
  */
 
 function default_hidden_columns( $hidden, $screen )
@@ -208,7 +208,7 @@ add_filter( 'default_hidden_columns', __NAMESPACE__ . '\default_hidden_columns',
 /**
  * Generates customized page titles in the admin overview.
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @see https://stackoverflow.com/questions/22261284/add-button-link-immediately-after-title-to-custom-post-type-edit-screen
  */

@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Determines the columns of the post list (backend).
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param array $default The defaults for columns.
  *
@@ -43,7 +43,7 @@ add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\post_type
 /**
  * Generates the column output.
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param string $column_name Designation of the column to be output.
  * @param int    $post_id     ID of the post (aka record) to be output.
@@ -71,7 +71,7 @@ add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\pos
 /**
  * Registers sortable columns (by assigning appropriate orderby parameters).
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param array columns The columns.
  *
@@ -94,7 +94,7 @@ add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\p
 /**
  * Produces sorted output.
  *
- * @since 2.5.0
+ * @since 1.0.0
  *
  * @param WP_Query $query A data object of the last query made.
  */

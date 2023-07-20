@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Returns the record of a specific partner.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @param int $partner_id
  *

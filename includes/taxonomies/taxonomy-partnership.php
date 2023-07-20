@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Specifies the columns in the taxonomy list.
  *
- * @since 2.5.0
+ * @since 1.0.0
  */
 
 function taxonomy_partnership__manage_edit_columns( $default )
@@ -40,7 +40,7 @@ add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\taxonomy_partne
 /**
  * Determines the content of the columns in the taxonomy list.
  *
- * @since 2.5.0
+ * @since 1.0.0
  */
 
 function taxonomy_partnership__manage_custom_column( $content, $column_name, $term_id )

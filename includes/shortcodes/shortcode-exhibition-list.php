@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
 * Generates an (exhibitor) list with the cooperation partners.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @param array $atts The attributes (parameters) of the shorcode..
  *                    - partnership (optional)
@@ -86,7 +86,7 @@ function shortcode_exhibition_list( $atts, $content = null )
                     /**
                      * Filter out empty entries
                      *
-                     * @since 2.5.0
+                     * @since 1.0.0
                      */
                     $spaces = array();
 
