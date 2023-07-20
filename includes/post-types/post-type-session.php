@@ -177,17 +177,17 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_session__pre_get_posts'
 function post_type_session__register()
 {
     $labels = [
-        "name"           => esc_html__( "Programmpunkte", 'cm-theme-core' ),
-        "singular_name"  => esc_html__( "Programmpunkt", 'cm-theme-core' ),
-        "menu_name"      => esc_html__( "Programm", 'cm-theme-core' ),
-        "all_items"      => esc_html__( "Programmpunkte", 'cm-theme-core' ),
-        "add_new"        => esc_html__( "Erstellen", 'cm-theme-core' ),
-        "add_new_item"   => esc_html__( "Neuen Programmpunkt erstellen", 'cm-theme-core' ),
-        "name_admin_bar" => esc_html__( "Programmpunkt", 'cm-theme-core' ),
+        "name"           => esc_html__( "Sessions", 'cm-theme-core' ),
+        "singular_name"  => esc_html__( "Session", 'cm-theme-core' ),
+        "menu_name"      => esc_html__( "Sessions", 'cm-theme-core' ),
+        "all_items"      => esc_html__( "Sessions", 'cm-theme-core' ),
+        "add_new"        => esc_html__( "Add new", 'cm-theme-core' ),
+        "add_new_item"   => esc_html__( "New session", 'cm-theme-core' ),
+        "name_admin_bar" => esc_html__( "Session", 'cm-theme-core' ),
     ];
 
     $args = [
-        "label"                 => esc_html__( "Programmpunkte", 'cm-theme-core' ),
+        "label"                 => esc_html__( "Sessions", 'cm-theme-core' ),
         "labels"                => $labels,
         "description"           => "",
         "public"                => true,

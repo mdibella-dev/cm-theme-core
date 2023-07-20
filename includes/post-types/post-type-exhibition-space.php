@@ -134,14 +134,14 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_exhibition_space__pre_g
 function post_type_exhibition_space__register()
 {
     $labels = [
-        "name"          => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
-        "singular_name" => esc_html__( "Ausstellungsfläche", 'cm-theme-core' ),
-        "menu_name"     => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
-        "all_items"     => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
+        "name"          => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        "singular_name" => esc_html__( 'Exhibition space', 'cm-theme-core' ),
+        "menu_name"     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        "all_items"     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
     ];
 
     $args = [
-        "label"                 => esc_html__( "Ausstellungsflächen", 'cm-theme-core' ),
+        "label"                 => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
         "labels"                => $labels,
         "description"           => "",
         "public"                => true,
@@ -161,7 +161,7 @@ function post_type_exhibition_space__register()
         "hierarchical"          => false,
         "can_export"            => true,
         "rewrite"               => [
-            "slug"       => "exhibition_space",
+            "slug"       => 'exhibition_space',
             "with_front" => true
         ],
         "query_var"             => true,
@@ -170,12 +170,12 @@ function post_type_exhibition_space__register()
         ],
         "taxonomies"            => [
             "location",
-            "exhibition_package" 
+            "exhibition_package"
         ],
         "show_in_graphql"       => false,
     ];
 
-    register_post_type( "exhibition_space", $args );
+    register_post_type( 'exhibition_space', $args );
 }
 
 add_action( 'init', __NAMESPACE__ . '\post_type_exhibition_space__register' );

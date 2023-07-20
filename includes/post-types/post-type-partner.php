@@ -168,10 +168,10 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_partner__pre_get_posts'
 function post_type_partner__register()
 {
     $labels = [
-        "name"          => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-        "singular_name" => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
-        "menu_name"     => esc_html__( "Kooperationen", 'cm-theme-core' ),
-        "all_items"     => esc_html__( "Kooperationspartner", 'cm-theme-core' ),
+        "name"          => esc_html__( "Partners", 'cm-theme-core' ),
+        "singular_name" => esc_html__( "Partner", 'cm-theme-core' ),
+        "menu_name"     => esc_html__( "Partnerships", 'cm-theme-core' ),
+        "all_items"     => esc_html__( "Partners", 'cm-theme-core' ),
     ];
 
     $args = [
@@ -211,7 +211,7 @@ function post_type_partner__register()
         "show_in_graphql"       => false,
     ];
 
-    register_post_type( "partner", $args );
+    register_post_type( 'partner', $args );
 
 }
 
