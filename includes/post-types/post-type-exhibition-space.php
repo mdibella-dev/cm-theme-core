@@ -52,7 +52,6 @@ add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\post_type
 function post_type_exhibition_space__manage_posts_custom_column( $column_name, $post_id )
 {
     switch( $column_name ) :
-
         case 'update':
             echo sprintf(
                 '%1$s at %2$s Uhr',
@@ -60,7 +59,6 @@ function post_type_exhibition_space__manage_posts_custom_column( $column_name, $
                 get_the_modified_date( 'H:i', $post_id ),
             );
         break;
-
     endswitch;
 }
 
@@ -105,7 +103,6 @@ function post_type_exhibition_space__pre_get_posts( $query )
         $orderby = $query->get( 'orderby' );
 
         switch( $orderby ) :
-
             case 'update':
                 $query->set( 'orderby', 'modified' );
             break;
@@ -115,8 +112,8 @@ function post_type_exhibition_space__pre_get_posts( $query )
                 $query->set( 'orderby', 'title' );
                 $query->set( 'order', 'asc' );
             break;
-
         endswitch;
+
     endif;
 }
 
