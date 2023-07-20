@@ -159,6 +159,12 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\post_type_partner__pre_get_posts'
 
 
 
+/**
+ * Registers the custom post type.
+ *
+ * @since 1.0.0
+ */
+ 
 function cptui_register_my_cpts() {
 
     /**
