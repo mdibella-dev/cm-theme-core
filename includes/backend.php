@@ -104,7 +104,7 @@ add_action( 'admin_menu', __NAMESPACE__ . '\admin_menu', 999 );
 
 
 /**
- * Sorts the Congressomat menu.
+ * Sorts the CM menu.
  *
  * @since 1.0.0
  */
