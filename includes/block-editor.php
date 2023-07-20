@@ -58,14 +58,17 @@ function add_block_editor_assets()
     wp_enqueue_style(
         'block-editor',
         PLUGIN_DIR . '/assets/build/css/block-editor.min.css',
-        array(),
+        [],
         PLUGIN_VERSION,
         'all'
     );
     wp_enqueue_script(
         'block-editor',
         PLUGIN_DIR . '/assets/build/js/block-editor.js',
-        array( 'wp-blocks', 'wp-dom' ),
+        [
+            'wp-blocks',
+            'wp-dom' 
+        ],
         PLUGIN_VERSION,
         true
     );
