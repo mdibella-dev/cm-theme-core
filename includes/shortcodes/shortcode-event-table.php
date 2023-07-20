@@ -164,12 +164,12 @@ function shortcode_event_table( $atts, $content = null )
                                     $speaker_dataset = core__get_speaker_dataset( $speaker );
                                     $speakers_list[] = sprintf(
                                         '<a href="%1$s" title="%2$s">%3$s</a>',
-                                        $speaker_dataset[ 'permalink' ],
+                                        $speaker_dataset['permalink'],
                                         sprintf(
                                             __( 'Learn more about %1$s', 'cm-theme-core' ),
-                                            $speaker_dataset[ 'title_name' ]
+                                            $speaker_dataset['title_name']
                                         ),
-                                        get_the_post_thumbnail( $speaker_dataset[ 'id' ], 'full' ) );
+                                        get_the_post_thumbnail( $speaker_dataset['id'], 'full' ) );
                                 endforeach;
 
                                 $output .= sprintf(
