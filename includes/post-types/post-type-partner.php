@@ -8,7 +8,7 @@
 
 namespace cm_theme_core\post_types\partner;
 
-use function \cm_theme_core\core__get_partner_dataset as get_dataset;
+use function \cm_theme_core\core\get_partner_dataset as get_dataset;
 
 
 /** Prevent direct access */
