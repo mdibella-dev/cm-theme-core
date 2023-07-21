@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2023-07-21 11:59+0200\n"
-"PO-Revision-Date: 2023-07-21 11:59+0200\n"
+"POT-Creation-Date: 2023-07-21 13:46+0200\n"
+"PO-Revision-Date: 2023-07-21 13:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -36,7 +36,7 @@ msgstr "Congress-Management"
 msgid "Events"
 msgstr "Veranstaltungen"
 
-#: includes/backend.php:73 includes/backend.php:74 includes/backend.php:120
+#: includes/backend.php:73 includes/backend.php:74 includes/backend.php:122
 #: includes/taxonomies/taxonomy-location.php:124
 #: includes/taxonomies/taxonomy-location.php:126
 #: includes/taxonomies/taxonomy-location.php:131
@@ -44,13 +44,47 @@ msgid "Locations"
 msgstr "Locations"
 
 #: includes/backend.php:83 includes/backend.php:84
-#: includes/post-types/post-type-partner.php:33
+#: includes/post-types/post-type-partner.php:35
 #: includes/taxonomies/taxonomy-partnership.php:92
 msgid "Partnership"
 msgstr "Kooperationsformen"
 
-#: includes/backend.php:93 includes/backend.php:94 includes/backend.php:125
-#: includes/backend.php:259
+#: includes/backend.php:93 includes/backend.php:94 includes/backend.php:126
+#: includes/taxonomies/taxonomy-exhibition-package.php:91
+#: includes/taxonomies/taxonomy-exhibition-package.php:97
+msgid "Exhibition packages"
+msgstr "Ausstellungspakete"
+
+#: includes/backend.php:120 includes/backend.php:233
+#: includes/post-types/post-type-session.php:179
+#: includes/post-types/post-type-session.php:181
+#: includes/post-types/post-type-session.php:182
+#: includes/post-types/post-type-session.php:189
+#: includes/taxonomies/taxonomy-location.php:33
+msgid "Sessions"
+msgstr "Veranstaltungspunkte"
+
+#: includes/backend.php:121 includes/post-types/post-type-session.php:38
+#: includes/post-types/post-type-speaker.php:154
+#: includes/post-types/post-type-speaker.php:156
+#: includes/post-types/post-type-speaker.php:157
+#: includes/post-types/post-type-speaker.php:171
+msgid "Speakers"
+msgstr "Referent:innen"
+
+#: includes/backend.php:123 includes/backend.php:245
+#: includes/post-types/post-type-partner.php:170
+#: includes/post-types/post-type-partner.php:173
+msgid "Partners"
+msgstr "Kooperationspartner"
+
+#: includes/backend.php:124 includes/post-types/post-type-partner.php:172
+#: includes/taxonomies/taxonomy-partnership.php:91
+#: includes/taxonomies/taxonomy-partnership.php:96
+msgid "Partnerships"
+msgstr "Kooperationsformen"
+
+#: includes/backend.php:125 includes/backend.php:259
 #: includes/post-types/post-type-exhibition-space.php:133
 #: includes/post-types/post-type-exhibition-space.php:135
 #: includes/post-types/post-type-exhibition-space.php:136
@@ -59,53 +93,18 @@ msgstr "Kooperationsformen"
 msgid "Exhibition spaces"
 msgstr "Ausstellungsflächen"
 
-#: includes/backend.php:121 includes/post-types/post-type-session.php:36
-#: includes/post-types/post-type-speaker.php:154
-#: includes/post-types/post-type-speaker.php:156
-#: includes/post-types/post-type-speaker.php:157
-#: includes/post-types/post-type-speaker.php:171
-msgid "Speakers"
-msgstr "Referent:innen"
-
-#: includes/backend.php:122 includes/backend.php:233
-#: includes/post-types/post-type-session.php:177
-#: includes/post-types/post-type-session.php:179
-#: includes/post-types/post-type-session.php:180
-#: includes/post-types/post-type-session.php:187
-#: includes/taxonomies/taxonomy-location.php:33
-msgid "Sessions"
-msgstr "Veranstaltungspunkte"
-
-#: includes/backend.php:123 includes/backend.php:245
-#: includes/post-types/post-type-partner.php:168
-#: includes/post-types/post-type-partner.php:171
-msgid "Partners"
-msgstr "Kooperationspartner"
-
-#: includes/backend.php:124 includes/post-types/post-type-partner.php:170
-#: includes/taxonomies/taxonomy-partnership.php:91
-#: includes/taxonomies/taxonomy-partnership.php:96
-msgid "Partnerships"
-msgstr "Kooperationsformen"
-
-#: includes/backend.php:126
-#: includes/taxonomies/taxonomy-exhibition-package.php:91
-#: includes/taxonomies/taxonomy-exhibition-package.php:97
-msgid "Exhibition packages"
-msgstr "Ausstellungspakete"
-
 #: includes/backend.php:271
 msgid "Create"
 msgstr "Erstellen"
 
 #: includes/post-types/post-type-exhibition-space.php:31
 #: includes/post-types/post-type-exhibition-space.php:134
-#: includes/post-types/post-type-partner.php:34
+#: includes/post-types/post-type-partner.php:36
 msgid "Exhibition space"
 msgstr "Ausstellungsfläche"
 
 #: includes/post-types/post-type-exhibition-space.php:32
-#: includes/post-types/post-type-session.php:33
+#: includes/post-types/post-type-session.php:35
 #: includes/taxonomies/taxonomy-location.php:125
 msgid "Location"
 msgstr "Location"
@@ -116,65 +115,71 @@ msgid "Exhibition package"
 msgstr "Ausstellungspaket"
 
 #: includes/post-types/post-type-exhibition-space.php:34
-#: includes/post-types/post-type-partner.php:35
-#: includes/post-types/post-type-session.php:37
+#: includes/post-types/post-type-partner.php:37
+#: includes/post-types/post-type-session.php:39
 #: includes/post-types/post-type-speaker.php:34
 msgid "Last updated"
 msgstr "Zuletzt aktuallisiert"
 
-#: includes/post-types/post-type-partner.php:31
+#: includes/post-types/post-type-partner.php:33
 #: includes/post-types/post-type-speaker.php:31
 #: includes/taxonomies/taxonomy-location.php:29
 msgid "Image"
 msgstr "Bild"
 
-#: includes/post-types/post-type-partner.php:32
-#: includes/post-types/post-type-partner.php:169
-#: includes/post-types/post-type-partner.php:175
+#: includes/post-types/post-type-partner.php:34
+#: includes/post-types/post-type-partner.php:171
+#: includes/post-types/post-type-partner.php:177
 msgid "Partner"
 msgstr "Kooperationspartner"
 
-#: includes/post-types/post-type-partner.php:63
+#: includes/post-types/post-type-partner.php:65
 #: includes/post-types/post-type-speaker.php:62
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: includes/post-types/post-type-partner.php:99
-#: includes/post-types/post-type-session.php:100
+#: includes/post-types/post-type-partner.php:101
+#: includes/post-types/post-type-session.php:102
 #: includes/post-types/post-type-speaker.php:85
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s um %2$s Uhr"
 
-#: includes/post-types/post-type-session.php:32
+#: includes/post-types/post-type-session.php:34
 #: includes/taxonomies/taxonomy-event.php:84
 msgid "Event"
 msgstr "Veranstaltung"
 
-#: includes/post-types/post-type-session.php:34
+#: includes/post-types/post-type-session.php:36
 msgid "Date"
 msgstr "Datum"
 
-#: includes/post-types/post-type-session.php:35
+#: includes/post-types/post-type-session.php:37
 msgid "Time period"
 msgstr "Zeitfenster"
 
-#: includes/post-types/post-type-session.php:70
+#: includes/post-types/post-type-session.php:72
 #, php-format
 msgid "Edit %1$s"
 msgstr "%1$s bearbeiten"
 
-#: includes/post-types/post-type-session.php:178
-#: includes/post-types/post-type-session.php:183
+#: includes/post-types/post-type-session.php:91
+#: includes/shortcodes/shortcode-event-table.php:107
+#, php-format
+msgid "from %1$s to %2$s"
+msgstr "von %1$s bis %2$s Uhr"
+
+#: includes/post-types/post-type-session.php:180
+#: includes/post-types/post-type-session.php:185
 msgid "Session"
 msgstr "Veranstaltungspunkt"
 
-#: includes/post-types/post-type-session.php:181
+#: includes/post-types/post-type-session.php:183
 #: includes/post-types/post-type-speaker.php:158
 msgid "Add new"
 msgstr "Neu hinzufügen"
 
-#: includes/post-types/post-type-session.php:182
+#: includes/post-types/post-type-session.php:184
 msgid "New session"
 msgstr "Neuer Veranstaltungspunkt"
 
@@ -219,11 +224,6 @@ msgstr "Als Bild des/der Referent:in verwenden"
 #: includes/post-types/post-type-speaker.php:166
 msgid "All speakers"
 msgstr "Alle Referent:innen"
-
-#: includes/shortcodes/shortcode-event-table.php:107
-#, php-format
-msgid "from %1$s to %2$s"
-msgstr "von %1$s bis %2$s Uhr"
 
 #: includes/shortcodes/shortcode-event-table.php:169
 #: includes/shortcodes/shortcode-speaker-grid.php:91

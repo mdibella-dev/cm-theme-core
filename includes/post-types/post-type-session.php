@@ -88,7 +88,7 @@ function manage_posts_custom_column( $column_name, $post_id )
 
             if( empty( $time ) ) :
                 $time = sprintf(
-                    'from %1$s to %2$s',
+                    __( 'from %1$s to %2$s', 'cm-theme-core' ),
                     get_field( 'programmpunkt-von', $post_id ),
                     get_field( 'programmpunkt-bis', $post_id )
                 );
