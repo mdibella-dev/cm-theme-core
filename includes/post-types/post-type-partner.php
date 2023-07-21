@@ -212,4 +212,4 @@ function register()
 
 }
 
-add_action( 'init', __NAMESPACE__ . '\post_type_partner__register' );
+add_action( 'init', __NAMESPACE__ . '\register' );
