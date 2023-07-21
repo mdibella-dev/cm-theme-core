@@ -90,8 +90,8 @@ function admin_menu()
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Exhibition spaces', 'cm-theme-core' ),
-        __( 'Exhibition spaces', 'cm-theme-core' ),
+        __( 'Exhibition packages', 'cm-theme-core' ),
+        __( 'Exhibition packages', 'cm-theme-core' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
@@ -117,9 +117,9 @@ function admin_menu_order( $menu_order )
 
     $sort_order = array(
         __( 'Events', 'cm-theme-core' ),
-        __( 'Locations', 'cm-theme-core' ),
-        __( 'Speakers', 'cm-theme-core' ),
         __( 'Sessions', 'cm-theme-core' ),
+        __( 'Speakers', 'cm-theme-core' ),
+        __( 'Locations', 'cm-theme-core' ),
         __( 'Partners', 'cm-theme-core' ),
         __( 'Partnerships', 'cm-theme-core' ),
         __( 'Exhibition spaces', 'cm-theme-core' ),
