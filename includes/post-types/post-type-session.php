@@ -63,7 +63,7 @@ function post_type_session__manage_posts_custom_column( $column_name, $post_id )
                 foreach( $speakers as $speaker ) :
                     $speaker_dataset = core__get_speaker_dataset( $speaker );
                     echo sprintf(
-                        '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
+                        '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                         $speaker_dataset[ 'id' ],
                         get_the_post_thumbnail( $speaker_dataset['id'], [ 100, 0 ] ),
                         sprintf(
@@ -157,7 +157,7 @@ function post_type_session__pre_get_posts( $query )
                 $query->set( 'orderby', 'modified' );
             break;
         endswitch;
-        
+
     endif;
 }
 

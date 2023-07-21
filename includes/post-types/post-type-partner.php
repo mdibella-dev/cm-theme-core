@@ -57,7 +57,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
             if( true === has_post_thumbnail( $post_id ) ) :
                 // alternatively: admin_url?
                 echo sprintf(
-                    '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
+                    '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                     __( 'Edit', 'cm-theme-core' )
@@ -76,7 +76,7 @@ function post_type_partner__manage_posts_custom_column( $column_name, $post_id )
                 foreach( $data[ 'exhibition-spaces' ] as $space ) :
                     if( ! empty( $space[ 'location' ] ) and ! empty( $space[ 'signature' ] ) ) :
                         $spaces[] = sprintf(
-                            '<a href='post.php?post=%1$s&action=edit'>%2$s</a>%3$s',
+                            '<a href="post.php?post=%1$s&action=edit">%2$s</a>%3$s',
                             $space['id'],
                             $space['signature'],
                             ( ! empty( $space['package'] ) )? ' (' . $space['package'] . ')' : '',
@@ -148,7 +148,7 @@ function post_type_partner__pre_get_posts( $query )
                 $query->set( 'orderby', 'modified' );
             break;
         endswitch;
-        
+
     endif;
 }
 

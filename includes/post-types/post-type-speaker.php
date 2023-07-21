@@ -56,7 +56,7 @@ function post_type_speaker__manage_posts_custom_column( $column_name, $post_id )
             if( true === has_post_thumbnail( $post_id ) ) :
                 // alternativ: admin_url?
                 echo sprintf(
-                    '<a href='/wp-admin/post.php?post=%1$s&action=edit' title='%3$s'>%2$s</a>',
+                    '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                     $post_id,
                     get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                     __( 'Edit', 'cm-theme-core' )
@@ -134,7 +134,7 @@ function post_type_speaker__pre_get_posts( $query )
                 $query->set( 'orderby', 'modified' );
             break;
         endswitch;
-        
+
     endif;
 }
 
