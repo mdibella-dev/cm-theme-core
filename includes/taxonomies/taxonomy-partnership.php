@@ -55,10 +55,10 @@ function taxonomy_partnership__manage_custom_column( $content, $column_name, $te
                 'post_type'   => 'partner',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => [ [
+                'tax_query'   => [[
                     'taxonomy' => 'partnership',
                     'terms'    => $term_id,
-                ] ],
+                ]],
             ] );
             $term    = get_term( $term_id, 'partnership' );
             $content = sprintf(
