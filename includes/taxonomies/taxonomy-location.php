@@ -68,10 +68,10 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
                 'post_type'   => 'session',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => [ [
+                'tax_query'   => [[
                     'taxonomy' => 'location',
                     'terms'    => $term_id,
-                ] ],
+                ]],
             ] );
             $term    = get_term( $term_id, 'location' );
             $content = sprintf(
@@ -87,10 +87,10 @@ function taxonomy_location__manage_custom_column( $content, $column_name, $term_
                 'post_type'   => 'exhibition_space',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => [ [
+                'tax_query'   => [[
                     'taxonomy' => 'location',
                     'terms'    => $term_id,
-                ] ],
+                ]],
             ] );
             $term    = get_term( $term_id, 'location' );
             $content = sprintf(

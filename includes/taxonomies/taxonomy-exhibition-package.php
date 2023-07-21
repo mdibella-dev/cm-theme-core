@@ -55,10 +55,10 @@ function taxonomy_exhibition_package__manage_custom_column( $content, $column_na
                 'post_type'   => 'exhibition_space',
                 'post_status' => 'any',
                 'numberposts' => -1,
-                'tax_query'   => [ [
+                'tax_query'   => [[
                     'taxonomy' => 'exhibition_package',
                     'terms'    => $term_id,
-                ] ],
+                ]],
             ] );
             $term    = get_term( $term_id, 'exhibition_package' );
             $content = sprintf(
