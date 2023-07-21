@@ -69,7 +69,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
         'tax_query' => [
             'relation' => 'OR'
         ]
-    );
+    ];
 
     if( ! empty( $event_list_string ) ) :
         $event_list = explode( ',', str_replace(" ", "", $event_list_string ) );
