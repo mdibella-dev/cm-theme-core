@@ -62,10 +62,10 @@ function core__get_speaker_datasets( $event_list_string = '' )
         'posts_per_page' => -1,
         'post_status'    => 'publish',
         'post_type'      => 'session',
-        'meta_query'     => [ [
+        'meta_query'     => [[
             'key'     => 'programmpunkt-referenten',
             'compare' => 'EXISTS',
-        ] ],
+        ]],
         'tax_query' => [
             'relation' => 'OR'
         ]
