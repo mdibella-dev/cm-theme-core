@@ -37,7 +37,7 @@ function manage_posts_columns( $default )
     return $columns;
 }
 
-add_filter( 'manage_partner_posts_columns', __NAMESPACE__ . '\post_type_partner__manage_posts_columns', 10 );
+add_filter( 'manage_partner_posts_columns', __NAMESPACE__ . '\manage_posts_columns', 10 );
 
 
 
