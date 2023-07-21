@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core;
+namespace cm_theme_core\taxonomies\exhibtition_package;
 
 
 /** Prevent direct access */
@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function taxonomy_exhibition_package__manage_edit_columns( $default )
+function manage_edit_columns( $default )
 {
     $columns = [
         'cb'          => $default['cb'],
@@ -33,7 +33,7 @@ function taxonomy_exhibition_package__manage_edit_columns( $default )
     ];
     return $columns;
 }
-add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\taxonomy_exhibition_package__manage_edit_columns' );
+add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\manage_edit_columns' );
 
 
 
@@ -43,7 +43,7 @@ add_filter( 'manage_edit-exhibition_package_columns', __NAMESPACE__ . '\taxonomy
  * @since 1.0.0
  */
 
-function taxonomy_exhibition_package__manage_custom_column( $content, $column_name, $term_id )
+function manage_custom_column( $content, $column_name, $term_id )
 {
     switch( $column_name ) :
         case 'id':
@@ -75,7 +75,7 @@ function taxonomy_exhibition_package__manage_custom_column( $content, $column_na
 
     return $content;
 }
-add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\taxonomy_exhibition_package__manage_custom_column', 10, 3 );
+add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\manage_custom_column', 10, 3 );
 
 
 
@@ -85,7 +85,7 @@ add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\taxonom
  * @since 1.0.0
  */
 
-function taxonomy_exhibition_package__register()
+function register()
 {
     $labels = [
         'name'          => esc_html__( 'Exhibition packages', 'cm-theme-core' ),
@@ -121,4 +121,4 @@ function taxonomy_exhibition_package__register()
     register_taxonomy( 'exhibition_package', ['exhibition_space'], $args );
 }
 
-add_action( 'init', __NAMESPACE__ . '\taxonomy_exhibition_package__register' );
+add_action( 'init', __NAMESPACE__ . '\register' );
