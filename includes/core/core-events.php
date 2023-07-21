@@ -66,7 +66,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
             'key'     => 'programmpunkt-referenten',
             'compare' => 'EXISTS',
         ] ],
-        'tax_query'      => [
+        'tax_query' => [
             'relation' => 'OR'
         ]
     );
