@@ -32,8 +32,8 @@ function core__get_speaker_dataset( $speaker )
     $data['id']          = $speaker;
     $data['firstname']   = get_field( 'referent-vorname', $speaker_post );
     $data['lastname']    = get_field( 'referent-nachname', $speaker_post );
-    $data['name']        = trim( sprintf( '%1$s %2$s', $data[ 'firstname' ], $data[ 'lastname' ] ) );
-    $data['title_name']  = trim( sprintf( '%1$s %2$s', get_field( 'referent-titel', $speaker_post ), $data[ 'name' ] ) );
+    $data['name']        = trim( sprintf( '%1$s %2$s', $data['firstname'], $data['lastname'] ) );
+    $data['title_name']  = trim( sprintf( '%1$s %2$s', get_field( 'referent-titel', $speaker_post ), $data['name'] ) );
     $data['position']    = get_field( 'referent-position', $speaker_post );
     $data['description'] = get_field( 'referent-beschreibung', $speaker_post );
     $data['permalink']   = get_post_permalink( $speaker_post );
@@ -56,8 +56,8 @@ function core__get_speaker_dataset( $speaker )
 function core__sort_speaker_datasets( $speaker_list )
 {
     foreach( $speaker_list as $key => $row ) :
-        $forename[ $key ] = $row['firstname'];
-        $lastname[ $key ] = $row['lastname'];
+        $forename[$key] = $row['firstname'];
+        $lastname[$key] = $row['lastname'];
     endforeach;
 
     array_multisort( $lastname, SORT_ASC, SORT_STRING, $forename, SORT_ASC, SORT_STRING, $speaker_list );
