@@ -8,6 +8,8 @@
 
 namespace cm_theme_core\post_types\partner;
 
+use function \cm_theme_core\core__get_partner_dataset as get_dataset;
+
 
 /** Prevent direct access */
 
@@ -68,7 +70,7 @@ function manage_posts_custom_column( $column_name, $post_id )
         break;
 
         case 'exhibition':
-            $data = core__get_partner_dataset( $post_id );
+            $data = get_dataset( $post_id );
 
             if( ! empty( $data['exhibition-spaces'] ) ) :
                 $spaces = [];
