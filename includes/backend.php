@@ -27,7 +27,7 @@ function admin_enqueue_scripts( $hook )
 {
     wp_enqueue_style(
         'cm-theme-core-backend-style',
-        PLUGIN_DIR . '/assets/build/css/backend.min.css',
+        PLUGIN_URL . 'assets/build/css/backend.min.css',
         [],
         PLUGIN_VERSION
     );
