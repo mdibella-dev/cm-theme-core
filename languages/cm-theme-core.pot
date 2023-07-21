@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2023-07-21 11:01+0200\n"
+"POT-Creation-Date: 2023-07-21 11:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,15 +28,19 @@ msgid "Congress Management"
 msgstr ""
 
 #: includes/backend.php:63 includes/backend.php:64 includes/backend.php:119
-#: includes/taxonomies/taxonomy-event.php:33
+#: includes/taxonomies/taxonomy-event.php:33 includes/taxonomies/taxonomy-event.php:83
+#: includes/taxonomies/taxonomy-event.php:85 includes/taxonomies/taxonomy-event.php:91
 msgid "Events"
 msgstr ""
 
 #: includes/backend.php:73 includes/backend.php:74 includes/backend.php:120
+#: includes/taxonomies/taxonomy-location.php:124 includes/taxonomies/taxonomy-location.php:126
+#: includes/taxonomies/taxonomy-location.php:131
 msgid "Locations"
 msgstr ""
 
 #: includes/backend.php:83 includes/backend.php:84 includes/post-types/post-type-partner.php:33
+#: includes/taxonomies/taxonomy-partnership.php:92
 msgid "Partnership"
 msgstr ""
 
@@ -66,10 +70,12 @@ msgid "Partners"
 msgstr ""
 
 #: includes/backend.php:124 includes/post-types/post-type-partner.php:170
+#: includes/taxonomies/taxonomy-partnership.php:91 includes/taxonomies/taxonomy-partnership.php:96
 msgid "Partnerships"
 msgstr ""
 
-#: includes/backend.php:126
+#: includes/backend.php:126 includes/taxonomies/taxonomy-exhibition-package.php:91
+#: includes/taxonomies/taxonomy-exhibition-package.php:97
 msgid "Exhibition packages"
 msgstr ""
 
@@ -83,10 +89,12 @@ msgid "Exhibition space"
 msgstr ""
 
 #: includes/post-types/post-type-exhibition-space.php:32 includes/post-types/post-type-session.php:33
+#: includes/taxonomies/taxonomy-location.php:125
 msgid "Location"
 msgstr ""
 
 #: includes/post-types/post-type-exhibition-space.php:33
+#: includes/taxonomies/taxonomy-exhibition-package.php:92
 msgid "Exhibition package"
 msgstr ""
 
@@ -115,7 +123,7 @@ msgstr ""
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: includes/post-types/post-type-session.php:32
+#: includes/post-types/post-type-session.php:32 includes/taxonomies/taxonomy-event.php:84
 msgid "Event"
 msgstr ""
 
@@ -230,6 +238,10 @@ msgstr ""
 
 #: includes/taxonomies/taxonomy-event.php:60
 msgid "inactive"
+msgstr ""
+
+#: includes/taxonomies/taxonomy-event.php:86
+msgid "All events"
 msgstr ""
 
 #: includes/taxonomies/taxonomy-exhibition-package.php:32 includes/taxonomies/taxonomy-partnership.php:32
