@@ -51,31 +51,31 @@ function core__get_sessions( $args )
     // or filtering by active or inactive sessions (variant 2).
     if( null !== core__get_event( $event ) ) :
 
-        $query['tax_query'] = [ [
+        $query['tax_query'] = [[
             'taxonomy' => 'event',
             'field'    => 'term_id',
             'terms'    => $event,
-        ] ];
+        ]];
     else :
         $event_list   = core__get_active_events();
         $event_filter = strtoupper( trim( $event_filter ) );
 
         if( 'INACTIVE' === $event_filter ) :
 
-            $query['tax_query'] = [ [
+            $query['tax_query'] = [[
                 'taxonomy' => 'event',
                 'field'    => 'term_id',
                 'terms'    => $event_list,
                 'operator' => 'NOT IN',
-            ] ];
+            ]];
         elseif( 'ACTIVE' === $event_filter ) :
 
-            $query['tax_query'] = [ [
+            $query['tax_query'] = [[
                 'taxonomy' => 'event',
                 'field'    => 'term_id',
                 'terms'    => $event_list,
                 'operator' => 'IN',
-            ] ];
+            ]];
         endif;
 
     endif;
