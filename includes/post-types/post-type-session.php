@@ -66,11 +66,11 @@ function manage_posts_custom_column( $column_name, $post_id )
                     $speaker_dataset = get_dataset( $speaker );
                     echo sprintf(
                         '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
-                        $speaker_dataset[ 'id' ],
+                        $speaker_dataset['id'],
                         get_the_post_thumbnail( $speaker_dataset['id'], [ 100, 0 ] ),
                         sprintf(
                             __( 'Edit %1$s', 'cm-theme-core' ),
-                            $speaker_dataset[ 'name' ],
+                            $speaker_dataset['name'],
                         ),
                     );
                 endforeach;

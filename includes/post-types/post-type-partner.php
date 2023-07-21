@@ -75,8 +75,8 @@ function manage_posts_custom_column( $column_name, $post_id )
             if( ! empty( $data['exhibition-spaces'] ) ) :
                 $spaces = [];
 
-                foreach( $data[ 'exhibition-spaces' ] as $space ) :
-                    if( ! empty( $space[ 'location' ] ) and ! empty( $space[ 'signature' ] ) ) :
+                foreach( $data['exhibition-spaces'] as $space ) :
+                    if( ! empty( $space['location'] ) and ! empty( $space['signature'] ) ) :
                         $spaces[] = sprintf(
                             '<a href="post.php?post=%1$s&action=edit">%2$s</a>%3$s',
                             $space['id'],
