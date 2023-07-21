@@ -8,7 +8,7 @@
 
 namespace cm_theme_core\post_types\session;
 
-use function \cm_theme_core\core\get_speaker_dataset as get_dataset;
+use \cm_theme_core\api as api;
 
 
 /** Prevent direct access */
@@ -63,7 +63,7 @@ function manage_posts_custom_column( $column_name, $post_id )
             if( null != $speakers ) :
 
                 foreach( $speakers as $speaker ) :
-                    $speaker_dataset = get_dataset( $speaker );
+                    $speaker_dataset = api\get_speaker_dataset( $speaker );
                     echo sprintf(
                         '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                         $speaker_dataset['id'],

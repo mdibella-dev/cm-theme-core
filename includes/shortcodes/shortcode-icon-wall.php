@@ -8,6 +8,8 @@
 
 namespace cm_theme_core;
 
+use \cm_theme_core\api as api;
+
 
 /** Prevent direct access */
 
@@ -84,7 +86,7 @@ function shortcode_icon_wall( $atts, $content = null )
     <?php
     foreach( $partners as $partner ) :
 
-        $data = core__get_partner_dataset( $partner->ID );
+        $data = api\get_partner_dataset( $partner->ID );
 
 
         // Squared logos?

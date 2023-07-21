@@ -8,6 +8,8 @@
 
 namespace cm_theme_core;
 
+use \cm_theme_core\api as api;
+
 
 /** Prevent direct access */
 
@@ -49,7 +51,7 @@ function shortcode_speaker_grid( $atts, $content = null )
 
     /** Retrieve and prepare data. */
 
-    $speakers = core__get_speaker_datasets( ( '-1' == $event )? implode( ',', core__get_active_events() ) : $event );
+    $speakers = api\get_speaker_datasets( ( '-1' == $event )? implode( ',', api\get_active_events() ) : $event );
 
     if( $speakers ) :
 
@@ -70,7 +72,7 @@ function shortcode_speaker_grid( $atts, $content = null )
             if( 1 == $shuffle ) :
                 shuffle( $speaker_list );
                 $speaker_list = array_slice( $speaker_list, 0, $show );
-                $speaker_list = core__sort_speaker_datasets( $speaker_list );
+                $speaker_list = api\sort_speaker_datasets( $speaker_list );
             else :
                 $speaker_list = array_slice( $speaker_list, 0, $show );
             endif;

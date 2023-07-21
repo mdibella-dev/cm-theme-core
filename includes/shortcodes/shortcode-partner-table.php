@@ -8,6 +8,8 @@
 
 namespace cm_theme_core;
 
+use \cm_theme_core\core as api;
+
 
 /** Prevent direct access */
 
@@ -54,11 +56,11 @@ function shortcode_partner_table( $atts, $content = null )
 
     // Optionally, you can filter by type of partnership
     if( ! empty( $partnership ) ) :
-        $query[ 'tax_query' ] = [ [
+        $query[ 'tax_query' ] = [[
             'taxonomy' => 'partnership',
             'field'    => 'term_id',
             'terms'    => explode(',', $partnership )
-        ] ];
+        ]];
     endif;
 
     $partners = get_posts( $query );
@@ -135,7 +137,7 @@ function shortcode_partner_table( $atts, $content = null )
 
                     case 'MESSESTAND':
                         $exhibition = get_field( 'messestand', $partner->ID );
-                        $location   = core__get_location( $exhibition['partner-messestand-ort'] );
+                        $location   = api\get_location( $exhibition['partner-messestand-ort'] );
                         $number     = $exhibition['partner-messestand-nummer'];
 
                         if( ! empty( $number ) or !empty( $location ) ) :

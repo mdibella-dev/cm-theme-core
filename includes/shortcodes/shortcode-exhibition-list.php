@@ -8,6 +8,8 @@
 
 namespace cm_theme_core;
 
+use \cm_theme_core\api as api;
+
 
 /** Prevent direct access */
 
@@ -68,7 +70,7 @@ function shortcode_exhibition_list( $atts, $content = null )
 <ul class="exhibition-list">
     <?php
     foreach( $partners as $partner ) :
-        $data = core__get_partner_dataset( $partner->ID );
+        $data = api\get_partner_dataset( $partner->ID );
     ?>
 
     <li class="exhibition-list-element">
