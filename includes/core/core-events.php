@@ -72,7 +72,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
     ];
 
     if( ! empty( $event_list_string ) ) :
-        $event_list = explode( ',', str_replace(" ", "", $event_list_string ) );
+        $event_list = explode( ',', str_replace( " ", "", $event_list_string ) );
     else :
         $event_list = core__get_active_events();
     endif;
