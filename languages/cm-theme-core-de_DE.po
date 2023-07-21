@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2023-07-20 09:56+0200\n"
-"PO-Revision-Date: 2023-07-20 10:01+0200\n"
+"POT-Creation-Date: 2023-07-21 11:01+0200\n"
+"PO-Revision-Date: 2023-07-21 11:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Poedit-WPHeader: plugin.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
@@ -44,38 +44,38 @@ msgstr "Kooperationsformen"
 
 #: includes/backend.php:93 includes/backend.php:94 includes/backend.php:125
 #: includes/backend.php:259
-#: includes/post-types/post-type-exhibition-space.php:137
-#: includes/post-types/post-type-exhibition-space.php:139
+#: includes/post-types/post-type-exhibition-space.php:133
+#: includes/post-types/post-type-exhibition-space.php:135
+#: includes/post-types/post-type-exhibition-space.php:136
 #: includes/post-types/post-type-exhibition-space.php:140
-#: includes/post-types/post-type-exhibition-space.php:144
 #: includes/taxonomies/taxonomy-location.php:34
 msgid "Exhibition spaces"
 msgstr "Ausstellungsflächen"
 
 #: includes/backend.php:121 includes/post-types/post-type-session.php:36
+#: includes/post-types/post-type-speaker.php:154
+#: includes/post-types/post-type-speaker.php:156
 #: includes/post-types/post-type-speaker.php:157
-#: includes/post-types/post-type-speaker.php:159
-#: includes/post-types/post-type-speaker.php:160
-#: includes/post-types/post-type-speaker.php:174
+#: includes/post-types/post-type-speaker.php:171
 msgid "Speakers"
 msgstr "Referent:innen"
 
 #: includes/backend.php:122 includes/backend.php:233
+#: includes/post-types/post-type-session.php:177
+#: includes/post-types/post-type-session.php:179
 #: includes/post-types/post-type-session.php:180
-#: includes/post-types/post-type-session.php:182
-#: includes/post-types/post-type-session.php:183
-#: includes/post-types/post-type-session.php:190
+#: includes/post-types/post-type-session.php:187
 #: includes/taxonomies/taxonomy-location.php:33
 msgid "Sessions"
 msgstr "Veranstaltungspunkte"
 
 #: includes/backend.php:123 includes/backend.php:245
+#: includes/post-types/post-type-partner.php:168
 #: includes/post-types/post-type-partner.php:171
-#: includes/post-types/post-type-partner.php:174
 msgid "Partners"
 msgstr "Kooperationspartner"
 
-#: includes/backend.php:124 includes/post-types/post-type-partner.php:173
+#: includes/backend.php:124 includes/post-types/post-type-partner.php:170
 msgid "Partnerships"
 msgstr "Kooperationsformen"
 
@@ -88,7 +88,7 @@ msgid "Create"
 msgstr "Erstellen"
 
 #: includes/post-types/post-type-exhibition-space.php:31
-#: includes/post-types/post-type-exhibition-space.php:138
+#: includes/post-types/post-type-exhibition-space.php:134
 #: includes/post-types/post-type-partner.php:34
 msgid "Exhibition space"
 msgstr "Ausstellungsfläche"
@@ -116,19 +116,19 @@ msgid "Image"
 msgstr "Bild"
 
 #: includes/post-types/post-type-partner.php:32
-#: includes/post-types/post-type-partner.php:172
-#: includes/post-types/post-type-partner.php:178
+#: includes/post-types/post-type-partner.php:169
+#: includes/post-types/post-type-partner.php:175
 msgid "Partner"
 msgstr "Kooperationspartner"
 
-#: includes/post-types/post-type-partner.php:64
-#: includes/post-types/post-type-speaker.php:63
+#: includes/post-types/post-type-partner.php:63
+#: includes/post-types/post-type-speaker.php:62
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: includes/post-types/post-type-partner.php:100
-#: includes/post-types/post-type-session.php:101
-#: includes/post-types/post-type-speaker.php:86
+#: includes/post-types/post-type-partner.php:99
+#: includes/post-types/post-type-session.php:100
+#: includes/post-types/post-type-speaker.php:85
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s um %2$s Uhr"
@@ -145,28 +145,28 @@ msgstr "Datum"
 msgid "Time period"
 msgstr "Zeitfenster"
 
-#: includes/post-types/post-type-session.php:71
+#: includes/post-types/post-type-session.php:70
 #, php-format
 msgid "Edit %1$s"
 msgstr "%1$s bearbeiten"
 
-#: includes/post-types/post-type-session.php:181
-#: includes/post-types/post-type-session.php:186
+#: includes/post-types/post-type-session.php:178
+#: includes/post-types/post-type-session.php:183
 msgid "Session"
 msgstr "Veranstaltungspunkt"
 
-#: includes/post-types/post-type-session.php:184
-#: includes/post-types/post-type-speaker.php:161
+#: includes/post-types/post-type-session.php:181
+#: includes/post-types/post-type-speaker.php:158
 msgid "Add new"
 msgstr "Neu hinzufügen"
 
-#: includes/post-types/post-type-session.php:185
+#: includes/post-types/post-type-session.php:182
 msgid "New session"
 msgstr "Neuer Veranstaltungspunkt"
 
 #: includes/post-types/post-type-speaker.php:32
-#: includes/post-types/post-type-speaker.php:158
-#: includes/post-types/post-type-speaker.php:170
+#: includes/post-types/post-type-speaker.php:155
+#: includes/post-types/post-type-speaker.php:167
 msgid "Speaker"
 msgstr "Referent:in"
 
@@ -174,35 +174,35 @@ msgstr "Referent:in"
 msgid "Short description"
 msgstr "Kurzbeschreibung"
 
-#: includes/post-types/post-type-speaker.php:162
+#: includes/post-types/post-type-speaker.php:159
 msgid "Search speaker"
 msgstr "Referent:in suchen"
 
-#: includes/post-types/post-type-speaker.php:163
+#: includes/post-types/post-type-speaker.php:160
 msgid "No speaker found"
 msgstr "Kein/e Referent:in gefunden"
 
-#: includes/post-types/post-type-speaker.php:164
+#: includes/post-types/post-type-speaker.php:161
 msgid "No deleted speaker found"
 msgstr "Keine/e gelöschte/r Referent:in gefunden"
 
-#: includes/post-types/post-type-speaker.php:165
+#: includes/post-types/post-type-speaker.php:162
 msgid "Speaker image"
 msgstr "Bild des/der Referent:in"
 
-#: includes/post-types/post-type-speaker.php:166
+#: includes/post-types/post-type-speaker.php:163
 msgid "Set speaker image"
 msgstr "Bild des/der Referent:in setzen"
 
-#: includes/post-types/post-type-speaker.php:167
+#: includes/post-types/post-type-speaker.php:164
 msgid "Remove speaker image"
 msgstr "Bild des/der Referent:in entfernen"
 
-#: includes/post-types/post-type-speaker.php:168
+#: includes/post-types/post-type-speaker.php:165
 msgid "Use as speaker image"
 msgstr "Als Bild des/der Referent:in verwenden"
 
-#: includes/post-types/post-type-speaker.php:169
+#: includes/post-types/post-type-speaker.php:166
 msgid "All speakers"
 msgstr "Alle Referent:innen"
 
@@ -274,11 +274,11 @@ msgstr "Alle Ausstellungsflächen an dieser Location anzeigen"
 
 #: includes/taxonomies/taxonomy-partnership.php:68
 msgid "Show all partners cooperating in this way"
-msgstr "Alle Partner anzeigen, die auf diese Art und Weise zusammenarbeiten"
+msgstr "Alle Partner anzeigen, die auf diese Art und Weise kooperieren"
 
 #. Plugin Name of the plugin/theme
-msgid "CM Theme &mdash; Core Plugin"
-msgstr "CM Theme &mdash; Core Plugin"
+msgid "CM Theme &mdash; Core"
+msgstr "CM Theme &mdash; Kernfunktionen"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/cm-theme-core"
@@ -286,11 +286,11 @@ msgstr "https://github.com/mdibella-dev/cm-theme-core"
 
 #. Description of the plugin/theme
 msgid ""
-"Core functions of CM theme. Originally an integral part of the theme, now "
+"Core functions of CM Theme. Originally an integral part of the theme, now "
 "outsourced in a plugin."
 msgstr ""
-"Kernfunktionen des CM-Themas. Ursprünglich ein integraler Bestandteil des "
-"Themes, jetzt ausgelagert in ein Plugin."
+"Wesentlicher Funktionskern von CM Theme. Ursprünglich ein integraler "
+"Bestandteil des Themes, jetzt ausgelagert in ein Plugin."
 
 #. Author of the plugin/theme
 msgid "Marco Di Bella"

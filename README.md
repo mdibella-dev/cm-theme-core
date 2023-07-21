@@ -1,5 +1,5 @@
 # CM Theme &mdash; Core
-Core functions of CM theme. Originally an integral part of the theme, now outsourced in a plugin.
+Core functions of CM Theme. Originally an integral part of the theme, now outsourced in a plugin.
 
 <br>
 
