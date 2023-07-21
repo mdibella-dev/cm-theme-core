@@ -180,13 +180,3 @@
         }
     }
 }
-
-
-/**
- * CM menu
- */
-
-#adminmenu #toplevel_page_edit-post_type-session ul.wp-submenu li a[href$="edit.php?post_type=session"],
-#adminmenu #toplevel_page_edit-post_type-session ul.wp-submenu li a[href$="edit-tags.php?taxonomy=partnership&post_type=session"] {
-    border-bottom: 1px solid hsla(0,0%,100%,.2)
-}
