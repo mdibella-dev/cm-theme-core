@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core;
+namespace cm_theme_core\core;
 
 
 /** Prevent direct access */
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function core__get_active_events()
+function get_active_events()
 {
     $events = [];
     $terms  = get_terms( [
@@ -54,7 +54,7 @@ function core__get_active_events()
  * @return array
  */
 
-function core__get_speaker_datasets( $event_list_string = '' )
+function get_speaker_datasets( $event_list_string = '' )
 {
     // Construction and implementation of the data query.
     // If no events have been specified (i.e. $event_list_string is empty), the active events will be used as a basis.
@@ -74,7 +74,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
     if( ! empty( $event_list_string ) ) :
         $event_list = explode( ',', str_replace( " ", "", $event_list_string ) );
     else :
-        $event_list = core__get_active_events();
+        $event_list = get_active_events();
     endif;
 
     foreach( $event_list as $event ) :
@@ -101,7 +101,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
                     // Do not add if already in the list.
                     if( false == in_array( $speaker, $finds_list ) ) :
                         $finds_list[]   = $speaker;
-                        $speaker_list[] = core__get_speaker_dataset( $speaker );
+                        $speaker_list[] = get_speaker_dataset( $speaker );
                     endif;
                 endforeach;
             endif;
@@ -109,7 +109,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
 
 
         // Sorting the found speakers by first and last name.
-        return core__sort_speaker_datasets( $speaker_list );
+        return sort_speaker_datasets( $speaker_list );
     endif;
 
     return null;
@@ -126,7 +126,7 @@ function core__get_speaker_datasets( $event_list_string = '' )
  * @return string
  */
 
-function core__get_event( $event )
+function get_event( $event )
 {
     if( ! empty( $event ) ) :
         $term = get_term_by( 'term_taxonomy_id', $event, 'event' );

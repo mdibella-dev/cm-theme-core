@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core;
+namespace cm_theme_core\core;
 
 
 /** Prevent direct access */
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string
  */
 
-function core__get_location( $location )
+function get_location( $location )
 {
     if( ! empty( $location ) ) :
         $term = get_term_by( 'term_taxonomy_id', $location, 'location' );

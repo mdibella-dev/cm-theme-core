@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core;
+namespace cm_theme_core\core;
 
 
 /** Prevent direct access */
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function core__get_partner_dataset( $partner )
+function get_partner_dataset( $partner )
 {
     $partner_post = get_post( $partner );
 

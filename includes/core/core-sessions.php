@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core;
+namespace cm_theme_core\core;
 
 
 /** Prevent direct access */
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function core__get_sessions( $args )
+function get_sessions( $args )
 {
     // Determination of the passed parameters
     $default_args = [
@@ -49,7 +49,7 @@ function core__get_sessions( $args )
     // Handling event/event_filter
     // Adds either the search for the sessions of a specific event (variant 1)
     // or filtering by active or inactive sessions (variant 2).
-    if( null !== core__get_event( $event ) ) :
+    if( null !== get_event( $event ) ) :
 
         $query['tax_query'] = [[
             'taxonomy' => 'event',
@@ -57,7 +57,7 @@ function core__get_sessions( $args )
             'terms'    => $event,
         ]];
     else :
-        $event_list   = core__get_active_events();
+        $event_list   = get_active_events();
         $event_filter = strtoupper( trim( $event_filter ) );
 
         if( 'INACTIVE' === $event_filter ) :
@@ -115,7 +115,7 @@ function core__get_sessions( $args )
 
     // Execution of the data query and return of the sorted result
     $sessions = get_posts( $query );
-    return core__sort_sessions_by_timestamp( $sessions );
+    return sort_sessions_by_timestamp( $sessions );
 }
 
 
@@ -130,9 +130,9 @@ function core__get_sessions( $args )
  * @return array
  */
 
-function core__get_sessions_by_event( $event, $date = '' )
+function get_sessions_by_event( $event, $date = '' )
 {
-    return core__get_sessions( [
+    return get_sessions( [
         'event' => $event,
         'date'  => $date,
     ] );
@@ -152,9 +152,9 @@ function core__get_sessions_by_event( $event, $date = '' )
  * @return array
  */
 
-function core__get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
+function get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
 {
-    return core__get_sessions( [
+    return get_sessions( [
         'speaker'      => $speaker,
         'event_filter' => $event_filter,
     ] );
@@ -172,7 +172,7 @@ function core__get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
  * @return array
  */
 
-function core__sort_sessions_by_timestamp( $sessions )
+function sort_sessions_by_timestamp( $sessions )
 {
     if( true == is_array( $sessions ) ) :
         $unable_to_sort = false;
