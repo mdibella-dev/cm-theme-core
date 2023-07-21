@@ -34,7 +34,7 @@ function shortcode_icon_wall( $atts, $content = null )
 {
     /** Determine passed parameters. */
 
-    $default_atts = array[
+    $default_atts = [
         'partnership' => '',
         'link'        => 'none',
     ];
