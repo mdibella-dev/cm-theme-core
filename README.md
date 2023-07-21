@@ -13,7 +13,7 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes
 
 ### Requires at least
 
-* WordPress 6.2
+* WordPress 6
 * ACF 5.0
 * FontAwesome 5
 
