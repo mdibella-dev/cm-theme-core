@@ -27,6 +27,8 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes
 
 ### Latest changes to the main branch
 
+* Bugfix: Remove PHP warning "Undefined variable $output"
+
 
 ### Previous changes
 

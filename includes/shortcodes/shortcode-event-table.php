@@ -205,9 +205,11 @@ function shortcode_event_table( $atts, $content = null )
 
             $output .= '</div>';
         endif;
+
+        return $output;
     endif;
 
-    return $output;
+    return null;
 }
 
 add_shortcode( 'event-table', __NAMESPACE__ . '\shortcode_event_table' );
