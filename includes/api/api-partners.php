@@ -50,8 +50,8 @@ function get_partner_dataset( $partner )
 
         $data['exhibition-spaces'][] = [
             'signature' => get_the_title( $space_post ),
-            'location'  => $space_location->name,
-            'package'   => $space_package->name,
+            'location'  => $space_location->name,           // PHP warning undefined property
+            'package'   => $space_package->name,            // PHP warning undefined property
             'id'        => $space_post->ID,
         ];
     endwhile;
