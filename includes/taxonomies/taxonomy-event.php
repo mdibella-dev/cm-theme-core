@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function manage_edit_columns( $default )
-{
+function manage_edit_columns( $default ) {
+
     $columns = [
         'cb'          => $default['cb'],
         'id'          => 'ID',
@@ -32,8 +32,10 @@ function manage_edit_columns( $default )
         'status'      => __( 'Status', 'cm-theme-core' ),
         'posts'       => __( 'Events', 'cm-theme-core' ),
     ];
+
     return $columns;
 }
+
 add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\manage_edit_columns' );
 
 
@@ -44,8 +46,8 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\manage_edit_columns' 
  * @since 1.0.0
  */
 
-function manage_custom_column( $content, $column_name, $term_id )
-{
+function manage_custom_column( $content, $column_name, $term_id ) {
+
     switch( $column_name ) :
         case 'id':
             $content = $term_id;
@@ -67,6 +69,7 @@ function manage_custom_column( $content, $column_name, $term_id )
 
     return $content;
 }
+
 add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\manage_custom_column', 10, 3 );
 
 
@@ -77,8 +80,8 @@ add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\manage_custom_column
  * @since 1.0.0
  */
 
-function register()
-{
+function register() {
+
     $labels = [
         'name'          => __( 'Events', 'cm-theme-core' ),
         'singular_name' => __( 'Event', 'cm-theme-core' ),

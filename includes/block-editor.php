@@ -30,8 +30,7 @@ defined( 'ABSPATH' ) or exit;
  * @return bool The outcome: true if the blockeditor is allowed, otherwise false
  */
 
-function disable_block_editor( $current_status, $post_type )
-{
+function disable_block_editor( $current_status, $post_type ) {
     if( ( 'session' === $post_type  ) or ( 'exhibitor' === $post_type ) or ( 'speaker'  === $post_type ) ) :
         return false;
     endif;
@@ -53,8 +52,7 @@ add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\disable_block_ed
  * @see https://www.billerickson.net/block-styles-in-gutenberg/
  */
 
-function add_block_editor_assets()
-{
+function add_block_editor_assets() {
     wp_enqueue_style(
         'block-editor',
         PLUGIN_DIR . '/assets/build/css/block-editor.min.css',
@@ -67,7 +65,7 @@ function add_block_editor_assets()
         PLUGIN_DIR . '/assets/build/js/block-editor.js',
         [
             'wp-blocks',
-            'wp-dom' 
+            'wp-dom'
         ],
         PLUGIN_VERSION,
         true

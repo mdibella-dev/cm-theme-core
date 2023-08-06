@@ -25,8 +25,8 @@ defined( 'ABSPATH' ) or exit;
  * @return string
  */
 
-function get_location( $location )
-{
+function get_location( $location ) {
+    
     if( ! empty( $location ) ) :
         $term = get_term_by( 'term_taxonomy_id', $location, 'location' );
 

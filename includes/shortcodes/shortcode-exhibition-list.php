@@ -30,8 +30,8 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function shortcode_exhibition_list( $atts, $content = null )
-{
+function shortcode_exhibition_list( $atts, $content = null ) {
+    
     /** Determine passed parameters. */
 
     $default_atts = [

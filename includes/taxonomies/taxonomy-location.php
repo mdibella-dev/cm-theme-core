@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function manage_edit_columns( $default )
-{
+function manage_edit_columns( $default ) {
+
     $columns = [
         'cb'            => $default['cb'],
         'id'            => 'ID',
@@ -33,8 +33,10 @@ function manage_edit_columns( $default )
         'count-session' => __( 'Sessions', 'cm-theme-core' ),
         'count-space'   => __( 'Exhibition spaces', 'cm-theme-core' ),
     ];
+
     return $columns;
 }
+
 add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\manage_edit_columns' );
 
 
@@ -45,8 +47,8 @@ add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\manage_edit_column
  * @since 1.0.0
  */
 
-function manage_custom_column( $content, $column_name, $term_id )
-{
+function manage_custom_column( $content, $column_name, $term_id ) {
+
     switch( $column_name ) :
         case 'id':
             $content = $term_id;
@@ -107,6 +109,7 @@ function manage_custom_column( $content, $column_name, $term_id )
 
     return $content;
 }
+
 add_filter( 'manage_location_custom_column', __NAMESPACE__ . '\manage_custom_column', 10, 3 );
 
 
@@ -117,8 +120,7 @@ add_filter( 'manage_location_custom_column', __NAMESPACE__ . '\manage_custom_col
  * @since 1.0.0
  */
 
-function register()
-{
+function register() {
 
     $labels = [
         'name'          => __( 'Locations', 'cm-theme-core' ),

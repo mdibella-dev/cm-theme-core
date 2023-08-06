@@ -27,8 +27,8 @@ defined( 'ABSPATH' ) or exit;
  * @return $array An associative array describing the columns to use.
  */
 
-function manage_posts_columns( $default )
-{
+function manage_posts_columns( $default ) {
+
     $columns['cb']                   = $default['cb'];
     $columns['image']                = __( 'Image', 'cm-theme-core' );
     $columns['title']                = __( 'Partner', 'cm-theme-core' );
@@ -52,8 +52,8 @@ add_filter( 'manage_partner_posts_columns', __NAMESPACE__ . '\manage_posts_colum
  * @param int    $post_id     ID of the post (aka record) to be output.
  */
 
-function manage_posts_custom_column( $column_name, $post_id )
-{
+function manage_posts_custom_column( $column_name, $post_id ) {
+
     switch( $column_name ) :
         case 'image':
             if( true === has_post_thumbnail( $post_id ) ) :
@@ -120,10 +120,11 @@ add_action( 'manage_partner_posts_custom_column', __NAMESPACE__ . '\manage_posts
  * @return $array An associative array.
  */
 
-function manage_sortable_columns( $columns )
-{
+function manage_sortable_columns( $columns ) {
+
     $columns['title']  = 'title';
     $columns['update'] = 'update';
+
     return $columns;
 }
 
@@ -139,8 +140,8 @@ add_filter( 'manage_edit-partner_sortable_columns', __NAMESPACE__ . '\manage_sor
  * @param WP_Query $query A data object of the last query made.
  */
 
-function pre_get_posts( $query )
-{
+function pre_get_posts( $query ) {
+
     if( $query->is_main_query() and is_admin() ) :
 
         $orderby = $query->get( 'orderby' );
@@ -164,8 +165,8 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
  * @since 1.0.0
  */
 
-function register()
-{
+function register() {
+    
     $labels = [
         'name'          => __( 'Partners', 'cm-theme-core' ),
         'singular_name' => __( 'Partner', 'cm-theme-core' ),

@@ -25,8 +25,8 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function get_sessions( $args )
-{
+function get_sessions( $args ) {
+
     // Determination of the passed parameters
     $default_args = [
         'event'          => '',
@@ -130,8 +130,7 @@ function get_sessions( $args )
  * @return array
  */
 
-function get_sessions_by_event( $event, $date = '' )
-{
+function get_sessions_by_event( $event, $date = '' ) {
     return get_sessions( [
         'event' => $event,
         'date'  => $date,
@@ -152,8 +151,7 @@ function get_sessions_by_event( $event, $date = '' )
  * @return array
  */
 
-function get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
-{
+function get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' ) {
     return get_sessions( [
         'speaker'      => $speaker,
         'event_filter' => $event_filter,
@@ -172,8 +170,8 @@ function get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' )
  * @return array
  */
 
-function sort_sessions_by_timestamp( $sessions )
-{
+function sort_sessions_by_timestamp( $sessions ) {
+    
     if( true == is_array( $sessions ) ) :
         $unable_to_sort = false;
         $sort           = [];

@@ -33,8 +33,8 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output produced by the shortcode.
  */
 
-function shortcode_partner_table( $atts, $content = null )
-{
+function shortcode_partner_table( $atts, $content = null ) {
+    
     /** Determine passed parameters. */
 
     $default_atts = [

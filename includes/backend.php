@@ -23,8 +23,7 @@ defined( 'ABSPATH' ) or exit;
  * @param string $hook The current page in the backend.
  */
 
-function admin_enqueue_scripts( $hook )
-{
+function admin_enqueue_scripts( $hook ) {
     wp_enqueue_style(
         'cm-theme-core-backend-style',
         PLUGIN_URL . 'assets/build/css/backend.min.css',
@@ -44,8 +43,7 @@ add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\admin_enqueue_scripts' );
  * @since 1.1.0
  */
 
-function admin_menu()
-{
+function admin_menu() {
     $admin_menu_slug = 'edit.php?post_type=session';
 
     add_menu_page(
@@ -109,8 +107,8 @@ add_action( 'admin_menu', __NAMESPACE__ . '\admin_menu', 999 );
  * @since 1.0.0
  */
 
-function admin_menu_order( $menu_order )
-{
+function admin_menu_order( $menu_order ) {
+
     global $submenu;
            $admin_menu_slug = 'edit.php?post_type=session';
            $sorted          = array();
@@ -154,8 +152,7 @@ add_filter( 'menu_order', __NAMESPACE__ . '\admin_menu_order' );
  * @see http://www.advancedcustomfields.com/resources/moving-wp-elements-content-editor-within-acf-fields/
  */
 
-function adjust_acf_dialog()
-{
+function adjust_acf_dialog() {
 ?>
 <script type="text/javascript">
     (function($) {
@@ -179,8 +176,8 @@ add_action( 'acf/input/admin_head', __NAMESPACE__ . '\adjust_acf_dialog' );
  * @since 1.0.0
  */
 
-function default_hidden_columns( $hidden, $screen )
-{
+function default_hidden_columns( $hidden, $screen ) {
+
     if( isset( $screen->id ) ) :
         switch( $screen->id ) :
 
@@ -213,14 +210,16 @@ add_filter( 'default_hidden_columns', __NAMESPACE__ . '\default_hidden_columns',
  * @see https://stackoverflow.com/questions/22261284/add-button-link-immediately-after-title-to-custom-post-type-edit-screen
  */
 
-function rewrite_header()
-{
+function rewrite_header() {
+
     $screen    = get_current_screen();
     $do_modify = false;
     $term      = false;
 
     if( isset( $_GET['post_type'] ) and isset( $screen->id ) ) :
+
         switch( $screen->id ) :
+            
             case 'edit-session':  // event // location
                 if( isset( $_GET['location'] ) ) :
                     $term = get_term_by( 'slug', $_GET['location'], 'location' );

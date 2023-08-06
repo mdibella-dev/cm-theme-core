@@ -22,8 +22,7 @@ defined( 'ABSPATH' ) or exit;
  * @return array
  */
 
-function get_active_events()
-{
+function get_active_events() {
     $events = [];
     $terms  = get_terms( [
         'taxonomy'   => 'event',
@@ -54,8 +53,8 @@ function get_active_events()
  * @return array
  */
 
-function get_speaker_datasets( $event_list_string = '' )
-{
+function get_speaker_datasets( $event_list_string = '' ) {
+
     // Construction and implementation of the data query.
     // If no events have been specified (i.e. $event_list_string is empty), the active events will be used as a basis.
     $query = [
@@ -126,8 +125,8 @@ function get_speaker_datasets( $event_list_string = '' )
  * @return string
  */
 
-function get_event( $event )
-{
+function get_event( $event ) {
+    
     if( ! empty( $event ) ) :
         $term = get_term_by( 'term_taxonomy_id', $event, 'event' );
 

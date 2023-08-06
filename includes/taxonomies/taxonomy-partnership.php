@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function manage_edit_columns( $default )
-{
+function manage_edit_columns( $default ) {
+
     $columns = [
         'cb'          => $default['cb'],
         'id'          => 'ID',
@@ -31,8 +31,10 @@ function manage_edit_columns( $default )
         'slug'        => $default['slug'],
         'count'       => __( 'Count', 'cm-theme-core' ),
     ];
+
     return $columns;
 }
+
 add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\manage_edit_columns' );
 
 
@@ -43,8 +45,8 @@ add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\manage_edit_col
  * @since 1.0.0
  */
 
-function manage_custom_column( $content, $column_name, $term_id )
-{
+function manage_custom_column( $content, $column_name, $term_id ) {
+
     switch( $column_name ) :
         case 'id':
             $content = $term_id;
@@ -75,6 +77,7 @@ function manage_custom_column( $content, $column_name, $term_id )
 
     return $content;
 }
+
 add_filter( 'manage_partnership_custom_column', __NAMESPACE__ . '\manage_custom_column', 10, 3 );
 
 
@@ -85,8 +88,8 @@ add_filter( 'manage_partnership_custom_column', __NAMESPACE__ . '\manage_custom_
  * @since 1.0.0
  */
 
-function register()
-{
+function register() {
+    
     $labels = [
         'name'          => __( 'Partnerships', 'cm-theme-core' ),
         'singular_name' => __( 'Partnership', 'cm-theme-core' ),
