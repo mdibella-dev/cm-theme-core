@@ -88,13 +88,13 @@ add_filter( 'manage_exhibition_package_custom_column', __NAMESPACE__ . '\manage_
 function register()
 {
     $labels = [
-        'name'          => esc_html__( 'Exhibition packages', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Exhibition package', 'cm-theme-core' ),
+        'name'          => __( 'Exhibition packages', 'cm-theme-core' ),
+        'singular_name' => __( 'Exhibition package', 'cm-theme-core' ),
     ];
 
 
     $args = [
-        'label'                 => esc_html__( 'Exhibition packages', 'cm-theme-core' ),
+        'label'                 => __( 'Exhibition packages', 'cm-theme-core' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

@@ -130,14 +130,14 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
 function register()
 {
     $labels = [
-        'name'          => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Exhibition space', 'cm-theme-core' ),
-        'menu_name'     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
-        'all_items'     => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'name'          => __( 'Exhibition spaces', 'cm-theme-core' ),
+        'singular_name' => __( 'Exhibition space', 'cm-theme-core' ),
+        'menu_name'     => __( 'Exhibition spaces', 'cm-theme-core' ),
+        'all_items'     => __( 'Exhibition spaces', 'cm-theme-core' ),
     ];
 
     $args = [
-        'label'                 => esc_html__( 'Exhibition spaces', 'cm-theme-core' ),
+        'label'                 => __( 'Exhibition spaces', 'cm-theme-core' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,

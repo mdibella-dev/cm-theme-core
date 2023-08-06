@@ -121,14 +121,14 @@ function register()
 {
 
     $labels = [
-        'name'          => esc_html__( 'Locations', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Location', 'cm-theme-core' ),
-        'menu_name'     => esc_html__( 'Locations', 'cm-theme-core' ),
+        'name'          => __( 'Locations', 'cm-theme-core' ),
+        'singular_name' => __( 'Location', 'cm-theme-core' ),
+        'menu_name'     => __( 'Locations', 'cm-theme-core' ),
     ];
 
 
     $args = [
-        'label'                 => esc_html__( 'Locations', 'cm-theme-core' ),
+        'label'                 => __( 'Locations', 'cm-theme-core' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

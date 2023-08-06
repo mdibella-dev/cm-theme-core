@@ -167,14 +167,14 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
 function register()
 {
     $labels = [
-        'name'          => esc_html__( 'Partners', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Partner', 'cm-theme-core' ),
-        'menu_name'     => esc_html__( 'Partnerships', 'cm-theme-core' ),
-        'all_items'     => esc_html__( 'Partners', 'cm-theme-core' ),
+        'name'          => __( 'Partners', 'cm-theme-core' ),
+        'singular_name' => __( 'Partner', 'cm-theme-core' ),
+        'menu_name'     => __( 'Partnerships', 'cm-theme-core' ),
+        'all_items'     => __( 'Partners', 'cm-theme-core' ),
     ];
 
     $args = [
-        'label'                 => esc_html__( 'Partner', 'cm-theme-core' ),
+        'label'                 => __( 'Partner', 'cm-theme-core' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,

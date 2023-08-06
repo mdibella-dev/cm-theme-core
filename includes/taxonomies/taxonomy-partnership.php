@@ -88,12 +88,12 @@ add_filter( 'manage_partnership_custom_column', __NAMESPACE__ . '\manage_custom_
 function register()
 {
     $labels = [
-        'name'          => esc_html__( 'Partnerships', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Partnership', 'cm-theme-core' ),
+        'name'          => __( 'Partnerships', 'cm-theme-core' ),
+        'singular_name' => __( 'Partnership', 'cm-theme-core' ),
     ];
 
     $args = [
-        'label'                 => esc_html__( 'Partnerships', 'cm-theme-core' ),
+        'label'                 => __( 'Partnerships', 'cm-theme-core' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

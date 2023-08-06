@@ -80,15 +80,15 @@ add_filter( 'manage_event_custom_column', __NAMESPACE__ . '\manage_custom_column
 function register()
 {
     $labels = [
-        'name'          => esc_html__( 'Events', 'cm-theme-core' ),
-        'singular_name' => esc_html__( 'Event', 'cm-theme-core' ),
-        'menu_name'     => esc_html__( 'Events', 'cm-theme-core' ),
-        'all_items'     => esc_html__( 'All events', 'cm-theme-core' ),
+        'name'          => __( 'Events', 'cm-theme-core' ),
+        'singular_name' => __( 'Event', 'cm-theme-core' ),
+        'menu_name'     => __( 'Events', 'cm-theme-core' ),
+        'all_items'     => __( 'All events', 'cm-theme-core' ),
     ];
 
 
     $args = [
-        'label'                 => esc_html__( 'Events', 'cm-theme-core' ),
+        'label'                 => __( 'Events', 'cm-theme-core' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

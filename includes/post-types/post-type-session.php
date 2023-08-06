@@ -176,17 +176,17 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
 function register()
 {
     $labels = [
-        'name'           => esc_html__( 'Sessions', 'cm-theme-core' ),
-        'singular_name'  => esc_html__( 'Session', 'cm-theme-core' ),
-        'menu_name'      => esc_html__( 'Sessions', 'cm-theme-core' ),
-        'all_items'      => esc_html__( 'Sessions', 'cm-theme-core' ),
-        'add_new'        => esc_html__( 'Add new', 'cm-theme-core' ),
-        'add_new_item'   => esc_html__( 'New session', 'cm-theme-core' ),
-        'name_admin_bar' => esc_html__( 'Session', 'cm-theme-core' ),
+        'name'           => __( 'Sessions', 'cm-theme-core' ),
+        'singular_name'  => __( 'Session', 'cm-theme-core' ),
+        'menu_name'      => __( 'Sessions', 'cm-theme-core' ),
+        'all_items'      => __( 'Sessions', 'cm-theme-core' ),
+        'add_new'        => __( 'Add new', 'cm-theme-core' ),
+        'add_new_item'   => __( 'New session', 'cm-theme-core' ),
+        'name_admin_bar' => __( 'Session', 'cm-theme-core' ),
     ];
 
     $args = [
-        'label'                 => esc_html__( 'Sessions', 'cm-theme-core' ),
+        'label'                 => __( 'Sessions', 'cm-theme-core' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,
