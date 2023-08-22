@@ -24,15 +24,12 @@ defined( 'ABSPATH' ) or exit;
  *
  * @since 1.0.0
  *
- * @param array $atts The attributes (parameters) of the shorcode.
- *         - event (optional)
- *           A comma-separated list of events from which to select speakers.
- *         - exclude (optional)
- *           A comma-separated list of speakers not to be displayed.
- *         - show (optional)
- *           The number of sepakers to display. If nothing is specified, all speakers found are displayed.
- *         - shuffle (optional, only in connection with show)
- *           Randomizes the speaker selection before the selection by show.
+ * The attributes (parameters) of the shorcode:
+ *
+ * - event (optional)       A comma-separated list of events from which to select speakers.
+ * - exclude (optional)     A comma-separated list of speakers not to be displayed.
+ * - show (optional)        The number of sepakers to display. If nothing is specified, all speakers found are displayed.
+ * - shuffle (optional)     Randomizes the speaker selection before the selection by show (only in connection with show).
  */
 
 class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {

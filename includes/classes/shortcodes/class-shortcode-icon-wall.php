@@ -23,12 +23,11 @@ defined( 'ABSPATH' ) or exit;
  *
  * @since 1.0.0
  *
- * @param array $atts The attributes (parameters) of the shorcode.
- *                    - partnership (optional)
- *                      The cooperation form(s) to be filtered by.
- *                      The forms of cooperation must be in the form of a comma-separated list of their identification numbers.
- *                    - link (optional)
- *                      Defines if and how the logo should be linked (none, internal, external).
+ * The attributes (parameters) of the shorcode:
+ *
+ * - partnership (optional)     The cooperation form(s) to be filtered by.
+ *                              The forms of cooperation must be in the form of a comma-separated list of their identification numbers.
+ * - link (optional)            Defines if and how the logo should be linked (none, internal, external).
  */
 
 class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
