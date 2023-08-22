@@ -71,9 +71,9 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 
 
     /**
+     * Gets a comma-separated list of events from which to select speakers.
      *
-     *
-     * @return
+     * @return string The list
      */
 
     protected function get_event() {
@@ -82,9 +82,9 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 
 
     /**
+     * Gets a comma-separated list of speakers not to be displayed in the grid.
      *
-     *
-     * @return
+     * @return string
      */
 
     protected function get_speakers_to_exclude() {
@@ -93,24 +93,24 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 
 
     /**
+     * Gets the number of sepakers to display.
      *
-     *
-     * @return
+     * @return int
      */
 
     protected function get_show() {
-        return $this->atts['show'];
+        return (int) $this->atts['show'];
     }
 
 
     /**
+     * Indicates whether to randomize the selection of speakers before output.
      *
-     *
-     * @return
+     * @return bool
      */
 
-    protected function get_shuffle() {
-        return $this->atts['shuffle'];
+    protected function is_shuffle_mode() {
+        return (bool) $this->atts['shuffle'];
     }
 
 
@@ -141,7 +141,7 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
             if( ( true == is_numeric( $this->get_show() ) ) and ( $this->get_show() > 0 ) and ( $this->get_show() < count( $this->speaker_list ) ) ) :
 
                 // Optional: Shuffle output
-                if( 1 == $this->get_shuffle() ) :
+                if( true == $this->is_shuffle_mode() ) :
                     shuffle( $this->speaker_list );
                     $this->speaker_list = array_slice( $this->speaker_list, 0, $this->get_show() );
                     $this->speaker_list = api\sort_speaker_datasets( $this->speaker_list );
