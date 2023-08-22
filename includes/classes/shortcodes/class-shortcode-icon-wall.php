@@ -42,6 +42,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
     protected $tag = 'icon-wall';
 
 
+
     /**
      * The default shortcode attributes (parameters).
      *
@@ -52,6 +53,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
         'partnership' => '',
         'link'        => 'none',
     ];
+
 
 
     /**
@@ -75,6 +77,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Returns the comma separated list of partnerships to filter by (optional)
      *
@@ -84,6 +87,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
     protected function get_partnership() {
         return $this->atts['partnership'];
     }
+
 
 
     /**
@@ -98,6 +102,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
     protected function set_link_mode( $link_mode ) {
         $this->atts['link'] = $link_mode;
     }
+
 
 
     /**
@@ -152,6 +157,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
 
         return (bool) $this->partners;
     }
+
 
 
     /**
