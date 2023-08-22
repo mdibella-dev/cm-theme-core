@@ -45,6 +45,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     protected $tag = 'event-table';
 
 
+
     /**
      * The default shortcode attributes (parameters).
      *
@@ -60,11 +61,13 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     ];
 
 
+
     /**
      * The sessions.
      */
 
     protected $sessions = null;
+
 
 
     /**
@@ -95,6 +98,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Gets the selected set.
      *
@@ -105,6 +109,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
      protected function get_setlist() {
         return (int) $this->atts['set'];
     }
+
 
 
     /**
@@ -119,6 +124,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Gets the selected event.
      *
@@ -129,6 +135,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
      protected function get_event() {
         return (int) $this->atts['event'];
     }
+
 
 
     /**
@@ -143,6 +150,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Gets the state of the show_details flag.
      *
@@ -155,6 +163,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Prepares the shortcode (the shortcode logic).
      *
@@ -163,11 +172,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
     function prepare() {
 
-
-        error_log( 'in prepare' );
-
         if( true == array_key_exists( $this->get_setlist(), $this->get_setlists() ) ) :
-
 
             // Variant 1: Search for (active) sessions of the specified speaker
             if( ! empty( $this->get_speaker() ) ) :
@@ -186,13 +191,13 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Renders the shortcode (the shortcode output).
      */
 
     function render() {
 
-        error_log( 'in render' );
         if( $this->sessions ) :
 
             $setlists = $this->get_setlists();
