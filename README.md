@@ -27,7 +27,9 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes
 
 ### Latest changes to the main branch
 
+* New: Abstract Shortcode class 
 * Bugfix: Remove PHP warning "Undefined variable $output"
+* Bugfix: Remove PHP warning "Undefined property $name"
 
 
 ### Previous changes

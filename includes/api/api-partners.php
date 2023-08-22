@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function get_partner_dataset( $partner ) {
-    
+
     $partner_post = get_post( $partner );
 
     $data['id']                = $partner;
@@ -48,12 +48,17 @@ function get_partner_dataset( $partner ) {
         $space_location = get_term( get_field( 'exhibition-space-location', $space_post ),'location' );
         $space_package  = get_term( get_field( 'exhibition-space-package', $space_post ), 'exhibition_package' );
 
-        $data['exhibition-spaces'][] = [
-            'signature' => get_the_title( $space_post ),
-            'location'  => $space_location->name,
-            'package'   => $space_package->name,
-            'id'        => $space_post->ID,
-        ];
+        if( ( false == is_wp_error( $space_location ) ) and ( false == is_wp_error( $space_package ) ) ) :
+
+            $data['exhibition-spaces'][] = [
+                'signature' => get_the_title( $space_post ),
+                'location'  => $space_location->name,
+                'package'   => $space_package->name,
+                'id'        => $space_post->ID,
+            ];
+
+        endif;
+
     endwhile;
 
     return $data;

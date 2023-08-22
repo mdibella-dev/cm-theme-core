@@ -33,31 +33,6 @@ define( __NAMESPACE__ . '\PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 
-/** Definitions (global scope) */
-
-// Preconfigured sets for event tables;
-// a = left column with place and time information; b = middle column with title etc.
-
-define( 'EVENT_TABLE_SETLIST', [
-    '1' => [
-        'a' => 'session-date,session-time-range,session-location',
-        'b' => 'session-title,session-subtitle',
-    ],
-    '2' => [
-        'a' => 'session-time-begin,session-location',
-        'b' => 'session-title,session-subtitle,session-speaker',
-    ],
-    '3' => [
-        'a' => 'session-time-range',
-        'b' => 'session-title,session-subtitle,session-speaker',
-    ],
-    '4' => [
-        'a' => 'session-date,session-time-range',
-        'b' => 'session-title,session-subtitle',
-    ],
-] );
-
-
 /** Include files */
 
 require_once( PLUGIN_DIR . 'includes/setup.php' );
@@ -68,3 +43,5 @@ require_once( PLUGIN_DIR . 'includes/api/index.php' );
 require_once( PLUGIN_DIR . 'includes/post-types/index.php' );
 require_once( PLUGIN_DIR . 'includes/taxonomies/index.php' );
 require_once( PLUGIN_DIR . 'includes/shortcodes/index.php' );
+
+require_once( PLUGIN_DIR . 'includes/classes/index.php' );
