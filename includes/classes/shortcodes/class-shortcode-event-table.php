@@ -202,7 +202,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
             $b_set    = explode( ',', $setlists[$this->get_setlist()]['b'] );
             ?>
 
-            <div class="event-table has-set-<?php echo $this->get_setlist();?>">
+            <div class="event-table has-set-<?php echo esc_attr( $this->get_setlist() );?>">
 
             <?php
 
