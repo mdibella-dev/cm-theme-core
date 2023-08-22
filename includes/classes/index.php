@@ -12,3 +12,4 @@ require_once( 'wordpress-helper/class-shortcode.php' );
 require_once( 'shortcodes/class-shortcode-icon-wall.php' );
 require_once( 'shortcodes/class-shortcode-event-table.php' );
 require_once( 'shortcodes/class-shortcode-speaker-grid.php' );
+require_once( 'shortcodes/class-shortcode-exhibition-list.php' );
