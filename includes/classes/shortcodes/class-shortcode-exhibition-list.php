@@ -145,7 +145,7 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
                              * @todo move this code fragment into get_partner_dataset()
                              */
 
-                            $spaces = array();
+                            $spaces = [];
 
                             foreach( $data['exhibition-spaces'] as $space ) :
                                 if( ! empty( $space['location'] ) and ! empty( $space['signature'] ) ) :
