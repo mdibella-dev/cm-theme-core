@@ -186,7 +186,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                     case 'internal' :
                         echo sprintf(
                             '<a href="%1$s" target="_self" title="%2$s">',
-                            $data['permalink'],
+                            esc_url( $data['permalink'] ),
                             __( 'View details page', 'cm-theme-core' ),
                         );
                     break;
@@ -195,7 +195,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                         if( ! empty( $data['website'] ) ) :
                             echo sprintf(
                                 '<a href="%1$s" target="blank" title="%2$s">',
-                                $data['website'],
+                                esc_url( $data['website'] ),
                                 __( 'View website', 'cm-theme-core' ),
                             );
                         endif;

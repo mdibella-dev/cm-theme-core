@@ -168,7 +168,7 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
                 <?php foreach( $this->speaker_list as $speaker ) : ?>
                 <li>
                     <a class="speaker-grid-element"
-                       href="<?php echo $speaker['permalink']; ?>"
+                       href="<?php echo esc_url( $speaker['permalink'] ); ?>"
                        title="<?php echo sprintf( __( 'Learn more about %1$s', 'cm-theme-core' ), $speaker['title_name'] ); ?>">
 
                         <figure>

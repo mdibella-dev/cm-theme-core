@@ -282,7 +282,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
                                             $speaker_dataset = api\get_speaker_dataset( $speaker );
                                             $speakers_list[] = sprintf(
                                                 '<a href="%1$s" title="%2$s">%3$s</a>',
-                                                $speaker_dataset['permalink'],
+                                                esc_url( $speaker_dataset['permalink'] ),
                                                 sprintf(
                                                     __( 'Learn more about %1$s', 'cm-theme-core' ),
                                                     $speaker_dataset['title_name']
