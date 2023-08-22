@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) or exit;
  * Generates a grid view with the images, names and position descriptions of the speakers of one or more events
  * If no information is given about the events, the events marked as active in the backend are used as a basis.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * The attributes (parameters) of the shorcode:
  *

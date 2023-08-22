@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Creates a "wall" with the logos of the cooperation partners.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * The attributes (parameters) of the shorcode:
  *

@@ -4,9 +4,17 @@
 
 <br>
 
-### RELEASE VERSION
-Released: RELEASE DATE (dd-mm-yyyy)
+### 2.0.0
+Released: 25-08-2023
 
-* New:
-* Improve:
-* Bugfix
+* New: Abstract Shortcode class
+* Improve: Convert procedural shortcode code into classes
+* Improve: Remove support for shortcode partner-table
+* Bugfix: Remove PHP warning "Undefined variable $output"
+* Bugfix: Remove PHP warning "Undefined property $name"
+
+
+### 1.0.0
+Released: 25-07-2023
+
+* Initial commit

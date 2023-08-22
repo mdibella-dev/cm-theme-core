@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Generates a table with the schedule of a specific event.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * The attributes (parameters) of the shorcode:
  *

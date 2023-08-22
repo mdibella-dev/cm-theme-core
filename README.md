@@ -9,7 +9,7 @@ Core functions of CM Theme. Originally an integral part of the theme, now outsou
 [Marco Di Bella ](https://github.com/mdibella-dev)
 
 ### Tags
-translation-ready, custom-post-types, custom-taxonomies, shortcodes
+translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Requires at least
 
@@ -26,12 +26,6 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes
 ## Changelog
 
 ### Latest changes to the main branch
-
-* New: Abstract Shortcode class
-* Improve: Convert procedural shortcode code into classes 
-* Improve: Remove support for shortcode partner-table
-* Bugfix: Remove PHP warning "Undefined variable $output"
-* Bugfix: Remove PHP warning "Undefined property $name"
 
 
 ### Previous changes

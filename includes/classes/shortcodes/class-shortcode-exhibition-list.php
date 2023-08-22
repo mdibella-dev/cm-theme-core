@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
 /**
 * Generates an (exhibitor) list with the cooperation partners.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * The attributes (parameters) of the shorcode:
  *
