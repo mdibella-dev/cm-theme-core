@@ -23,15 +23,12 @@ defined( 'ABSPATH' ) or exit;
  *
  * @since 1.0.0
  *
- * @param array $atts The attributes (parameters) of the shorcode.
- *                     - set
- *                       The selected setlist.
- *                     - event
- *                       The identification number of the event.
- *                     - speaker
- *                       The identification number of a speaker; is used to filter the contributions of this speaker.
- *                     - show_details
- *                       Allow details to be displayed (TRUE, FALSE).
+ * The attributes (parameters) of the shorcode:
+ *
+ * - set            The selected setlist.
+ * - event          The identification number of the event.
+ * - speaker        The identification number of a speaker; is used to filter the contributions of this speaker.
+ * - show_details   Allow details to be displayed (TRUE, FALSE).
  */
 
 class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
