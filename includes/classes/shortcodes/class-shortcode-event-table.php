@@ -18,7 +18,6 @@ defined( 'ABSPATH' ) or exit;
 
 
 
-
 /**
  * Generates a table with the schedule of a specific event.
  *

@@ -18,7 +18,6 @@ defined( 'ABSPATH' ) or exit;
 
 
 
-
 /**
  * Creates a "wall" with the logos of the cooperation partners.
  *

@@ -9,6 +9,7 @@
 namespace wordpress_helper;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;
