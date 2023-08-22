@@ -128,7 +128,7 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
             ?>
 
             <li class="exhibition-list-element">
-                <a href="<?php echo $data['permalink']; ?>">
+                <a href="<?php echo esc_url( $data['permalink'] ); ?>">
                     <figure>
                         <?php echo get_the_post_thumbnail( $partner->ID, 'full' ); ?>
                     </figure>
