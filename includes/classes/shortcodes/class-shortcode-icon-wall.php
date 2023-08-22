@@ -229,4 +229,3 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
 
 
 $icon_wall = new Shortcode_Icon_Wall;
-$icon_wall->init();
