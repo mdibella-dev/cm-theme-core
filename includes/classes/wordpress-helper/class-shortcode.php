@@ -26,6 +26,7 @@ abstract class Shortcode {
     protected $tag = '';
 
 
+
     /**
      * The default shortcode attributes (parameters).
      *
@@ -33,6 +34,7 @@ abstract class Shortcode {
      */
 
     protected $default_atts = [];
+
 
 
     /**
@@ -54,6 +56,19 @@ abstract class Shortcode {
     protected $content = '';
 
 
+
+    /**
+     * Constructor: Adds the shortcode to the WordPress ecosystem.
+     */
+
+    function __construct() {
+        if( ! empty( $this->tag ) ) :
+            add_shortcode( $this->tag, [$this, 'callback'] );
+        endif;
+    }
+
+
+
     /**
      * Sets the content.
      *
@@ -63,6 +78,7 @@ abstract class Shortcode {
     protected function set_content( $content ) {
         $this->content = $content;
     }
+
 
 
     /**
@@ -76,6 +92,7 @@ abstract class Shortcode {
             $this->atts = array_merge( $this->default_atts, $atts );
         endif;
     }
+
 
 
     /**
@@ -93,6 +110,7 @@ abstract class Shortcode {
     }
 
 
+
     /**
      * Renders the shortcode (the shortcode output).
      *
@@ -100,6 +118,7 @@ abstract class Shortcode {
      */
 
     abstract function render();
+
 
 
     /**
@@ -127,16 +146,5 @@ abstract class Shortcode {
         endif;
 
         return $output;
-    }
-
-
-    /**
-     * Adds the shortcode to the WordPress ecosystem.
-     */
-
-    public function init() {
-        if( ! empty( $this->tag ) ) :
-            add_shortcode( $this->tag, [$this, 'callback'] );
-        endif;
     }
 }
