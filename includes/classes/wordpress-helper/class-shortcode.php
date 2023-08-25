@@ -19,6 +19,8 @@ defined( 'ABSPATH' ) or exit;
 /**
  * An abstract class for the implementation of shortcodes.
  *
+ * @version 1.0.0
+ *
  * @since 2.0.0
  */
 
