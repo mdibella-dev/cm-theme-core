@@ -13,13 +13,13 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Requires at least
 
-* WordPress 6
-* ACF 5.0
-* FontAwesome 5
+- WordPress 6
+- ACF 5.0
+- FontAwesome 5
 
 ### Tested up to
 
-* WordPress 6.2
+- WordPress 6.2
 
 <br>
 
