@@ -54,11 +54,11 @@ function get_speaker_dataset( $speaker ) {
  */
 
 function sort_speaker_datasets( $speaker_list ) {
-    
-    foreach( $speaker_list as $key => $row ) :
+
+    foreach ( $speaker_list as $key => $row ) {
         $forename[$key] = $row['firstname'];
         $lastname[$key] = $row['lastname'];
-    endforeach;
+    }
 
     array_multisort( $lastname, SORT_ASC, SORT_STRING, $forename, SORT_ASC, SORT_STRING, $speaker_list );
 

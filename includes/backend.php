@@ -124,14 +124,14 @@ function admin_menu_order( $menu_order ) {
         __( 'Exhibition packages', 'cm-theme-core' ),
     );
 
-    for( $i = 0; $i != sizeof( $sort_order ); $i++ ) :
-        foreach( $submenu[ $admin_menu_slug ] as $submenu_item ) :
-            if( $submenu_item[0] == $sort_order[ $i ]) :
+    for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
+        foreach ( $submenu[ $admin_menu_slug ] as $submenu_item ) {
+            if ( $submenu_item[0] == $sort_order[ $i ]) {
                 $sorted[] = $submenu_item;
                 break;
-            endif;
-        endforeach;
-    endfor;
+            }
+        }
+    }
 
     $submenu[ $admin_menu_slug ] = $sorted;
 
@@ -178,22 +178,21 @@ add_action( 'acf/input/admin_head', __NAMESPACE__ . '\adjust_acf_dialog' );
 
 function default_hidden_columns( $hidden, $screen ) {
 
-    if( isset( $screen->id ) ) :
-        switch( $screen->id ) :
+    if ( isset( $screen->id ) ) {
+        switch ( $screen->id ) {
 
             case 'edit-event' :
                 $hidden[] = 'slug' ;
-            break;
+                break;
 
             case 'edit-location' :
             case 'edit-partnership' :
             case 'edit-exhibition_package' :
                 $hidden[] = 'description';
                 $hidden[] = 'slug';
-            break;
-
-        endswitch;
-    endif;
+                break;
+        }
+    }
 
     return $hidden;
 }
@@ -216,54 +215,53 @@ function rewrite_header() {
     $do_modify = false;
     $term      = false;
 
-    if( isset( $_GET['post_type'] ) and isset( $screen->id ) ) :
+    if ( isset( $_GET['post_type'] ) and isset( $screen->id ) ) {
 
-        switch( $screen->id ) :
-            
-            case 'edit-session':  // event // location
-                if( isset( $_GET['location'] ) ) :
+        switch( $screen->id ) {
+
+            case 'edit-session' :  // event // location
+                if ( isset( $_GET['location'] ) ) {
                     $term = get_term_by( 'slug', $_GET['location'], 'location' );
-                elseif( isset( $_GET['event'] ) ) :
+                } elseif( isset( $_GET['event'] ) ) {
                     $term = get_term_by( 'slug', $_GET['event'], 'event' );
-                endif;
+                }
 
-                if( false !== $term ) :
+                if ( false !== $term ) {
                     $do_modify = true;
                     $title     = __( 'Sessions', 'cm-theme-core' );
                     $subtitle  = $term->name;
-                endif;
-            break;
+                }
+                break;
 
-            case 'edit-partner':
-                if( isset( $_GET['partnership'] ) ) :
+            case 'edit-partner' :
+                if ( isset( $_GET['partnership'] ) ) {
                     $term = get_term_by( 'slug', $_GET['partnership'], 'partnership' );
-                endif;
+                }
 
-                if( false !== $term ) :
+                if ( false !== $term ) {
                     $do_modify = true;
                     $title     = __( 'Partners', 'cm-theme-core' );
                     $subtitle  = $term->name;
-                endif;
-            break;
+                }
+                break;
 
-            case 'edit-exhibition_space':
-                if( isset( $_GET['location'] ) ) :
+            case 'edit-exhibition_space' :
+                if ( isset( $_GET['location'] ) ) {
                     $term = get_term_by( 'slug', $_GET['location'], 'location' );
-                elseif( isset( $_GET['exhibition_package'] ) ) :
+                } elseif ( isset( $_GET['exhibition_package'] ) ) {
                     $term = get_term_by( 'slug', $_GET['exhibition_package'], 'exhibition_package' );
-                endif;
+                }
 
-                if( false !== $term ) :
+                if ( false !== $term ) {
                     $do_modify = true;
                     $title     = __( 'Exhibition spaces', 'cm-theme-core' );
                     $subtitle  = $term->name;
-                endif;
-            break;
+                }
+                break;
+        }
+    }
 
-        endswitch;
-    endif;
-
-    if( $do_modify ) :
+    if ( $do_modify ) {
      ?>
 <div class="wrap">
     <h1 class="wp-heading-inline show" style="display:inline-block;"><?php echo $title . ' (' . $subtitle . ')';?></h1>
@@ -273,7 +271,7 @@ function rewrite_header() {
     .wp-heading-inline:not(.show),.page-title-action:not(.show){display:none!important;}
 </style>
 <?php
-    endif;
+    }
  }
 
  add_action( 'admin_notices', __NAMESPACE__ . '\rewrite_header' );

@@ -169,20 +169,19 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
     function prepare() {
 
-        if( true == array_key_exists( $this->get_setlist(), $this->get_setlists() ) ) :
+        if ( true == array_key_exists( $this->get_setlist(), $this->get_setlists() ) ) {
 
             // Variant 1: Search for (active) sessions of the specified speaker
-            if( ! empty( $this->get_speaker() ) ) :
+            if ( ! empty( $this->get_speaker() ) ) {
                 $this->sessions = api\get_sessions_by_speaker( $this->get_speaker() );
             // Variant 2: Search for the sessions of the specified event
-            elseif( ! empty( $this->get_event() ) ) :
+            } elseif( ! empty( $this->get_event() ) ) {
                 $this->sessions = api\get_sessions_by_event( $this->get_event(), $this->get_event_date() );
             // Nothing to search
-            else :
+            } else {
                 $this->sessions = null;
-            endif;
-
-        endif;
+            }
+        }
 
         return (bool) $this->sessions;
     }
@@ -195,7 +194,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
     function render() {
 
-        if( $this->sessions ) :
+        if ( $this->sessions ) {
 
             $setlists = $this->get_setlists();
             $a_set    = explode( ',', $setlists[$this->get_setlist()]['a'] );
@@ -206,7 +205,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
             <?php
 
-            foreach( $this->sessions as $session ) :
+            foreach ( $this->sessions as $session ) {
                 ?>
                 <div class="event-table__session">
 
@@ -214,42 +213,41 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                         <?php
                         // Process the elements configured by a_set
-                        foreach( $a_set as $data_key ) :
+                        foreach ( $a_set as $data_key ) {
 
                             $data_content = '';
 
-                            switch( $data_key ) :
+                            switch ( $data_key ) {
 
                                 case 'session-date' :
                                     $data_content = get_field( 'programmpunkt-datum', $session->ID );
-                                break;
+                                    break;
 
                                 case 'session-time-begin' :
                                     $data_content = get_field( 'programmpunkt-von', $session->ID );
-                                break;
+                                    break;
 
                                 case 'session-time-range' :
                                     $data_content = get_field( 'programmpunkt-alternative-zeitangabe', $session->ID );
 
-                                    if( true == empty( $data_content ) ) :
+                                    if ( true == empty( $data_content ) ) {
                                         $data_content = sprintf(
                                             __( 'from %1$s to %2$s', 'cm-theme-core' ),
                                             get_field( 'programmpunkt-von', $session->ID ),
                                             get_field( 'programmpunkt-bis', $session->ID ) );
-                                    endif;
-                                break;
+                                    }
+                                    break;
 
                                 case 'session-location' :
                                     $data_content = api\get_location( get_field( 'programmpunkt-location', $session->ID ) );
-                                break;
-
-                            endswitch;
+                                    break;
+                            }
                             ?>
 
                             <div data-type="<?php echo $data_key; ?>"><?php echo $data_content; ?></div>
 
                         <?php
-                        endforeach;
+                        }
                         ?>
 
                     </div>
@@ -258,27 +256,27 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                         <?php
                         // Process the elements configured by b_set
-                        foreach( $b_set as $data_key ) :
+                        foreach ( $b_set as $data_key ) {
 
                             $data_content = '';
 
-                            switch( $data_key ) :
+                            switch ( $data_key ) {
 
                                 case 'session-title' :
                                     $data_content = $session->post_title;
-                                break;
+                                    break;
 
                                 case 'session-subtitle' :
                                     $data_content = get_field( 'programmpunkt-untertitel', $session->ID );
-                                break;
+                                    break;
 
                                 case 'session-speaker' :
                                     $speakers = get_field( 'programmpunkt-referenten', $session->ID );
 
-                                    if( null != $speakers ) :
+                                    if ( null != $speakers ) {
                                         unset( $speakers_list );
 
-                                        foreach( $speakers as $speaker ) :
+                                        foreach ( $speakers as $speaker ) {
                                             $speaker_dataset = api\get_speaker_dataset( $speaker );
                                             $speakers_list[] = sprintf(
                                                 '<a href="%1$s" title="%2$s">%3$s</a>',
@@ -288,20 +286,18 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
                                                     $speaker_dataset['title_name']
                                                 ),
                                                 get_the_post_thumbnail( $speaker_dataset['id'], 'full' ) );
-                                        endforeach;
+                                        }
 
                                         $data_content = implode( ' ', $speakers_list );
-                                    endif;
-
-                                break;
-
-                            endswitch;
+                                    }
+                                    break;
+                            }
                             ?>
 
                             <div data-type="<?php echo $data_key; ?>"><?php echo $data_content; ?></div>
 
                         <?php
-                        endforeach;
+                        }
                         ?>
 
                     </div>
@@ -311,25 +307,25 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                     $details = apply_filters( 'the_content', get_field( 'programmpunkt-beschreibung', $session->ID ) );
 
-                    if( ( true == $this->get_show_details ) and ! empty( $details ) ) :
+                    if ( ( true == $this->get_show_details ) and ! empty( $details ) ) {
                         ?>
                         <div class="event-table__session-toggle"><span><i class="far fa-angle-down"></i></span></div>
                         <div class="event-table__session-details"><?php echo $details; ?></div>
                         <?php
-                    endif;
+                    }
 
                     ?>
 
                 </div>
 
             <?php
-            endforeach;
+            }
             ?>
 
             </div>
 
         <?php
-        endif;
+        }
     }
 }
 

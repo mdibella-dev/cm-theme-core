@@ -51,9 +51,9 @@ add_filter( 'manage_speaker_posts_columns', __NAMESPACE__ . '\manage_posts_colum
 
 function manage_posts_custom_column( $column_name, $post_id ) {
 
-    switch( $column_name ) :
-        case 'image':
-            if( true === has_post_thumbnail( $post_id ) ) :
+    switch ( $column_name ) {
+        case 'image' :
+            if ( true === has_post_thumbnail( $post_id ) ) {
                 // alternativ: admin_url?
                 echo sprintf(
                     '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
@@ -61,12 +61,12 @@ function manage_posts_custom_column( $column_name, $post_id ) {
                     get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                     __( 'Edit', 'cm-theme-core' )
                 );
-            else :
+            } else {
                 echo '&mdash;';
-            endif;
-        break;
+            }
+            break;
 
-        case 'shortdescription':
+        case 'shortdescription' :
             echo trim( implode( ' ', array(
                 get_field( 'referent-titel', $post_id ),
                 get_field( 'referent-vorname', $post_id ),
@@ -75,19 +75,19 @@ function manage_posts_custom_column( $column_name, $post_id ) {
 
             $position = get_field( 'referent-position', $post_id );
 
-            if( ! empty( $position ) ) :
+            if ( ! empty( $position ) ) {
                 echo '<br>' . $position;
-            endif;
-        break;
+            }
+            break;
 
-        case 'update':
+        case 'update' :
             echo sprintf(
                 __( '%1$s at %2$s','cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
-        break;
-    endswitch;
+            break;
+    }
 }
 
 add_action( 'manage_speaker_posts_custom_column', __NAMESPACE__ . '\manage_posts_custom_column', 9999, 2 );
@@ -126,17 +126,17 @@ add_filter( 'manage_edit-speaker_sortable_columns', __NAMESPACE__ . '\manage_sor
 
 function pre_get_posts( $query ) {
 
-    if( $query->is_main_query() and is_admin() ) :
+    if ( $query->is_main_query() and is_admin() ) {
 
         $orderby = $query->get( 'orderby' );
 
-        switch( $orderby ) :
-            case 'update':
+        switch ( $orderby ) {
+            case 'update' :
                 $query->set( 'orderby', 'modified' );
-            break;
-        endswitch;
+                break;
+        }
 
-    endif;
+    }
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
@@ -150,7 +150,7 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
  */
 
 function register() {
-    
+
     $labels = [
         'name'                  => __( 'Speakers', 'cm-theme-core' ),
         'singular_name'         => __( 'Speaker', 'cm-theme-core' ),

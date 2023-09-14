@@ -96,13 +96,13 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
         ];
 
         // Optionally, you can filter by type of partnership.
-        if( ! empty( $partnership ) ) :
+        if ( ! empty( $partnership ) ) {
             $query['tax_query'] = [ [
                 'taxonomy' => 'partnership',
                 'field'    => 'term_id',
                 'terms'    => explode( ',', $partnership ),
             ] ];
-        endif;
+        }
 
         // Do the query
         $this->partners = get_posts( $query );
@@ -118,12 +118,12 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
 
     function render() {
 
-        if( $this->partners ) :
+        if ( $this->partners ) {
         ?>
         <ul class="exhibition-list">
 
             <?php
-            foreach( $this->partners as $partner ) :
+            foreach ( $this->partners as $partner ) {
                 $data = api\get_partner_dataset( $partner->ID );
             ?>
 
@@ -147,13 +147,13 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
 
                             $spaces = [];
 
-                            foreach( $data['exhibition-spaces'] as $space ) :
-                                if( ! empty( $space['location'] ) and ! empty( $space['signature'] ) ) :
+                            foreach ( $data['exhibition-spaces'] as $space ) {
+                                if ( ! empty( $space['location'] ) and ! empty( $space['signature'] ) ) {
                                     $spaces[] = $space;
-                                endif;
-                            endforeach;
+                                }
+                            }
 
-                            if( ! empty( $spaces ) ) :
+                            if ( ! empty( $spaces ) ) {
                             ?>
                                 <div>
                                     <div>
@@ -161,18 +161,18 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
                                         <div><?php echo __( 'Booth', 'cm-theme-core' ); ?></div>
                                     </div>
                                 <?php
-                                foreach( $spaces as $space ) :
+                                foreach ( $spaces as $space ) {
                                 ?>
                                     <div>
                                         <div><?php echo $space['location'];?></div>
                                         <div><?php echo $space['signature'];?></div>
                                     </div>
                                 <?php
-                                endforeach;
+                                }
                                 ?>
                                 </div>
                             <?php
-                            endif;
+                            }
                             ?>
                             </div>
                             <div>
@@ -186,11 +186,11 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
                     </div>
                 </a>
             </li>
-            <?php endforeach; ?>
+            <?php } ?>
         </ul>
 
         <?php
-        endif;
+        }
     }
 }
 

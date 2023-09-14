@@ -31,13 +31,13 @@ function get_active_events() {
         'meta_value' => '1',
     ] );
 
-    if( false === $terms ) :
+    if ( false === $terms ) {
         return null;
-    endif;
+    }
 
-    foreach( $terms as $term ) :
+    foreach ( $terms as $term ) {
         $events[] = $term->term_taxonomy_id;
-    endforeach;
+    }
 
     return $events;
 }
@@ -70,46 +70,46 @@ function get_speaker_datasets( $event_list_string = '' ) {
         ]
     ];
 
-    if( ! empty( $event_list_string ) ) :
+    if ( ! empty( $event_list_string ) ) {
         $event_list = explode( ',', str_replace( " ", "", $event_list_string ) );
-    else :
+    } else {
         $event_list = get_active_events();
-    endif;
+    }
 
-    foreach( $event_list as $event ) :
+    foreach ( $event_list as $event ) {
         $query['tax_query'][] = [
             'taxonomy' => 'event',
             'field'    => 'term_id',
             'terms'    => $event,
         ];
-    endforeach;
+    }
 
     $sessions = get_posts( $query );
 
 
     // Identification of the affected speakers.
-    if( $sessions ) :
+    if ( $sessions ) {
         $finds_list   = [];
         $speaker_list = [];
 
-        foreach( $sessions as $session ) :
+        foreach ( $sessions as $session ) {
             $speakers = get_field( 'programmpunkt-referenten', $session->ID );
 
-            if( null != $speakers ) :
-                foreach( $speakers as $speaker ) :
+            if ( null != $speakers ) {
+                foreach ( $speakers as $speaker ) {
                     // Do not add if already in the list.
-                    if( false == in_array( $speaker, $finds_list ) ) :
+                    if ( false == in_array( $speaker, $finds_list ) ) {
                         $finds_list[]   = $speaker;
                         $speaker_list[] = get_speaker_dataset( $speaker );
-                    endif;
-                endforeach;
-            endif;
-        endforeach;
+                    }
+                }
+            }
+        }
 
 
         // Sorting the found speakers by first and last name.
         return sort_speaker_datasets( $speaker_list );
-    endif;
+    }
 
     return null;
 }
@@ -126,14 +126,14 @@ function get_speaker_datasets( $event_list_string = '' ) {
  */
 
 function get_event( $event ) {
-    
-    if( ! empty( $event ) ) :
+
+    if ( ! empty( $event ) ) {
         $term = get_term_by( 'term_taxonomy_id', $event, 'event' );
 
-        if( false != $term ) :
+        if ( false != $term ) {
             return $term->name;
-        endif;
-    endif;
+        }
+    }
 
     return null;
 }

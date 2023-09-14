@@ -122,33 +122,34 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 
         $speakers = api\get_speaker_datasets( ( '-1' == $this->get_event() )? implode( ',', api\get_active_events() ) : $this->get_event() );
 
-        if( $speakers ) :
-
+        if ( $speakers ) {
             // Optional: Exclusion of certain speakers
             $exclude_ids = explode( ',', str_replace( " ", "", $this->get_speakers_to_exclude() ) );
 
-            foreach( $speakers as $speaker ) :
-                if( false == in_array( $speaker['id'], $exclude_ids ) ) :
+            foreach ( $speakers as $speaker ) {
+                if ( false == in_array( $speaker['id'], $exclude_ids ) ) {
                     $this->speaker_list[] = $speaker;
-                endif;
-            endforeach;
+                }
+            }
 
 
             // Optional: Limit the output
-            if( ( true == is_numeric( $this->get_show() ) ) and ( $this->get_show() > 0 ) and ( $this->get_show() < count( $this->speaker_list ) ) ) :
+            if ( ( true == is_numeric( $this->get_show() ) )
+                and ( $this->get_show() > 0 )
+                and ( $this->get_show() < count( $this->speaker_list ) ) ) {
 
                 // Optional: Shuffle output
-                if( true == $this->is_shuffle_mode() ) :
+                if ( true == $this->is_shuffle_mode() ) {
                     shuffle( $this->speaker_list );
                     $this->speaker_list = array_slice( $this->speaker_list, 0, $this->get_show() );
                     $this->speaker_list = api\sort_speaker_datasets( $this->speaker_list );
-                else :
+                } else {
                     $this->speaker_list = array_slice( $this->speaker_list, 0, $this->get_show() );
-                endif;
+                }
 
-            endif;
+            }
 
-        endif;
+        }
 
         return (bool) count( $this->speaker_list );
     }
@@ -161,11 +162,11 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 
     function render() {
 
-        if( 0 != count( $this->speaker_list ) ) :
+        if ( 0 != count( $this->speaker_list ) ) {
         ?>
         <div class="speaker-grid">
             <ul>
-                <?php foreach( $this->speaker_list as $speaker ) : ?>
+                <?php foreach ( $this->speaker_list as $speaker ) { ?>
                 <li>
                     <a class="speaker-grid-element"
                        href="<?php echo esc_url( $speaker['permalink'] ); ?>"
@@ -182,11 +183,11 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
                         </figure>
                     </a>
                 </li>
-                <?php endforeach; ?>
+                <?php } ?>
             </ul>
         </div>
         <?php
-        endif;
+        }
     }
 }
 

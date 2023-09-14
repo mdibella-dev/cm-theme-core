@@ -31,9 +31,9 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function disable_block_editor( $current_status, $post_type ) {
-    if( ( 'session' === $post_type  ) or ( 'exhibitor' === $post_type ) or ( 'speaker'  === $post_type ) ) :
+    if ( ( 'session' === $post_type  ) or ( 'exhibitor' === $post_type ) or ( 'speaker'  === $post_type ) ) {
         return false;
-    endif;
+    }
 
     return $current_status;
 }

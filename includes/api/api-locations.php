@@ -26,15 +26,14 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function get_location( $location ) {
-    
-    if( ! empty( $location ) ) :
+
+    if ( ! empty( $location ) ) {
         $term = get_term_by( 'term_taxonomy_id', $location, 'location' );
 
-        if( false != $term ) :
+        if ( false != $term ) {
             return $term->name;
-        endif;
-
-    endif;
+        }
+    }
 
     return null;
 }

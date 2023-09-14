@@ -47,12 +47,12 @@ add_filter( 'manage_edit-partnership_columns', __NAMESPACE__ . '\manage_edit_col
 
 function manage_custom_column( $content, $column_name, $term_id ) {
 
-    switch( $column_name ) :
-        case 'id':
+    switch ( $column_name ) {
+        case 'id' :
             $content = $term_id;
-        break;
+            break;
 
-        case 'count':
+        case 'count' :
             $posts = get_posts( [
                 'post_type'   => 'partner',
                 'post_status' => 'any',
@@ -69,11 +69,11 @@ function manage_custom_column( $content, $column_name, $term_id ) {
                 $term->slug,
                 __( 'Show all partners cooperating in this way', 'cm-theme-core' )
             );
-        break;
+            break;
 
         default:
-        break;
-    endswitch;
+            break;
+    }
 
     return $content;
 }
@@ -89,7 +89,7 @@ add_filter( 'manage_partnership_custom_column', __NAMESPACE__ . '\manage_custom_
  */
 
 function register() {
-    
+
     $labels = [
         'name'          => __( 'Partnerships', 'cm-theme-core' ),
         'singular_name' => __( 'Partnership', 'cm-theme-core' ),

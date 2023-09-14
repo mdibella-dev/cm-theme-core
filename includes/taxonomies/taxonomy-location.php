@@ -49,23 +49,23 @@ add_filter( 'manage_edit-location_columns', __NAMESPACE__ . '\manage_edit_column
 
 function manage_custom_column( $content, $column_name, $term_id ) {
 
-    switch( $column_name ) :
-        case 'id':
+    switch( $column_name ) {
+        case 'id' :
             $content = $term_id;
-        break;
+            break;
 
-        case 'image':
+        case 'image' :
             $image_id = get_field( 'location-image', 'location_' . $term_id );
             $image    = wp_get_attachment_image( $image_id, [ '150', '9999' ] );
 
-            if( ! empty( $image ) ) :
+            if ( ! empty( $image ) ) {
                 echo $image;
-            else :
+            } else {
                 echo '&mdash;';
-            endif;
-        break;
+            }
+            break;
 
-        case 'count-session':
+        case 'count-session' :
             $posts = get_posts( [
                 'post_type'   => 'session',
                 'post_status' => 'any',
@@ -82,9 +82,9 @@ function manage_custom_column( $content, $column_name, $term_id ) {
                 $term->slug,
                 __( 'View all sessions at this location', 'cm-theme-core' )
             );
-        break;
+            break;
 
-        case 'count-space':
+        case 'count-space' :
             $posts = get_posts( [
                 'post_type'   => 'exhibition_space',
                 'post_status' => 'any',
@@ -101,11 +101,11 @@ function manage_custom_column( $content, $column_name, $term_id ) {
                 $term->slug,
                 __( 'View all exhibition spaces in this location', 'cm-theme-core' )
             );
-        break;
+            break;
 
         default:
-        break;
-    endswitch;
+            break;
+    }
 
     return $content;
 }
@@ -127,7 +127,6 @@ function register() {
         'singular_name' => __( 'Location', 'cm-theme-core' ),
         'menu_name'     => __( 'Locations', 'cm-theme-core' ),
     ];
-
 
     $args = [
         'label'                 => __( 'Locations', 'cm-theme-core' ),

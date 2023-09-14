@@ -56,13 +56,13 @@ add_filter( 'manage_session_posts_columns', __NAMESPACE__ . '\manage_posts_colum
 
 function manage_posts_custom_column( $column_name, $post_id ) {
 
-    switch( $column_name ) :
-        case 'speaker':
+    switch ( $column_name ) {
+        case 'speaker' :
             $speakers = get_field( 'programmpunkt-referenten', $post_id );
 
-            if( null != $speakers ) :
+            if ( null != $speakers ) {
 
-                foreach( $speakers as $speaker ) :
+                foreach ( $speakers as $speaker ) {
                     $speaker_dataset = api\get_speaker_dataset( $speaker );
                     echo sprintf(
                         '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
@@ -73,38 +73,38 @@ function manage_posts_custom_column( $column_name, $post_id ) {
                             $speaker_dataset['name'],
                         ),
                     );
-                endforeach;
-            else :
+                }
+            } else {
                 echo '-';
-            endif;
-        break;
+            }
+            break;
 
-        case 'event-date':
+        case 'event-date' :
             echo get_field( 'programmpunkt-datum', $post_id );
-        break;
+            break;
 
-        case 'event-time':
+        case 'event-time' :
             $time = get_field( 'programmpunkt-alternative-zeitangabe', $post_id );
 
-            if( empty( $time ) ) :
+            if ( empty( $time ) ) {
                 $time = sprintf(
                     __( 'from %1$s to %2$s', 'cm-theme-core' ),
                     get_field( 'programmpunkt-von', $post_id ),
                     get_field( 'programmpunkt-bis', $post_id )
                 );
-            endif;
+            }
 
             echo $time;
-        break;
+            break;
 
-        case 'update':
+        case 'update' :
             echo sprintf(
                 __( '%1$s at %2$s', 'cm-theme-core' ),
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
-        break;
-    endswitch;
+            break;
+    }
 }
 
 add_action( 'manage_session_posts_custom_column', __NAMESPACE__ . '\manage_posts_custom_column', 9999, 2 );
@@ -146,22 +146,21 @@ add_filter( 'manage_edit-session_sortable_columns', __NAMESPACE__ . '\manage_sor
 
 function pre_get_posts( $query ) {
 
-    if( $query->is_main_query() and is_admin() ) :
+    if ( $query->is_main_query() and is_admin() ) {
 
         $orderby = $query->get( 'orderby' );
 
-        switch( $orderby ) :
-            case 'event-date':
+        switch ( $orderby ) {
+            case 'event-date' :
                 $query->set( 'orderby', 'meta_value' );
                 $query->set( 'meta_key', 'programmpunkt-datum' );
-            break;
+                break;
 
-            case 'update':
+            case 'update' :
                 $query->set( 'orderby', 'modified' );
-            break;
-        endswitch;
-
-    endif;
+                break;
+        }
+    }
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
@@ -175,7 +174,7 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
  */
 
 function register() {
-    
+
     $labels = [
         'name'           => __( 'Sessions', 'cm-theme-core' ),
         'singular_name'  => __( 'Session', 'cm-theme-core' ),

@@ -123,9 +123,9 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
             'external',
         ];
 
-        if( ! in_array( $link_mode, $link_mode_options ) ) :
+        if ( ! in_array( $link_mode, $link_mode_options ) ) {
             $link = 'none';
-        endif;
+        }
 
         $this->set_link_mode( $link_mode );
 
@@ -143,13 +143,13 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
         ];
 
         // Add partnership filtering (optional)
-        if( ! empty( $this->get_partnership() ) ) :
+        if ( ! empty( $this->get_partnership() ) ) {
             $query['tax_query'] = [ [
                 'taxonomy' => 'partnership',
                 'field'    => 'term_id',
                 'terms'    => explode( ',', $this->get_partnership() ),
             ] ];
-        endif;
+        }
 
         // Do the query
         $this->partners = get_posts( $query );
@@ -165,23 +165,23 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
 
     function render() {
 
-        if( $this->partners ) :
+        if ( $this->partners ) {
         ?>
         <ul class="icon-wall">
             <?php
-            foreach( $this->partners as $partner ) :
+            foreach ( $this->partners as $partner ) {
 
                 $data     = api\get_partner_dataset( $partner->ID );
                 $li_class = '';
                 $thumb    = wp_get_attachment_metadata( get_post_thumbnail_id( $data['id'] ) );
 
-                if( $thumb['width'] == $thumb['height'] ) : // squared logos?
+                if ( $thumb['width'] == $thumb['height'] ) { // squared logos?
                     $li_class = ' class="is-squared"';
-                endif;
+                }
             ?>
             <li<?php echo esc_attr( $li_class); ?>>
                 <?php
-                switch( $this->get_link_mode() ) :
+                switch ( $this->get_link_mode() ) {
 
                     case 'internal' :
                         echo sprintf(
@@ -189,45 +189,44 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                             esc_url( $data['permalink'] ),
                             __( 'View details page', 'cm-theme-core' ),
                         );
-                    break;
+                        break;
 
                     case 'external' :
-                        if( ! empty( $data['website'] ) ) :
+                        if ( ! empty( $data['website'] ) ) {
                             echo sprintf(
                                 '<a href="%1$s" target="blank" title="%2$s">',
                                 esc_url( $data['website'] ),
                                 __( 'View website', 'cm-theme-core' ),
                             );
-                        endif;
-                    break;
+                        }
+                        break;
 
                     case 'none' :
-                    break;
-
-                endswitch;
+                        break;
+                }
 
                 echo get_the_post_thumbnail( $data['id'], 'full' );
 
-                switch( $this->get_link_mode() ) :
+                switch ( $this->get_link_mode() ) {
                     case 'internal' :
                         echo '</a>';
-                    break;
+                        break;
 
                     case 'external' :
-                        if( ! empty( $data['website'] ) ) :
+                        if ( ! empty( $data['website'] ) ) {
                             echo '</a>';
-                        endif;
-                    break;
+                        }
+                        break;
 
                     case 'none' :
-                    break;
-                endswitch;
+                        break;
+                }
                 ?>
             </li>
-            <?php endforeach; ?>
+        <?php } ?>
         </ul>
         <?php
-        endif;
+        }
     }
 }
 

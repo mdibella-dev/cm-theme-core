@@ -51,15 +51,15 @@ add_filter( 'manage_exhibition_space_posts_columns', __NAMESPACE__ . '\manage_po
 
 function manage_posts_custom_column( $column_name, $post_id ) {
 
-    switch( $column_name ) :
-        case 'update':
+    switch ( $column_name ) {
+        case 'update' :
             echo sprintf(
                 '%1$s at %2$s Uhr',
                 get_the_modified_date( 'd.m.Y', $post_id ),
                 get_the_modified_date( 'H:i', $post_id ),
             );
-        break;
-    endswitch;
+            break;
+    }
 }
 
 add_action( 'manage_exhibition_space_posts_custom_column', __NAMESPACE__ . '\manage_posts_custom_column', 9999, 2 );
@@ -99,23 +99,22 @@ add_filter( 'manage_edit-exhibition_space_sortable_columns', __NAMESPACE__ . '\m
 
 function pre_get_posts( $query ) {
 
-    if( $query->is_main_query() and is_admin() ) :
+    if ( $query->is_main_query() and is_admin() ) {
 
         $orderby = $query->get( 'orderby' );
 
-        switch( $orderby ) :
+        switch ( $orderby ) {
             case 'update':
                 $query->set( 'orderby', 'modified' );
-            break;
+                break;
 
             default:
             case '':
                 $query->set( 'orderby', 'title' );
                 $query->set( 'order', 'asc' );
-            break;
-        endswitch;
-
-    endif;
+                break;
+        }
+    }
 }
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
@@ -129,7 +128,7 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\pre_get_posts', 1 );
  */
 
 function register() {
-    
+
     $labels = [
         'name'          => __( 'Exhibition spaces', 'cm-theme-core' ),
         'singular_name' => __( 'Exhibition space', 'cm-theme-core' ),

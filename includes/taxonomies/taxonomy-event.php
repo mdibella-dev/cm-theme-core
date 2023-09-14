@@ -48,12 +48,12 @@ add_filter( 'manage_edit-event_columns', __NAMESPACE__ . '\manage_edit_columns' 
 
 function manage_custom_column( $content, $column_name, $term_id ) {
 
-    switch( $column_name ) :
-        case 'id':
+    switch ( $column_name ) {
+        case 'id' :
             $content = $term_id;
-        break;
+            break;
 
-        case 'status':
+        case 'status' :
             $status = get_field( 'event-status', 'term_' . $term_id );
 
             $content = sprintf(
@@ -61,11 +61,11 @@ function manage_custom_column( $content, $column_name, $term_id ) {
                 (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
                 (1 == $status)? __( 'active', 'cm-theme-core' ) : __( 'inactive', 'cm-theme-core' ),
             );
-        break;
+            break;
 
         default:
-        break;
-    endswitch;
+            break;
+    }
 
     return $content;
 }
@@ -88,7 +88,6 @@ function register() {
         'menu_name'     => __( 'Events', 'cm-theme-core' ),
         'all_items'     => __( 'All events', 'cm-theme-core' ),
     ];
-
 
     $args = [
         'label'                 => __( 'Events', 'cm-theme-core' ),

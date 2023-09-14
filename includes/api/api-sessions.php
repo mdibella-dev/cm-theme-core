@@ -49,18 +49,18 @@ function get_sessions( $args ) {
     // Handling event/event_filter
     // Adds either the search for the sessions of a specific event (variant 1)
     // or filtering by active or inactive sessions (variant 2).
-    if( null !== get_event( $event ) ) :
+    if ( null !== get_event( $event ) ) {
 
         $query['tax_query'] = [[
             'taxonomy' => 'event',
             'field'    => 'term_id',
             'terms'    => $event,
         ]];
-    else :
+    } else {
         $event_list   = get_active_events();
         $event_filter = strtoupper( trim( $event_filter ) );
 
-        if( 'INACTIVE' === $event_filter ) :
+        if ( 'INACTIVE' === $event_filter ) {
 
             $query['tax_query'] = [[
                 'taxonomy' => 'event',
@@ -68,7 +68,7 @@ function get_sessions( $args ) {
                 'terms'    => $event_list,
                 'operator' => 'NOT IN',
             ]];
-        elseif( 'ACTIVE' === $event_filter ) :
+        } elseif ( 'ACTIVE' === $event_filter ) {
 
             $query['tax_query'] = [[
                 'taxonomy' => 'event',
@@ -76,41 +76,36 @@ function get_sessions( $args ) {
                 'terms'    => $event_list,
                 'operator' => 'IN',
             ]];
-        endif;
-
-    endif;
+        }
+    }
 
 
     // Handling of speaker/date
     // Adds the search for the sessions of a specific speaker and/or the search for the session taking place on a specific date.
-    if( ! empty( $speaker ) or ! empty( $date ) ) :
+    if ( ! empty( $speaker ) or ! empty( $date ) ) {
         $query['meta_query'] = [];
 
-        if( ! empty( $speaker ) and is_numeric( $speaker ) ) :
+        if ( ! empty( $speaker ) and is_numeric( $speaker ) ) {
 
             $query['meta_query'][] = [
                 'key'     => 'programmpunkt-referenten',
                 'value'   => $speaker,
                 'compare' => 'LIKE',
             ];
+        }
 
-        endif;
-
-        if( ! empty( $date ) ) :
-
+        if ( ! empty( $date ) ) {
             // @see: https://www.php.net/manual/de/function.strtotime.php#122937/
             $date = str_replace( '.', '-', $date );
 
-            if( false !== ( $timestamp = strtotime( $date) ) ) :
+            if ( false !== ( $timestamp = strtotime( $date) ) ) {
                 $query['meta_query'][] = [
                     'key'   => 'programmpunkt-datum',
                     'value' => date( 'Ymd', $timestamp ),
                 ];
-            endif;
-
-        endif;
-
-    endif;
+            }
+        }
+    }
 
 
     // Execution of the data query and return of the sorted result
@@ -171,13 +166,13 @@ function get_sessions_by_speaker( $speaker, $event_filter = 'ACTIVE' ) {
  */
 
 function sort_sessions_by_timestamp( $sessions ) {
-    
-    if( true == is_array( $sessions ) ) :
+
+    if ( true == is_array( $sessions ) ) {
         $unable_to_sort = false;
         $sort           = [];
 
         // Creation of a sortable array
-        foreach( $sessions as $session ) :
+        foreach ( $sessions as $session ) {
 
             // Generation of the necessary time stamps ('from', to')
             $timestamp_from = strtotime(
@@ -195,25 +190,25 @@ function sort_sessions_by_timestamp( $sessions ) {
 
             // Add the session to the sort array if 'from' timestamps (1st priority) or 'to' timestamps (2nd priority) are present.
             // Otherwise abort, because sorting is not possible.
-            if( false !== $timestamp_from ) :
+            if ( false !== $timestamp_from ) {
                 $sort[ $timestamp_from ] = $session;
-            elseif ( false !== $timestamp_to ) :
+            } elseif ( false !== $timestamp_to ) {
                 $sort[ $timestamp_to ] = $session;
-            else :
+            } else {
                 $unable_to_sort = true;
                 break;
-            endif;
+            }
 
-        endforeach;
+        }
 
 
         // Implementation of the sorting (if possible)
-        if( false === $unable_to_sort ) :
+        if ( false === $unable_to_sort ) {
             ksort( $sort );
             $sessions = array_values( $sort );
-        endif;
+        }
 
-    endif;
+    }
 
     return $sessions;
 }
