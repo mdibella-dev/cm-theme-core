@@ -35,12 +35,12 @@ define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 /** Include files */
 
-require_once( PLUGIN_DIR . 'includes/setup.php' );
-require_once( PLUGIN_DIR . 'includes/backend.php' );
-require_once( PLUGIN_DIR . 'includes/block-editor.php' );
+require_once PLUGIN_DIR . 'includes/setup.php';
+require_once PLUGIN_DIR . 'includes/backend.php';
+require_once PLUGIN_DIR . 'includes/block-editor.php';
 
-require_once( PLUGIN_DIR . 'includes/api/index.php' );
-require_once( PLUGIN_DIR . 'includes/post-types/index.php' );
-require_once( PLUGIN_DIR . 'includes/taxonomies/index.php' );
+require_once PLUGIN_DIR . 'includes/api/index.php';
+require_once PLUGIN_DIR . 'includes/post-types/index.php';
+require_once PLUGIN_DIR . 'includes/taxonomies/index.php';
 
-require_once( PLUGIN_DIR . 'includes/classes/index.php' );
+require_once PLUGIN_DIR . 'includes/classes/index.php';
