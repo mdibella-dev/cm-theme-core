@@ -27,6 +27,8 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Latest changes to the main branch
 
+- Improve: Remove class variables
+
 
 ### Previous changes
 
