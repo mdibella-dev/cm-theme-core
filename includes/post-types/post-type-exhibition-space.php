@@ -108,8 +108,8 @@ function pre_get_posts( $query ) {
                 $query->set( 'orderby', 'modified' );
                 break;
 
-            default:
-            case '':
+            default :
+            case '' :
                 $query->set( 'orderby', 'title' );
                 $query->set( 'order', 'asc' );
                 break;
