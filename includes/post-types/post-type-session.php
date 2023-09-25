@@ -9,6 +9,11 @@
 namespace cm_theme_core\post_types\session;
 
 
+/** Prevent direct access */
+
+defined( 'ABSPATH' ) or exit;
+
+
 
 /**
  * Registers the custom post type.
