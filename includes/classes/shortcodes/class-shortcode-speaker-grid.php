@@ -192,4 +192,4 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
 }
 
 
-$speaker_grid= new Shortcode_Speaker_Grid;
+new Shortcode_Speaker_Grid();

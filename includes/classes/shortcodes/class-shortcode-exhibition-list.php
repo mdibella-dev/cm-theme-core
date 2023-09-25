@@ -195,4 +195,4 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
 }
 
 
-$exhibition_list = new Shortcode_Exhibition_List;
+new Shortcode_Exhibition_List();

@@ -330,4 +330,4 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 }
 
 
-$event_table = new Shortcode_Event_Table;
+new Shortcode_Event_Table();
