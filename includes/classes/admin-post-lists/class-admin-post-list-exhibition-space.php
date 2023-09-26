@@ -29,7 +29,7 @@ class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List
      * @var string
      */
 
-    protected $post_type = 'exhibition-space';
+    protected $post_type = 'exhibition_space';
 
 
 
