@@ -43,14 +43,16 @@ class Admin_Taxonomy_List_Location extends \wordpress_helper\Admin_Taxonomy_List
      */
 
     public function manage_columns( $default ) {
-        $columns['cb']            = $default['cb'];
-        $columns['id']            = 'ID';
-        $columns['image']         = __( 'Image', 'cm-theme-core' );
-        $columns['name']          = $default['name'];
-        $columns['description']   = $default['description'];
-        $columns['slug']          = $default['slug'];
-        $columns['count-session'] = __( 'Sessions', 'cm-theme-core' );
-        $columns['count-space']   = __( 'Exhibition spaces', 'cm-theme-core' );
+        $columns = [
+            'cb'            => $default['cb'],
+            'id'            => 'ID',
+            'image'         => __( 'Image', 'cm-theme-core' ),
+            'name'          => $default['name'],
+            'description'   => $default['description'],
+            'slug'          => $default['slug'],
+            'count-session' => __( 'Sessions', 'cm-theme-core' ),
+            'count-space'   => __( 'Exhibition spaces', 'cm-theme-core' ),
+        ];
 
         return $columns;
     }
