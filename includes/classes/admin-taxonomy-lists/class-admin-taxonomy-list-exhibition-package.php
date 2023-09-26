@@ -1,6 +1,6 @@
 <?php
 /**
- * Class Admin_Taxonomy_List_Exhibiton_Package
+ * Class Admin_Taxonomy_List_Exhibition_Package
  *
  * @author  Marco Di Bella
  * @package cm-theme-core
@@ -17,12 +17,12 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * A class for the implementation of the admin taxonomy list for taxonomy "exhibiton_package".
+ * A class for the implementation of the admin taxonomy list for taxonomy "exhibition_package".
  *
  * @since 2.1.0
  */
 
-class Admin_Taxonomy_List_Exhibiton_Package extends \wordpress_helper\Admin_Taxonomy_List {
+class Admin_Taxonomy_List_Exhibition_Package extends \wordpress_helper\Admin_Taxonomy_List {
 
     /**
      * The post type.
