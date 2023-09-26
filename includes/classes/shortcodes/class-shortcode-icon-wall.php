@@ -42,18 +42,6 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
 
 
 
-    /**
-     * The default shortcode attributes (parameters).
-     *
-     * @var array
-     */
-
-    protected $default_atts = [
-        'partnership' => '',
-        'link'        => 'none',
-    ];
-
-
 
     /**
      * The result of the query
@@ -62,6 +50,21 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
      */
 
     protected $partners = null;
+
+
+
+    /**
+     * Gets the The default attributes of this shortcode.
+     *
+     * @return array The default attributes
+     */
+
+    protected function get_default_atts() {
+        return [
+            'partnership' => '',
+            'link'        => 'none',
+        ];
+    }
 
 
 

@@ -44,26 +44,28 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
 
     /**
-     * The default shortcode attributes (parameters).
-     *
-     * @var array
-     */
-
-    protected $default_atts = [
-        'set'          => '1',
-        'speaker'      => '',
-        'event'        => '',
-        'date'         => '',
-        'show_details' => 'false',
-    ];
-
-
-
-    /**
      * The sessions.
      */
 
     protected $sessions = null;
+
+
+
+    /**
+     * Gets the The default attributes of this shortcode.
+     *
+     * @return array The default attributes
+     */
+
+    protected function get_default_atts() {
+        return [
+            'set'          => '1',
+            'speaker'      => '',
+            'event'        => '',
+            'date'         => '',
+            'show_details' => 'false',
+        ];
+    }
 
 
 

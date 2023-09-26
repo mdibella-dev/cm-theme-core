@@ -43,19 +43,6 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
     protected $tag = 'speaker-grid';
 
 
-    /**
-     * The default shortcode attributes (parameters).
-     *
-     * @var array
-     */
-
-    protected $default_atts = [
-        'event'   => '-1',      // only active events
-        'exclude' => '',
-        'show'    => 0,
-        'shuffle' => 0,
-    ];
-
 
     /**
      * The result of the query
@@ -64,6 +51,23 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
      */
 
     protected $speaker_list = [];
+
+
+
+    /**
+     * Gets the The default attributes of this shortcode.
+     *
+     * @return array The default attributes
+     */
+
+    protected function get_default_atts() {
+        return [
+            'event'   => '-1',      // only active events
+            'exclude' => '',
+            'show'    => 0,
+            'shuffle' => 0,
+        ];
+    }
 
 
 
@@ -78,6 +82,7 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Gets a comma-separated list of speakers not to be displayed in the grid.
      *
@@ -89,6 +94,7 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
     }
 
 
+
     /**
      * Gets the number of sepakers to display.
      *
@@ -98,6 +104,7 @@ class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
     protected function get_show() {
         return (int) $this->atts['show'];
     }
+
 
 
     /**

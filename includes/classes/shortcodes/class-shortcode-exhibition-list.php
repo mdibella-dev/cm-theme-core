@@ -42,18 +42,6 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
 
 
     /**
-     * The default shortcode attributes (parameters).
-     *
-     * @var array
-     */
-
-    protected $default_atts = [
-        'partnership' => '',
-    ];
-
-
-
-    /**
      * The result of the query
      *
      * @see prepare()
@@ -61,6 +49,19 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
 
     protected $partners = null;
 
+
+
+    /**
+     * Gets the The default attributes of this shortcode.
+     *
+     * @return array The default attributes
+     */
+
+    protected function get_default_atts() {
+        return [
+            'partnership' => '',
+        ];
+    }
 
 
     /**
