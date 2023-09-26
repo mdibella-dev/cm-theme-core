@@ -43,14 +43,13 @@ class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List
 
     public function manage_columns( $default ) {
         $columns = [
-            'cb'                   => $default['cb'],
-            'image'                => __( 'Image', 'cm-theme-core' ),
-            'title'                => __( 'Partner', 'cm-theme-core' ),
-            'taxonomy-partnership' => __( 'Partnership', 'cm-theme-core' ),
-            'exhibition'           => __( 'Exhibition space', 'cm-theme-core' ),
-            'update'               => __( 'Last updated', 'cm-theme-core' ),
+            'cb'                          => $default['cb'],
+            'title'                       => __( 'Partner', 'cm-theme-core' ),
+            'taxonomy-location'           => __( 'Location', 'cm-theme-core' ),
+            'taxonomy-exhibition_package' => __( 'Exhibition package', 'cm-theme-core' ),
+            'update'                      => __( 'Last updated', 'cm-theme-core' ),
         ];
-
+        
         return $columns;
     }
 
