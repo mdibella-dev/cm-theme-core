@@ -30,7 +30,7 @@ class Admin_Taxonomy_List_Event extends \wordpress_helper\Admin_Taxonomy_List {
      * @var string
      */
 
-    protected $taxonomy = 'exhibition_package';
+    protected $taxonomy = 'event';
 
 
 
