@@ -4,6 +4,14 @@ _New / Improve / Bugfix_
 
 <br>
 
+### 2.1.0
+Released: 26-09-2023
+
+- Improve: Convert procedural taxonomy and post lists code into classes
+- Improve: Remove class variables
+- Improve: Reorganize folder structure of custom post types and taxonomies
+
+
 ### 2.0.0
 Released: 25-08-2023
 

@@ -19,18 +19,13 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Tested up to
 
-- WordPress 6.2
+- WordPress 6.3
 
 <br>
 
 ## Changelog
 
 ### Latest changes to the main branch
-
-- Improve: Convert procedural taxonomy and post lists code into classes
-- Improve: Remove class variables
-- Improve: Reorganize folder structure of custom post types and taxonomies
-
 
 ### Previous changes
 
