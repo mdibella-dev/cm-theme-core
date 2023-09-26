@@ -28,6 +28,7 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 ### Latest changes to the main branch
 
 - Improve: Remove class variables
+- Improve: Reorganize folder structure of custom post types and taxonomies
 
 
 ### Previous changes
