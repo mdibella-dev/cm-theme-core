@@ -43,11 +43,13 @@ class Admin_Post_List_Speaker extends \wordpress_helper\Admin_Post_List {
      */
 
     public function manage_columns( $default ) {
-        $columns['cb']               = $default['cb'];
-        $columns['image']            = __( 'Image', 'cm-theme-core' );
-        $columns['title']            = __( 'Speaker', 'cm-theme-core' );
-        $columns['shortdescription'] = __( 'Short description', 'cm-theme-core' );
-        $columns['update']           = __( 'Last updated', 'cm-theme-core' );
+        $columns = [
+            'cb'               => $default['cb'],
+            'image'            => __( 'Image', 'cm-theme-core' ),
+            'title'            => __( 'Speaker', 'cm-theme-core' ),
+            'shortdescription' => __( 'Short description', 'cm-theme-core' ),
+            'update'           => __( 'Last updated', 'cm-theme-core' ),
+        ];
 
         return $columns;
     }

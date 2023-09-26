@@ -45,14 +45,16 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
      */
 
     public function manage_columns( $default ) {
-        $columns['cb']                = $default['cb'];
-        $columns['title']             = $default['title'];
-        $columns['taxonomy-event']    = __( 'Event', 'cm-theme-core' );
-        $columns['taxonomy-location'] = __( 'Location', 'cm-theme-core' );
-        $columns['event-date']        = __( 'Date', 'cm-theme-core' );
-        $columns['event-time']        = __( 'Time period', 'cm-theme-core' );
-        $columns['speaker']           = __( 'Speakers', 'cm-theme-core' );
-        $columns['update']            = __( 'Last updated', 'cm-theme-core' );
+        $columns = [
+            'cb'                => $default['cb'],
+            'title'             => $default['title'],
+            'taxonomy-event'    => __( 'Event', 'cm-theme-core' ),
+            'taxonomy-location' => __( 'Location', 'cm-theme-core' ),
+            'event-date'        => __( 'Date', 'cm-theme-core' ),
+            'event-time'        => __( 'Time period', 'cm-theme-core' ),
+            'speaker'           => __( 'Speakers', 'cm-theme-core' ),
+            'update'            => __( 'Last updated', 'cm-theme-core' ),
+        ];
 
         return $columns;
     }

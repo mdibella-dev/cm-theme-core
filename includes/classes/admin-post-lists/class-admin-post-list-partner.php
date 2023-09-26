@@ -45,13 +45,14 @@ class Admin_Post_List_Partner extends \wordpress_helper\Admin_Post_List {
      */
 
     public function manage_columns( $default ) {
-        $columns['cb']                   = $default['cb'];
-        $columns['image']                = __( 'Image', 'cm-theme-core' );
-        $columns['title']                = __( 'Partner', 'cm-theme-core' );
-        $columns['taxonomy-partnership'] = __( 'Partnership', 'cm-theme-core' );
-        $columns['exhibition']           = __( 'Exhibition space', 'cm-theme-core' );
-        $columns['update']               = __( 'Last updated', 'cm-theme-core' );
-
+        $columns = [
+            'cb'                   => $default['cb'],
+            'image'                => __( 'Image', 'cm-theme-core' ),
+            'title'                => __( 'Partner', 'cm-theme-core' ),
+            'taxonomy-partnership' => __( 'Partnership', 'cm-theme-core' ),
+            'exhibition'           => __( 'Exhibition space', 'cm-theme-core' ),
+            'update'               => __( 'Last updated', 'cm-theme-core' ),
+        ];
         return $columns;
     }
 
