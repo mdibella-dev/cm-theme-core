@@ -24,3 +24,5 @@ require_once 'admin-post-lists/class-admin-post-list-exhibition-space.php';
 
 // Admin Taxonomy Lists Classes
 require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-location.php';
+require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php';
+require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php';
