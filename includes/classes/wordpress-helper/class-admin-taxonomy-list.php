@@ -126,10 +126,7 @@ if ( ! class_exists( __NAMESPACE__ . '\Admin_Taxonomy_List' ) ) {
          */
 
         function __construct() {
-            error_log( 'in construct ' );
-
             if ( ! empty( $this->taxonomy ) ) {
-                error_log( 'tax ' . $this->taxonomy );
                 add_filter( "manage_edit-{$this->get_taxonomy()}_columns", [$this, 'manage_columns'], 10, 1 );
                 add_action( "manage_{$this->get_taxonomy()}_custom_column", [$this, 'manage_custom_column'], 10, 3 );    // 9999?
                 add_filter( "manage_edit-{$this->get_taxonomy()}_sortable_columns", [$this, 'manage_sortable_columns'], 10, 1 );
