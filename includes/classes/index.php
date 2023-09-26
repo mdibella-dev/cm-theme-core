@@ -18,3 +18,4 @@ require_once 'shortcodes/class-shortcode-exhibition-list.php';
 require_once 'admin-post-lists/class-admin-post-list-speaker.php';
 require_once 'admin-post-lists/class-admin-post-list-session.php';
 require_once 'admin-post-lists/class-admin-post-list-partner.php';
+require_once 'admin-post-lists/class-admin-post-list-exhibition-space.php';
