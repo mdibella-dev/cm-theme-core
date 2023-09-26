@@ -71,11 +71,11 @@ class Admin_Taxonomy_List_Event extends \wordpress_helper\Admin_Taxonomy_List {
     public function manage_custom_column( $output, $column_name, $term_id ) {
 
         switch ( $column_name ) {
-            case 'id' :
+            case 'id':
                 $poutput = $term_id;
                 break;
 
-            case 'status' :
+            case 'status':
                 $status = get_field( 'event-status', 'term_' . $term_id );
                 $output = sprintf(
                     '<span class="status-icon %1$s" title="%2$s"></span>',

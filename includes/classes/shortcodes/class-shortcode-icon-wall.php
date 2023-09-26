@@ -186,7 +186,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                 <?php
                 switch ( $this->get_link_mode() ) {
 
-                    case 'internal' :
+                    case 'internal':
                         echo sprintf(
                             '<a href="%1$s" target="_self" title="%2$s">',
                             esc_url( $data['permalink'] ),
@@ -194,7 +194,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                         );
                         break;
 
-                    case 'external' :
+                    case 'external':
                         if ( ! empty( $data['website'] ) ) {
                             echo sprintf(
                                 '<a href="%1$s" target="blank" title="%2$s">',
@@ -204,24 +204,24 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                         }
                         break;
 
-                    case 'none' :
+                    case 'none':
                         break;
                 }
 
                 echo get_the_post_thumbnail( $data['id'], 'full' );
 
                 switch ( $this->get_link_mode() ) {
-                    case 'internal' :
+                    case 'internal':
                         echo '</a>';
                         break;
 
-                    case 'external' :
+                    case 'external':
                         if ( ! empty( $data['website'] ) ) {
                             echo '</a>';
                         }
                         break;
 
-                    case 'none' :
+                    case 'none':
                         break;
                 }
                 ?>

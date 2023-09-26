@@ -70,11 +70,11 @@ class Admin_Taxonomy_List_Exhibition_Package extends \wordpress_helper\Admin_Tax
     public function manage_custom_column( $output, $column_name, $term_id ) {
 
         switch ( $column_name ) {
-            case 'id' :
+            case 'id':
                 $output = $term_id;
                 break;
 
-            case 'count' :
+            case 'count':
                 $posts = get_posts( [
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',

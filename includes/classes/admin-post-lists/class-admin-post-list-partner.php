@@ -68,7 +68,7 @@ class Admin_Post_List_Partner extends \wordpress_helper\Admin_Post_List {
     public function manage_custom_column( $column_name, $post_id ) {
 
         switch ( $column_name ) {
-            case 'image' :
+            case 'image':
                 if ( true === has_post_thumbnail( $post_id ) ) {
                     // alternatively: admin_url?
                     echo sprintf(
@@ -82,7 +82,7 @@ class Admin_Post_List_Partner extends \wordpress_helper\Admin_Post_List {
                 }
                 break;
 
-            case 'exhibition' :
+            case 'exhibition':
                 $data = api\get_partner_dataset( $post_id );
 
                 if ( ! empty( $data['exhibition-spaces'] ) ) {
@@ -109,7 +109,7 @@ class Admin_Post_List_Partner extends \wordpress_helper\Admin_Post_List {
                 }
                 break;
 
-            case 'update' :
+            case 'update':
                 echo sprintf(
                     __( '%1$s at %2$s', 'cm-theme-core' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),

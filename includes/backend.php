@@ -181,13 +181,13 @@ function default_hidden_columns( $hidden, $screen ) {
     if ( isset( $screen->id ) ) {
         switch ( $screen->id ) {
 
-            case 'edit-event' :
+            case 'edit-event':
                 $hidden[] = 'slug' ;
                 break;
 
-            case 'edit-location' :
-            case 'edit-partnership' :
-            case 'edit-exhibition_package' :
+            case 'edit-location':
+            case 'edit-partnership':
+            case 'edit-exhibition_package':
                 $hidden[] = 'description';
                 $hidden[] = 'slug';
                 break;
@@ -219,7 +219,7 @@ function rewrite_header() {
 
         switch( $screen->id ) {
 
-            case 'edit-session' :  // event // location
+            case 'edit-session':  // event // location
                 if ( isset( $_GET['location'] ) ) {
                     $term = get_term_by( 'slug', $_GET['location'], 'location' );
                 } elseif( isset( $_GET['event'] ) ) {
@@ -233,7 +233,7 @@ function rewrite_header() {
                 }
                 break;
 
-            case 'edit-partner' :
+            case 'edit-partner':
                 if ( isset( $_GET['partnership'] ) ) {
                     $term = get_term_by( 'slug', $_GET['partnership'], 'partnership' );
                 }
@@ -245,7 +245,7 @@ function rewrite_header() {
                 }
                 break;
 
-            case 'edit-exhibition_space' :
+            case 'edit-exhibition_space':
                 if ( isset( $_GET['location'] ) ) {
                     $term = get_term_by( 'slug', $_GET['location'], 'location' );
                 } elseif ( isset( $_GET['exhibition_package'] ) ) {

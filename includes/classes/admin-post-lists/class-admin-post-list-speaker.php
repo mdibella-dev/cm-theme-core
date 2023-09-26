@@ -66,7 +66,7 @@ class Admin_Post_List_Speaker extends \wordpress_helper\Admin_Post_List {
     public function manage_custom_column( $column_name, $post_id ) {
 
         switch ( $column_name ) {
-            case 'image' :
+            case 'image':
                 if ( true === has_post_thumbnail( $post_id ) ) {
                     // alternativ: admin_url?
                     echo sprintf(
@@ -80,7 +80,7 @@ class Admin_Post_List_Speaker extends \wordpress_helper\Admin_Post_List {
                 }
                 break;
 
-            case 'shortdescription' :
+            case 'shortdescription':
                 echo trim( implode( ' ', array(
                     get_field( 'referent-titel', $post_id ),
                     get_field( 'referent-vorname', $post_id ),
@@ -94,7 +94,7 @@ class Admin_Post_List_Speaker extends \wordpress_helper\Admin_Post_List {
                 }
                 break;
 
-            case 'update' :
+            case 'update':
                 echo sprintf(
                     __( '%1$s at %2$s','cm-theme-core' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
@@ -134,7 +134,7 @@ class Admin_Post_List_Speaker extends \wordpress_helper\Admin_Post_List {
         $order   = $query->get( 'order' );
 
         switch ( $orderby ) {
-            case 'update' :
+            case 'update':
                 $query->set( 'orderby', 'modified' );
                 break;
         }

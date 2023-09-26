@@ -49,7 +49,7 @@ class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List
             'taxonomy-exhibition_package' => __( 'Exhibition package', 'cm-theme-core' ),
             'update'                      => __( 'Last updated', 'cm-theme-core' ),
         ];
-        
+
         return $columns;
     }
 
@@ -65,7 +65,7 @@ class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List
     public function manage_custom_column( $column_name, $post_id ) {
 
         switch ( $column_name ) {
-            case 'update' :
+            case 'update':
                 echo sprintf(
                     __( '%1$s at %2$s', 'cm-theme-core' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
@@ -107,12 +107,12 @@ class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List
         $order   = $query->get( 'order' );
 
         switch ( $orderby ) {
-            case 'update' :
+            case 'update':
                 $query->set( 'orderby', 'modified' );
                 break;
 
             default :
-            case '' :
+            case '':
                 $query->set( 'orderby', 'title' );
                 $query->set( 'order', 'asc' );
                 break;

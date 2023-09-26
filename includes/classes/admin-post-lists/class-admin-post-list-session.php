@@ -71,7 +71,7 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
     public function manage_custom_column( $column_name, $post_id ) {
 
         switch ( $column_name ) {
-            case 'speaker' :
+            case 'speaker':
                 $speakers = get_field( 'programmpunkt-referenten', $post_id );
 
                 if ( null != $speakers ) {
@@ -93,11 +93,11 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
                 }
                 break;
 
-            case 'event-date' :
+            case 'event-date':
                 echo get_field( 'programmpunkt-datum', $post_id );
                 break;
 
-            case 'event-time' :
+            case 'event-time':
                 $time = get_field( 'programmpunkt-alternative-zeitangabe', $post_id );
 
                 if ( empty( $time ) ) {
@@ -111,7 +111,7 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
                 echo $time;
                 break;
 
-            case 'update' :
+            case 'update':
                 echo sprintf(
                     __( '%1$s at %2$s', 'cm-theme-core' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
@@ -154,12 +154,12 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
         $order   = $query->get( 'order' );
 
         switch ( $orderby ) {
-            case 'event-date' :
+            case 'event-date':
                 $query->set( 'orderby', 'meta_value' );
                 $query->set( 'meta_key', 'programmpunkt-datum' );
                 break;
 
-            case 'update' :
+            case 'update':
                 $query->set( 'orderby', 'modified' );
                 break;
         }

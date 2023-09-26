@@ -221,15 +221,15 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                             switch ( $data_key ) {
 
-                                case 'session-date' :
+                                case 'session-date':
                                     $data_content = get_field( 'programmpunkt-datum', $session->ID );
                                     break;
 
-                                case 'session-time-begin' :
+                                case 'session-time-begin':
                                     $data_content = get_field( 'programmpunkt-von', $session->ID );
                                     break;
 
-                                case 'session-time-range' :
+                                case 'session-time-range':
                                     $data_content = get_field( 'programmpunkt-alternative-zeitangabe', $session->ID );
 
                                     if ( true == empty( $data_content ) ) {
@@ -240,7 +240,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
                                     }
                                     break;
 
-                                case 'session-location' :
+                                case 'session-location':
                                     $data_content = api\get_location( get_field( 'programmpunkt-location', $session->ID ) );
                                     break;
                             }
@@ -264,15 +264,15 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                             switch ( $data_key ) {
 
-                                case 'session-title' :
+                                case 'session-title':
                                     $data_content = $session->post_title;
                                     break;
 
-                                case 'session-subtitle' :
+                                case 'session-subtitle':
                                     $data_content = get_field( 'programmpunkt-untertitel', $session->ID );
                                     break;
 
-                                case 'session-speaker' :
+                                case 'session-speaker':
                                     $speakers = get_field( 'programmpunkt-referenten', $session->ID );
 
                                     if ( null != $speakers ) {

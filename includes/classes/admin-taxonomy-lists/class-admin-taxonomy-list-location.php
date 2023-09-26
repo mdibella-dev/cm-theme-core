@@ -72,11 +72,11 @@ class Admin_Taxonomy_List_Location extends \wordpress_helper\Admin_Taxonomy_List
     public function manage_custom_column( $output, $column_name, $term_id ) {
 
         switch( $column_name ) {
-            case 'id' :
+            case 'id':
                 $output = $term_id;
                 break;
 
-            case 'image' :
+            case 'image':
                 $image_id = get_field( 'location-image', 'location_' . $term_id );
                 $image    = wp_get_attachment_image( $image_id, [ '150', '9999' ] );
 
@@ -87,7 +87,7 @@ class Admin_Taxonomy_List_Location extends \wordpress_helper\Admin_Taxonomy_List
                 }
                 break;
 
-            case 'count-session' :
+            case 'count-session':
                 $posts = get_posts( [
                     'post_type'   => 'session',
                     'post_status' => 'any',
@@ -106,7 +106,7 @@ class Admin_Taxonomy_List_Location extends \wordpress_helper\Admin_Taxonomy_List
                 );
                 break;
 
-            case 'count-space' :
+            case 'count-space':
                 $posts = get_posts( [
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',
