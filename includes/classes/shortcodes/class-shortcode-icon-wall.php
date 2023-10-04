@@ -182,7 +182,7 @@ class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
                     $li_class = ' class="is-squared"';
                 }
             ?>
-            <li<?php echo esc_attr( $li_class); ?>>
+            <li<?php echo $li_class; ?>>
                 <?php
                 switch ( $this->get_link_mode() ) {
 
