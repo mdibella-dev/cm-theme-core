@@ -234,7 +234,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                                     if ( true == empty( $data_content ) ) {
                                         $data_content = sprintf(
-                                            __( 'from %1$s to %2$s', 'cm-theme-core' ),
+                                            __( '%1$s to %2$s', 'cm-theme-core' ),
                                             get_field( 'programmpunkt-von', $session->ID ),
                                             get_field( 'programmpunkt-bis', $session->ID ) );
                                     }

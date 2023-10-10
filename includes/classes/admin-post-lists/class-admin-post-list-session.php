@@ -102,7 +102,7 @@ class Admin_Post_List_Session extends \wordpress_helper\Admin_Post_List {
 
                 if ( empty( $time ) ) {
                     $time = sprintf(
-                        __( 'from %1$s to %2$s', 'cm-theme-core' ),
+                        __( '%1$s to %2$s', 'cm-theme-core' ),
                         get_field( 'programmpunkt-von', $post_id ),
                         get_field( 'programmpunkt-bis', $post_id )
                     );
