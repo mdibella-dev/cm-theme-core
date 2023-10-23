@@ -95,13 +95,14 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
             'order'          => 'ASC',
             'orderby'        => 'title',
         ];
+        
 
-        // Optionally, you can filter by type of partnership.
-        if ( ! empty( $partnership ) ) {
+        // Add partnership filtering (optional)
+        if ( ! empty( $this->get_partnership() ) ) {
             $query['tax_query'] = [ [
                 'taxonomy' => 'partnership',
                 'field'    => 'term_id',
-                'terms'    => explode( ',', $partnership ),
+                'terms'    => explode( ',', $this->get_partnership() ),
             ] ];
         }
 
