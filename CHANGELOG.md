@@ -2,6 +2,10 @@
 
 _New / Improve / Bugfix_
 
+### Latest changes to the main branch
+
+- Bugfix: Fix partnership filter in exhibtion list 
+
 <br>
 
 ### 2.1.0

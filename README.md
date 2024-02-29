@@ -25,12 +25,6 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ## Changelog
 
-### Latest changes to the main branch
-
-- Bugfix: Fix partnership filter in exhibtion list 
-
-### Previous changes
-
 See [CHANGELOG.md](https://github.com/mdibella-dev/cm-theme-core/blob/main/CHANGELOG.md).
 
 <br>
