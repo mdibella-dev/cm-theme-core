@@ -63,7 +63,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
             'speaker'      => '',
             'event'        => '',
             'date'         => '',
-            'show_details' => 'false',
+            'show_details' => 'true',
         ];
     }
 
@@ -158,7 +158,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
      */
 
      protected function get_show_details() {
-        return (bool) $this->atts['get_show_details'];
+        return (bool) $this->atts['show_details'];
     }
 
 
@@ -309,7 +309,7 @@ class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
 
                     $details = apply_filters( 'the_content', get_field( 'programmpunkt-beschreibung', $session->ID ) );
 
-                    if ( ( true == $this->get_show_details ) and ! empty( $details ) ) {
+                    if ( ( true == $this->get_show_details() ) and ! empty( $details ) ) {
                         ?>
                         <div class="event-table__session-toggle"><span><i class="far fa-angle-down"></i></span></div>
                         <div class="event-table__session-details"><?php echo $details; ?></div>
