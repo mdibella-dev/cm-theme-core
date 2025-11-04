@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 2.1.0
  */
 
-class Admin_Taxonomy_List_Location extends \wordpress_helper\Admin_Taxonomy_List {
+class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List {
 
     /**
      * The post type.

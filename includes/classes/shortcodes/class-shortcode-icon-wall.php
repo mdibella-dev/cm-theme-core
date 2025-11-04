@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) or exit;
  * - link (optional)            Defines if and how the logo should be linked (none, internal, external).
  */
 
-class Shortcode_Icon_Wall extends \wordpress_helper\Shortcode {
+class Shortcode_Icon_Wall extends \WordPress_Helper\Shortcode {
 
     /**
      * The shortcode tag.

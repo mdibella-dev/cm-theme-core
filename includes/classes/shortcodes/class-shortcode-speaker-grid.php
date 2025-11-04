@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) or exit;
  * - shuffle (optional)     Randomizes the speaker selection before the selection by show (only in connection with show).
  */
 
-class Shortcode_Speaker_Grid extends \wordpress_helper\Shortcode {
+class Shortcode_Speaker_Grid extends \WordPress_Helper\Shortcode {
 
     /**
      * The shortcode tag.

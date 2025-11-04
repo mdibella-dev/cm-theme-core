@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 2.1.0
  */
 
-class Admin_Post_List_Exhibition_Space extends \wordpress_helper\Admin_Post_List {
+class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List {
 
     /**
      * The post type.

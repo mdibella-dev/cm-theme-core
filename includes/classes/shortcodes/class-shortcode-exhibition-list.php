@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) or exit;
  *                              The forms of cooperation must be in the form of a comma-separated list of their identification numbers.
  */
 
-class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
+class Shortcode_Exhibition_List extends \WordPress_Helper\Shortcode {
 
     /**
      * The shortcode tag.
@@ -95,7 +95,7 @@ class Shortcode_Exhibition_List extends \wordpress_helper\Shortcode {
             'order'          => 'ASC',
             'orderby'        => 'title',
         ];
-        
+
 
         // Add partnership filtering (optional)
         if ( ! empty( $this->get_partnership() ) ) {

@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) or exit;
  * - show_details   Allow details to be displayed (TRUE, FALSE).
  */
 
-class Shortcode_Event_Table extends \wordpress_helper\Shortcode {
+class Shortcode_Event_Table extends \WordPress_Helper\Shortcode {
 
     /**
      * The shortcode tag.
