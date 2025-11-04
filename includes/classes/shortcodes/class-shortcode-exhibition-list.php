@@ -8,7 +8,7 @@
 
 namespace cm_theme_core;
 
-use \cm_theme_core\api as api;
+use \cm_theme_core\API as API;
 
 
 
@@ -126,7 +126,7 @@ class Shortcode_Exhibition_List extends \WordPress_Helper\Shortcode {
 
             <?php
             foreach ( $this->partners as $partner ) {
-                $data = api\get_partner_dataset( $partner->ID );
+                $data = API\get_partner_dataset( $partner->ID );
             ?>
 
             <li class="exhibition-list-element">

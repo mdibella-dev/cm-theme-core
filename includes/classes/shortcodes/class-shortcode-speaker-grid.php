@@ -8,7 +8,7 @@
 
 namespace cm_theme_core;
 
-use \cm_theme_core\api as api;
+use \cm_theme_core\API as API;
 
 
 
@@ -127,7 +127,7 @@ class Shortcode_Speaker_Grid extends \WordPress_Helper\Shortcode {
 
     function prepare() {
 
-        $speakers = api\get_speaker_datasets( ( '-1' == $this->get_event() )? implode( ',', api\get_active_events() ) : $this->get_event() );
+        $speakers = API\get_speaker_datasets( ( '-1' == $this->get_event() )? implode( ',', api\get_active_events() ) : $this->get_event() );
 
         if ( $speakers ) {
             // Optional: Exclusion of certain speakers

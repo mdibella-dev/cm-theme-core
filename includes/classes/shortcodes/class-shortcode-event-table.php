@@ -8,7 +8,7 @@
 
 namespace cm_theme_core;
 
-use \cm_theme_core\api as api;
+use \cm_theme_core\API as API;
 
 
 
@@ -175,10 +175,10 @@ class Shortcode_Event_Table extends \WordPress_Helper\Shortcode {
 
             // Variant 1: Search for (active) sessions of the specified speaker
             if ( ! empty( $this->get_speaker() ) ) {
-                $this->sessions = api\get_sessions_by_speaker( $this->get_speaker() );
+                $this->sessions = API\get_sessions_by_speaker( $this->get_speaker() );
             // Variant 2: Search for the sessions of the specified event
             } elseif( ! empty( $this->get_event() ) ) {
-                $this->sessions = api\get_sessions_by_event( $this->get_event(), $this->get_event_date() );
+                $this->sessions = API\get_sessions_by_event( $this->get_event(), $this->get_event_date() );
             // Nothing to search
             } else {
                 $this->sessions = null;

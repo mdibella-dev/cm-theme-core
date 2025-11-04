@@ -8,7 +8,7 @@
 
 namespace cm_theme_core;
 
-use \cm_theme_core\api as api;
+use \cm_theme_core\API as API;
 
 
 
@@ -174,7 +174,7 @@ class Shortcode_Icon_Wall extends \WordPress_Helper\Shortcode {
             <?php
             foreach ( $this->partners as $partner ) {
 
-                $data     = api\get_partner_dataset( $partner->ID );
+                $data     = API\get_partner_dataset( $partner->ID );
                 $li_class = '';
                 $thumb    = wp_get_attachment_metadata( get_post_thumbnail_id( $data['id'] ) );
 
