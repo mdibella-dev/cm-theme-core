@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace CM_Theme\Core\post_types\partner;
+namespace CM_Theme\Core\Post_Types\Partner;
 
 
 

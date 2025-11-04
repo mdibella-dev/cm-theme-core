@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace CM_Theme\Core\post_types\speaker;
+namespace CM_Theme\Core\Post_Types\Speaker;
 
 
 

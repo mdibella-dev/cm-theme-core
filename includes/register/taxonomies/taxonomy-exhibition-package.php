@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace CM_Theme\Core\taxonomies\exhibtition_package;
+namespace CM_Theme\Core\Taxonomies\Exhibtition_Package;
 
 
 

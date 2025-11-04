@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace CM_Theme\Core\taxonomies\partnership;
+namespace CM_Theme\Core\Taxonomies\Partnership;
 
 
 
