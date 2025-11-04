@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\taxonomies\partnership;
+namespace CM_Theme\Core\taxonomies\partnership;
 
 
 /** Prevent direct access */

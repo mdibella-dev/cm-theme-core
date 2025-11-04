@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\taxonomies\location;
+namespace CM_Theme\Core\taxonomies\location;
 
 
 /** Prevent direct access */

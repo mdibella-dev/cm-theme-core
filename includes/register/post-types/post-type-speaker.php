@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\post_types\speaker;
+namespace CM_Theme\Core\post_types\speaker;
 
 
 /** Prevent direct access */

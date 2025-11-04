@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\post_types\session;
+namespace CM_Theme\Core\post_types\session;
 
 
 /** Prevent direct access */

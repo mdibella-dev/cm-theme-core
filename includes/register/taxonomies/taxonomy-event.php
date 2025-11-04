@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\taxonomies\event;
+namespace CM_Theme\Core\taxonomies\event;
 
 
 /** Prevent direct access */

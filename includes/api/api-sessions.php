@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\API;
+namespace CM_Theme\Core\API;
 
 
 /** Prevent direct access */

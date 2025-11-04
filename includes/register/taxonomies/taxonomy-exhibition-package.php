@@ -6,7 +6,7 @@
  * @package cm-theme-core
  */
 
-namespace cm_theme_core\taxonomies\exhibtition_package;
+namespace CM_Theme\Core\taxonomies\exhibtition_package;
 
 
 /** Prevent direct access */
