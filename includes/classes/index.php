@@ -4,12 +4,6 @@
 defined( 'ABSPATH' ) or exit;
 
 
-
-// WordPress Helper Classes
-require_once 'wordpress-helper/class-shortcode.php';
-require_once 'wordpress-helper/class-admin-post-list.php';
-require_once 'wordpress-helper/class-admin-taxonomy-list.php';
-
 // Shortcode Classes
 require_once 'shortcodes/class-shortcode-icon-wall.php';
 require_once 'shortcodes/class-shortcode-event-table.php';
