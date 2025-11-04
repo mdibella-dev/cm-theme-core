@@ -9,7 +9,7 @@
 
 namespace CM_Theme\Core;
 
-use \cm_theme_core\api as api;
+use CM_Theme\Core\API as API;
 
 
 /** Prevent direct access */
