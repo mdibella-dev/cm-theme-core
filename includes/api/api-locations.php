@@ -9,6 +9,7 @@
 namespace CM_Theme\Core\API;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;

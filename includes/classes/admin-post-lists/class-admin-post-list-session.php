@@ -9,7 +9,8 @@
 
 namespace CM_Theme\Core;
 
-use \cm_theme_core\api as api;
+use \CM_Theme\Core\API as API;
+
 
 
 /** Prevent direct access */
@@ -77,7 +78,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                 if ( null != $speakers ) {
 
                     foreach ( $speakers as $speaker ) {
-                        $speaker_dataset = api\get_speaker_dataset( $speaker );
+                        $speaker_dataset = API\get_speaker_dataset( $speaker );
                         echo sprintf(
                             '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                             $speaker_dataset['id'],

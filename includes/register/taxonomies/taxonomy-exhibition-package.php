@@ -9,6 +9,7 @@
 namespace CM_Theme\Core\taxonomies\exhibtition_package;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;

@@ -9,6 +9,7 @@
 namespace CM_Theme\Core\taxonomies\partnership;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;

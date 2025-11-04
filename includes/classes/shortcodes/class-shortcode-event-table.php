@@ -8,7 +8,7 @@
 
 namespace CM_Theme\Core;
 
-use \cm_theme_core\API as API;
+use \CM_Theme\Core\API as API;
 
 
 

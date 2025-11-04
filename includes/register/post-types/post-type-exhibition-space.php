@@ -9,6 +9,7 @@
 namespace CM_Theme\Core\post_types\exhibition_space;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;

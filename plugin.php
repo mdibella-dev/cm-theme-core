@@ -20,6 +20,7 @@
 namespace CM_Theme\Core;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;

@@ -9,6 +9,7 @@
 namespace CM_Theme\Core\post_types\partner;
 
 
+
 /** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;
