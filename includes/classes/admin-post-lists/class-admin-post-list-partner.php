@@ -83,7 +83,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                 break;
 
             case 'exhibition':
-                $data = api\get_partner_dataset( $post_id );
+                $data = API\get_partner_dataset( $post_id );
 
                 if ( ! empty( $data['exhibition-spaces'] ) ) {
                     $spaces = [];
