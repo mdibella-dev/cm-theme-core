@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mdibella-dev/wordpress-helper"
+        }
+    ],
+    "require": {
+        "mdibella-dev/wordpress-helper": "dev-main"
+    }
+}

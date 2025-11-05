@@ -1,0 +1,52 @@
+{
+    "packages": [
+        {
+            "name": "mdibella-dev/wordpress-helper",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdibella-dev/wordpress-helper.git",
+                "reference": "de42ee74f3cf47213bf88b2d413b9233ab5fa84c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdibella-dev/wordpress-helper/zipball/de42ee74f3cf47213bf88b2d413b9233ab5fa84c",
+                "reference": "de42ee74f3cf47213bf88b2d413b9233ab5fa84c",
+                "shasum": ""
+            },
+            "time": "2025-11-03T20:07:47+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WordPress_Helper\\": "includes/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Di Bella",
+                    "homepage": "https://www.marcodibella.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress Helper is a Composer repository which provides few helper classes to simplify the development of WordPress plugins.",
+            "keywords": [
+                "composer",
+                "repository",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/mdibella-dev/wordpress-helper/tree/main",
+                "issues": "https://github.com/mdibella-dev/wordpress-helper/issues"
+            },
+            "install-path": "../mdibella-dev/wordpress-helper"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
