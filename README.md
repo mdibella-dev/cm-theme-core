@@ -19,7 +19,7 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Tested up to
 
-- WordPress 6.3
+- WordPress 6.8
 
 <br>
 
