@@ -73,7 +73,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
 
         switch ( $column_name ) {
             case 'id':
-                $poutput = $term_id;
+                $output = $term_id;
                 break;
 
             case 'status':
