@@ -7,7 +7,7 @@
  * Author URI:          https://www.marcodibella.de
  * License:             MIT License
  * Requires at least:   6
- * Tested up to:        6.8
+ * Tested up to:        7.0
  * Requires PHP:        7
  * Version:             2.1.0
  * Text Domain:         cm-theme-core
