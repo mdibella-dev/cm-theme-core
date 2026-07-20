@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2026-07-20 18:35+0200\n"
+"POT-Creation-Date: 2026-07-20 18:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,9 +28,8 @@ msgid "Congress Management"
 msgstr ""
 
 #: includes/backend.php:62 includes/backend.php:63 includes/backend.php:118
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
 #: includes/register/taxonomies/taxonomy-event.php:28 includes/register/taxonomies/taxonomy-event.php:30
-#: includes/register/taxonomies/taxonomy-event.php:39
+#: includes/register/taxonomies/taxonomy-event.php:42
 msgid "Events"
 msgstr ""
 
@@ -54,11 +53,12 @@ msgid "Exhibition packages"
 msgstr ""
 
 #: includes/backend.php:119 includes/backend.php:232
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/register/post-types/post-type-session.php:28
 #: includes/register/post-types/post-type-session.php:30
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-session.php:38
+#: includes/register/post-types/post-type-session.php:39
+#: includes/register/post-types/post-type-session.php:44
 msgid "Sessions"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Short description"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
 msgid "Status"
 msgstr ""
 
@@ -234,17 +234,41 @@ msgid "View website"
 msgstr ""
 
 #: includes/register/post-types/post-type-session.php:29
-#: includes/register/post-types/post-type-session.php:34
+#: includes/register/post-types/post-type-session.php:40
 msgid "Session"
 msgstr ""
 
+#: includes/register/post-types/post-type-session.php:31
 #: includes/register/post-types/post-type-session.php:32
-#: includes/register/post-types/post-type-speaker.php:32
-msgid "Add new"
+msgid "Add New Session"
 msgstr ""
 
 #: includes/register/post-types/post-type-session.php:33
-msgid "New session"
+msgid "Edit Session"
+msgstr ""
+
+#: includes/register/post-types/post-type-session.php:34
+msgid "New Session"
+msgstr ""
+
+#: includes/register/post-types/post-type-session.php:35
+msgid "View Session"
+msgstr ""
+
+#: includes/register/post-types/post-type-session.php:36
+msgid "View Sessions"
+msgstr ""
+
+#: includes/register/post-types/post-type-session.php:37
+msgid "Search Sessions"
+msgstr ""
+
+#: includes/register/post-types/post-type-session.php:38
+msgid "No Session Found"
+msgstr ""
+
+#: includes/register/post-types/post-type-speaker.php:32
+msgid "Add new"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:33
@@ -280,23 +304,35 @@ msgid "All speakers"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:31
-msgid "All Events"
+msgid "Search Events"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:32
-msgid "Edit Event"
+msgid "All Events"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:33
-msgid "Update Event"
+msgid "Edit Event"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:34
-msgid "Add New Event"
+msgid "View Event"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:35
+msgid "Update Event"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:36
+msgid "Add New Event"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:37
 msgid "New Event Title"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:38
+msgid "No Event Found"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

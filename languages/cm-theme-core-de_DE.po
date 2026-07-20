@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2026-07-20 18:43+0200\n"
-"PO-Revision-Date: 2026-07-20 18:43+0200\n"
+"POT-Creation-Date: 2026-07-20 18:57+0200\n"
+"PO-Revision-Date: 2026-07-20 18:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -28,7 +28,6 @@ msgid "Congress Management"
 msgstr "Congress-Management"
 
 #: includes/backend.php:62 includes/backend.php:63 includes/backend.php:118
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
 #: includes/register/taxonomies/taxonomy-event.php:28
 #: includes/register/taxonomies/taxonomy-event.php:30
 #: includes/register/taxonomies/taxonomy-event.php:42
@@ -55,11 +54,12 @@ msgid "Exhibition packages"
 msgstr "Ausstellungspakete"
 
 #: includes/backend.php:119 includes/backend.php:232
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/register/post-types/post-type-session.php:28
 #: includes/register/post-types/post-type-session.php:30
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-session.php:38
+#: includes/register/post-types/post-type-session.php:39
+#: includes/register/post-types/post-type-session.php:44
 msgid "Sessions"
 msgstr "Veranstaltungspunkte"
 
@@ -181,7 +181,7 @@ msgstr "Referent:in"
 msgid "Short description"
 msgstr "Kurzbeschreibung"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
 msgid "Status"
 msgstr "Status"
 
@@ -237,18 +237,42 @@ msgid "View website"
 msgstr "Webseite anzeigen"
 
 #: includes/register/post-types/post-type-session.php:29
-#: includes/register/post-types/post-type-session.php:34
+#: includes/register/post-types/post-type-session.php:40
 msgid "Session"
 msgstr "Session"
 
+#: includes/register/post-types/post-type-session.php:31
 #: includes/register/post-types/post-type-session.php:32
+msgid "Add New Session"
+msgstr "Neue Session hinzufügen"
+
+#: includes/register/post-types/post-type-session.php:33
+msgid "Edit Session"
+msgstr "Session bearbeiten"
+
+#: includes/register/post-types/post-type-session.php:34
+msgid "New Session"
+msgstr "Neue Session"
+
+#: includes/register/post-types/post-type-session.php:35
+msgid "View Session"
+msgstr "Session anzeigen"
+
+#: includes/register/post-types/post-type-session.php:36
+msgid "View Sessions"
+msgstr "Sessions anzeigen"
+
+#: includes/register/post-types/post-type-session.php:37
+msgid "Search Sessions"
+msgstr "Sessions durchsuchen"
+
+#: includes/register/post-types/post-type-session.php:38
+msgid "No Session Found"
+msgstr "Keine Session gefunden"
+
 #: includes/register/post-types/post-type-speaker.php:32
 msgid "Add new"
 msgstr "Neu hinzufügen"
-
-#: includes/register/post-types/post-type-session.php:33
-msgid "New session"
-msgstr "Neue Session"
 
 #: includes/register/post-types/post-type-speaker.php:33
 msgid "Search speaker"

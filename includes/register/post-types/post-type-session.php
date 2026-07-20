@@ -28,9 +28,15 @@ function register() {
         'name'           => __( 'Sessions', 'cm-theme-core' ),
         'singular_name'  => __( 'Session', 'cm-theme-core' ),
         'menu_name'      => __( 'Sessions', 'cm-theme-core' ),
+        'add_new'        => __( 'Add New Session', 'cm-theme-core' ),
+        'add_new_item'   => __( 'Add New Session', 'cm-theme-core' ),
+        'edit_item'      => __( 'Edit Session', 'cm-theme-core' ),
+        'new_item'       => __( 'New Session', 'cm-theme-core' ),
+        'view_item'      => __( 'View Session', 'cm-theme-core' ),
+        'view_items'     => __( 'View Sessions', 'cm-theme-core' ),
+        'search_items'   => __( 'Search Sessions', 'cm-theme-core' ),
+        'not_found'      => __( 'No Session Found', 'cm-theme-core' ),
         'all_items'      => __( 'Sessions', 'cm-theme-core' ),
-        'add_new'        => __( 'Add new', 'cm-theme-core' ),
-        'add_new_item'   => __( 'New session', 'cm-theme-core' ),
         'name_admin_bar' => __( 'Session', 'cm-theme-core' ),
     ];
 
