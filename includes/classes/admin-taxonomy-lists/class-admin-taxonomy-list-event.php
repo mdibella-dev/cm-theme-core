@@ -51,7 +51,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
             'description' => $default['description'],
             'slug'        => $default['slug'],
             'status'      => __( 'Status', 'cm-theme-core' ),
-            'posts'       => __( 'Events', 'cm-theme-core' ),
+            'posts'       => __( 'Sessions', 'cm-theme-core' ),
         ];
 
         return $columns;
