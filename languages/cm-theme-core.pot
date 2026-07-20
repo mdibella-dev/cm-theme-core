@@ -5,209 +5,209 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2023-10-10 09:29+0200\n"
+"POT-Creation-Date: 2026-07-20 18:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.9\n"
 "X-Domain: cm-theme-core\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: plugin.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
-"esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: includes/backend.php:50 includes/backend.php:51
+#: includes/backend.php:51 includes/backend.php:52
 msgid "Congress Management"
 msgstr ""
 
-#: includes/backend.php:61 includes/backend.php:62 includes/backend.php:117
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
-#: includes/register/taxonomies/taxonomy-event.php:27 includes/register/taxonomies/taxonomy-event.php:29
-#: includes/register/taxonomies/taxonomy-event.php:34
+#: includes/backend.php:62 includes/backend.php:63 includes/backend.php:118
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
+#: includes/register/taxonomies/taxonomy-event.php:28 includes/register/taxonomies/taxonomy-event.php:30
+#: includes/register/taxonomies/taxonomy-event.php:39
 msgid "Events"
 msgstr ""
 
-#: includes/backend.php:71 includes/backend.php:72 includes/backend.php:120
-#: includes/register/taxonomies/taxonomy-location.php:27
-#: includes/register/taxonomies/taxonomy-location.php:29
-#: includes/register/taxonomies/taxonomy-location.php:33
+#: includes/backend.php:72 includes/backend.php:73 includes/backend.php:121
+#: includes/register/taxonomies/taxonomy-location.php:28
+#: includes/register/taxonomies/taxonomy-location.php:30
+#: includes/register/taxonomies/taxonomy-location.php:34
 msgid "Locations"
 msgstr ""
 
-#: includes/backend.php:81 includes/backend.php:82
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
-#: includes/register/taxonomies/taxonomy-partnership.php:28
+#: includes/backend.php:82 includes/backend.php:83
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
+#: includes/register/taxonomies/taxonomy-partnership.php:29
 msgid "Partnership"
 msgstr ""
 
-#: includes/backend.php:91 includes/backend.php:92 includes/backend.php:124
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:27
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:32
+#: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
 msgid "Exhibition packages"
 msgstr ""
 
-#: includes/backend.php:118 includes/backend.php:231
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:53
-#: includes/register/post-types/post-type-session.php:27
-#: includes/register/post-types/post-type-session.php:29
+#: includes/backend.php:119 includes/backend.php:232
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
+#: includes/register/post-types/post-type-session.php:28
 #: includes/register/post-types/post-type-session.php:30
-#: includes/register/post-types/post-type-session.php:37
+#: includes/register/post-types/post-type-session.php:31
+#: includes/register/post-types/post-type-session.php:38
 msgid "Sessions"
 msgstr ""
 
-#: includes/backend.php:119 includes/classes/admin-post-lists/class-admin-post-list-session.php:55
-#: includes/register/post-types/post-type-speaker.php:27
-#: includes/register/post-types/post-type-speaker.php:29
+#: includes/backend.php:120 includes/classes/admin-post-lists/class-admin-post-list-session.php:56
+#: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
-#: includes/register/post-types/post-type-speaker.php:44
+#: includes/register/post-types/post-type-speaker.php:31
+#: includes/register/post-types/post-type-speaker.php:45
 msgid "Speakers"
 msgstr ""
 
-#: includes/backend.php:121 includes/backend.php:243
-#: includes/register/post-types/post-type-partner.php:27
-#: includes/register/post-types/post-type-partner.php:30
+#: includes/backend.php:122 includes/backend.php:244
+#: includes/register/post-types/post-type-partner.php:28
+#: includes/register/post-types/post-type-partner.php:31
 msgid "Partners"
 msgstr ""
 
-#: includes/backend.php:122 includes/register/post-types/post-type-partner.php:29
-#: includes/register/taxonomies/taxonomy-partnership.php:27
-#: includes/register/taxonomies/taxonomy-partnership.php:32
+#: includes/backend.php:123 includes/register/post-types/post-type-partner.php:30
+#: includes/register/taxonomies/taxonomy-partnership.php:28
+#: includes/register/taxonomies/taxonomy-partnership.php:33
 msgid "Partnerships"
 msgstr ""
 
-#: includes/backend.php:123 includes/backend.php:257
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
-#: includes/register/post-types/post-type-exhibition-space.php:27
-#: includes/register/post-types/post-type-exhibition-space.php:29
+#: includes/backend.php:124 includes/backend.php:258
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
+#: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
-#: includes/register/post-types/post-type-exhibition-space.php:34
+#: includes/register/post-types/post-type-exhibition-space.php:31
+#: includes/register/post-types/post-type-exhibition-space.php:35
 msgid "Exhibition spaces"
 msgstr ""
 
-#: includes/backend.php:268
+#: includes/backend.php:269
 msgid "Create"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:47
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:51
-#: includes/register/post-types/post-type-partner.php:28
-#: includes/register/post-types/post-type-partner.php:34
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
+#: includes/register/post-types/post-type-partner.php:29
+#: includes/register/post-types/post-type-partner.php:35
 msgid "Partner"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:52
-#: includes/register/taxonomies/taxonomy-location.php:28
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
+#: includes/register/taxonomies/taxonomy-location.php:29
 msgid "Location"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
 msgid "Exhibition package"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:51
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:57
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:52
 msgid "Last updated"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:70
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:114
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:116
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:99
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:71
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:115
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:117
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:100
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:50
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:48
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:49
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:51
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:49
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
 msgid "Image"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
-#: includes/register/post-types/post-type-exhibition-space.php:28
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
+#: includes/register/post-types/post-type-exhibition-space.php:29
 msgid "Exhibition space"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:78
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:76
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:79
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:77
 msgid "Edit"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:51
-#: includes/register/taxonomies/taxonomy-event.php:28
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:52
+#: includes/register/taxonomies/taxonomy-event.php:29
 msgid "Event"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:54
 msgid "Date"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:54
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:55
 msgid "Time period"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:86
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:87
 #, php-format
 msgid "Edit %1$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:105
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:106
 #: includes/classes/shortcodes/class-shortcode-event-table.php:237
 #, php-format
 msgid "%1$s to %2$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:49
-#: includes/register/post-types/post-type-speaker.php:28
-#: includes/register/post-types/post-type-speaker.php:40
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:50
+#: includes/register/post-types/post-type-speaker.php:29
+#: includes/register/post-types/post-type-speaker.php:41
 msgid "Speaker"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:50
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:51
 msgid "Short description"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:52
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 msgid "Status"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:83
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:84
 msgid "active"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:83
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:84
 msgid "inactive"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:52
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
 msgid "Count"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:92
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:93
 msgid "Show all exhibition spaces with this exhibition package"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:105
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:106
 msgid "View all sessions at this location"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:124
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:125
 msgid "View all exhibition spaces in this location"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:92
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:93
 msgid "Show all partners cooperating in this way"
 msgstr ""
 
@@ -217,11 +217,11 @@ msgstr ""
 msgid "Learn more about %1$s"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:161
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
 msgid "Area"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
 msgid "Booth"
 msgstr ""
 
@@ -233,54 +233,70 @@ msgstr ""
 msgid "View website"
 msgstr ""
 
-#: includes/register/post-types/post-type-session.php:28
-#: includes/register/post-types/post-type-session.php:33
+#: includes/register/post-types/post-type-session.php:29
+#: includes/register/post-types/post-type-session.php:34
 msgid "Session"
 msgstr ""
 
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-speaker.php:31
+#: includes/register/post-types/post-type-session.php:32
+#: includes/register/post-types/post-type-speaker.php:32
 msgid "Add new"
 msgstr ""
 
-#: includes/register/post-types/post-type-session.php:32
+#: includes/register/post-types/post-type-session.php:33
 msgid "New session"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:32
+#: includes/register/post-types/post-type-speaker.php:33
 msgid "Search speaker"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:33
+#: includes/register/post-types/post-type-speaker.php:34
 msgid "No speaker found"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:34
+#: includes/register/post-types/post-type-speaker.php:35
 msgid "No deleted speaker found"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:35
+#: includes/register/post-types/post-type-speaker.php:36
 msgid "Speaker image"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:36
+#: includes/register/post-types/post-type-speaker.php:37
 msgid "Set speaker image"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:37
+#: includes/register/post-types/post-type-speaker.php:38
 msgid "Remove speaker image"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:38
+#: includes/register/post-types/post-type-speaker.php:39
 msgid "Use as speaker image"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:39
+#: includes/register/post-types/post-type-speaker.php:40
 msgid "All speakers"
 msgstr ""
 
-#: includes/register/taxonomies/taxonomy-event.php:30
-msgid "All events"
+#: includes/register/taxonomies/taxonomy-event.php:31
+msgid "All Events"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:32
+msgid "Edit Event"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:33
+msgid "Update Event"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:34
+msgid "Add New Event"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-event.php:35
+msgid "New Event Title"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

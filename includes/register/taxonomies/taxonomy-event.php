@@ -28,7 +28,14 @@ function register() {
         'name'          => __( 'Events', 'cm-theme-core' ),
         'singular_name' => __( 'Event', 'cm-theme-core' ),
         'menu_name'     => __( 'Events', 'cm-theme-core' ),
-        'all_items'     => __( 'All events', 'cm-theme-core' ),
+        'search_items'  => __( 'Search Events', 'cm-theme-core' ),
+        'all_items'     => __( 'All Events', 'cm-theme-core' ),
+        'edit_item'     => __( 'Edit Event', 'cm-theme-core' ),
+        'view_item'     => __( 'View Event', 'cm-theme-core' ),
+        'update_item'   => __( 'Update Event', 'cm-theme-core' ),
+        'add_new_item'  => __( 'Add New Event', 'cm-theme-core' ),
+        'new_item_name' => __( 'New Event Title', 'cm-theme-core' ),
+        'not_found'     => __( 'No Event Found', 'cm-theme-core' ),
     ];
 
     $args = [
@@ -47,7 +54,7 @@ function register() {
         ],
         'show_admin_column'     => true,
         'show_in_rest'          => true,
-        'show_tagcloud'         => true,
+        'show_tagcloud'         => false,
         'rest_base'             => 'event',
         'rest_controller_class' => 'WP_REST_Terms_Controller',
         'rest_namespace'        => 'wp/v2',
