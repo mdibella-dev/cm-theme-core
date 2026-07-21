@@ -1,11 +1,9 @@
-# Copyright (C) 2026 Marco Di Bella
-# This file is distributed under the MIT License.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Congressomat 2.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/congressomat\n"
-"POT-Creation-Date: 2026-07-21T07:54:34+00:00\n"
-"PO-Revision-Date: 2026-07-21 10:00+0200\n"
+"Project-Id-Version: Congressomat\n"
+"POT-Creation-Date: 2026-07-21 11:14+0200\n"
+"PO-Revision-Date: 2026-07-21 11:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -13,58 +11,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
-"X-Domain: congressomat\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
 
-#. Plugin Name of the plugin
-#: includes/backend.php:51 includes/backend.php:52
-msgid "Congressomat"
-msgstr ""
-
-#. Plugin URI of the plugin
-msgid "https://github.com/mdibella-dev/congressomat"
-msgstr "https://www.marcodibella.de"
-
-#. Description of the plugin
-msgid ""
-"Core functions of CM Theme. Originally an integral part of the theme, now "
-"outsourced in a plugin."
-msgstr ""
-
-#. Author of the plugin
-msgid "Marco Di Bella"
-msgstr "Marco Di Bella"
-
-#. Author URI of the plugin
-msgid "https://www.marcodibella.de"
-msgstr "https://www.marcodibella.de"
-
-#: includes/backend.php:62 includes/backend.php:63 includes/backend.php:118
-#: includes/register/taxonomies/taxonomy-event.php:28
-#: includes/register/taxonomies/taxonomy-event.php:30
-#: includes/register/taxonomies/taxonomy-event.php:42
-msgid "Events"
-msgstr "Events"
-
-#: includes/backend.php:72 includes/backend.php:73 includes/backend.php:121
-#: includes/register/taxonomies/taxonomy-location.php:28
-#: includes/register/taxonomies/taxonomy-location.php:30
-#: includes/register/taxonomies/taxonomy-location.php:34
-msgid "Locations"
-msgstr ""
-
-#: includes/backend.php:82 includes/backend.php:83
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
-#: includes/register/taxonomies/taxonomy-partnership.php:29
-msgid "Partnership"
-msgstr ""
-
-#: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
-msgid "Exhibition packages"
-msgstr ""
-
-#: includes/backend.php:119 includes/backend.php:232
+#: includes/backend.php:51 includes/backend.php:136 includes/backend.php:252
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/register/post-types/post-type-session.php:28
@@ -74,29 +31,64 @@ msgstr ""
 msgid "Sessions"
 msgstr "Sessions"
 
-#: includes/backend.php:120
+#: includes/backend.php:52
+msgid "Congress Management"
+msgstr ""
+
+#: includes/backend.php:62 includes/backend.php:63 includes/backend.php:135
+#: includes/register/taxonomies/taxonomy-event.php:28
+#: includes/register/taxonomies/taxonomy-event.php:30
+#: includes/register/taxonomies/taxonomy-event.php:42
+msgid "Events"
+msgstr "Veranstaltungen"
+
+#: includes/backend.php:72 includes/backend.php:73 includes/backend.php:138
+#: includes/register/taxonomies/taxonomy-location.php:28
+#: includes/register/taxonomies/taxonomy-location.php:30
+#: includes/register/taxonomies/taxonomy-location.php:34
+msgid "Locations"
+msgstr ""
+
+#: includes/backend.php:85
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
+#: includes/register/post-types/post-type-partner.php:29
+#: includes/register/post-types/post-type-partner.php:35
+msgid "Partner"
+msgstr ""
+
+#: includes/backend.php:86
+msgid "Exhibition Management"
+msgstr ""
+
+#: includes/backend.php:97 includes/backend.php:98
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
+#: includes/register/taxonomies/taxonomy-partnership.php:29
+msgid "Partnership"
+msgstr ""
+
+#: includes/backend.php:107 includes/backend.php:108
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+msgid "Exhibition packages"
+msgstr ""
+
+#: includes/backend.php:137
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
 #: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
 #: includes/register/post-types/post-type-speaker.php:40
 #: includes/register/post-types/post-type-speaker.php:49
 msgid "Speakers"
-msgstr ""
+msgstr "Speakers"
 
-#: includes/backend.php:122 includes/backend.php:244
+#: includes/backend.php:264
 #: includes/register/post-types/post-type-partner.php:28
 #: includes/register/post-types/post-type-partner.php:31
 msgid "Partners"
 msgstr ""
 
-#: includes/backend.php:123
-#: includes/register/post-types/post-type-partner.php:30
-#: includes/register/taxonomies/taxonomy-partnership.php:28
-#: includes/register/taxonomies/taxonomy-partnership.php:33
-msgid "Partnerships"
-msgstr ""
-
-#: includes/backend.php:124 includes/backend.php:258
+#: includes/backend.php:278
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
@@ -105,15 +97,8 @@ msgstr ""
 msgid "Exhibition spaces"
 msgstr ""
 
-#: includes/backend.php:269
+#: includes/backend.php:289
 msgid "Create"
-msgstr ""
-
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
-#: includes/register/post-types/post-type-partner.php:29
-#: includes/register/post-types/post-type-partner.php:35
-msgid "Partner"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
@@ -123,21 +108,20 @@ msgid "Location"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
-msgid "Exhibition package"
+msgid "Exhibition Package"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:57
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:52
-msgid "Last updated"
-msgstr ""
+msgid "Last Update"
+msgstr "Letzte Aktualisierung"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:71
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:115
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:117
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:116
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:100
+#, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
@@ -148,8 +132,7 @@ msgid "Image"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
-#: includes/register/post-types/post-type-exhibition-space.php:29
-msgid "Exhibition space"
+msgid "Exhibition Space"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:79
@@ -160,22 +143,24 @@ msgstr ""
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:52
 #: includes/register/taxonomies/taxonomy-event.php:29
 msgid "Event"
-msgstr "Event"
+msgstr "Veranstaltung"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:54
-msgid "Date"
-msgstr ""
+msgid "Event Date"
+msgstr "Veranstaltungsdatum"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:55
-msgid "Time period"
-msgstr ""
+msgid "Time Slot"
+msgstr "Zeitfenster"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:87
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:86
+#, php-format
 msgid "Edit %1$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:106
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:105
 #: includes/classes/shortcodes/class-shortcode-event-table.php:237
+#, php-format
 msgid "%1$s to %2$s"
 msgstr ""
 
@@ -183,15 +168,15 @@ msgstr ""
 #: includes/register/post-types/post-type-speaker.php:29
 #: includes/register/post-types/post-type-speaker.php:41
 msgid "Speaker"
-msgstr ""
+msgstr "Speaker"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:51
-msgid "Short description"
-msgstr ""
+msgid "Short Description"
+msgstr "Kurzbeschreibung"
 
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:84
 msgid "active"
@@ -204,7 +189,7 @@ msgstr ""
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:53
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
 msgid "Count"
-msgstr ""
+msgstr "Anzahl"
 
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:93
 msgid "Show all exhibition spaces with this exhibition package"
@@ -224,6 +209,7 @@ msgstr ""
 
 #: includes/classes/shortcodes/class-shortcode-event-table.php:287
 #: includes/classes/shortcodes/class-shortcode-speaker-grid.php:180
+#, php-format
 msgid "Learn more about %1$s"
 msgstr ""
 
@@ -243,6 +229,16 @@ msgstr ""
 msgid "View website"
 msgstr ""
 
+#: includes/register/post-types/post-type-exhibition-space.php:29
+msgid "Exhibition space"
+msgstr ""
+
+#: includes/register/post-types/post-type-partner.php:30
+#: includes/register/taxonomies/taxonomy-partnership.php:28
+#: includes/register/taxonomies/taxonomy-partnership.php:33
+msgid "Partnerships"
+msgstr ""
+
 #: includes/register/post-types/post-type-session.php:29
 #: includes/register/post-types/post-type-session.php:40
 msgid "Session"
@@ -259,7 +255,7 @@ msgstr "Session bearbeiten"
 
 #: includes/register/post-types/post-type-session.php:34
 msgid "New Session"
-msgstr "Neue Session"
+msgstr "New Session"
 
 #: includes/register/post-types/post-type-session.php:35
 msgid "View Session"
@@ -280,7 +276,7 @@ msgstr "Keine Session gefunden"
 #: includes/register/post-types/post-type-speaker.php:31
 #: includes/register/post-types/post-type-speaker.php:32
 msgid "Add New Speaker"
-msgstr "Neuer Speaker hinzufügen"
+msgstr "Neuen Speaker hinzufügen"
 
 #: includes/register/post-types/post-type-speaker.php:33
 msgid "Edit Speaker"
@@ -288,7 +284,7 @@ msgstr "Speaker bearbeiten"
 
 #: includes/register/post-types/post-type-speaker.php:34
 msgid "New Speaker"
-msgstr "Neuen Speaker"
+msgstr "Neuer Speaker"
 
 #: includes/register/post-types/post-type-speaker.php:35
 #: includes/register/post-types/post-type-speaker.php:36
@@ -301,7 +297,7 @@ msgstr "Speaker durchsuchen"
 
 #: includes/register/post-types/post-type-speaker.php:38
 msgid "No Speaker Found"
-msgstr "Keinen Speaker gefunden"
+msgstr "Kein Speaker gefunden"
 
 #: includes/register/post-types/post-type-speaker.php:39
 msgid "No deleted speaker found"
@@ -325,27 +321,27 @@ msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:31
 msgid "Search Events"
-msgstr "Events durchsuchen"
+msgstr "Veranstaltungen durchsuchen"
 
 #: includes/register/taxonomies/taxonomy-event.php:32
 msgid "All Events"
-msgstr "Alle Events"
+msgstr "Alle Veranstaltungen"
 
 #: includes/register/taxonomies/taxonomy-event.php:33
 msgid "Edit Event"
-msgstr "Event bearbeiten"
+msgstr "Veranstaltung bearbeiten"
 
 #: includes/register/taxonomies/taxonomy-event.php:34
 msgid "View Event"
-msgstr "Event anzeigen"
+msgstr "Veranstaltung anzeigen"
 
 #: includes/register/taxonomies/taxonomy-event.php:35
 msgid "Update Event"
-msgstr ""
+msgstr "Veranstaltung aktualisieren"
 
 #: includes/register/taxonomies/taxonomy-event.php:36
 msgid "Add New Event"
-msgstr "Neues Event hinzufügen"
+msgstr "Neue Veranstaltung hinzufügen"
 
 #: includes/register/taxonomies/taxonomy-event.php:37
 msgid "New Event Title"
@@ -353,4 +349,30 @@ msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:38
 msgid "No Event Found"
-msgstr "Kein Event gefunden"
+msgstr "Keine Veranstaltung gefunden"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
+msgid "Exhibition package"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Congressomat"
+msgstr "Congressomat"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/mdibella-dev/congressomat"
+msgstr "https://github.com/mdibella-dev/congressomat"
+
+#. Description of the plugin/theme
+msgid ""
+"Core functions of CM Theme. Originally an integral part of the theme, now "
+"outsourced in a plugin."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Marco Di Bella"
+msgstr "Marco Di Bella"
+
+#. Author URI of the plugin/theme
+msgid "https://www.marcodibella.de"
+msgstr "https://www.marcodibella.de"
