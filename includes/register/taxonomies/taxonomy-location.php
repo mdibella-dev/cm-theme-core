@@ -25,13 +25,13 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Locations', 'cm-theme-core' ),
-        'singular_name' => __( 'Location', 'cm-theme-core' ),
-        'menu_name'     => __( 'Locations', 'cm-theme-core' ),
+        'name'          => __( 'Locations', 'congressomat' ),
+        'singular_name' => __( 'Location', 'congressomat' ),
+        'menu_name'     => __( 'Locations', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Locations', 'cm-theme-core' ),
+        'label'                 => __( 'Locations', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

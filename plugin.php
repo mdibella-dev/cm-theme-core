@@ -10,7 +10,7 @@
  * Tested up to:        7.0
  * Requires PHP:        7
  * Version:             2.1.0
- * Text Domain:         cm-theme-core
+ * Text Domain:         congressomat
  * Domain Path:         /languages
  *
  * @author  Marco Di Bella

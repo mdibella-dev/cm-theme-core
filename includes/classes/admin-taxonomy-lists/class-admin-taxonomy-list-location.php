@@ -47,12 +47,12 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
         $columns = [
             'cb'            => $default['cb'],
             'id'            => 'ID',
-            'image'         => __( 'Image', 'cm-theme-core' ),
+            'image'         => __( 'Image', 'congressomat' ),
             'name'          => $default['name'],
             'description'   => $default['description'],
             'slug'          => $default['slug'],
-            'count-session' => __( 'Sessions', 'cm-theme-core' ),
-            'count-space'   => __( 'Exhibition spaces', 'cm-theme-core' ),
+            'count-session' => __( 'Sessions', 'congressomat' ),
+            'count-space'   => __( 'Exhibition spaces', 'congressomat' ),
         ];
 
         return $columns;
@@ -103,7 +103,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     '<a href="/wp-admin/edit.php?location=%2$s&post_type=session" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'View all sessions at this location', 'cm-theme-core' )
+                    __( 'View all sessions at this location', 'congressomat' )
                 );
                 break;
 
@@ -122,7 +122,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'View all exhibition spaces in this location', 'cm-theme-core' )
+                    __( 'View all exhibition spaces in this location', 'congressomat' )
                 );
                 break;
 

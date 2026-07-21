@@ -45,10 +45,10 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
     public function manage_columns( $default ) {
         $columns = [
             'cb'                          => $default['cb'],
-            'title'                       => __( 'Partner', 'cm-theme-core' ),
-            'taxonomy-location'           => __( 'Location', 'cm-theme-core' ),
-            'taxonomy-exhibition_package' => __( 'Exhibition package', 'cm-theme-core' ),
-            'update'                      => __( 'Last updated', 'cm-theme-core' ),
+            'title'                       => __( 'Partner', 'congressomat' ),
+            'taxonomy-location'           => __( 'Location', 'congressomat' ),
+            'taxonomy-exhibition_package' => __( 'Exhibition package', 'congressomat' ),
+            'update'                      => __( 'Last updated', 'congressomat' ),
         ];
 
         return $columns;
@@ -68,7 +68,7 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
         switch ( $column_name ) {
             case 'update':
                 echo sprintf(
-                    __( '%1$s at %2$s', 'cm-theme-core' ),
+                    __( '%1$s at %2$s', 'congressomat' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
                     get_the_modified_date( 'H:i', $post_id ),
                 );

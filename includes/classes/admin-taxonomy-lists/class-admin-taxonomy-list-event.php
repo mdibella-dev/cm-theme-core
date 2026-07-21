@@ -50,8 +50,8 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
             'name'        => $default['name'],
             'description' => $default['description'],
             'slug'        => $default['slug'],
-            'posts'       => __( 'Sessions', 'cm-theme-core' ),
-            'status'      => __( 'Status', 'cm-theme-core' ),
+            'posts'       => __( 'Sessions', 'congressomat' ),
+            'status'      => __( 'Status', 'congressomat' ),
         ];
 
         return $columns;
@@ -81,7 +81,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
                 $output = sprintf(
                     '<span class="status-icon %1$s" title="%2$s"></span>',
                     (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
-                    (1 == $status)? __( 'active', 'cm-theme-core' ) : __( 'inactive', 'cm-theme-core' ),
+                    (1 == $status)? __( 'active', 'congressomat' ) : __( 'inactive', 'congressomat' ),
                 );
                 break;
 

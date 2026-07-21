@@ -50,7 +50,7 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
             'name'        => $default['name'],
             'description' => $default['description'],
             'slug'        => $default['slug'],
-            'count'       => __( 'Count', 'cm-theme-core' ),
+            'count'       => __( 'Count', 'congressomat' ),
         ];
 
         return $columns;
@@ -90,7 +90,7 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
                     '<a href="/wp-admin/edit.php?exhibition_package=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'Show all exhibition spaces with this exhibition package', 'cm-theme-core' )
+                    __( 'Show all exhibition spaces with this exhibition package', 'congressomat' )
                 );
                 break;
 

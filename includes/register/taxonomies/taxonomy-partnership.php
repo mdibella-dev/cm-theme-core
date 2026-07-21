@@ -25,12 +25,12 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Partnerships', 'cm-theme-core' ),
-        'singular_name' => __( 'Partnership', 'cm-theme-core' ),
+        'name'          => __( 'Partnerships', 'congressomat' ),
+        'singular_name' => __( 'Partnership', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Partnerships', 'cm-theme-core' ),
+        'label'                 => __( 'Partnerships', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

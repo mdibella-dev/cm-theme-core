@@ -234,7 +234,7 @@ class Shortcode_Event_Table extends \WordPress_Helper\Shortcode {
 
                                     if ( true == empty( $data_content ) ) {
                                         $data_content = sprintf(
-                                            __( '%1$s to %2$s', 'cm-theme-core' ),
+                                            __( '%1$s to %2$s', 'congressomat' ),
                                             get_field( 'programmpunkt-von', $session->ID ),
                                             get_field( 'programmpunkt-bis', $session->ID ) );
                                     }
@@ -284,7 +284,7 @@ class Shortcode_Event_Table extends \WordPress_Helper\Shortcode {
                                                 '<a href="%1$s" title="%2$s">%3$s</a>',
                                                 esc_url( $speaker_dataset['permalink'] ),
                                                 sprintf(
-                                                    __( 'Learn more about %1$s', 'cm-theme-core' ),
+                                                    __( 'Learn more about %1$s', 'congressomat' ),
                                                     $speaker_dataset['title_name']
                                                 ),
                                                 get_the_post_thumbnail( $speaker_dataset['id'], 'full' ) );

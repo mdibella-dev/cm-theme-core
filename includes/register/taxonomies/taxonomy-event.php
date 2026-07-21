@@ -25,21 +25,21 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Events', 'cm-theme-core' ),
-        'singular_name' => __( 'Event', 'cm-theme-core' ),
-        'menu_name'     => __( 'Events', 'cm-theme-core' ),
-        'search_items'  => __( 'Search Events', 'cm-theme-core' ),
-        'all_items'     => __( 'All Events', 'cm-theme-core' ),
-        'edit_item'     => __( 'Edit Event', 'cm-theme-core' ),
-        'view_item'     => __( 'View Event', 'cm-theme-core' ),
-        'update_item'   => __( 'Update Event', 'cm-theme-core' ),
-        'add_new_item'  => __( 'Add New Event', 'cm-theme-core' ),
-        'new_item_name' => __( 'New Event Title', 'cm-theme-core' ),
-        'not_found'     => __( 'No Event Found', 'cm-theme-core' ),
+        'name'          => __( 'Events', 'congressomat' ),
+        'singular_name' => __( 'Event', 'congressomat' ),
+        'menu_name'     => __( 'Events', 'congressomat' ),
+        'search_items'  => __( 'Search Events', 'congressomat' ),
+        'all_items'     => __( 'All Events', 'congressomat' ),
+        'edit_item'     => __( 'Edit Event', 'congressomat' ),
+        'view_item'     => __( 'View Event', 'congressomat' ),
+        'update_item'   => __( 'Update Event', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Event', 'congressomat' ),
+        'new_item_name' => __( 'New Event Title', 'congressomat' ),
+        'not_found'     => __( 'No Event Found', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Events', 'cm-theme-core' ),
+        'label'                 => __( 'Events', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

@@ -159,8 +159,8 @@ class Shortcode_Exhibition_List extends \WordPress_Helper\Shortcode {
                             ?>
                                 <div>
                                     <div>
-                                        <div><?php echo __( 'Area', 'cm-theme-core' ); ?></div>
-                                        <div><?php echo __( 'Booth', 'cm-theme-core' ); ?></div>
+                                        <div><?php echo __( 'Area', 'congressomat' ); ?></div>
+                                        <div><?php echo __( 'Booth', 'congressomat' ); ?></div>
                                     </div>
                                 <?php
                                 foreach ( $spaces as $space ) {

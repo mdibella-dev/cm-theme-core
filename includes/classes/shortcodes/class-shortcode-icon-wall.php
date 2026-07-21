@@ -190,7 +190,7 @@ class Shortcode_Icon_Wall extends \WordPress_Helper\Shortcode {
                         echo sprintf(
                             '<a href="%1$s" target="_self" title="%2$s">',
                             esc_url( $data['permalink'] ),
-                            __( 'View details page', 'cm-theme-core' ),
+                            __( 'View details page', 'congressomat' ),
                         );
                         break;
 
@@ -199,7 +199,7 @@ class Shortcode_Icon_Wall extends \WordPress_Helper\Shortcode {
                             echo sprintf(
                                 '<a href="%1$s" target="blank" title="%2$s">',
                                 esc_url( $data['website'] ),
-                                __( 'View website', 'cm-theme-core' ),
+                                __( 'View website', 'congressomat' ),
                             );
                         }
                         break;

@@ -50,7 +50,7 @@ class Admin_Taxonomy_List_Partnership extends \WordPress_Helper\Admin_Taxonomy_L
             'name'        => $default['name'],
             'description' => $default['description'],
             'slug'        => $default['slug'],
-            'count'       => __( 'Count', 'cm-theme-core' ),
+            'count'       => __( 'Count', 'congressomat' ),
         ];
 
         return $columns;
@@ -90,7 +90,7 @@ class Admin_Taxonomy_List_Partnership extends \WordPress_Helper\Admin_Taxonomy_L
                     '<a href="/wp-admin/edit.php?partnership=%2$s&post_type=partner" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'Show all partners cooperating in this way', 'cm-theme-core' )
+                    __( 'Show all partners cooperating in this way', 'congressomat' )
                 );
                 break;
 

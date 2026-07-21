@@ -49,12 +49,12 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
         $columns = [
             'cb'                => $default['cb'],
             'title'             => $default['title'],
-            'taxonomy-event'    => __( 'Event', 'cm-theme-core' ),
-            'taxonomy-location' => __( 'Location', 'cm-theme-core' ),
-            'event-date'        => __( 'Date', 'cm-theme-core' ),
-            'event-time'        => __( 'Time period', 'cm-theme-core' ),
-            'speaker'           => __( 'Speakers', 'cm-theme-core' ),
-            'update'            => __( 'Last updated', 'cm-theme-core' ),
+            'taxonomy-event'    => __( 'Event', 'congressomat' ),
+            'taxonomy-location' => __( 'Location', 'congressomat' ),
+            'event-date'        => __( 'Date', 'congressomat' ),
+            'event-time'        => __( 'Time period', 'congressomat' ),
+            'speaker'           => __( 'Speakers', 'congressomat' ),
+            'update'            => __( 'Last updated', 'congressomat' ),
         ];
 
         return $columns;
@@ -84,7 +84,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                             $speaker_dataset['id'],
                             get_the_post_thumbnail( $speaker_dataset['id'], [ 100, 0 ] ),
                             sprintf(
-                                __( 'Edit %1$s', 'cm-theme-core' ),
+                                __( 'Edit %1$s', 'congressomat' ),
                                 $speaker_dataset['name'],
                             ),
                         );
@@ -103,7 +103,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
 
                 if ( empty( $time ) ) {
                     $time = sprintf(
-                        __( '%1$s to %2$s', 'cm-theme-core' ),
+                        __( '%1$s to %2$s', 'congressomat' ),
                         get_field( 'programmpunkt-von', $post_id ),
                         get_field( 'programmpunkt-bis', $post_id )
                     );
@@ -114,7 +114,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
 
             case 'update':
                 echo sprintf(
-                    __( '%1$s at %2$s', 'cm-theme-core' ),
+                    __( '%1$s at %2$s', 'congressomat' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
                     get_the_modified_date( 'H:i', $post_id ),
                 );

@@ -25,14 +25,14 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Exhibition spaces', 'cm-theme-core' ),
-        'singular_name' => __( 'Exhibition space', 'cm-theme-core' ),
-        'menu_name'     => __( 'Exhibition spaces', 'cm-theme-core' ),
-        'all_items'     => __( 'Exhibition spaces', 'cm-theme-core' ),
+        'name'          => __( 'Exhibition spaces', 'congressomat' ),
+        'singular_name' => __( 'Exhibition space', 'congressomat' ),
+        'menu_name'     => __( 'Exhibition spaces', 'congressomat' ),
+        'all_items'     => __( 'Exhibition spaces', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Exhibition spaces', 'cm-theme-core' ),
+        'label'                 => __( 'Exhibition spaces', 'congressomat' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,

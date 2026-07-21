@@ -48,11 +48,11 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
     public function manage_columns( $default ) {
         $columns = [
             'cb'                   => $default['cb'],
-            'image'                => __( 'Image', 'cm-theme-core' ),
-            'title'                => __( 'Partner', 'cm-theme-core' ),
-            'taxonomy-partnership' => __( 'Partnership', 'cm-theme-core' ),
-            'exhibition'           => __( 'Exhibition space', 'cm-theme-core' ),
-            'update'               => __( 'Last updated', 'cm-theme-core' ),
+            'image'                => __( 'Image', 'congressomat' ),
+            'title'                => __( 'Partner', 'congressomat' ),
+            'taxonomy-partnership' => __( 'Partnership', 'congressomat' ),
+            'exhibition'           => __( 'Exhibition space', 'congressomat' ),
+            'update'               => __( 'Last updated', 'congressomat' ),
         ];
         return $columns;
     }
@@ -76,7 +76,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                         '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
                         $post_id,
                         get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
-                        __( 'Edit', 'cm-theme-core' )
+                        __( 'Edit', 'congressomat' )
                     );
                 } else {
                     echo '&mdash;';
@@ -112,7 +112,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
 
             case 'update':
                 echo sprintf(
-                    __( '%1$s at %2$s', 'cm-theme-core' ),
+                    __( '%1$s at %2$s', 'congressomat' ),
                     get_the_modified_date( 'd.m.Y', $post_id ),
                     get_the_modified_date( 'H:i', $post_id ),
                 );

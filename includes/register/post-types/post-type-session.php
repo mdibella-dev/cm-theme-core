@@ -25,23 +25,23 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'           => __( 'Sessions', 'cm-theme-core' ),
-        'singular_name'  => __( 'Session', 'cm-theme-core' ),
-        'menu_name'      => __( 'Sessions', 'cm-theme-core' ),
-        'add_new'        => __( 'Add New Session', 'cm-theme-core' ),
-        'add_new_item'   => __( 'Add New Session', 'cm-theme-core' ),
-        'edit_item'      => __( 'Edit Session', 'cm-theme-core' ),
-        'new_item'       => __( 'New Session', 'cm-theme-core' ),
-        'view_item'      => __( 'View Session', 'cm-theme-core' ),
-        'view_items'     => __( 'View Sessions', 'cm-theme-core' ),
-        'search_items'   => __( 'Search Sessions', 'cm-theme-core' ),
-        'not_found'      => __( 'No Session Found', 'cm-theme-core' ),
-        'all_items'      => __( 'Sessions', 'cm-theme-core' ),
-        'name_admin_bar' => __( 'Session', 'cm-theme-core' ),
+        'name'           => __( 'Sessions', 'congressomat' ),
+        'singular_name'  => __( 'Session', 'congressomat' ),
+        'menu_name'      => __( 'Sessions', 'congressomat' ),
+        'add_new'        => __( 'Add New Session', 'congressomat' ),
+        'add_new_item'   => __( 'Add New Session', 'congressomat' ),
+        'edit_item'      => __( 'Edit Session', 'congressomat' ),
+        'new_item'       => __( 'New Session', 'congressomat' ),
+        'view_item'      => __( 'View Session', 'congressomat' ),
+        'view_items'     => __( 'View Sessions', 'congressomat' ),
+        'search_items'   => __( 'Search Sessions', 'congressomat' ),
+        'not_found'      => __( 'No Session Found', 'congressomat' ),
+        'all_items'      => __( 'Sessions', 'congressomat' ),
+        'name_admin_bar' => __( 'Session', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Sessions', 'cm-theme-core' ),
+        'label'                 => __( 'Sessions', 'congressomat' ),
         'labels'                => $labels,
         'description'           => '',
         'public'                => true,

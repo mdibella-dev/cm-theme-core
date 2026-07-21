@@ -48,8 +48,8 @@ function admin_menu() {
     $admin_menu_slug = 'edit.php?post_type=session';
 
     add_menu_page(
-        __( 'Congress Management', 'cm-theme-core' ),
-        __( 'Congress Management', 'cm-theme-core' ),
+        __( 'Congressomat', 'congressomat' ),
+        __( 'Congressomat', 'congressomat' ),
         'manage_options',
         $admin_menu_slug,
         '',
@@ -59,8 +59,8 @@ function admin_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Events', 'cm-theme-core' ),
-        __( 'Events', 'cm-theme-core' ),
+        __( 'Events', 'congressomat' ),
+        __( 'Events', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=event&post_type=session',
         '',
@@ -69,8 +69,8 @@ function admin_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Locations', 'cm-theme-core' ),
-        __( 'Locations', 'cm-theme-core' ),
+        __( 'Locations', 'congressomat' ),
+        __( 'Locations', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=location&post_type=session',
         '',
@@ -79,8 +79,8 @@ function admin_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Partnership', 'cm-theme-core' ),
-        __( 'Partnership', 'cm-theme-core' ),
+        __( 'Partnership', 'congressomat' ),
+        __( 'Partnership', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
         '',
@@ -89,8 +89,8 @@ function admin_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Exhibition packages', 'cm-theme-core' ),
-        __( 'Exhibition packages', 'cm-theme-core' ),
+        __( 'Exhibition packages', 'congressomat' ),
+        __( 'Exhibition packages', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
@@ -115,14 +115,14 @@ function admin_menu_order( $menu_order ) {
            $sorted          = array();
 
     $sort_order = array(
-        __( 'Events', 'cm-theme-core' ),
-        __( 'Sessions', 'cm-theme-core' ),
-        __( 'Speakers', 'cm-theme-core' ),
-        __( 'Locations', 'cm-theme-core' ),
-        __( 'Partners', 'cm-theme-core' ),
-        __( 'Partnerships', 'cm-theme-core' ),
-        __( 'Exhibition spaces', 'cm-theme-core' ),
-        __( 'Exhibition packages', 'cm-theme-core' ),
+        __( 'Events', 'congressomat' ),
+        __( 'Sessions', 'congressomat' ),
+        __( 'Speakers', 'congressomat' ),
+        __( 'Locations', 'congressomat' ),
+        __( 'Partners', 'congressomat' ),
+        __( 'Partnerships', 'congressomat' ),
+        __( 'Exhibition spaces', 'congressomat' ),
+        __( 'Exhibition packages', 'congressomat' ),
     );
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
@@ -229,7 +229,7 @@ function rewrite_header() {
 
                 if ( false !== $term ) {
                     $do_modify = true;
-                    $title     = __( 'Sessions', 'cm-theme-core' );
+                    $title     = __( 'Sessions', 'congressomat' );
                     $subtitle  = $term->name;
                 }
                 break;
@@ -241,7 +241,7 @@ function rewrite_header() {
 
                 if ( false !== $term ) {
                     $do_modify = true;
-                    $title     = __( 'Partners', 'cm-theme-core' );
+                    $title     = __( 'Partners', 'congressomat' );
                     $subtitle  = $term->name;
                 }
                 break;
@@ -255,7 +255,7 @@ function rewrite_header() {
 
                 if ( false !== $term ) {
                     $do_modify = true;
-                    $title     = __( 'Exhibition spaces', 'cm-theme-core' );
+                    $title     = __( 'Exhibition spaces', 'congressomat' );
                     $subtitle  = $term->name;
                 }
                 break;
@@ -266,7 +266,7 @@ function rewrite_header() {
      ?>
 <div class="wrap">
     <h1 class="wp-heading-inline show" style="display:inline-block;"><?php echo $title . ' (' . $subtitle . ')';?></h1>
-     <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Create', 'cm-theme-core' );?></a>
+     <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Create', 'congressomat' );?></a>
 </div>
 <style id="modify">
     .wp-heading-inline:not(.show),.page-title-action:not(.show){display:none!important;}
