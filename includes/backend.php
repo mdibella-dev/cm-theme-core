@@ -48,13 +48,13 @@ function admin_menu() {
     $admin_menu_slug = 'edit.php?post_type=session';
 
     add_menu_page(
-        __( 'Congressomat', 'congressomat' ),
-        __( 'Congressomat', 'congressomat' ),
+        __( 'Sessions', 'congressomat' ),
+        __( 'Congress Management', 'congressomat' ),
         'manage_options',
         $admin_menu_slug,
         '',
         'dashicons-groups',
-        20,
+        2,
     );
 
     add_submenu_page(
@@ -77,12 +77,27 @@ function admin_menu() {
         0,
     );
 
+    // ---
+
+    $admin_menu_slug = 'edit.php?post_type=partner';
+
+    add_menu_page(
+        __( 'Partner', 'congressomat' ),
+        __( 'Exhibition Management', 'congressomat' ),
+        'manage_options',
+        $admin_menu_slug,
+        '',
+        'dashicons-groups',
+        2,
+    );
+
+
     add_submenu_page(
         $admin_menu_slug,
         __( 'Partnership', 'congressomat' ),
         __( 'Partnership', 'congressomat' ),
         'manage_options',
-        'edit-tags.php?taxonomy=partnership&post_type=session',
+        'edit-tags.php?taxonomy=partnership&post_type=partner',
         '',
         0,
     );
@@ -92,7 +107,7 @@ function admin_menu() {
         __( 'Exhibition packages', 'congressomat' ),
         __( 'Exhibition packages', 'congressomat' ),
         'manage_options',
-        'edit-tags.php?taxonomy=exhibition_package&post_type=session',
+        'edit-tags.php?taxonomy=exhibition_package&post_type=partner',
         '',
         0,
     );
@@ -111,19 +126,17 @@ add_action( 'admin_menu', __NAMESPACE__ . '\admin_menu', 999 );
 function admin_menu_order( $menu_order ) {
 
     global $submenu;
-           $admin_menu_slug = 'edit.php?post_type=session';
-           $sorted          = array();
 
-    $sort_order = array(
+    $admin_menu_slug = 'edit.php?post_type=session';
+
+
+    $sorted     = [];
+    $sort_order = [
         __( 'Events', 'congressomat' ),
         __( 'Sessions', 'congressomat' ),
         __( 'Speakers', 'congressomat' ),
         __( 'Locations', 'congressomat' ),
-        __( 'Partners', 'congressomat' ),
-        __( 'Partnerships', 'congressomat' ),
-        __( 'Exhibition spaces', 'congressomat' ),
-        __( 'Exhibition packages', 'congressomat' ),
-    );
+    ];
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
         foreach ( $submenu[ $admin_menu_slug ] as $submenu_item ) {
@@ -135,6 +148,13 @@ function admin_menu_order( $menu_order ) {
     }
 
     $submenu[ $admin_menu_slug ] = $sorted;
+
+    /*
+    __( 'Partners', 'congressomat' ),
+    __( 'Partnerships', 'congressomat' ),
+    __( 'Exhibition spaces', 'congressomat' ),
+    __( 'Exhibition packages', 'congressomat' ),
+    */
 
     return $menu_order;
 }
