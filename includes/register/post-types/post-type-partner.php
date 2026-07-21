@@ -27,7 +27,7 @@ function register() {
     $labels = [
         'name'          => __( 'Partners', 'congressomat' ),
         'singular_name' => __( 'Partner', 'congressomat' ),
-        'menu_name'     => __( 'Partnerships', 'congressomat' ),
+        'menu_name'     => __( 'Partners', 'congressomat' ),
         'all_items'     => __( 'Partners', 'congressomat' ),
     ];
 

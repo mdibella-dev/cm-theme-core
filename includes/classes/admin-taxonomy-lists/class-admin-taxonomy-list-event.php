@@ -81,7 +81,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
                 $output = sprintf(
                     '<span class="status-icon %1$s" title="%2$s"></span>',
                     (1 == $status)? 'status-icon-active' : 'status-icon-inactive',
-                    (1 == $status)? __( 'active', 'congressomat' ) : __( 'inactive', 'congressomat' ),
+                    (1 == $status)? __( 'Active', 'congressomat' ) : __( 'Inactive', 'congressomat' ),
                 );
                 break;
 

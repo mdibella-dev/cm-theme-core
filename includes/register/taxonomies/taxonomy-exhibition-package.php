@@ -25,12 +25,12 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Exhibition packages', 'congressomat' ),
-        'singular_name' => __( 'Exhibition package', 'congressomat' ),
+        'name'          => __( 'Exhibition Packages', 'congressomat' ),
+        'singular_name' => __( 'Exhibition Package', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Exhibition packages', 'congressomat' ),
+        'label'                 => __( 'Exhibition Packages', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

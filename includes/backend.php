@@ -54,7 +54,7 @@ function admin_menu() {
         $admin_menu_slug,
         '',
         'dashicons-groups',
-        20,
+        2,
     );
 
     add_submenu_page(
@@ -121,8 +121,8 @@ function admin_menu_order( $menu_order ) {
         __( 'Locations', 'congressomat' ),
         __( 'Partners', 'congressomat' ),
         __( 'Partnerships', 'congressomat' ),
-        __( 'Exhibition spaces', 'congressomat' ),
-        __( 'Exhibition packages', 'congressomat' ),
+        __( 'Exhibition Spaces', 'congressomat' ),
+        __( 'Exhibition Packages', 'congressomat' ),
     );
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
