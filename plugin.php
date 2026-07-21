@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:         CM Theme &mdash; Core
- * Plugin URI:          https://github.com/mdibella-dev/cm-theme-core
+ * Plugin Name:         Congressomat
+ * Plugin URI:          https://github.com/mdibella-dev/congressomat
  * Description:         Core functions of CM Theme. Originally an integral part of the theme, now outsourced in a plugin.
  * Author:              Marco Di Bella
  * Author URI:          https://www.marcodibella.de

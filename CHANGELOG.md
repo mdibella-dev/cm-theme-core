@@ -4,6 +4,7 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
+- Rename project name
 - Bugfix: Fix partnership filter in exhibtion list 
 
 <br>

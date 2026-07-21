@@ -1,4 +1,4 @@
-# CM Theme &mdash; Core
+# Congressomat
 Core functions of CM Theme. Originally an integral part of the theme, now outsourced in a plugin.
 
 <br>
@@ -19,16 +19,16 @@ translation-ready, custom-post-types, custom-taxonomies, shortcodes, oop
 
 ### Tested up to
 
-- WordPress 6.8
+- WordPress 7
 
 <br>
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/mdibella-dev/cm-theme-core/blob/main/CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/mdibella-dev/congressomat/blob/main/CHANGELOG.md).
 
 <br>
 
 ## License
 
-This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/cm-theme-core/blob/main/LICENSE.md) for further details.
+This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/congressomat/blob/main/LICENSE.md) for further details.
