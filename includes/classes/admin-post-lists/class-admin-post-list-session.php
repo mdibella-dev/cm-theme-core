@@ -51,10 +51,9 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
             'title'             => $default['title'],
             'taxonomy-event'    => __( 'Event', 'congressomat' ),
             'taxonomy-location' => __( 'Location', 'congressomat' ),
-            'event-date'        => __( 'Date', 'congressomat' ),
-            'event-time'        => __( 'Time period', 'congressomat' ),
+            'event-date'        => __( 'Event Date', 'congressomat' ),
+            'event-time'        => __( 'Time Slot', 'congressomat' ),
             'speaker'           => __( 'Speakers', 'congressomat' ),
-            'update'            => __( 'Last updated', 'congressomat' ),
         ];
 
         return $columns;
