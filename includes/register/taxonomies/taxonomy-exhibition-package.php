@@ -3,7 +3,7 @@
  * Custom taxonomy: exhibition_package ('Ausstellungspaket').
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core\Taxonomies\Exhibtition_Package;

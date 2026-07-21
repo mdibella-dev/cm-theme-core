@@ -3,7 +3,7 @@
  * Shortcode [event-table].
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core;

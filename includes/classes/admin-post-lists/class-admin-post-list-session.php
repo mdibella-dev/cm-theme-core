@@ -3,7 +3,7 @@
  * Class Admin_Post_List_Session
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  * @uses    ACF
  */
 

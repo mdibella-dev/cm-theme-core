@@ -3,7 +3,7 @@
  * Class Admin_Taxonomy_List_Location
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  * @uses    ACF
  */
 

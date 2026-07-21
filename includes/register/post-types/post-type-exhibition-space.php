@@ -3,7 +3,7 @@
  * Custom post type: exhibition_space ('Ausstellungsfläche').
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core\Post_Types\Exhibition_Space;

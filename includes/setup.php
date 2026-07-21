@@ -3,7 +3,7 @@
  * Functions to activate, initiate and deactivate the plugin.
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core;

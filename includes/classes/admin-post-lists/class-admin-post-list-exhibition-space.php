@@ -3,7 +3,7 @@
  * Class Admin_Post_List_Exhibition_Space
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core;

@@ -3,7 +3,7 @@
  * Custom taxonomy: event ('veranstaltung')
  *
  * @author  Marco Di Bella
- * @package cm-theme-core
+ * @package congressomat
  */
 
 namespace CM_Theme\Core\Taxonomies\Event;
