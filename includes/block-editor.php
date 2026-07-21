@@ -41,36 +41,3 @@ function disable_block_editor( $current_status, $post_type ) {
 
 add_filter( 'gutenberg_can_edit_post_type', __NAMESPACE__ . '\disable_block_editor' );
 add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\disable_block_editor', 10, 2);
-
-
-
-/**
- * Script and style modifications for the block editor.
- *
- * @since 1.0.0
- *
- * @see https://die-netzialisten.de/wordpress/gutenberg-breite-des-editors-anpassen/
- * @see https://www.billerickson.net/block-styles-in-gutenberg/
- */
-
-function add_block_editor_assets() {
-    wp_enqueue_style(
-        'block-editor',
-        PLUGIN_DIR . '/assets/build/css/block-editor.min.css',
-        [],
-        PLUGIN_VERSION,
-        'all'
-    );
-    wp_enqueue_script(
-        'block-editor',
-        PLUGIN_DIR . '/assets/build/js/block-editor.js',
-        [
-            'wp-blocks',
-            'wp-dom'
-        ],
-        PLUGIN_VERSION,
-        true
-    );
-}
-
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_block_editor_assets' );
