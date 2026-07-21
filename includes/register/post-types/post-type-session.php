@@ -65,7 +65,7 @@ function register() {
             'with_front' => true
         ],
         'query_var'             => true,
-        'menu_position'         => 2,
+        'menu_position'         => 20,
         'supports'              => [
             'title',
             'thumbnail'

@@ -43,7 +43,7 @@ function register() {
         'rest_controller_class' => 'WP_REST_Posts_Controller',
         'rest_namespace'        => 'wp/v2',
         'has_archive'           => false,
-        'show_in_menu'          => 'edit.php?post_type=partner',
+        'show_in_menu'          => 'edit.php?post_type=session',
         'show_in_nav_menus'     => true,
         'delete_with_user'      => false,
         'exclude_from_search'   => false,
@@ -56,7 +56,7 @@ function register() {
             'with_front' => true
         ],
         'query_var'             => true,
-        'menu_position'         => 2,
+        'menu_position'         => 5,
         'menu_icon'             => 'dashicons-groups',
         'supports'              => [
             'title',
