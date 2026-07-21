@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2026-07-20 18:57+0200\n"
-"PO-Revision-Date: 2026-07-20 18:59+0200\n"
+"POT-Creation-Date: 2026-07-21 07:34+0200\n"
+"PO-Revision-Date: 2026-07-21 07:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -61,14 +61,14 @@ msgstr "Ausstellungspakete"
 #: includes/register/post-types/post-type-session.php:39
 #: includes/register/post-types/post-type-session.php:44
 msgid "Sessions"
-msgstr "Veranstaltungspunkte"
+msgstr "Sessions"
 
 #: includes/backend.php:120
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
 #: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
-#: includes/register/post-types/post-type-speaker.php:31
-#: includes/register/post-types/post-type-speaker.php:45
+#: includes/register/post-types/post-type-speaker.php:40
+#: includes/register/post-types/post-type-speaker.php:49
 msgid "Speakers"
 msgstr "Referent:innen"
 
@@ -270,41 +270,61 @@ msgstr "Sessions durchsuchen"
 msgid "No Session Found"
 msgstr "Keine Session gefunden"
 
+#: includes/register/post-types/post-type-speaker.php:31
 #: includes/register/post-types/post-type-speaker.php:32
-msgid "Add new"
-msgstr "Neu hinzufügen"
+msgid "Add New Speaker"
+msgstr "Neue Referent/in hinzufügen"
 
 #: includes/register/post-types/post-type-speaker.php:33
-msgid "Search speaker"
-msgstr "Referent:in suchen"
+msgid "Edit Speaker"
+msgstr "Referent/in hinzufügen"
 
 #: includes/register/post-types/post-type-speaker.php:34
-msgid "No speaker found"
-msgstr "Kein/e Referent:in gefunden"
+msgid "New Speaker"
+msgstr "Neue Referent/in"
 
 #: includes/register/post-types/post-type-speaker.php:35
+#: includes/register/post-types/post-type-speaker.php:36
+msgid "View Speaker"
+msgstr "Referierenden anzeigen"
+
+#: includes/register/post-types/post-type-speaker.php:37
+msgid "Search Speaker"
+msgstr "Referent/innen durchsuchen"
+
+#: includes/register/post-types/post-type-speaker.php:38
+#, fuzzy
+#| msgid "No speaker found"
+msgid "No Speaker Found"
+msgstr "Kein/e Referent:in gefunden"
+
+#: includes/register/post-types/post-type-speaker.php:39
 msgid "No deleted speaker found"
 msgstr "Keine/e gelöschte/r Referent:in gefunden"
 
-#: includes/register/post-types/post-type-speaker.php:36
-msgid "Speaker image"
+#: includes/register/post-types/post-type-speaker.php:42
+#, fuzzy
+#| msgid "Speaker image"
+msgid "Speaker Image"
 msgstr "Bild des/der Referent:in"
 
-#: includes/register/post-types/post-type-speaker.php:37
-msgid "Set speaker image"
+#: includes/register/post-types/post-type-speaker.php:43
+#, fuzzy
+#| msgid "Set speaker image"
+msgid "Set Speaker Image"
 msgstr "Bild des/der Referent:in setzen"
 
-#: includes/register/post-types/post-type-speaker.php:38
-msgid "Remove speaker image"
+#: includes/register/post-types/post-type-speaker.php:44
+#, fuzzy
+#| msgid "Remove speaker image"
+msgid "Remove Speaker Image"
 msgstr "Bild des/der Referent:in entfernen"
 
-#: includes/register/post-types/post-type-speaker.php:39
-msgid "Use as speaker image"
+#: includes/register/post-types/post-type-speaker.php:45
+#, fuzzy
+#| msgid "Use as speaker image"
+msgid "Use As Speaker Image"
 msgstr "Als Bild des/der Referent:in verwenden"
-
-#: includes/register/post-types/post-type-speaker.php:40
-msgid "All speakers"
-msgstr "Alle Referent:innen"
 
 #: includes/register/taxonomies/taxonomy-event.php:31
 msgid "Search Events"
@@ -361,6 +381,12 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Add new"
+#~ msgstr "Neu hinzufügen"
+
+#~ msgid "All speakers"
+#~ msgstr "Alle Referent:innen"
 
 #, php-format
 #~ msgid "from %1$s to %2$s"

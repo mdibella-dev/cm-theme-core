@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CM Theme &mdash; Core Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cm-theme-core\n"
-"POT-Creation-Date: 2026-07-20 18:57+0200\n"
+"POT-Creation-Date: 2026-07-21 07:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,8 +65,8 @@ msgstr ""
 #: includes/backend.php:120 includes/classes/admin-post-lists/class-admin-post-list-session.php:56
 #: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
-#: includes/register/post-types/post-type-speaker.php:31
-#: includes/register/post-types/post-type-speaker.php:45
+#: includes/register/post-types/post-type-speaker.php:40
+#: includes/register/post-types/post-type-speaker.php:49
 msgid "Speakers"
 msgstr ""
 
@@ -267,40 +267,50 @@ msgstr ""
 msgid "No Session Found"
 msgstr ""
 
+#: includes/register/post-types/post-type-speaker.php:31
 #: includes/register/post-types/post-type-speaker.php:32
-msgid "Add new"
+msgid "Add New Speaker"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:33
-msgid "Search speaker"
+msgid "Edit Speaker"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:34
-msgid "No speaker found"
+msgid "New Speaker"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:35
-msgid "No deleted speaker found"
-msgstr ""
-
 #: includes/register/post-types/post-type-speaker.php:36
-msgid "Speaker image"
+msgid "View Speaker"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:37
-msgid "Set speaker image"
+msgid "Search Speaker"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:38
-msgid "Remove speaker image"
+msgid "No Speaker Found"
 msgstr ""
 
 #: includes/register/post-types/post-type-speaker.php:39
-msgid "Use as speaker image"
+msgid "No deleted speaker found"
 msgstr ""
 
-#: includes/register/post-types/post-type-speaker.php:40
-msgid "All speakers"
+#: includes/register/post-types/post-type-speaker.php:42
+msgid "Speaker Image"
+msgstr ""
+
+#: includes/register/post-types/post-type-speaker.php:43
+msgid "Set Speaker Image"
+msgstr ""
+
+#: includes/register/post-types/post-type-speaker.php:44
+msgid "Remove Speaker Image"
+msgstr ""
+
+#: includes/register/post-types/post-type-speaker.php:45
+msgid "Use As Speaker Image"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:31
