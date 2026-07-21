@@ -48,8 +48,8 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
             'cb'               => $default['cb'],
             'image'            => __( 'Image', 'congressomat' ),
             'title'            => __( 'Speaker', 'congressomat' ),
-            'shortdescription' => __( 'Short description', 'congressomat' ),
-            'update'           => __( 'Last updated', 'congressomat' ),
+            'shortdescription' => __( 'Short Description', 'congressomat' ),
+            'update'           => __( 'Last Update', 'congressomat' ),
         ];
 
         return $columns;
