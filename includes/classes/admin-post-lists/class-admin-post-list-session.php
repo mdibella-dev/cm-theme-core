@@ -80,14 +80,14 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                         $speaker_dataset = API\get_speaker_dataset( $speaker );
                         $speaker_id      = $speaker_dataset['id'];
 
-                         echo sprintf(
+                        echo sprintf(
                             '<a href="%1$s" title="%2$s">%3$s</a>',
                             esc_url( sprintf(
                                 '%1$s/post.php?post=%2$s&action=edit',
                                 get_admin_url(),
                                 $speaker_id,
                             ) ),
-                           __( 'Edit Speaker', 'congressomat' ),
+                            __( 'Edit Speaker', 'congressomat' ),
                             get_the_post_thumbnail(
                                 $speaker_id,
                                 'thumbnail',

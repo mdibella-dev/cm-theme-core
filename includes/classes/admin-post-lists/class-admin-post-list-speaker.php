@@ -72,21 +72,21 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
 
                     $speaker_id = $post_id;
 
-                     echo sprintf(
-                        '<a href="%1$s" title="%2$s">%3$s</a>',
-                        esc_url( sprintf(
-                            '%1$s/post.php?post=%2$s&action=edit',
-                            get_admin_url(),
-                            $speaker_id,
-                        ) ),
-                       __( 'Edit Speaker', 'congressomat' ),
-                        get_the_post_thumbnail(
-                            $speaker_id,
-                            'thumbnail',
-                            [
-                                'class' => 'speaker-icon'
-                            ]
-                        ),
+                    echo sprintf(
+                    '<a href="%1$s" title="%2$s">%3$s</a>',
+                    esc_url( sprintf(
+                        '%1$s/post.php?post=%2$s&action=edit',
+                        get_admin_url(),
+                        $speaker_id,
+                    ) ),
+                    __( 'Edit Speaker', 'congressomat' ),
+                    get_the_post_thumbnail(
+                        $speaker_id,
+                        'thumbnail',
+                        [
+                            'class' => 'speaker-icon'
+                        ]
+                    ),
                     );
                 } else {
                     echo '&mdash;';
