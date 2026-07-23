@@ -103,7 +103,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     '<a href="/wp-admin/edit.php?location=%2$s&post_type=session" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'View all sessions at this location', 'congressomat' )
+                    __( 'View All Sessions At This Location', 'congressomat' )
                 );
                 break;
 
@@ -122,7 +122,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
                     sizeof( $posts ),
                     $term->slug,
-                    __( 'View all exhibition spaces in this location', 'congressomat' )
+                    __( 'View All Exhibition Spaces In This Location', 'congressomat' )
                 );
                 break;
 

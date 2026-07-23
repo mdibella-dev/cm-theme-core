@@ -89,8 +89,8 @@ function admin_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Exhibition packages', 'congressomat' ),
-        __( 'Exhibition packages', 'congressomat' ),
+        __( 'Exhibition Packages', 'congressomat' ),
+        __( 'Exhibition Packages', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
