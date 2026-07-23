@@ -69,12 +69,24 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
         switch ( $column_name ) {
             case 'image':
                 if ( true === has_post_thumbnail( $post_id ) ) {
-                    // alternativ: admin_url?
-                    echo sprintf(
-                        '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
-                        $post_id,
-                        get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
-                        __( 'Edit', 'congressomat' )
+
+                    $speaker_id = $post_id;
+
+                     echo sprintf(
+                        '<a href="%1$s" title="%2$s">%3$s</a>',
+                        esc_url( sprintf(
+                            '%1$s/post.php?post=%2$s&action=edit',
+                            get_admin_url(),
+                            $speaker_id,
+                        ) ),
+                       __( 'Edit Speaker', 'congressomat' ),
+                        get_the_post_thumbnail(
+                            $speaker_id,
+                            'thumbnail',
+                            [
+                                'class' => 'speaker-icon'
+                            ]
+                        ),
                     );
                 } else {
                     echo '&mdash;';
