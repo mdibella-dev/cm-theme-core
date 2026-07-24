@@ -83,7 +83,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                         echo sprintf(
                             '<a href="%1$s" title="%2$s">%3$s</a>',
                             esc_url( sprintf(
-                                '%1$s/post.php?post=%2$s&action=edit',
+                                '%1$spost.php?post=%2$s&action=edit',
                                 get_admin_url(),
                                 $speaker_id,
                             ) ),
