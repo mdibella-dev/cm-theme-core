@@ -55,6 +55,13 @@ body.congressomat .postbox {
 }
 
 
+body.congressomat .postbox .inside,
+body.congressomat #major-publishing-actions {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 body.congressomat .tablenav {
 
     &.top {
@@ -77,6 +84,14 @@ body.congressomat.admin-color-modern {
     & ul.striped > :nth-child(2n+1),
     & .alternate {
         background-color: hsl(228.9, 79.4%, 98%);
+    }
+
+    & .postbox#acf-group_5c335ed9c412e .inside,
+    & .postbox#acf-group_5c3472f9224b7 .inside,
+    & .postbox#acf-group_5c45b8906f884 .inside,
+    & .postbox#acf-group_5f27d2d118cca .inside {
+        background-color: hsl(228.9, 79.4%, 98%);
+
     }
 }
 

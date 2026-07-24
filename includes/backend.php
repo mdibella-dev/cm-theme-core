@@ -293,7 +293,7 @@ function modify_admin_body_classes( $classes ) {
             'session',
             'speaker',
             'partner',
-            'exhibition-space',
+            'exhibition_space',
             'edit-session',
             'edit-speaker',
             'edit-partner',
