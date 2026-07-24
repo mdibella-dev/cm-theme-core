@@ -71,13 +71,25 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
         switch ( $column_name ) {
             case 'image':
                 if ( true === has_post_thumbnail( $post_id ) ) {
-                    // alternatively: admin_url?
+
                     echo sprintf(
-                        '<a href="/wp-admin/post.php?post=%1$s&action=edit" title="%3$s">%2$s</a>',
-                        $post_id,
-                        get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
-                        __( 'Edit', 'congressomat' )
+                        '<a href="%1$s" title="%2$s">%3$s</a>',
+                        esc_url( sprintf(
+                            '%1$spost.php?post=%2$s&action=edit',
+                            get_admin_url(),
+                            $post_id,
+                        ) ),
+                        __( 'Edit Partner', 'congressomat' ),
+                        get_the_post_thumbnail(
+                            $post_id,
+                            [ 100, 0 ],
+                            [
+                                'class' => 'partner-icon'
+                            ]
+                        ),
                     );
+
+                        //get_the_post_thumbnail( $post_id, [ 100, 0 ] ),
                 } else {
                     echo '&mdash;';
                 }
