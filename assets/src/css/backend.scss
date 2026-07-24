@@ -55,16 +55,42 @@ body.congressomat .postbox {
 }
 
 
+body.congressomat .tablenav {
+
+    &.top {
+        margin: 1rem 0 2rem;
+    }
+
+    &.bottom {
+        margin: 2rem 0 1rem;
+    }
+}
+
+
+body.congressomat p.search-box {
+    margin: 11px 0 1rem;
+}
+
+
+body.congressomat.admin-color-modern {
+    & .striped > tbody > :nth-child(2n+1),
+    & ul.striped > :nth-child(2n+1),
+    & .alternate {
+        background-color: hsl(228.9, 79.4%, 98%);
+    }
+}
+
+
+
 
 /**
- * Overview of the speakers
  * wp-admin/edit.php?post_type=speaker
  */
 
 .post-type-speaker .wp-list-table {
 
     .column-image {
-        width: 10%;
+        width: 60px;
 
         a {
             display: inline-block;
@@ -76,7 +102,6 @@ body.congressomat .postbox {
 
 
 /**
- * Overview of the sessions
  * wp-admin/edit.php?post_type=session
  */
 
@@ -100,7 +125,6 @@ body.congressomat .postbox {
 
 
 /**
- * Overview of the partners
  * wp-admin/edit.php?post_type=partner
  */
 
@@ -151,7 +175,6 @@ body.congressomat .postbox {
 
 
 /**
- * Overview of the events
  * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
  */
 
@@ -181,7 +204,6 @@ body.congressomat .postbox {
 
 
 /**
- * Overview of the locations
  * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
  */
 
@@ -194,32 +216,5 @@ body.congressomat .postbox {
             width: 150px;
             height: auto;
         }
-    }
-}
-
-
-/**.*/
-.tablenav {
-
-    &.top {
-        margin: 1rem 0 2rem;
-    }
-
-    &.bottom {
-        margin: 2rem 0 1rem;
-    }
-}
-
-
-p.search-box {
-    margin: 11px 0 1rem;
-}
-
-
-body.admin-color-modern {
-    & .striped > tbody > :nth-child(2n+1),
-    & ul.striped > :nth-child(2n+1),
-    & .alternate {
-        background-color: hsl(228.9, 79.4%, 98%);
     }
 }
