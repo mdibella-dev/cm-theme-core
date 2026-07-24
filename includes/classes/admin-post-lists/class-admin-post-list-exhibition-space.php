@@ -45,7 +45,7 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
     public function manage_columns( $default ) {
         $columns = [
             'cb'                          => $default['cb'],
-            'title'                       => __( 'Partner', 'congressomat' ),
+            'title'                       => __( 'Exhibition Space', 'congressomat' ),
             'taxonomy-location'           => __( 'Location', 'congressomat' ),
             'taxonomy-exhibition_package' => __( 'Exhibition Package', 'congressomat' ),
             'update'                      => __( 'Last Update', 'congressomat' ),

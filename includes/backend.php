@@ -255,7 +255,7 @@ function rewrite_header() {
 
                 if ( false !== $term ) {
                     $do_modify = true;
-                    $title     = __( 'Exhibition spaces', 'congressomat' );
+                    $title     = __( 'Exhibition Spaces', 'congressomat' );
                     $subtitle  = $term->name;
                 }
                 break;
