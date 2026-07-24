@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-21 14:03+0200\n"
-"PO-Revision-Date: 2026-07-21 14:11+0200\n"
+"POT-Creation-Date: 2026-07-24 11:35+0200\n"
+"PO-Revision-Date: 2026-07-24 11:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -46,8 +46,10 @@ msgstr ""
 msgid "Partnership"
 msgstr ""
 
-#: includes/backend.php:92 includes/backend.php:93
-msgid "Exhibition packages"
+#: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+msgid "Exhibition Packages"
 msgstr ""
 
 #: includes/backend.php:119 includes/backend.php:232
@@ -56,7 +58,7 @@ msgstr ""
 #: includes/register/post-types/post-type-session.php:28
 #: includes/register/post-types/post-type-session.php:30
 #: includes/register/post-types/post-type-session.php:39
-#: includes/register/post-types/post-type-session.php:44
+#: includes/register/post-types/post-type-session.php:46
 msgid "Sessions"
 msgstr "Sessions"
 
@@ -65,16 +67,16 @@ msgstr "Sessions"
 #: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
 #: includes/register/post-types/post-type-speaker.php:40
-#: includes/register/post-types/post-type-speaker.php:49
+#: includes/register/post-types/post-type-speaker.php:51
 msgid "Speakers"
 msgstr "Speakers"
 
 #: includes/backend.php:122 includes/backend.php:244
 #: includes/register/post-types/post-type-partner.php:28
 #: includes/register/post-types/post-type-partner.php:30
-#: includes/register/post-types/post-type-partner.php:31
+#: includes/register/post-types/post-type-partner.php:40
 msgid "Partners"
-msgstr ""
+msgstr "Partner"
 
 #: includes/backend.php:123
 #: includes/register/taxonomies/taxonomy-partnership.php:28
@@ -87,15 +89,9 @@ msgstr ""
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
 #: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:35
+#: includes/register/post-types/post-type-exhibition-space.php:37
 msgid "Exhibition Spaces"
 msgstr "Ausstellungsflächen"
-
-#: includes/backend.php:125
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
-msgid "Exhibition Packages"
-msgstr ""
 
 #: includes/backend.php:258
 msgid "Exhibition spaces"
@@ -108,9 +104,10 @@ msgstr ""
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
 #: includes/register/post-types/post-type-partner.php:29
-#: includes/register/post-types/post-type-partner.php:35
+#: includes/register/post-types/post-type-partner.php:41
+#: includes/register/post-types/post-type-partner.php:51
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
@@ -130,9 +127,9 @@ msgid "Last Update"
 msgstr "Letzte Aktualisierung"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:71
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:115
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:116
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:100
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:127
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:125
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:112
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
@@ -148,9 +145,10 @@ msgstr ""
 msgid "Exhibition Space"
 msgstr "Ausstellungsfläche"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:79
-msgid "Edit"
-msgstr ""
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:82
+#: includes/register/post-types/post-type-partner.php:33
+msgid "Edit Partner"
+msgstr "Partner bearbeiten"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:52
 #: includes/register/taxonomies/taxonomy-event.php:29
@@ -165,13 +163,13 @@ msgstr "Veranstaltungsdatum"
 msgid "Time Slot"
 msgstr "Zeitfenster"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:86
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:77
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:90
+#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:82
 #: includes/register/post-types/post-type-speaker.php:33
 msgid "Edit Speaker"
 msgstr "Speaker bearbeiten"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:105
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:114
 #: includes/classes/shortcodes/class-shortcode-event-table.php:237
 #, php-format
 msgid "%1$s to %2$s"
@@ -216,9 +214,9 @@ msgstr ""
 msgid "View All Exhibition Spaces In This Location"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:93
-msgid "Show all partners cooperating in this way"
-msgstr ""
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:96
+msgid "Show Partners"
+msgstr "Partner anzeigen"
 
 #: includes/classes/shortcodes/class-shortcode-event-table.php:287
 #: includes/classes/shortcodes/class-shortcode-speaker-grid.php:180
@@ -241,6 +239,48 @@ msgstr ""
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:202
 msgid "View website"
 msgstr ""
+
+#: includes/register/post-types/post-type-partner.php:31
+#: includes/register/post-types/post-type-partner.php:32
+msgid "Add New Partner"
+msgstr "Neuen Partner hinzufügen"
+
+#: includes/register/post-types/post-type-partner.php:34
+msgid "New Partner"
+msgstr "Neuer Partner"
+
+#: includes/register/post-types/post-type-partner.php:35
+#: includes/register/post-types/post-type-partner.php:36
+msgid "View Partner"
+msgstr "Partner anzeigen"
+
+#: includes/register/post-types/post-type-partner.php:37
+msgid "Search Partner"
+msgstr "Partner durchsuchen"
+
+#: includes/register/post-types/post-type-partner.php:38
+msgid "No partner found"
+msgstr "Keinen Partner gefunden"
+
+#: includes/register/post-types/post-type-partner.php:39
+msgid "No deleted partner found"
+msgstr "Keinen gelöschten Partner gefunden"
+
+#: includes/register/post-types/post-type-partner.php:42
+msgid "Partner Logo"
+msgstr "Partner-Logo"
+
+#: includes/register/post-types/post-type-partner.php:43
+msgid "Set Partner Logo"
+msgstr "Partner-Logo setzen"
+
+#: includes/register/post-types/post-type-partner.php:44
+msgid "Remove Partner Logo"
+msgstr "Partner-Logo entfernen"
+
+#: includes/register/post-types/post-type-partner.php:45
+msgid "Use As Partner Logo"
+msgstr "Als Partner-Logo benutzen"
 
 #: includes/register/post-types/post-type-session.php:29
 #: includes/register/post-types/post-type-session.php:40
@@ -296,27 +336,27 @@ msgstr "Speaker durchsuchen"
 
 #: includes/register/post-types/post-type-speaker.php:38
 msgid "No Speaker Found"
-msgstr "Kein Speaker gefunden"
+msgstr "Keinen Speaker gefunden"
 
 #: includes/register/post-types/post-type-speaker.php:39
 msgid "No deleted speaker found"
-msgstr ""
+msgstr "Keinen gelöschten Speaker gefunden"
 
 #: includes/register/post-types/post-type-speaker.php:42
 msgid "Speaker Image"
-msgstr ""
+msgstr "Bild des Sprechers"
 
 #: includes/register/post-types/post-type-speaker.php:43
 msgid "Set Speaker Image"
-msgstr ""
+msgstr "Sprecherbild setzen"
 
 #: includes/register/post-types/post-type-speaker.php:44
 msgid "Remove Speaker Image"
-msgstr ""
+msgstr "Sprecherbild entfernen"
 
 #: includes/register/post-types/post-type-speaker.php:45
 msgid "Use As Speaker Image"
-msgstr ""
+msgstr "Als Sprecherbild benutzen"
 
 #: includes/register/taxonomies/taxonomy-event.php:31
 msgid "Search Events"
