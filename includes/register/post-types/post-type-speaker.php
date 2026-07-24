@@ -45,6 +45,8 @@ function register() {
         'use_featured_image'    => __( 'Use As Speaker Image', 'congressomat' ),
     ];
 
+    $menu = 'edit.php?post_type=session';
+
     $args = [
         'label'                 => __( 'Speakers', 'congressomat' ),
         'labels'                => $labels,
@@ -57,7 +59,7 @@ function register() {
         'rest_controller_class' => 'WP_REST_Posts_Controller',
         'rest_namespace'        => 'wp/v2',
         'has_archive'           => false,
-        'show_in_menu'          => 'edit.php?post_type=session',
+        'show_in_menu'          => $menu,
         'show_in_nav_menus'     => false,
         'delete_with_user'      => false,
         'exclude_from_search'   => false,
