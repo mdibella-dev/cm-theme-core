@@ -276,3 +276,40 @@ function rewrite_header() {
  }
 
  add_action( 'admin_notices', __NAMESPACE__ . '\rewrite_header' );
+
+
+
+ /**
+  * Adds a CSS class to certain admin pages to show the presence of this plugin.
+  *
+  * @since 3.0.0
+  */
+
+function modify_admin_body_classes( $classes ) {
+
+    if ( is_admin() ) {
+        $current_screen = get_current_screen();
+        $screens = [
+            'session',
+            'speaker',
+            'partner',
+            'exhibition-space',
+            'edit-session',
+            'edit-speaker',
+            'edit-partner',
+            'edit-exhibition_space',
+            'edit-event',
+            'edit-location',
+            'edit-exhibition_package',
+            'edit-partnership'
+        ];
+
+        if ( in_array( $current_screen->id, $screens ) ) {
+            $classes .= ' congressomat';
+        }
+    }
+
+    return $classes;
+}
+
+add_filter( 'admin_body_class', __NAMESPACE__ . '\modify_admin_body_classes' );
