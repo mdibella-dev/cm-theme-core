@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-24 11:35+0200\n"
+"POT-Creation-Date: 2026-07-24 12:12+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,7 +47,8 @@ msgstr ""
 
 #: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:28
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:31
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:39
 msgid "Exhibition Packages"
 msgstr ""
 
@@ -387,6 +388,26 @@ msgstr ""
 
 #: includes/register/taxonomies/taxonomy-event.php:38
 msgid "No Event Found"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:30
+msgid "Search Exhibition Package"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:32
+msgid "Edit Exhibition Package"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+msgid "Update Exhibition Package"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:34
+msgid "Add New Exhibition Package"
+msgstr ""
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:35
+msgid "No Exhibition Package found"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

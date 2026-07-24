@@ -27,6 +27,12 @@ function register() {
     $labels = [
         'name'          => __( 'Exhibition Packages', 'congressomat' ),
         'singular_name' => __( 'Exhibition Package', 'congressomat' ),
+        'search_items'  => __( 'Search Exhibition Package', 'congressomat' ),
+        'all_items'     => __( 'Exhibition Packages', 'congressomat' ),
+        'edit_item'     => __( 'Edit Exhibition Package', 'congressomat' ),
+        'update_item'   => __( 'Update Exhibition Package', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Exhibition Package', 'congressomat' ),
+        'not_found'     => __( 'No Exhibition Package found', 'congressomat' ),
     ];
 
     $args = [

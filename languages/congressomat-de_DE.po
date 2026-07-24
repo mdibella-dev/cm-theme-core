@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-24 11:35+0200\n"
-"PO-Revision-Date: 2026-07-24 11:40+0200\n"
+"POT-Creation-Date: 2026-07-24 12:12+0200\n"
+"PO-Revision-Date: 2026-07-24 12:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -48,9 +48,10 @@ msgstr ""
 
 #: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:28
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:31
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:39
 msgid "Exhibition Packages"
-msgstr ""
+msgstr "Ausstellungspakete"
 
 #: includes/backend.php:119 includes/backend.php:232
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
@@ -118,7 +119,7 @@ msgstr ""
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:29
 msgid "Exhibition Package"
-msgstr ""
+msgstr "Ausstellungspaket"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
@@ -138,7 +139,7 @@ msgstr ""
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:49
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
 msgid "Image"
-msgstr ""
+msgstr "Bild"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/register/post-types/post-type-exhibition-space.php:29
@@ -389,6 +390,26 @@ msgstr "Neuer Veranstaltungstitel"
 #: includes/register/taxonomies/taxonomy-event.php:38
 msgid "No Event Found"
 msgstr "Keine Veranstaltung gefunden"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:30
+msgid "Search Exhibition Package"
+msgstr "Ausstellungspakete durchsuchen"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:32
+msgid "Edit Exhibition Package"
+msgstr "Ausstellungspaket bearbeiten"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
+msgid "Update Exhibition Package"
+msgstr "Ausstellungspaket aktualisieren"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:34
+msgid "Add New Exhibition Package"
+msgstr "Neues Ausstellungspaket hinzufügen"
+
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:35
+msgid "No Exhibition Package found"
+msgstr "Kein Ausstellungspaket gefunden"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/congressomat"
