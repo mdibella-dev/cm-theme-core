@@ -68,7 +68,6 @@ function register() {
         'menu_position'         => 20,
         'supports'              => [
             'title',
-            'thumbnail'
         ],
         'taxonomies'            => [
             'location',
