@@ -14,9 +14,8 @@
     border-radius: 50%;
     box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
     border: 2px solid white;
-    line-height: 0;
-    font-size: 0;
 }
+
 
 
 
@@ -24,8 +23,7 @@
  * General settings
  */
 
-.widefat {
-
+ body.congressomat .widefat {
     td,
     th,
     th.sortable,
@@ -42,6 +40,18 @@
     th.sorted a span:not(.sorting-indicator) {
         font-weight: bold;
     }
+
+    td a img {
+        line-height: 0;
+        font-size: 0;
+    }
+}
+
+
+body.congressomat table.widefat,
+body.congressomat .postbox {
+    box-shadow: 0 5px 20px -8px rgba(0,0,0,.1);
+    border-radius: 10px;
 }
 
 
@@ -62,6 +72,7 @@
         }
     }
 }
+
 
 
 /**
@@ -96,19 +107,21 @@
 .post-type-partner .wp-list-table {
 
     .column-image {
-        width: 10%;
+        --column-size: 60px;
+
+        width: var(--column-size);
 
         a {
             display: inline-block;
+            line-height:0;
+            width: var(--column-size);
         }
 
-        img {
-            width: 80px;
-            height: auto;
-            line-height: 0;
-            font-size: 0;
+        a > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-
     }
 
 }
@@ -181,5 +194,32 @@
             width: 150px;
             height: auto;
         }
+    }
+}
+
+
+/**.*/
+.tablenav {
+
+    &.top {
+        margin: 1rem 0 2rem;
+    }
+
+    &.bottom {
+        margin: 2rem 0 1rem;
+    }
+}
+
+
+p.search-box {
+    margin: 11px 0 1rem;
+}
+
+
+body.admin-color-modern {
+    & .striped > tbody > :nth-child(2n+1),
+    & ul.striped > :nth-child(2n+1),
+    & .alternate {
+        background-color: hsl(228.9, 79.4%, 98%);
     }
 }
