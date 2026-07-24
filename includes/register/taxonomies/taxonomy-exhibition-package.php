@@ -32,7 +32,7 @@ function register() {
         'edit_item'     => __( 'Edit Exhibition Package', 'congressomat' ),
         'update_item'   => __( 'Update Exhibition Package', 'congressomat' ),
         'add_new_item'  => __( 'Add New Exhibition Package', 'congressomat' ),
-        'not_found'     => __( 'No Exhibition Package found', 'congressomat' ),
+        'not_found'     => __( 'No exhibition package found', 'congressomat' ),
     ];
 
     $args = [

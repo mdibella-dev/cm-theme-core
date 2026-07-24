@@ -28,6 +28,14 @@ function register() {
         'name'          => __( 'Locations', 'congressomat' ),
         'singular_name' => __( 'Location', 'congressomat' ),
         'menu_name'     => __( 'Locations', 'congressomat' ),
+        'search_items'  => __( 'Search Locations', 'congressomat' ),
+        'all_items'     => __( 'All Locations', 'congressomat' ),
+        'edit_item'     => __( 'Edit Location', 'congressomat' ),
+        'view_item'     => __( 'View Location', 'congressomat' ),
+        'update_item'   => __( 'Update Location', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Location', 'congressomat' ),
+        'new_item_name' => __( 'New Location Title', 'congressomat' ),
+        'not_found'     => __( 'No location found', 'congressomat' ),
     ];
 
     $args = [

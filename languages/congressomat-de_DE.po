@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-24 12:12+0200\n"
-"PO-Revision-Date: 2026-07-24 12:16+0200\n"
+"POT-Creation-Date: 2026-07-24 13:04+0200\n"
+"PO-Revision-Date: 2026-07-24 13:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -36,9 +36,9 @@ msgstr "Veranstaltungen"
 #: includes/backend.php:72 includes/backend.php:73 includes/backend.php:121
 #: includes/register/taxonomies/taxonomy-location.php:28
 #: includes/register/taxonomies/taxonomy-location.php:30
-#: includes/register/taxonomies/taxonomy-location.php:34
+#: includes/register/taxonomies/taxonomy-location.php:42
 msgid "Locations"
-msgstr ""
+msgstr "Orte"
 
 #: includes/backend.php:82 includes/backend.php:83
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
@@ -89,8 +89,8 @@ msgstr ""
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
-#: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:37
+#: includes/register/post-types/post-type-exhibition-space.php:40
+#: includes/register/post-types/post-type-exhibition-space.php:47
 msgid "Exhibition Spaces"
 msgstr "Ausstellungsflächen"
 
@@ -114,7 +114,7 @@ msgstr "Partner"
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
 #: includes/register/taxonomies/taxonomy-location.php:29
 msgid "Location"
-msgstr ""
+msgstr "Ort"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:29
@@ -143,6 +143,7 @@ msgstr "Bild"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/register/post-types/post-type-exhibition-space.php:29
+#: includes/register/post-types/post-type-exhibition-space.php:41
 msgid "Exhibition Space"
 msgstr "Ausstellungsfläche"
 
@@ -240,6 +241,36 @@ msgstr ""
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:202
 msgid "View website"
 msgstr ""
+
+#: includes/register/post-types/post-type-exhibition-space.php:31
+#: includes/register/post-types/post-type-exhibition-space.php:32
+msgid "Add New Exhibition Space"
+msgstr "Neue Ausstellungsfläche hinzufügen"
+
+#: includes/register/post-types/post-type-exhibition-space.php:33
+msgid "Edit Exhibition Space"
+msgstr "Ausstellungsfläche bearbeiten"
+
+#: includes/register/post-types/post-type-exhibition-space.php:34
+msgid "New Exhibition Space"
+msgstr "Neue Ausstellungsfläche"
+
+#: includes/register/post-types/post-type-exhibition-space.php:35
+#: includes/register/post-types/post-type-exhibition-space.php:36
+msgid "View Exhibition Space"
+msgstr "Ausstellungsflächen anzeigen"
+
+#: includes/register/post-types/post-type-exhibition-space.php:37
+msgid "Search Exhibition Space"
+msgstr "Ausstellungsflächen durchsuchen"
+
+#: includes/register/post-types/post-type-exhibition-space.php:38
+msgid "No exhibition space found"
+msgstr "Keine Ausstellungsfläche gefunden"
+
+#: includes/register/post-types/post-type-exhibition-space.php:39
+msgid "No deleted exhibition space found"
+msgstr "Keine gelöschte Ausstellungsfläche gefunden"
 
 #: includes/register/post-types/post-type-partner.php:31
 #: includes/register/post-types/post-type-partner.php:32
@@ -388,7 +419,7 @@ msgid "New Event Title"
 msgstr "Neuer Veranstaltungstitel"
 
 #: includes/register/taxonomies/taxonomy-event.php:38
-msgid "No Event Found"
+msgid "No event found"
 msgstr "Keine Veranstaltung gefunden"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:30
@@ -408,8 +439,40 @@ msgid "Add New Exhibition Package"
 msgstr "Neues Ausstellungspaket hinzufügen"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:35
-msgid "No Exhibition Package found"
+msgid "No exhibition package found"
 msgstr "Kein Ausstellungspaket gefunden"
+
+#: includes/register/taxonomies/taxonomy-location.php:31
+msgid "Search Locations"
+msgstr "Orte durchsuchen"
+
+#: includes/register/taxonomies/taxonomy-location.php:32
+msgid "All Locations"
+msgstr "Alle Orte"
+
+#: includes/register/taxonomies/taxonomy-location.php:33
+msgid "Edit Location"
+msgstr "Ort bearbeiten"
+
+#: includes/register/taxonomies/taxonomy-location.php:34
+msgid "View Location"
+msgstr "Ort anzeigen"
+
+#: includes/register/taxonomies/taxonomy-location.php:35
+msgid "Update Location"
+msgstr "Ort aktualisieren"
+
+#: includes/register/taxonomies/taxonomy-location.php:36
+msgid "Add New Location"
+msgstr "Neuen Ort hinzufügen"
+
+#: includes/register/taxonomies/taxonomy-location.php:37
+msgid "New Location Title"
+msgstr "Neuer Ortstitel"
+
+#: includes/register/taxonomies/taxonomy-location.php:38
+msgid "No location found"
+msgstr "Keinen Ort gefunden"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/congressomat"

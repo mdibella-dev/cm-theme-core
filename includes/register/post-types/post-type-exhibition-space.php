@@ -25,10 +25,20 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Exhibition Spaces', 'congressomat' ),
-        'singular_name' => __( 'Exhibition Space', 'congressomat' ),
-        'menu_name'     => __( 'Exhibition Spaces', 'congressomat' ),
-        'all_items'     => __( 'Exhibition Spaces', 'congressomat' ),
+        'name'                  => __( 'Exhibition Spaces', 'congressomat' ),
+        'singular_name'         => __( 'Exhibition Space', 'congressomat' ),
+        'menu_name'             => __( 'Exhibition Spaces', 'congressomat' ),
+        'add_new'               => __( 'Add New Exhibition Space', 'congressomat' ),
+        'add_new_item'          => __( 'Add New Exhibition Space', 'congressomat' ),
+        'edit_item'             => __( 'Edit Exhibition Space', 'congressomat' ),
+        'new_item'              => __( 'New Exhibition Space', 'congressomat' ),
+        'view_item'             => __( 'View Exhibition Space', 'congressomat' ),
+        'view_items'            => __( 'View Exhibition Space', 'congressomat' ),
+        'search_items'          => __( 'Search Exhibition Space', 'congressomat' ),
+        'not_found'             => __( 'No exhibition space found', 'congressomat' ),
+        'not_found_in_trash'    => __( 'No deleted exhibition space found', 'congressomat' ),
+        'all_items'             => __( 'Exhibition Spaces', 'congressomat' ),
+        'name_admin_bar'        => __( 'Exhibition Space', 'congressomat' ),
     ];
 
     $menu = 'edit.php?post_type=session';

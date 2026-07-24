@@ -35,7 +35,7 @@ function register() {
         'update_item'   => __( 'Update Event', 'congressomat' ),
         'add_new_item'  => __( 'Add New Event', 'congressomat' ),
         'new_item_name' => __( 'New Event Title', 'congressomat' ),
-        'not_found'     => __( 'No Event Found', 'congressomat' ),
+        'not_found'     => __( 'No event found', 'congressomat' ),
     ];
 
     $args = [
