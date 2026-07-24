@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom taxonomy: event ('veranstaltung')
+ * Custom taxonomy: event
  *
  * @author  Marco Di Bella
  * @package congressomat

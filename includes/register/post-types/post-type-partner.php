@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom post type: partner ('Kongresspartner').
+ * Custom post type: partner
  *
  * @author  Marco Di Bella
  * @package congressomat
@@ -25,10 +25,24 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Partners', 'congressomat' ),
-        'singular_name' => __( 'Partner', 'congressomat' ),
-        'menu_name'     => __( 'Partners', 'congressomat' ),
-        'all_items'     => __( 'Partners', 'congressomat' ),
+        'name'                  => __( 'Partners', 'congressomat' ),
+        'singular_name'         => __( 'Partner', 'congressomat' ),
+        'menu_name'             => __( 'Partners', 'congressomat' ),
+        'add_new'               => __( 'Add New Partner', 'congressomat' ),
+        'add_new_item'          => __( 'Add New Partner', 'congressomat' ),
+        'edit_item'             => __( 'Edit Partner', 'congressomat' ),
+        'new_item'              => __( 'New Partner', 'congressomat' ),
+        'view_item'             => __( 'View Partner', 'congressomat' ),
+        'view_items'            => __( 'View Partner', 'congressomat' ),
+        'search_items'          => __( 'Search Partner', 'congressomat' ),
+        'not_found'             => __( 'No partner found', 'congressomat' ),
+        'not_found_in_trash'    => __( 'No deleted partner found', 'congressomat' ),
+        'all_items'             => __( 'Partners', 'congressomat' ),
+        'name_admin_bar'        => __( 'Partner', 'congressomat' ),
+        'featured_image'        => __( 'Partner Logo', 'congressomat' ),
+        'set_featured_image'    => __( 'Set Partner Logo', 'congressomat' ),
+        'remove_featured_image' => __( 'Remove Partner Logo', 'congressomat' ),
+        'use_featured_image'    => __( 'Use As Partner Logo', 'congressomat' ),
     ];
 
     $menu = 'edit.php?post_type=session';

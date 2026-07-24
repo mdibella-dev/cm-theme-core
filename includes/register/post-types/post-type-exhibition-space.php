@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom post type: exhibition_space ('Ausstellungsfläche').
+ * Custom post type: exhibition_space
  *
  * @author  Marco Di Bella
  * @package congressomat

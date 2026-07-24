@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom taxonomy: exhibition_package ('Ausstellungspaket').
+ * Custom taxonomy: exhibition_package
  *
  * @author  Marco Di Bella
  * @package congressomat

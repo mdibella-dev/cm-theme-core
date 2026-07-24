@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom post type: session ('Programmpunkte').
+ * Custom post type: session
  *
  * @author  Marco Di Bella
  * @package congressomat

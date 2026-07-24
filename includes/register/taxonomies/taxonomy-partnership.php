@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom taxonomy: partnership ('Kooperationsformen').
+ * Custom taxonomy: partnership
  *
  * @author  Marco Di Bella
  * @package congressomat

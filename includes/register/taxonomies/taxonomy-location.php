@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom taxonomy: location ('Örtlichkeiten').
+ * Custom taxonomy: location
  *
  * @author  Marco Di Bella
  * @package congressomat

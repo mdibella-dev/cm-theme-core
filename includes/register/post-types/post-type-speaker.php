@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom post type: speaker ('referent').
+ * Custom post type: speaker
  *
  * @author  Marco Di Bella
  * @package congressomat
