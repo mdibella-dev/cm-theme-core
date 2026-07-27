@@ -7,7 +7,7 @@
  * @uses    ACF
  */
 
-namespace CM_Theme\Core;
+namespace CM_Theme\Backend;
 
 
 

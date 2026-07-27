@@ -7,7 +7,7 @@
  * @uses    ACF
  */
 
-namespace CM_Theme\Core;
+namespace CM_Theme\Backend;
 
 
 
@@ -108,11 +108,7 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
                 break;
 
             case 'update':
-                echo sprintf(
-                    __( '%1$s at %2$s','congressomat' ),
-                    get_the_modified_date( 'd.m.Y', $post_id ),
-                    get_the_modified_date( 'H:i', $post_id ),
-                );
+                show_modified_date( $post_id );
                 break;
         }
     }

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-27 12:05+0200\n"
+"POT-Creation-Date: 2026-07-27 15:46+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,6 +19,45 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: includes/backend/backend-datetime.php:34
+#, php-format
+msgid "%s year ago"
+msgid_plural "%s years ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/backend/backend-datetime.php:36
+#, php-format
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/backend/backend-datetime.php:38
+#, php-format
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/backend/backend-datetime.php:40
+#, php-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/backend/backend-datetime.php:42
+#, php-format
+msgid "%s minute ago"
+msgid_plural "%s minutes ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/backend/backend-datetime.php:44
+msgid "just now"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 #: includes/backend/backend-menu.php:31 includes/backend/backend-menu.php:32
@@ -91,6 +130,7 @@ msgstr ""
 
 #: includes/backend/backend-menu.php:104
 #: includes/backend/backend-taxonomy-lists.php:105
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
@@ -118,14 +158,12 @@ msgid "Add New Exhibition Space"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/register/post-types/post-type-exhibition-space.php:29
 #: includes/register/post-types/post-type-exhibition-space.php:41
 msgid "Exhibition Space"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
 #: includes/register/taxonomies/taxonomy-location.php:29
 msgid "Location"
 msgstr ""
@@ -139,14 +177,6 @@ msgstr ""
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:52
 msgid "Last Update"
-msgstr ""
-
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:71
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:127
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:125
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:112
-#, php-format
-msgid "%1$s at %2$s"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:51
@@ -172,6 +202,10 @@ msgstr ""
 msgid "Event"
 msgstr ""
 
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
+msgid "Event Location"
+msgstr ""
+
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:54
 msgid "Event Date"
 msgstr ""
@@ -190,6 +224,11 @@ msgstr ""
 #: includes/classes/shortcodes/class-shortcode-event-table.php:237
 #, php-format
 msgid "%1$s to %2$s"
+msgstr ""
+
+#: includes/classes/admin-post-lists/class-admin-post-list-session.php:125
+#, php-format
+msgid "%1$s at %2$s"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:50
