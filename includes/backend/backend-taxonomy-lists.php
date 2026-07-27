@@ -76,6 +76,7 @@ function rewrite_header() {
                     $do_modify = true;
                     $title     = __( 'Sessions', 'congressomat' );
                     $subtitle  = $term->name;
+                    $add_new   = __( 'Add New Session', 'congressomat' );
                 }
                 break;
 
@@ -88,6 +89,7 @@ function rewrite_header() {
                     $do_modify = true;
                     $title     = __( 'Partners', 'congressomat' );
                     $subtitle  = $term->name;
+                    $add_new   = __( 'Add New Partner', 'congressomat' );
                 }
                 break;
 
@@ -102,6 +104,7 @@ function rewrite_header() {
                     $do_modify = true;
                     $title     = __( 'Exhibition Spaces', 'congressomat' );
                     $subtitle  = $term->name;
+                    $add_new   = __( 'Add New Exhibition Space', 'congressomat' );
                 }
                 break;
         }
@@ -111,7 +114,7 @@ function rewrite_header() {
      ?>
 <div class="wrap">
     <h1 class="wp-heading-inline show" style="display:inline-block;"><?php echo $title . ' (' . $subtitle . ')';?></h1>
-     <a href="<?php echo esc_url( admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ) ); ?>" class="page-title-action show"><?php echo __( 'Create', 'congressomat' );?></a>
+     <a href="<?php echo esc_url( admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ) ); ?>" class="page-title-action show"><?php echo $add_new;?></a>
 </div>
 <style id="modify">
     .wp-heading-inline:not(.show),.page-title-action:not(.show){display:none!important;}

@@ -51,7 +51,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
             'image'                => __( 'Image', 'congressomat' ),
             'title'                => __( 'Partner', 'congressomat' ),
             'taxonomy-partnership' => __( 'Partnership', 'congressomat' ),
-            'exhibition'           => __( 'Exhibition Space', 'congressomat' ),
+            'exhibition'           => __( 'Exhibition Spaces', 'congressomat' ),
             'update'               => __( 'Last Update', 'congressomat' ),
         ];
         return $columns;

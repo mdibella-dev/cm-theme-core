@@ -50,7 +50,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
             'cb'                => $default['cb'],
             'title'             => $default['title'],
             'taxonomy-event'    => __( 'Event', 'congressomat' ),
-            'taxonomy-location' => __( 'Location', 'congressomat' ),
+            'taxonomy-location' => __( 'Event Location', 'congressomat' ),
             'event-date'        => __( 'Event Date', 'congressomat' ),
             'event-time'        => __( 'Time Slot', 'congressomat' ),
             'speaker'           => __( 'Speakers', 'congressomat' ),

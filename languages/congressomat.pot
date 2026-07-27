@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-24 13:25+0200\n"
+"POT-Creation-Date: 2026-07-27 12:05+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,38 +21,42 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: vendor\n"
 
 #. Plugin Name of the plugin/theme
-#: includes/backend.php:51 includes/backend.php:52
+#: includes/backend/backend-menu.php:31 includes/backend/backend-menu.php:32
 msgid "Congressomat"
 msgstr ""
 
-#: includes/backend.php:62 includes/backend.php:63 includes/backend.php:118
+#: includes/backend/backend-menu.php:42 includes/backend/backend-menu.php:43
+#: includes/backend/backend-menu.php:98
 #: includes/register/taxonomies/taxonomy-event.php:28
 #: includes/register/taxonomies/taxonomy-event.php:30
 #: includes/register/taxonomies/taxonomy-event.php:42
 msgid "Events"
 msgstr ""
 
-#: includes/backend.php:72 includes/backend.php:73 includes/backend.php:121
+#: includes/backend/backend-menu.php:52 includes/backend/backend-menu.php:53
+#: includes/backend/backend-menu.php:101
 #: includes/register/taxonomies/taxonomy-location.php:28
 #: includes/register/taxonomies/taxonomy-location.php:30
 #: includes/register/taxonomies/taxonomy-location.php:42
 msgid "Locations"
 msgstr ""
 
-#: includes/backend.php:82 includes/backend.php:83
+#: includes/backend/backend-menu.php:62 includes/backend/backend-menu.php:63
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
 #: includes/register/taxonomies/taxonomy-partnership.php:29
 msgid "Partnership"
 msgstr ""
 
-#: includes/backend.php:92 includes/backend.php:93 includes/backend.php:125
+#: includes/backend/backend-menu.php:72 includes/backend/backend-menu.php:73
+#: includes/backend/backend-menu.php:105
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:28
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:31
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:39
 msgid "Exhibition Packages"
 msgstr ""
 
-#: includes/backend.php:119 includes/backend.php:232
+#: includes/backend/backend-menu.php:99
+#: includes/backend/backend-taxonomy-lists.php:77
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/register/post-types/post-type-session.php:28
@@ -62,7 +66,7 @@ msgstr ""
 msgid "Sessions"
 msgstr ""
 
-#: includes/backend.php:120
+#: includes/backend/backend-menu.php:100
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
 #: includes/register/post-types/post-type-speaker.php:28
 #: includes/register/post-types/post-type-speaker.php:30
@@ -71,20 +75,22 @@ msgstr ""
 msgid "Speakers"
 msgstr ""
 
-#: includes/backend.php:122 includes/backend.php:244
+#: includes/backend/backend-menu.php:102
+#: includes/backend/backend-taxonomy-lists.php:90
 #: includes/register/post-types/post-type-partner.php:28
 #: includes/register/post-types/post-type-partner.php:30
 #: includes/register/post-types/post-type-partner.php:40
 msgid "Partners"
 msgstr ""
 
-#: includes/backend.php:123
+#: includes/backend/backend-menu.php:103
 #: includes/register/taxonomies/taxonomy-partnership.php:28
 #: includes/register/taxonomies/taxonomy-partnership.php:33
 msgid "Partnerships"
 msgstr ""
 
-#: includes/backend.php:124
+#: includes/backend/backend-menu.php:104
+#: includes/backend/backend-taxonomy-lists.php:105
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
@@ -93,20 +99,29 @@ msgstr ""
 msgid "Exhibition Spaces"
 msgstr ""
 
-#: includes/backend.php:258
-msgid "Exhibition spaces"
+#: includes/backend/backend-taxonomy-lists.php:79
+#: includes/register/post-types/post-type-session.php:31
+#: includes/register/post-types/post-type-session.php:32
+msgid "Add New Session"
 msgstr ""
 
-#: includes/backend.php:269
-msgid "Create"
+#: includes/backend/backend-taxonomy-lists.php:92
+#: includes/register/post-types/post-type-partner.php:31
+#: includes/register/post-types/post-type-partner.php:32
+msgid "Add New Partner"
+msgstr ""
+
+#: includes/backend/backend-taxonomy-lists.php:107
+#: includes/register/post-types/post-type-exhibition-space.php:31
+#: includes/register/post-types/post-type-exhibition-space.php:32
+msgid "Add New Exhibition Space"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
-#: includes/register/post-types/post-type-partner.php:29
-#: includes/register/post-types/post-type-partner.php:41
-#: includes/register/post-types/post-type-partner.php:51
-msgid "Partner"
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
+#: includes/register/post-types/post-type-exhibition-space.php:29
+#: includes/register/post-types/post-type-exhibition-space.php:41
+msgid "Exhibition Space"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
@@ -140,10 +155,11 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
-#: includes/register/post-types/post-type-exhibition-space.php:29
-#: includes/register/post-types/post-type-exhibition-space.php:41
-msgid "Exhibition Space"
+#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
+#: includes/register/post-types/post-type-partner.php:29
+#: includes/register/post-types/post-type-partner.php:41
+#: includes/register/post-types/post-type-partner.php:51
+msgid "Partner"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:82
@@ -241,11 +257,6 @@ msgstr ""
 msgid "View website"
 msgstr ""
 
-#: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:32
-msgid "Add New Exhibition Space"
-msgstr ""
-
 #: includes/register/post-types/post-type-exhibition-space.php:33
 msgid "Edit Exhibition Space"
 msgstr ""
@@ -269,11 +280,6 @@ msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:39
 msgid "No deleted exhibition space found"
-msgstr ""
-
-#: includes/register/post-types/post-type-partner.php:31
-#: includes/register/post-types/post-type-partner.php:32
-msgid "Add New Partner"
 msgstr ""
 
 #: includes/register/post-types/post-type-partner.php:34
@@ -316,11 +322,6 @@ msgstr ""
 #: includes/register/post-types/post-type-session.php:29
 #: includes/register/post-types/post-type-session.php:40
 msgid "Session"
-msgstr ""
-
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-session.php:32
-msgid "Add New Session"
 msgstr ""
 
 #: includes/register/post-types/post-type-session.php:33
