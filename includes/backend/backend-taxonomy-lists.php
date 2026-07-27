@@ -111,7 +111,7 @@ function rewrite_header() {
      ?>
 <div class="wrap">
     <h1 class="wp-heading-inline show" style="display:inline-block;"><?php echo $title . ' (' . $subtitle . ')';?></h1>
-     <a href="<?php echo admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ); ?>" class="page-title-action show"><?php echo __( 'Create', 'congressomat' );?></a>
+     <a href="<?php echo esc_url( admin_url( 'post-new.php?post_type=' . $_GET['post_type'] ) ); ?>" class="page-title-action show"><?php echo __( 'Create', 'congressomat' );?></a>
 </div>
 <style id="modify">
     .wp-heading-inline:not(.show),.page-title-action:not(.show){display:none!important;}
