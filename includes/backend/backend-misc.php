@@ -8,6 +8,8 @@
 
 namespace CM_Theme\Backend;
 
+use \CM_Theme\Core as Core;
+
 
 
 /** Prevent direct access */
@@ -27,9 +29,9 @@ defined( 'ABSPATH' ) or exit;
 function admin_enqueue_scripts( $hook ) {
     wp_enqueue_style(
         'cm-theme-core-backend-style',
-        PLUGIN_URL . 'assets/build/css/backend.min.css',
+        esc_url( plugins_url( 'congressomat/assets/build/css/backend.min.css' ) ),
         [],
-        PLUGIN_VERSION
+        Core\PLUGIN_VERSION
     );
 }
 
