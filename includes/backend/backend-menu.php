@@ -60,7 +60,7 @@ function setup_menu() {
     add_submenu_page(
         $admin_menu_slug,
         __( 'Partnership', 'congressomat' ),
-        __( 'Partnership', 'congressomat' ),
+        __( 'Partnerships', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
         '',
@@ -100,9 +100,9 @@ function setup_menu_order( $menu_order ) {
         __( 'Speakers', 'congressomat' ),
         __( 'Locations', 'congressomat' ),
         __( 'Exhibitors', 'congressomat' ),
-        __( 'Partnerships', 'congressomat' ),
         __( 'Booths', 'congressomat' ),
         __( 'Booth Packages', 'congressomat' ),
+        __( 'Partnerships', 'congressomat' ),
     );
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
