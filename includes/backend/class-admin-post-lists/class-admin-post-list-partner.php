@@ -103,8 +103,12 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                     foreach ( $data['exhibition-spaces'] as $space ) {
                         if ( ! empty( $space['location'] ) and ! empty( $space['signature'] ) ) {
                             $spaces[] = sprintf(
-                                '<a href="post.php?post=%1$s&action=edit">%2$s</a>%3$s',
-                                $space['id'],
+                                '<a href="%1$s">%2$s</a>%3$s',
+                                esc_url( sprintf(
+                                    '%1$spost.php?post=%2$s&action=edit',
+                                    get_admin_url(),
+                                    $space['id']
+                                ) ),
                                 $space['signature'],
                                 ( ! empty( $space['package'] ) )? ' (' . $space['package'] . ')' : '',
                             );
