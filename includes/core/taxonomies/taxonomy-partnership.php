@@ -27,6 +27,15 @@ function register() {
     $labels = [
         'name'          => __( 'Partnerships', 'congressomat' ),
         'singular_name' => __( 'Partnership', 'congressomat' ),
+        'menu_name'     => __( 'Partnerships', 'congressomat' ),
+        'search_items'  => __( 'Search Partnerships', 'congressomat' ),
+        'all_items'     => __( 'All Partnerships', 'congressomat' ),
+        'edit_item'     => __( 'Edit Partnership', 'congressomat' ),
+        'view_item'     => __( 'View Partnership', 'congressomat' ),
+        'update_item'   => __( 'Update Partnership', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Partnership', 'congressomat' ),
+        'new_item_name' => __( 'New Partnership Title', 'congressomat' ),
+        'not_found'     => __( 'No Partnership found', 'congressomat' ),
     ];
 
     $args = [
