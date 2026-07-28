@@ -89,7 +89,7 @@ function rewrite_header() {
                     $do_modify = true;
                     $title     = __( 'Partners', 'congressomat' );
                     $subtitle  = $term->name;
-                    $add_new   = __( 'Add New Partner', 'congressomat' );
+                    $add_new   = __( 'Add New Exhibitor', 'congressomat' );
                 }
                 break;
 

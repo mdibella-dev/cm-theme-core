@@ -80,10 +80,10 @@ class Admin_Taxonomy_List_Partnership extends \WordPress_Helper\Admin_Taxonomy_L
                     'post_type'   => 'partner',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [[
+                    'tax_query'   => [ [
                         'taxonomy' => 'partnership',
                         'terms'    => $term_id,
-                    ]],
+                    ] ],
                 ] );
                 $term   = get_term( $term_id, 'partnership' );
                 $output = sprintf(

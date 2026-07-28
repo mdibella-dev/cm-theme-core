@@ -81,7 +81,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                         ) ),
                         get_the_post_thumbnail(
                             $post_id,
-                            [ 100, 0 ]
+                            [100, 0]
                         ),
                     );
 

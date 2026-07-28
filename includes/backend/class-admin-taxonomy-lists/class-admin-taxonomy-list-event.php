@@ -81,10 +81,10 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
                     'post_type'   => 'session',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [[
+                    'tax_query'   => [ [
                         'taxonomy' => 'event',
                         'terms'    => $term_id,
-                    ]],
+                    ] ],
                 ] );
                 $count = sizeof( $posts );
 

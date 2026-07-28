@@ -78,7 +78,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
 
             case 'image':
                 $image_id = get_field( 'location-image', 'location_' . $term_id );
-                $image    = wp_get_attachment_image( $image_id, [ '150', '9999' ] );
+                $image    = wp_get_attachment_image( $image_id, ['150', '9999'] );
 
                 if ( ! empty( $image ) ) {
                     echo sprintf(
@@ -101,10 +101,10 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     'post_type'   => 'session',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [[
+                    'tax_query'   => [ [
                         'taxonomy' => 'location',
                         'terms'    => $term_id,
-                    ]],
+                    ] ],
                 ] );
                 $count = sizeof( $posts );
 
@@ -128,10 +128,10 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [[
+                    'tax_query'   => [ [
                         'taxonomy' => 'location',
                         'terms'    => $term_id,
-                    ]],
+                    ] ],
                 ] );
                 $term  = get_term( $term_id, 'location' );
                 $count = sizeof( $posts );
