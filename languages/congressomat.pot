@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 15:40+0200\n"
+"POT-Creation-Date: 2026-07-28 16:20+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -183,7 +183,8 @@ msgid "Last Update"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:51
-msgid "Logo"
+#: includes/core/post-types/post-type-partner.php:42
+msgid "Exhibitor Logo"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:52
@@ -305,10 +306,6 @@ msgstr ""
 
 #: includes/core/post-types/post-type-partner.php:39
 msgid "No deleted exhibitor found"
-msgstr ""
-
-#: includes/core/post-types/post-type-partner.php:42
-msgid "Exhibitor Logo"
 msgstr ""
 
 #: includes/core/post-types/post-type-partner.php:43

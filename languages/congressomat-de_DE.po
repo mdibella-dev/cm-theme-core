@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 15:39+0200\n"
-"PO-Revision-Date: 2026-07-28 15:40+0200\n"
+"POT-Creation-Date: 2026-07-28 16:20+0200\n"
+"PO-Revision-Date: 2026-07-28 16:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -121,14 +121,20 @@ msgstr "Veranstaltungen"
 msgid "Locations"
 msgstr "Orte"
 
-#: includes/backend/backend-menu.php:62 includes/backend/backend-menu.php:63
+#: includes/backend/backend-menu.php:62
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
 #: includes/core/taxonomies/taxonomy-partnership.php:29
 msgid "Partnership"
 msgstr ""
 
+#: includes/backend/backend-menu.php:63 includes/backend/backend-menu.php:105
+#: includes/core/taxonomies/taxonomy-partnership.php:28
+#: includes/core/taxonomies/taxonomy-partnership.php:33
+msgid "Partnerships"
+msgstr ""
+
 #: includes/backend/backend-menu.php:72 includes/backend/backend-menu.php:73
-#: includes/backend/backend-menu.php:105
+#: includes/backend/backend-menu.php:104
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:28
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:31
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:39
@@ -153,12 +159,6 @@ msgid "Exhibitors"
 msgstr "Aussteller"
 
 #: includes/backend/backend-menu.php:103
-#: includes/core/taxonomies/taxonomy-partnership.php:28
-#: includes/core/taxonomies/taxonomy-partnership.php:33
-msgid "Partnerships"
-msgstr ""
-
-#: includes/backend/backend-menu.php:104
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/core/post-types/post-type-exhibition-space.php:28
@@ -185,8 +185,9 @@ msgid "Last Update"
 msgstr "Letzte Aktualisierung"
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:51
-msgid "Logo"
-msgstr ""
+#: includes/core/post-types/post-type-partner.php:42
+msgid "Exhibitor Logo"
+msgstr "Ausstellerlogo"
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:52
 #: includes/core/post-types/post-type-partner.php:29
@@ -309,10 +310,6 @@ msgstr "Keinen Aussteller gefunden"
 msgid "No deleted exhibitor found"
 msgstr "Keinen gelöschten Aussteller gefunden"
 
-#: includes/core/post-types/post-type-partner.php:42
-msgid "Exhibitor Logo"
-msgstr "Ausstellerlogo"
-
 #: includes/core/post-types/post-type-partner.php:43
 msgid "Set Exhibitor Logo"
 msgstr "Ausstellerlogo setzen"
@@ -386,19 +383,19 @@ msgstr "Keinen gelöschten Speaker gefunden"
 
 #: includes/core/post-types/post-type-speaker.php:42
 msgid "Speaker Image"
-msgstr "Bild des Sprechers"
+msgstr "Bild des Speakers"
 
 #: includes/core/post-types/post-type-speaker.php:43
 msgid "Set Speaker Image"
-msgstr "Sprecherbild setzen"
+msgstr "Speaker-Bild setzen"
 
 #: includes/core/post-types/post-type-speaker.php:44
 msgid "Remove Speaker Image"
-msgstr "Sprecherbild entfernen"
+msgstr "Speaker-Bild entfernen"
 
 #: includes/core/post-types/post-type-speaker.php:45
 msgid "Use As Speaker Image"
-msgstr "Als Sprecherbild benutzen"
+msgstr "Als Speaker-Bild benutzen"
 
 #: includes/core/taxonomies/taxonomy-event.php:31
 msgid "Search Events"
