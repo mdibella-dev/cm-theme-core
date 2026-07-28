@@ -1,33 +1,59 @@
 # Changelog
 
-_New / Improve / Bugfix_
+All notable changes to this project will be documented in this file.
 
-### Latest changes to the main branch
-
-- Rename project name
-- Bugfix: Fix partnership filter in exhibtion list 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <br>
 
-### 2.1.0
-Released: 26-09-2023
+## [Unreleased]
 
-- Improve: Convert procedural taxonomy and post lists code into classes
-- Improve: Remove class variables
-- Improve: Reorganize folder structure of custom post types and taxonomies
+### Added
+- Add more human readable time in column 'last modified'
+- Add plugin's CSS class to admin body 
+- Add more labels to post types and taxonomies
+- Add more CSS to backend tables and pages
 
+### Changed
+- Rename project
+- File structure
+- Change namespace 'CM_theme' to 'congressomat'
+- Change namespace structure
+- Hide publishing actions in post types
+- Overhaul labels and german translation
+- Changelog style
 
-### 2.0.0
-Released: 25-08-2023
+### Fixed
+- Fix partnership filter in exhibtion list 
+- Fix not working links to edit pages
 
-- New: Abstract Shortcode class
-- Improve: Convert procedural shortcode code into classes
-- Improve: Remove support for shortcode partner-table
-- Bugfix: Remove PHP warning "Undefined variable $output"
-- Bugfix: Remove PHP warning "Undefined property $name"
+<br>
 
+## [2.1.0] - 2023-09-26
 
-### 1.0.0
-Released: 25-07-2023
+### Changed
+- Convert procedural taxonomy and post lists code into classes
+- Remove class variables
+- Reorganize folder structure of custom post types and taxonomies
+
+<br>
+
+## [2.0.0] - 2023-08-25
+
+### Added
+- Abstract Shortcode class
+
+### Changed
+- Convert procedural shortcode code into classes
+- Remove support for shortcode partner-table
+
+### Fixed
+- Remove PHP warning "Undefined variable $output"
+- Remove PHP warning "Undefined property $name"
+
+<br>
+
+## [1.0.0] - 2023-07-25
 
 - Initial commit
