@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Rename project
-- File structure
+- Folder and file structure
 - Change namespace 'CM_theme' to 'congressomat'
 - Change namespace structure
 - Hide publishing actions in post types
@@ -27,6 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix partnership filter in exhibtion list 
 - Fix not working links to edit pages
+
+### Removed
+- setup.php (code merged into plugin.php)
 
 <br>
 

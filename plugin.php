@@ -37,10 +37,22 @@ define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 /** Include files */
 
 require_once PLUGIN_DIR . 'vendor/autoload.php';
-
-require_once PLUGIN_DIR . 'includes/setup.php';
-
+require_once PLUGIN_DIR . 'includes/core/index.php';
 require_once PLUGIN_DIR . 'includes/backend/index.php';
-require_once PLUGIN_DIR . 'includes/api/index.php';
-require_once PLUGIN_DIR . 'includes/register/index.php';
-require_once PLUGIN_DIR . 'includes/classes/index.php';
+require_once PLUGIN_DIR . 'includes/shortcodes/index.php';
+
+
+
+
+/**
+ * The init function for the plugin.
+ *
+ * @since 1.0.0
+ */
+
+function plugin_init() {
+    // Load text domain, use relative path to the plugin's language folder
+    load_plugin_textdomain( 'congressomat', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
+}
+
+add_action( 'init', __NAMESPACE__ . '\plugin_init' );
