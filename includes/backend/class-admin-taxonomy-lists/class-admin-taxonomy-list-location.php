@@ -81,13 +81,22 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                 $image    = wp_get_attachment_image( $image_id, [ '150', '9999' ] );
 
                 if ( ! empty( $image ) ) {
-                    $output = $image;
+                    echo sprintf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( sprintf(
+                            '%1$sterm.php?taxonomy=location&tag_ID=%2$s&post_type=session',
+                            get_admin_url(),
+                            $term_id,
+                        ) ),
+                        $image
+                    );
                 } else {
                     $output = '&mdash;';
                 }
                 break;
 
             case 'count-session':
+                $term  = get_term( $term_id, 'location' );
                 $posts = get_posts( [
                     'post_type'   => 'session',
                     'post_status' => 'any',
@@ -97,14 +106,13 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                         'terms'    => $term_id,
                     ]],
                 ] );
-                $term  = get_term( $term_id, 'location' );
                 $count = sizeof( $posts );
 
                 if ( $count != 0 ) {
                     $output = sprintf(
                         '<a href="%1$s">%2$s</a>',
                         esc_url( sprintf(
-                            '%1$edit.php?location=%2$s&post_type=session',
+                            '%1$sedit.php?location=%2$s&post_type=session',
                             get_admin_url(),
                             $term->slug,
                         ) ),
@@ -132,7 +140,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     $output = sprintf(
                         '<a href="%1$s">%2$s</a>',
                         esc_url( sprintf(
-                            '%1$edit.php?location=%2$s&post_type=exhibition_space',
+                            '%1$sedit.php?location=%2$s&post_type=exhibition_space',
                             get_admin_url(),
                             $term->slug,
                         ) ),
