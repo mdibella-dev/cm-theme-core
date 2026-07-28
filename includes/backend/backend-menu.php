@@ -92,7 +92,7 @@ function setup_menu_order( $menu_order ) {
 
     global $submenu;
            $admin_menu_slug = 'edit.php?post_type=session';
-           $sorted          = array();
+           $sorted          = [];
 
     $sort_order = array(
         __( 'Events', 'congressomat' ),
@@ -106,15 +106,15 @@ function setup_menu_order( $menu_order ) {
     );
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
-        foreach ( $submenu[ $admin_menu_slug ] as $submenu_item ) {
-            if ( $submenu_item[0] == $sort_order[ $i ]) {
+        foreach ( $submenu[$admin_menu_slug] as $submenu_item ) {
+            if ( $submenu_item[0] == $sort_order[$i]) {
                 $sorted[] = $submenu_item;
                 break;
             }
         }
     }
 
-    $submenu[ $admin_menu_slug ] = $sorted;
+    $submenu[$admin_menu_slug] = $sorted;
 
     return $menu_order;
 }
