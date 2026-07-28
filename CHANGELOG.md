@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - setup.php (code merged into plugin.php)
+- Remove slug column from exhibition_package and location
 
 <br>
 
