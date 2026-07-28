@@ -97,16 +97,22 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                         'terms'    => $term_id,
                     ]],
                 ] );
-                $term   = get_term( $term_id, 'location' );
-                $output = sprintf(
-                    '<a href="%1$s">%2$s</a>',
-                    esc_url( sprintf(
-                        '%1$edit.php?location=%2$s&post_type=session',
-                        get_admin_url(),
-                        $term->slug,
-                    ) ),
-                    sizeof( $posts ),
-                );
+                $term  = get_term( $term_id, 'location' );
+                $count = sizeof( $posts );
+
+                if ( $count != 0 ) {
+                    $output = sprintf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( sprintf(
+                            '%1$edit.php?location=%2$s&post_type=session',
+                            get_admin_url(),
+                            $term->slug,
+                        ) ),
+                        sizeof( $posts ),
+                    );
+                } else {
+                      $output = '&mdash;';
+                }
                 break;
 
             case 'count-space':
@@ -119,16 +125,22 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                         'terms'    => $term_id,
                     ]],
                 ] );
-                $term   = get_term( $term_id, 'location' );
-                $output = sprintf(
-                    '<a href="%1$s">%2$s</a>',
-                    esc_url( sprintf(
-                        '%1$edit.php?location=%2$s&post_type=exhibition_space',
-                        get_admin_url(),
-                        $term->slug,
-                    ) ),
-                    sizeof( $posts ),
-                );
+                $term  = get_term( $term_id, 'location' );
+                $count = sizeof( $posts );
+
+                if ( $count != 0 ) {
+                    $output = sprintf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( sprintf(
+                            '%1$edit.php?location=%2$s&post_type=exhibition_space',
+                            get_admin_url(),
+                            $term->slug,
+                        ) ),
+                        sizeof( $posts ),
+                    );
+                } else {
+                    $output = '&mdash;';
+                }
                 break;
 
             default:

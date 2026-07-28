@@ -49,7 +49,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
             'id'          => 'ID',
             'name'        => $default['name'],
             'description' => $default['description'],
-            'posts'       => __( 'Sessions', 'congressomat' ),
+            'sessions'    => __( 'Sessions', 'congressomat' ),
             'status'      => __( 'Status', 'congressomat' ),
         ];
 
@@ -73,6 +73,34 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
         switch ( $column_name ) {
             case 'id':
                 $output = $term_id;
+                break;
+
+            case 'sessions':
+                $term  = get_term( $term_id, 'event' );
+                $posts = get_posts( [
+                    'post_type'   => 'session',
+                    'post_status' => 'any',
+                    'numberposts' => -1,
+                    'tax_query'   => [[
+                        'taxonomy' => 'event',
+                        'terms'    => $term_id,
+                    ]],
+                ] );
+                $count = sizeof( $posts );
+
+                if ( $count != 0 ) {
+                    $output = sprintf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( sprintf(
+                            '%1$sedit.php?event=%2$s&post_type=session',
+                            get_admin_url(),
+                            $term->slug,
+                        ) ),
+                        sizeof( $posts ),
+                    );
+                } else {
+                    $output = '&mdash;';
+                }
                 break;
 
             case 'status':
