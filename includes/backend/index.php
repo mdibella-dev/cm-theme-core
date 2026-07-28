@@ -13,14 +13,14 @@ require_once 'backend-block-editor.php';
 
 
 // Admin Post Lists Classes
-require_once 'admin-post-lists/class-admin-post-list-speaker.php';
-require_once 'admin-post-lists/class-admin-post-list-session.php';
-require_once 'admin-post-lists/class-admin-post-list-partner.php';
-require_once 'admin-post-lists/class-admin-post-list-exhibition-space.php';
+require_once 'class-admin-post-lists/class-admin-post-list-speaker.php';
+require_once 'class-admin-post-lists/class-admin-post-list-session.php';
+require_once 'class-admin-post-lists/class-admin-post-list-partner.php';
+require_once 'class-admin-post-lists/class-admin-post-list-exhibition-space.php';
 
 
 // Admin Taxonomy Lists Classes
-require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-location.php';
-require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php';
-require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php';
-require_once 'admin-taxonomy-lists/class-admin-taxonomy-list-event.php';
+require_once 'class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php';
+require_once 'class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php';
+require_once 'class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php';
+require_once 'class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php';
