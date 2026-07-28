@@ -49,7 +49,6 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
             'id'          => 'ID',
             'name'        => $default['name'],
             'description' => $default['description'],
-            'slug'        => $default['slug'],
             'count'       => __( 'Count', 'congressomat' ),
         ];
 
