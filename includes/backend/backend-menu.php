@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Backend;
+namespace Congressomat\Backend;
 
 
 

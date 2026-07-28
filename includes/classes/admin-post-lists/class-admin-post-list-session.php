@@ -7,9 +7,9 @@
  * @uses    ACF
  */
 
-namespace CM_Theme\Backend;
+namespace Congressomat\Backend;
 
-use \CM_Theme\Core\API as API;
+use \Congressomat\API as API;
 
 
 

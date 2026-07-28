@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core\Post_Types\Session;
+namespace Congressomat\Post_Types\Session;
 
 
 

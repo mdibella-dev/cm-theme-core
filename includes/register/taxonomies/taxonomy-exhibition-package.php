@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core\Taxonomies\Exhibtition_Package;
+namespace Congressomat\Taxonomies\Exhibtition_Package;
 
 
 

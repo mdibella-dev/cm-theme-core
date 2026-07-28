@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core\Taxonomies\Event;
+namespace Congressomat\Taxonomies\Event;
 
 
 

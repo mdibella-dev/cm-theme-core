@@ -6,9 +6,9 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core;
+namespace Congressomat\Shortcodes;
 
-use \CM_Theme\Core\API as API;
+use \Congressomat\API as API;
 
 
 

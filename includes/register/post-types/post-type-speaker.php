@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core\Post_Types\Speaker;
+namespace Congressomat\Post_Types\Speaker;
 
 
 

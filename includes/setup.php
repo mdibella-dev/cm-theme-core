@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Core;
+namespace Congressomat;
 
 
 

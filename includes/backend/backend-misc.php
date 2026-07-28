@@ -6,9 +6,9 @@
  * @package congressomat
  */
 
-namespace CM_Theme\Backend;
+namespace Congressomat\Backend;
 
-use \CM_Theme\Core as Core;
+use \Congressomat as Core;
 
 
 
