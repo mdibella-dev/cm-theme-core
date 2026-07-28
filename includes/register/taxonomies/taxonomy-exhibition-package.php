@@ -25,18 +25,18 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Exhibition Packages', 'congressomat' ),
-        'singular_name' => __( 'Exhibition Package', 'congressomat' ),
-        'search_items'  => __( 'Search Exhibition Package', 'congressomat' ),
-        'all_items'     => __( 'Exhibition Packages', 'congressomat' ),
-        'edit_item'     => __( 'Edit Exhibition Package', 'congressomat' ),
-        'update_item'   => __( 'Update Exhibition Package', 'congressomat' ),
-        'add_new_item'  => __( 'Add New Exhibition Package', 'congressomat' ),
-        'not_found'     => __( 'No exhibition package found', 'congressomat' ),
+        'name'          => __( 'Booth Packages', 'congressomat' ),
+        'singular_name' => __( 'Booth Package', 'congressomat' ),
+        'search_items'  => __( 'Search Booth Package', 'congressomat' ),
+        'all_items'     => __( 'Booth Packages', 'congressomat' ),
+        'edit_item'     => __( 'Edit Booth Package', 'congressomat' ),
+        'update_item'   => __( 'Update Booth Package', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Booth Package', 'congressomat' ),
+        'not_found'     => __( 'No booth package found', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Exhibition Packages', 'congressomat' ),
+        'label'                 => __( 'Booth Packages', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

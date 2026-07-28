@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-27 15:46+0200\n"
-"PO-Revision-Date: 2026-07-27 16:11+0200\n"
+"POT-Creation-Date: 2026-07-28 09:02+0200\n"
+"PO-Revision-Date: 2026-07-28 09:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -93,7 +93,7 @@ msgstr ""
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:28
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:31
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:39
-msgid "Exhibition Packages"
+msgid "Booth Packages"
 msgstr "Ausstellungspakete"
 
 #: includes/backend/backend-menu.php:99
@@ -131,15 +131,14 @@ msgid "Partnerships"
 msgstr ""
 
 #: includes/backend/backend-menu.php:104
-#: includes/backend/backend-taxonomy-lists.php:105
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
 #: includes/register/post-types/post-type-exhibition-space.php:40
 #: includes/register/post-types/post-type-exhibition-space.php:47
-msgid "Exhibition Spaces"
-msgstr "Ausstellungsflächen"
+msgid "Booths"
+msgstr "Ausstellungsfächen"
 
 #: includes/backend/backend-taxonomy-lists.php:79
 #: includes/register/post-types/post-type-session.php:31
@@ -153,27 +152,32 @@ msgstr "Neue Session hinzufügen"
 msgid "Add New Partner"
 msgstr "Neuen Partner hinzufügen"
 
+#: includes/backend/backend-taxonomy-lists.php:105
+msgid "Booth Spaces"
+msgstr ""
+
 #: includes/backend/backend-taxonomy-lists.php:107
 #: includes/register/post-types/post-type-exhibition-space.php:31
 #: includes/register/post-types/post-type-exhibition-space.php:32
-msgid "Add New Exhibition Space"
+msgid "Add New Booth"
 msgstr "Neue Ausstellungsfläche hinzufügen"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
 #: includes/register/post-types/post-type-exhibition-space.php:29
 #: includes/register/post-types/post-type-exhibition-space.php:41
-msgid "Exhibition Space"
-msgstr "Ausstellungsfläche"
+msgid "Booth"
+msgstr "Ausstellungsfäche"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
+msgid "Booth Package"
+msgstr "Ausstellungspaket"
+
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
 #: includes/register/taxonomies/taxonomy-location.php:29
 msgid "Location"
 msgstr "Ort"
-
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
-msgid "Exhibition Package"
-msgstr "Ausstellungspaket"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
@@ -286,10 +290,6 @@ msgstr ""
 msgid "Area"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
-msgid "Booth"
-msgstr ""
-
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:193
 msgid "View details page"
 msgstr ""
@@ -299,29 +299,29 @@ msgid "View website"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:33
-msgid "Edit Exhibition Space"
-msgstr "Ausstellungsfläche bearbeiten"
+msgid "Edit Booth"
+msgstr "Ausstellungsfäche bearbeiten"
 
 #: includes/register/post-types/post-type-exhibition-space.php:34
-msgid "New Exhibition Space"
-msgstr "Neue Ausstellungsfläche"
+msgid "New Booth"
+msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:35
 #: includes/register/post-types/post-type-exhibition-space.php:36
-msgid "View Exhibition Space"
-msgstr "Ausstellungsflächen anzeigen"
+msgid "View Booth"
+msgstr "Ausstellungsfäche anzeigen"
 
 #: includes/register/post-types/post-type-exhibition-space.php:37
-msgid "Search Exhibition Space"
-msgstr "Ausstellungsflächen durchsuchen"
+msgid "Search Booth"
+msgstr "Ausstellungsfächen durchsuchen"
 
 #: includes/register/post-types/post-type-exhibition-space.php:38
-msgid "No exhibition space found"
-msgstr "Keine Ausstellungsfläche gefunden"
+msgid "No booth found"
+msgstr "Keine Ausstellungsfäche gefunden"
 
 #: includes/register/post-types/post-type-exhibition-space.php:39
-msgid "No deleted exhibition space found"
-msgstr "Keine gelöschte Ausstellungsfläche gefunden"
+msgid "No deleted booth found"
+msgstr "Keine gelöschte Ausstellungsfäche gefunden"
 
 #: includes/register/post-types/post-type-partner.php:34
 msgid "New Partner"
@@ -464,23 +464,23 @@ msgid "No event found"
 msgstr "Keine Veranstaltung gefunden"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:30
-msgid "Search Exhibition Package"
+msgid "Search Booth Package"
 msgstr "Ausstellungspakete durchsuchen"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:32
-msgid "Edit Exhibition Package"
+msgid "Edit Booth Package"
 msgstr "Ausstellungspaket bearbeiten"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:33
-msgid "Update Exhibition Package"
+msgid "Update Booth Package"
 msgstr "Ausstellungspaket aktualisieren"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:34
-msgid "Add New Exhibition Package"
+msgid "Add New Booth Package"
 msgstr "Neues Ausstellungspaket hinzufügen"
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:35
-msgid "No exhibition package found"
+msgid "No booth package found"
 msgstr "Kein Ausstellungspaket gefunden"
 
 #: includes/register/taxonomies/taxonomy-location.php:31
@@ -532,3 +532,33 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Exhibition Spaces"
+#~ msgstr "Ausstellungsflächen"
+
+#~ msgid "Add New Exhibition Space"
+#~ msgstr "Neue Ausstellungsfläche hinzufügen"
+
+#~ msgid "Exhibition Space"
+#~ msgstr "Ausstellungsfläche"
+
+#~ msgid "Exhibition Package"
+#~ msgstr "Ausstellungspaket"
+
+#~ msgid "Edit Exhibition Space"
+#~ msgstr "Ausstellungsfläche bearbeiten"
+
+#~ msgid "New Exhibition Space"
+#~ msgstr "Neue Ausstellungsfläche"
+
+#~ msgid "View Exhibition Space"
+#~ msgstr "Ausstellungsflächen anzeigen"
+
+#~ msgid "Search Exhibition Space"
+#~ msgstr "Ausstellungsflächen durchsuchen"
+
+#~ msgid "No exhibition space found"
+#~ msgstr "Keine Ausstellungsfläche gefunden"
+
+#~ msgid "No deleted exhibition space found"
+#~ msgstr "Keine gelöschte Ausstellungsfläche gefunden"

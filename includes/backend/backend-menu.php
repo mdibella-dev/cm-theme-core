@@ -69,8 +69,8 @@ function setup_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Exhibition Packages', 'congressomat' ),
-        __( 'Exhibition Packages', 'congressomat' ),
+        __( 'Booth Packages', 'congressomat' ),
+        __( 'Booth Packages', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=exhibition_package&post_type=session',
         '',
@@ -101,8 +101,8 @@ function setup_menu_order( $menu_order ) {
         __( 'Locations', 'congressomat' ),
         __( 'Partners', 'congressomat' ),
         __( 'Partnerships', 'congressomat' ),
-        __( 'Exhibition Spaces', 'congressomat' ),
-        __( 'Exhibition Packages', 'congressomat' ),
+        __( 'Booths', 'congressomat' ),
+        __( 'Booth Packages', 'congressomat' ),
     );
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {

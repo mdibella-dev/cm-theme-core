@@ -52,7 +52,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
             'description'   => $default['description'],
             'slug'          => $default['slug'],
             'count-session' => __( 'Sessions', 'congressomat' ),
-            'count-space'   => __( 'Exhibition Spaces', 'congressomat' ),
+            'count-space'   => __( 'Booths', 'congressomat' ),
         ];
 
         return $columns;

@@ -102,9 +102,9 @@ function rewrite_header() {
 
                 if ( false !== $term ) {
                     $do_modify = true;
-                    $title     = __( 'Exhibition Spaces', 'congressomat' );
+                    $title     = __( 'Booth Spaces', 'congressomat' );
                     $subtitle  = $term->name;
-                    $add_new   = __( 'Add New Exhibition Space', 'congressomat' );
+                    $add_new   = __( 'Add New Booth', 'congressomat' );
                 }
                 break;
         }
