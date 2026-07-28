@@ -8,7 +8,7 @@
 
 namespace Congressomat\Shortcodes;
 
-use \Congressomat\API as API;
+use \Congressomat\Core\API as API;
 
 
 

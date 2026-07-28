@@ -9,7 +9,7 @@
 
 namespace Congressomat\Backend;
 
-use \Congressomat\API as API;
+use \Congressomat\Core\API as API;
 
 
 

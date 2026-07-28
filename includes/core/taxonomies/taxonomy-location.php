@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\Taxonomies\Location;
+namespace Congressomat\Core\Taxonomies\Location;
 
 
 

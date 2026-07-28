@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\API;
+namespace Congressomat\Core\API;
 
 
 

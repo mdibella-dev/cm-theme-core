@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\Taxonomies\Partnership;
+namespace Congressomat\Core\Taxonomies\Partnership;
 
 
 

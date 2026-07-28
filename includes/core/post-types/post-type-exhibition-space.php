@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\Post_Types\Exhibition_Space;
+namespace Congressomat\Core\Post_Types\Exhibition_Space;
 
 
 

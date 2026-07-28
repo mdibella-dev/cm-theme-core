@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\Post_Types\Session;
+namespace Congressomat\Core\Post_Types\Session;
 
 
 
