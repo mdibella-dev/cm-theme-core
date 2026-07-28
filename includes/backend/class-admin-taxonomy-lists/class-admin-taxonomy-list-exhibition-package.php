@@ -75,6 +75,7 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
                 break;
 
             case 'count':
+                $term  = get_term( $term_id, 'exhibition_package' );
                 $posts = get_posts( [
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',
@@ -84,16 +85,21 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
                         'terms'    => $term_id,
                     ]],
                 ] );
-                $term   = get_term( $term_id, 'exhibition_package' );
-                $output = sprintf(
-                    '<a href="%1$s">%2$s</a>',
-                    esc_url( sprintf(
-                        '%1$edit.php?exhibition_package=%2$s&post_type=exhibition_space',
-                        get_admin_url(),
-                        $term->slug,
-                    ) ),
-                    sizeof( $posts ),
-                );
+                $count = sizeof( $posts );
+
+                if ( $count != 0 ) {
+                    $output = sprintf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( sprintf(
+                            '%1$edit.php?exhibition_package=%2$s&post_type=exhibition_space',
+                            get_admin_url(),
+                            $term->slug,
+                        ) ),
+                        sizeof( $posts ),
+                    );
+                } else {
+                    $output = '&mdash;';
+                }
                 break;
 
             default:
