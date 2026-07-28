@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-27 15:46+0200\n"
+"POT-Creation-Date: 2026-07-28 09:40+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -91,7 +91,7 @@ msgstr ""
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:28
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:31
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:39
-msgid "Exhibition Packages"
+msgid "Booth Packages"
 msgstr ""
 
 #: includes/backend/backend-menu.php:99
@@ -129,14 +129,13 @@ msgid "Partnerships"
 msgstr ""
 
 #: includes/backend/backend-menu.php:104
-#: includes/backend/backend-taxonomy-lists.php:105
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
 #: includes/register/post-types/post-type-exhibition-space.php:28
 #: includes/register/post-types/post-type-exhibition-space.php:30
 #: includes/register/post-types/post-type-exhibition-space.php:40
 #: includes/register/post-types/post-type-exhibition-space.php:47
-msgid "Exhibition Spaces"
+msgid "Booths"
 msgstr ""
 
 #: includes/backend/backend-taxonomy-lists.php:79
@@ -151,26 +150,29 @@ msgstr ""
 msgid "Add New Partner"
 msgstr ""
 
+#: includes/backend/backend-taxonomy-lists.php:105
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
+#: includes/register/post-types/post-type-exhibition-space.php:29
+#: includes/register/post-types/post-type-exhibition-space.php:41
+msgid "Booth"
+msgstr ""
+
 #: includes/backend/backend-taxonomy-lists.php:107
 #: includes/register/post-types/post-type-exhibition-space.php:31
 #: includes/register/post-types/post-type-exhibition-space.php:32
-msgid "Add New Exhibition Space"
-msgstr ""
-
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/register/post-types/post-type-exhibition-space.php:29
-#: includes/register/post-types/post-type-exhibition-space.php:41
-msgid "Exhibition Space"
+msgid "Add New Booth"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
-#: includes/register/taxonomies/taxonomy-location.php:29
-msgid "Location"
+#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
+msgid "Booth Package"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
-msgid "Exhibition Package"
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
+#: includes/register/taxonomies/taxonomy-location.php:29
+msgid "Location"
 msgstr ""
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
@@ -253,39 +255,15 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
 msgid "Count"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:93
-msgid "Show all exhibition spaces with this exhibition package"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:106
-msgid "View All Sessions At This Location"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:125
-msgid "View All Exhibition Spaces In This Location"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:96
-msgid "Show Partners"
 msgstr ""
 
 #: includes/classes/shortcodes/class-shortcode-event-table.php:287
 #: includes/classes/shortcodes/class-shortcode-speaker-grid.php:180
 #, php-format
 msgid "Learn more about %1$s"
-msgstr ""
-
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
-msgid "Area"
-msgstr ""
-
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
-msgid "Booth"
 msgstr ""
 
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:193
@@ -297,28 +275,28 @@ msgid "View website"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:33
-msgid "Edit Exhibition Space"
+msgid "Edit Booth"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:34
-msgid "New Exhibition Space"
+msgid "New Booth"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:35
 #: includes/register/post-types/post-type-exhibition-space.php:36
-msgid "View Exhibition Space"
+msgid "View Booth"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:37
-msgid "Search Exhibition Space"
+msgid "Search Booth"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:38
-msgid "No exhibition space found"
+msgid "No booth found"
 msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:39
-msgid "No deleted exhibition space found"
+msgid "No deleted booth found"
 msgstr ""
 
 #: includes/register/post-types/post-type-partner.php:34
@@ -462,23 +440,23 @@ msgid "No event found"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:30
-msgid "Search Exhibition Package"
+msgid "Search Booth Package"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:32
-msgid "Edit Exhibition Package"
+msgid "Edit Booth Package"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:33
-msgid "Update Exhibition Package"
+msgid "Update Booth Package"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:34
-msgid "Add New Exhibition Package"
+msgid "Add New Booth Package"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:35
-msgid "No exhibition package found"
+msgid "No booth package found"
 msgstr ""
 
 #: includes/register/taxonomies/taxonomy-location.php:31
@@ -518,7 +496,7 @@ msgid "https://github.com/mdibella-dev/congressomat"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Core functions of CM Theme. Originally an integral part of the theme, now outsourced in a plugin."
+msgid "A simple event managing tool."
 msgstr ""
 
 #. Author of the plugin/theme

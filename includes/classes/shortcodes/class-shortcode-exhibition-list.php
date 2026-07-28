@@ -159,7 +159,7 @@ class Shortcode_Exhibition_List extends \WordPress_Helper\Shortcode {
                             ?>
                                 <div>
                                     <div>
-                                        <div><?php echo __( 'Area', 'congressomat' ); ?></div>
+                                        <div><?php echo __( 'Booth Location', 'congressomat' ); ?></div>
                                         <div><?php echo __( 'Booth', 'congressomat' ); ?></div>
                                     </div>
                                 <?php

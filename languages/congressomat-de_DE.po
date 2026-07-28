@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 09:02+0200\n"
-"PO-Revision-Date: 2026-07-28 09:10+0200\n"
+"POT-Creation-Date: 2026-07-28 10:06+0200\n"
+"PO-Revision-Date: 2026-07-28 10:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -153,15 +153,6 @@ msgid "Add New Partner"
 msgstr "Neuen Partner hinzufügen"
 
 #: includes/backend/backend-taxonomy-lists.php:105
-msgid "Booth Spaces"
-msgstr ""
-
-#: includes/backend/backend-taxonomy-lists.php:107
-#: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:32
-msgid "Add New Booth"
-msgstr "Neue Ausstellungsfläche hinzufügen"
-
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
 #: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
 #: includes/register/post-types/post-type-exhibition-space.php:29
@@ -169,15 +160,20 @@ msgstr "Neue Ausstellungsfläche hinzufügen"
 msgid "Booth"
 msgstr "Ausstellungsfäche"
 
+#: includes/backend/backend-taxonomy-lists.php:107
+#: includes/register/post-types/post-type-exhibition-space.php:31
+#: includes/register/post-types/post-type-exhibition-space.php:32
+msgid "Add New Booth"
+msgstr "Neue Ausstellungsfläche hinzufügen"
+
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:29
 msgid "Booth Package"
 msgstr "Ausstellungspaket"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/register/taxonomies/taxonomy-location.php:29
-msgid "Location"
-msgstr "Ort"
+msgid "Booth Location"
+msgstr "Standort"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
 #: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
@@ -259,26 +255,10 @@ msgstr "Aktiv"
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
 #: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
 msgid "Count"
 msgstr "Anzahl"
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:93
-msgid "Show all exhibition spaces with this exhibition package"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:106
-msgid "View All Sessions At This Location"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:125
-msgid "View All Exhibition Spaces In This Location"
-msgstr ""
-
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:96
-msgid "Show Partners"
-msgstr "Partner anzeigen"
 
 #: includes/classes/shortcodes/class-shortcode-event-table.php:287
 #: includes/classes/shortcodes/class-shortcode-speaker-grid.php:180
@@ -287,8 +267,9 @@ msgid "Learn more about %1$s"
 msgstr ""
 
 #: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
-msgid "Area"
-msgstr ""
+#: includes/register/taxonomies/taxonomy-location.php:29
+msgid "Location"
+msgstr "Ort"
 
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:193
 msgid "View details page"
@@ -304,7 +285,7 @@ msgstr "Ausstellungsfäche bearbeiten"
 
 #: includes/register/post-types/post-type-exhibition-space.php:34
 msgid "New Booth"
-msgstr ""
+msgstr "Neue Ausstellungsfläche"
 
 #: includes/register/post-types/post-type-exhibition-space.php:35
 #: includes/register/post-types/post-type-exhibition-space.php:36
@@ -520,10 +501,8 @@ msgid "https://github.com/mdibella-dev/congressomat"
 msgstr "https://github.com/mdibella-dev/congressomat"
 
 #. Description of the plugin/theme
-msgid ""
-"Core functions of CM Theme. Originally an integral part of the theme, now "
-"outsourced in a plugin."
-msgstr ""
+msgid "A simple event managing tool."
+msgstr "Ein einfaches Tool für das Veranstaltungsmanagement."
 
 #. Author of the plugin/theme
 msgid "Marco Di Bella"
@@ -532,6 +511,9 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Show Partners"
+#~ msgstr "Partner anzeigen"
 
 #~ msgid "Exhibition Spaces"
 #~ msgstr "Ausstellungsflächen"

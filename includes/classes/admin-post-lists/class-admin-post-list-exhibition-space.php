@@ -47,7 +47,7 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
             'cb'                          => $default['cb'],
             'title'                       => __( 'Booth', 'congressomat' ),
             'taxonomy-exhibition_package' => __( 'Booth Package', 'congressomat' ),
-            'taxonomy-location'           => __( 'Location', 'congressomat' ),
+            'taxonomy-location'           => __( 'Booth Location', 'congressomat' ),
             'update'                      => __( 'Last Update', 'congressomat' ),
         ];
 
