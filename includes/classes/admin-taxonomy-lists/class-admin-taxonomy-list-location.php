@@ -100,10 +100,9 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                 ] );
                 $term   = get_term( $term_id, 'location' );
                 $output = sprintf(
-                    '<a href="/wp-admin/edit.php?location=%2$s&post_type=session" title="%3$s">%1$s</a>',
+                    '<a href="/wp-admin/edit.php?location=%2$s&post_type=session">%1$s</a>',
                     sizeof( $posts ),
-                    $term->slug,
-                    __( 'View All Sessions At This Location', 'congressomat' )
+                    $term->slug
                 );
                 break;
 
@@ -119,10 +118,9 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                 ] );
                 $term   = get_term( $term_id, 'location' );
                 $output = sprintf(
-                    '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
+                    '<a href="/wp-admin/edit.php?location=%2$s&post_type=exhibition_space">%1$s</a>',
                     sizeof( $posts ),
-                    $term->slug,
-                    __( 'View All Exhibition Spaces In This Location', 'congressomat' )
+                    $term->slug
                 );
                 break;
 

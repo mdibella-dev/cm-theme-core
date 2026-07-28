@@ -86,10 +86,9 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
                 ] );
                 $term   = get_term( $term_id, 'exhibition_package' );
                 $output = sprintf(
-                    '<a href="/wp-admin/edit.php?exhibition_package=%2$s&post_type=exhibition_space" title="%3$s">%1$s</a>',
+                    '<a href="/wp-admin/edit.php?exhibition_package=%2$s&post_type=exhibition_space">%1$s</a>',
                     sizeof( $posts ),
-                    $term->slug,
-                    __( 'Show all exhibition spaces with this exhibition package', 'congressomat' )
+                    $term->slug
                 );
                 break;
 

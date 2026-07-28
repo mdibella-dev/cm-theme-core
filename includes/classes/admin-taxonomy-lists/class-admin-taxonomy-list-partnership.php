@@ -87,13 +87,12 @@ class Admin_Taxonomy_List_Partnership extends \WordPress_Helper\Admin_Taxonomy_L
                 ] );
                 $term   = get_term( $term_id, 'partnership' );
                 $output = sprintf(
-                    '<a href="%1$s" title="%2$s">%3$s</a>',
+                    '<a href="%1$s">%2$s</a>',
                     esc_url( sprintf(
                         '%1$sedit.php?post_type=%2$s&post_type=partner',
                         get_admin_url(),
                         $term->slug,
                     ) ),
-                    __( 'Show Partners', 'congressomat' ),
                     sizeof( $posts ),
                 );
                 break;
