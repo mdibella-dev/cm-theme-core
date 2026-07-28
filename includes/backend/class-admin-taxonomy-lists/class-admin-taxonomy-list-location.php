@@ -50,7 +50,6 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
             'image'         => __( 'Image', 'congressomat' ),
             'name'          => $default['name'],
             'description'   => $default['description'],
-            'slug'          => $default['slug'],
             'count-session' => __( 'Sessions', 'congressomat' ),
             'count-space'   => __( 'Booths', 'congressomat' ),
         ];
