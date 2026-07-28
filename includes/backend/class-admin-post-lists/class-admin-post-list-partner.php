@@ -73,13 +73,12 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                 if ( true === has_post_thumbnail( $post_id ) ) {
 
                     echo sprintf(
-                        '<a href="%1$s" title="%2$s">%3$s</a>',
+                        '<a href="%1$s">%2$s</a>',
                         esc_url( sprintf(
                             '%1$spost.php?post=%2$s&action=edit',
                             get_admin_url(),
                             $post_id,
                         ) ),
-                        __( 'Edit Partner', 'congressomat' ),
                         get_the_post_thumbnail(
                             $post_id,
                             [ 100, 0 ],
