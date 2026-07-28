@@ -86,7 +86,8 @@ body.congressomat.admin-color-modern {
 
 
 .congressomat-speaker-image,
-.congressomat-location-image {
+.congressomat-location-image,
+.congressomat-exhibitor-image {
     display: inline-block;
     line-height: 0;
     font-size: 0;
@@ -113,6 +114,17 @@ body.congressomat.admin-color-modern {
         width: 100%;
         height: auto;
         border-radius: inherit;
+    }
+}
+
+
+.congressomat-exhibitor-image {
+    width: 60px;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -155,23 +167,8 @@ body.congressomat.admin-color-modern {
 .post-type-partner .wp-list-table {
 
     .column-image {
-        --column-size: 60px;
-
-        width: var(--column-size);
-
-        a {
-            display: inline-block;
-            line-height:0;
-            width: var(--column-size);
-        }
-
-        a > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        width: 150px;
     }
-
 }
 
 

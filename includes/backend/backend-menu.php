@@ -99,7 +99,7 @@ function setup_menu_order( $menu_order ) {
         __( 'Sessions', 'congressomat' ),
         __( 'Speakers', 'congressomat' ),
         __( 'Locations', 'congressomat' ),
-        __( 'Partners', 'congressomat' ),
+        __( 'Exhibitors', 'congressomat' ),
         __( 'Partnerships', 'congressomat' ),
         __( 'Booths', 'congressomat' ),
         __( 'Booth Packages', 'congressomat' ),

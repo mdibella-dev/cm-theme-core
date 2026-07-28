@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 11:58+0200\n"
-"PO-Revision-Date: 2026-07-28 12:00+0200\n"
+"POT-Creation-Date: 2026-07-28 15:39+0200\n"
+"PO-Revision-Date: 2026-07-28 15:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -24,46 +24,40 @@ msgstr ""
 
 #: includes/backend/backend-admin-lists.php:77
 #: includes/backend/backend-menu.php:99
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
-#: includes/register/post-types/post-type-session.php:28
-#: includes/register/post-types/post-type-session.php:30
-#: includes/register/post-types/post-type-session.php:39
-#: includes/register/post-types/post-type-session.php:46
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:52
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:53
+#: includes/core/post-types/post-type-session.php:28
+#: includes/core/post-types/post-type-session.php:30
+#: includes/core/post-types/post-type-session.php:39
+#: includes/core/post-types/post-type-session.php:46
 msgid "Sessions"
 msgstr "Sessions"
 
 #: includes/backend/backend-admin-lists.php:79
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-session.php:32
+#: includes/core/post-types/post-type-session.php:31
+#: includes/core/post-types/post-type-session.php:32
 msgid "Add New Session"
 msgstr "Neue Session hinzufügen"
 
 #: includes/backend/backend-admin-lists.php:90
-#: includes/backend/backend-menu.php:102
-#: includes/register/post-types/post-type-partner.php:28
-#: includes/register/post-types/post-type-partner.php:30
-#: includes/register/post-types/post-type-partner.php:40
 msgid "Partners"
 msgstr "Partner"
 
 #: includes/backend/backend-admin-lists.php:92
-#: includes/register/post-types/post-type-partner.php:31
-#: includes/register/post-types/post-type-partner.php:32
 msgid "Add New Partner"
 msgstr "Neuen Partner hinzufügen"
 
 #: includes/backend/backend-admin-lists.php:105
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
-#: includes/register/post-types/post-type-exhibition-space.php:29
-#: includes/register/post-types/post-type-exhibition-space.php:41
+#: includes/backend/class-admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/core/post-types/post-type-exhibition-space.php:29
+#: includes/core/post-types/post-type-exhibition-space.php:41
+#: includes/shortcodes/class-shortcode-exhibition-list.php:163
 msgid "Booth"
 msgstr "Ausstellungsfäche"
 
 #: includes/backend/backend-admin-lists.php:107
-#: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:32
+#: includes/core/post-types/post-type-exhibition-space.php:31
+#: includes/core/post-types/post-type-exhibition-space.php:32
 msgid "Add New Booth"
 msgstr "Neue Ausstellungsfläche hinzufügen"
 
@@ -113,388 +107,400 @@ msgstr "Congressomat"
 
 #: includes/backend/backend-menu.php:42 includes/backend/backend-menu.php:43
 #: includes/backend/backend-menu.php:98
-#: includes/register/taxonomies/taxonomy-event.php:28
-#: includes/register/taxonomies/taxonomy-event.php:30
-#: includes/register/taxonomies/taxonomy-event.php:42
+#: includes/core/taxonomies/taxonomy-event.php:28
+#: includes/core/taxonomies/taxonomy-event.php:30
+#: includes/core/taxonomies/taxonomy-event.php:42
 msgid "Events"
 msgstr "Veranstaltungen"
 
 #: includes/backend/backend-menu.php:52 includes/backend/backend-menu.php:53
 #: includes/backend/backend-menu.php:101
-#: includes/register/taxonomies/taxonomy-location.php:28
-#: includes/register/taxonomies/taxonomy-location.php:30
-#: includes/register/taxonomies/taxonomy-location.php:42
+#: includes/core/taxonomies/taxonomy-location.php:28
+#: includes/core/taxonomies/taxonomy-location.php:30
+#: includes/core/taxonomies/taxonomy-location.php:42
 msgid "Locations"
 msgstr "Orte"
 
 #: includes/backend/backend-menu.php:62 includes/backend/backend-menu.php:63
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:53
-#: includes/register/taxonomies/taxonomy-partnership.php:29
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
+#: includes/core/taxonomies/taxonomy-partnership.php:29
 msgid "Partnership"
 msgstr ""
 
 #: includes/backend/backend-menu.php:72 includes/backend/backend-menu.php:73
 #: includes/backend/backend-menu.php:105
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:28
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:31
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:39
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:28
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:31
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:39
 msgid "Booth Packages"
 msgstr "Ausstellungspakete"
 
 #: includes/backend/backend-menu.php:100
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
-#: includes/register/post-types/post-type-speaker.php:28
-#: includes/register/post-types/post-type-speaker.php:30
-#: includes/register/post-types/post-type-speaker.php:40
-#: includes/register/post-types/post-type-speaker.php:51
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:56
+#: includes/core/post-types/post-type-speaker.php:28
+#: includes/core/post-types/post-type-speaker.php:30
+#: includes/core/post-types/post-type-speaker.php:40
+#: includes/core/post-types/post-type-speaker.php:51
 msgid "Speakers"
 msgstr "Speakers"
 
+#: includes/backend/backend-menu.php:102
+#: includes/core/post-types/post-type-partner.php:28
+#: includes/core/post-types/post-type-partner.php:30
+#: includes/core/post-types/post-type-partner.php:40
+#: includes/core/post-types/post-type-partner.php:51
+msgid "Exhibitors"
+msgstr "Aussteller"
+
 #: includes/backend/backend-menu.php:103
-#: includes/register/taxonomies/taxonomy-partnership.php:28
-#: includes/register/taxonomies/taxonomy-partnership.php:33
+#: includes/core/taxonomies/taxonomy-partnership.php:28
+#: includes/core/taxonomies/taxonomy-partnership.php:33
 msgid "Partnerships"
 msgstr ""
 
 #: includes/backend/backend-menu.php:104
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:54
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:55
-#: includes/register/post-types/post-type-exhibition-space.php:28
-#: includes/register/post-types/post-type-exhibition-space.php:30
-#: includes/register/post-types/post-type-exhibition-space.php:40
-#: includes/register/post-types/post-type-exhibition-space.php:47
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:54
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
+#: includes/core/post-types/post-type-exhibition-space.php:28
+#: includes/core/post-types/post-type-exhibition-space.php:30
+#: includes/core/post-types/post-type-exhibition-space.php:40
+#: includes/core/post-types/post-type-exhibition-space.php:47
 msgid "Booths"
 msgstr "Ausstellungsflächen"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:29
+#: includes/backend/class-admin-post-lists/class-admin-post-list-exhibition-space.php:49
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:29
 msgid "Booth Package"
 msgstr "Ausstellungspaket"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
+#: includes/backend/class-admin-post-lists/class-admin-post-list-exhibition-space.php:50
+#: includes/shortcodes/class-shortcode-exhibition-list.php:162
 msgid "Booth Location"
 msgstr "Standort"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:51
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:55
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:52
+#: includes/backend/class-admin-post-lists/class-admin-post-list-exhibition-space.php:51
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:55
+#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:52
 msgid "Last Update"
 msgstr "Letzte Aktualisierung"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:51
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:49
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
-msgid "Image"
-msgstr "Bild"
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:51
+msgid "Logo"
+msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:52
-#: includes/register/post-types/post-type-partner.php:29
-#: includes/register/post-types/post-type-partner.php:41
-#: includes/register/post-types/post-type-partner.php:51
-msgid "Partner"
-msgstr "Partner"
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:52
+#: includes/core/post-types/post-type-partner.php:29
+#: includes/core/post-types/post-type-partner.php:41
+msgid "Exhibitor"
+msgstr "Aussteller"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-partner.php:82
-#: includes/register/post-types/post-type-partner.php:33
-msgid "Edit Partner"
-msgstr "Partner bearbeiten"
-
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:52
-#: includes/register/taxonomies/taxonomy-event.php:29
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:52
+#: includes/core/taxonomies/taxonomy-event.php:29
 msgid "Event"
 msgstr "Veranstaltung"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:53
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:53
 msgid "Event Location"
 msgstr "Veranstaltungsort"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:54
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:54
 msgid "Event Date"
 msgstr "Veranstaltungsdatum"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:55
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:55
 msgid "Time Slot"
 msgstr "Zeitfenster"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:90
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:82
-#: includes/register/post-types/post-type-speaker.php:33
-msgid "Edit Speaker"
-msgstr "Speaker bearbeiten"
-
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:114
-#: includes/classes/shortcodes/class-shortcode-event-table.php:237
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:110
+#: includes/shortcodes/class-shortcode-event-table.php:237
 #, php-format
 msgid "%1$s to %2$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-session.php:125
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:121
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:50
-#: includes/register/post-types/post-type-speaker.php:29
-#: includes/register/post-types/post-type-speaker.php:41
+#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:49
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
+msgid "Image"
+msgstr "Bild"
+
+#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:50
+#: includes/core/post-types/post-type-speaker.php:29
+#: includes/core/post-types/post-type-speaker.php:41
 msgid "Speaker"
 msgstr "Speaker"
 
-#: includes/classes/admin-post-lists/class-admin-post-list-speaker.php:51
+#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:51
 msgid "Short Description"
 msgstr "Kurzbeschreibung"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:54
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 msgid "Status"
 msgstr "Status"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:84
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:111
 msgid "Active"
 msgstr "Aktiv"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:84
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:111
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
 msgid "Count"
 msgstr "Anzahl"
 
-#: includes/classes/shortcodes/class-shortcode-event-table.php:287
-#: includes/classes/shortcodes/class-shortcode-speaker-grid.php:180
+#: includes/core/post-types/post-type-exhibition-space.php:33
+msgid "Edit Booth"
+msgstr "Ausstellungsfläche bearbeiten"
+
+#: includes/core/post-types/post-type-exhibition-space.php:34
+msgid "New Booth"
+msgstr "Neue Ausstellungsfläche"
+
+#: includes/core/post-types/post-type-exhibition-space.php:35
+#: includes/core/post-types/post-type-exhibition-space.php:36
+msgid "View Booth"
+msgstr "Ausstellungsfläche anzeigen"
+
+#: includes/core/post-types/post-type-exhibition-space.php:37
+msgid "Search Booth"
+msgstr "Ausstellungsflächen durchsuchen"
+
+#: includes/core/post-types/post-type-exhibition-space.php:38
+msgid "No booth found"
+msgstr "Keine Ausstellungsfläche gefunden"
+
+#: includes/core/post-types/post-type-exhibition-space.php:39
+msgid "No deleted booth found"
+msgstr "Keine gelöschte Ausstellungsfläche gefunden"
+
+#: includes/core/post-types/post-type-partner.php:31
+#: includes/core/post-types/post-type-partner.php:32
+msgid "Add New Exhibitor"
+msgstr "Neuen Aussteller hinzufügen"
+
+#: includes/core/post-types/post-type-partner.php:33
+msgid "Edit Exhibitor"
+msgstr "Aussteller bearbeiten"
+
+#: includes/core/post-types/post-type-partner.php:34
+msgid "New Exhibitor"
+msgstr "Neuen Aussteller"
+
+#: includes/core/post-types/post-type-partner.php:35
+#: includes/core/post-types/post-type-partner.php:36
+msgid "View Exhibitor"
+msgstr "Aussteller anzeigen"
+
+#: includes/core/post-types/post-type-partner.php:37
+msgid "Search Exhibitor"
+msgstr "Aussteller durchsuchen"
+
+#: includes/core/post-types/post-type-partner.php:38
+msgid "No exhibitor found"
+msgstr "Keinen Aussteller gefunden"
+
+#: includes/core/post-types/post-type-partner.php:39
+msgid "No deleted exhibitor found"
+msgstr "Keinen gelöschten Aussteller gefunden"
+
+#: includes/core/post-types/post-type-partner.php:42
+msgid "Exhibitor Logo"
+msgstr "Ausstellerlogo"
+
+#: includes/core/post-types/post-type-partner.php:43
+msgid "Set Exhibitor Logo"
+msgstr "Ausstellerlogo setzen"
+
+#: includes/core/post-types/post-type-partner.php:44
+msgid "Remove Exhibitor Logo"
+msgstr "Ausstellerlogo entfernen"
+
+#: includes/core/post-types/post-type-partner.php:45
+msgid "Use As Exhibitor Logo"
+msgstr "Als Ausstellerlogo benutzen"
+
+#: includes/core/post-types/post-type-session.php:29
+#: includes/core/post-types/post-type-session.php:40
+msgid "Session"
+msgstr "Session"
+
+#: includes/core/post-types/post-type-session.php:33
+msgid "Edit Session"
+msgstr "Session bearbeiten"
+
+#: includes/core/post-types/post-type-session.php:34
+msgid "New Session"
+msgstr "New Session"
+
+#: includes/core/post-types/post-type-session.php:35
+msgid "View Session"
+msgstr "Session anzeigen"
+
+#: includes/core/post-types/post-type-session.php:36
+msgid "View Sessions"
+msgstr "Sessions anzeigen"
+
+#: includes/core/post-types/post-type-session.php:37
+msgid "Search Sessions"
+msgstr "Sessions durchsuchen"
+
+#: includes/core/post-types/post-type-session.php:38
+msgid "No Session Found"
+msgstr "Keine Session gefunden"
+
+#: includes/core/post-types/post-type-speaker.php:31
+#: includes/core/post-types/post-type-speaker.php:32
+msgid "Add New Speaker"
+msgstr "Neuen Speaker hinzufügen"
+
+#: includes/core/post-types/post-type-speaker.php:33
+msgid "Edit Speaker"
+msgstr "Speaker bearbeiten"
+
+#: includes/core/post-types/post-type-speaker.php:34
+msgid "New Speaker"
+msgstr "Neuer Speaker"
+
+#: includes/core/post-types/post-type-speaker.php:35
+#: includes/core/post-types/post-type-speaker.php:36
+msgid "View Speaker"
+msgstr "Speaker anzeigen"
+
+#: includes/core/post-types/post-type-speaker.php:37
+msgid "Search Speaker"
+msgstr "Speaker durchsuchen"
+
+#: includes/core/post-types/post-type-speaker.php:38
+msgid "No Speaker Found"
+msgstr "Keinen Speaker gefunden"
+
+#: includes/core/post-types/post-type-speaker.php:39
+msgid "No deleted speaker found"
+msgstr "Keinen gelöschten Speaker gefunden"
+
+#: includes/core/post-types/post-type-speaker.php:42
+msgid "Speaker Image"
+msgstr "Bild des Sprechers"
+
+#: includes/core/post-types/post-type-speaker.php:43
+msgid "Set Speaker Image"
+msgstr "Sprecherbild setzen"
+
+#: includes/core/post-types/post-type-speaker.php:44
+msgid "Remove Speaker Image"
+msgstr "Sprecherbild entfernen"
+
+#: includes/core/post-types/post-type-speaker.php:45
+msgid "Use As Speaker Image"
+msgstr "Als Sprecherbild benutzen"
+
+#: includes/core/taxonomies/taxonomy-event.php:31
+msgid "Search Events"
+msgstr "Veranstaltungen durchsuchen"
+
+#: includes/core/taxonomies/taxonomy-event.php:32
+msgid "All Events"
+msgstr "Alle Veranstaltungen"
+
+#: includes/core/taxonomies/taxonomy-event.php:33
+msgid "Edit Event"
+msgstr "Veranstaltung bearbeiten"
+
+#: includes/core/taxonomies/taxonomy-event.php:34
+msgid "View Event"
+msgstr "Veranstaltung anzeigen"
+
+#: includes/core/taxonomies/taxonomy-event.php:35
+msgid "Update Event"
+msgstr "Veranstaltung aktualisieren"
+
+#: includes/core/taxonomies/taxonomy-event.php:36
+msgid "Add New Event"
+msgstr "Neue Veranstaltung hinzufügen"
+
+#: includes/core/taxonomies/taxonomy-event.php:37
+msgid "New Event Title"
+msgstr "Neuer Veranstaltungstitel"
+
+#: includes/core/taxonomies/taxonomy-event.php:38
+msgid "No event found"
+msgstr "Keine Veranstaltung gefunden"
+
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:30
+msgid "Search Booth Package"
+msgstr "Ausstellungspakete durchsuchen"
+
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:32
+msgid "Edit Booth Package"
+msgstr "Ausstellungspaket bearbeiten"
+
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:33
+msgid "Update Booth Package"
+msgstr "Ausstellungspaket aktualisieren"
+
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:34
+msgid "Add New Booth Package"
+msgstr "Neues Ausstellungspaket hinzufügen"
+
+#: includes/core/taxonomies/taxonomy-exhibition-package.php:35
+msgid "No booth package found"
+msgstr "Kein Ausstellungspaket gefunden"
+
+#: includes/core/taxonomies/taxonomy-location.php:29
+msgid "Location"
+msgstr "Ort"
+
+#: includes/core/taxonomies/taxonomy-location.php:31
+msgid "Search Locations"
+msgstr "Orte durchsuchen"
+
+#: includes/core/taxonomies/taxonomy-location.php:32
+msgid "All Locations"
+msgstr "Alle Orte"
+
+#: includes/core/taxonomies/taxonomy-location.php:33
+msgid "Edit Location"
+msgstr "Ort bearbeiten"
+
+#: includes/core/taxonomies/taxonomy-location.php:34
+msgid "View Location"
+msgstr "Ort anzeigen"
+
+#: includes/core/taxonomies/taxonomy-location.php:35
+msgid "Update Location"
+msgstr "Ort aktualisieren"
+
+#: includes/core/taxonomies/taxonomy-location.php:36
+msgid "Add New Location"
+msgstr "Neuen Ort hinzufügen"
+
+#: includes/core/taxonomies/taxonomy-location.php:37
+msgid "New Location Title"
+msgstr "Neuer Ortstitel"
+
+#: includes/core/taxonomies/taxonomy-location.php:38
+msgid "No location found"
+msgstr "Keinen Ort gefunden"
+
+#: includes/shortcodes/class-shortcode-event-table.php:287
+#: includes/shortcodes/class-shortcode-speaker-grid.php:180
 #, php-format
 msgid "Learn more about %1$s"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-icon-wall.php:193
+#: includes/shortcodes/class-shortcode-icon-wall.php:193
 msgid "View details page"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-icon-wall.php:202
+#: includes/shortcodes/class-shortcode-icon-wall.php:202
 msgid "View website"
 msgstr ""
-
-#: includes/register/post-types/post-type-exhibition-space.php:33
-msgid "Edit Booth"
-msgstr "Ausstellungsfläche bearbeiten"
-
-#: includes/register/post-types/post-type-exhibition-space.php:34
-msgid "New Booth"
-msgstr "Neue Ausstellungsfläche"
-
-#: includes/register/post-types/post-type-exhibition-space.php:35
-#: includes/register/post-types/post-type-exhibition-space.php:36
-msgid "View Booth"
-msgstr "Ausstellungsfläche anzeigen"
-
-#: includes/register/post-types/post-type-exhibition-space.php:37
-msgid "Search Booth"
-msgstr "Ausstellungsflächen durchsuchen"
-
-#: includes/register/post-types/post-type-exhibition-space.php:38
-msgid "No booth found"
-msgstr "Keine Ausstellungsfläche gefunden"
-
-#: includes/register/post-types/post-type-exhibition-space.php:39
-msgid "No deleted booth found"
-msgstr "Keine gelöschte Ausstellungsfläche gefunden"
-
-#: includes/register/post-types/post-type-partner.php:34
-msgid "New Partner"
-msgstr "Neuer Partner"
-
-#: includes/register/post-types/post-type-partner.php:35
-#: includes/register/post-types/post-type-partner.php:36
-msgid "View Partner"
-msgstr "Partner anzeigen"
-
-#: includes/register/post-types/post-type-partner.php:37
-msgid "Search Partner"
-msgstr "Partner durchsuchen"
-
-#: includes/register/post-types/post-type-partner.php:38
-msgid "No partner found"
-msgstr "Keinen Partner gefunden"
-
-#: includes/register/post-types/post-type-partner.php:39
-msgid "No deleted partner found"
-msgstr "Keinen gelöschten Partner gefunden"
-
-#: includes/register/post-types/post-type-partner.php:42
-msgid "Partner Logo"
-msgstr "Partner-Logo"
-
-#: includes/register/post-types/post-type-partner.php:43
-msgid "Set Partner Logo"
-msgstr "Partner-Logo setzen"
-
-#: includes/register/post-types/post-type-partner.php:44
-msgid "Remove Partner Logo"
-msgstr "Partner-Logo entfernen"
-
-#: includes/register/post-types/post-type-partner.php:45
-msgid "Use As Partner Logo"
-msgstr "Als Partner-Logo benutzen"
-
-#: includes/register/post-types/post-type-session.php:29
-#: includes/register/post-types/post-type-session.php:40
-msgid "Session"
-msgstr "Session"
-
-#: includes/register/post-types/post-type-session.php:33
-msgid "Edit Session"
-msgstr "Session bearbeiten"
-
-#: includes/register/post-types/post-type-session.php:34
-msgid "New Session"
-msgstr "New Session"
-
-#: includes/register/post-types/post-type-session.php:35
-msgid "View Session"
-msgstr "Session anzeigen"
-
-#: includes/register/post-types/post-type-session.php:36
-msgid "View Sessions"
-msgstr "Sessions anzeigen"
-
-#: includes/register/post-types/post-type-session.php:37
-msgid "Search Sessions"
-msgstr "Sessions durchsuchen"
-
-#: includes/register/post-types/post-type-session.php:38
-msgid "No Session Found"
-msgstr "Keine Session gefunden"
-
-#: includes/register/post-types/post-type-speaker.php:31
-#: includes/register/post-types/post-type-speaker.php:32
-msgid "Add New Speaker"
-msgstr "Neuen Speaker hinzufügen"
-
-#: includes/register/post-types/post-type-speaker.php:34
-msgid "New Speaker"
-msgstr "Neuer Speaker"
-
-#: includes/register/post-types/post-type-speaker.php:35
-#: includes/register/post-types/post-type-speaker.php:36
-msgid "View Speaker"
-msgstr "Speaker anzeigen"
-
-#: includes/register/post-types/post-type-speaker.php:37
-msgid "Search Speaker"
-msgstr "Speaker durchsuchen"
-
-#: includes/register/post-types/post-type-speaker.php:38
-msgid "No Speaker Found"
-msgstr "Keinen Speaker gefunden"
-
-#: includes/register/post-types/post-type-speaker.php:39
-msgid "No deleted speaker found"
-msgstr "Keinen gelöschten Speaker gefunden"
-
-#: includes/register/post-types/post-type-speaker.php:42
-msgid "Speaker Image"
-msgstr "Bild des Sprechers"
-
-#: includes/register/post-types/post-type-speaker.php:43
-msgid "Set Speaker Image"
-msgstr "Sprecherbild setzen"
-
-#: includes/register/post-types/post-type-speaker.php:44
-msgid "Remove Speaker Image"
-msgstr "Sprecherbild entfernen"
-
-#: includes/register/post-types/post-type-speaker.php:45
-msgid "Use As Speaker Image"
-msgstr "Als Sprecherbild benutzen"
-
-#: includes/register/taxonomies/taxonomy-event.php:31
-msgid "Search Events"
-msgstr "Veranstaltungen durchsuchen"
-
-#: includes/register/taxonomies/taxonomy-event.php:32
-msgid "All Events"
-msgstr "Alle Veranstaltungen"
-
-#: includes/register/taxonomies/taxonomy-event.php:33
-msgid "Edit Event"
-msgstr "Veranstaltung bearbeiten"
-
-#: includes/register/taxonomies/taxonomy-event.php:34
-msgid "View Event"
-msgstr "Veranstaltung anzeigen"
-
-#: includes/register/taxonomies/taxonomy-event.php:35
-msgid "Update Event"
-msgstr "Veranstaltung aktualisieren"
-
-#: includes/register/taxonomies/taxonomy-event.php:36
-msgid "Add New Event"
-msgstr "Neue Veranstaltung hinzufügen"
-
-#: includes/register/taxonomies/taxonomy-event.php:37
-msgid "New Event Title"
-msgstr "Neuer Veranstaltungstitel"
-
-#: includes/register/taxonomies/taxonomy-event.php:38
-msgid "No event found"
-msgstr "Keine Veranstaltung gefunden"
-
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:30
-msgid "Search Booth Package"
-msgstr "Ausstellungspakete durchsuchen"
-
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:32
-msgid "Edit Booth Package"
-msgstr "Ausstellungspaket bearbeiten"
-
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:33
-msgid "Update Booth Package"
-msgstr "Ausstellungspaket aktualisieren"
-
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:34
-msgid "Add New Booth Package"
-msgstr "Neues Ausstellungspaket hinzufügen"
-
-#: includes/register/taxonomies/taxonomy-exhibition-package.php:35
-msgid "No booth package found"
-msgstr "Kein Ausstellungspaket gefunden"
-
-#: includes/register/taxonomies/taxonomy-location.php:29
-msgid "Location"
-msgstr "Ort"
-
-#: includes/register/taxonomies/taxonomy-location.php:31
-msgid "Search Locations"
-msgstr "Orte durchsuchen"
-
-#: includes/register/taxonomies/taxonomy-location.php:32
-msgid "All Locations"
-msgstr "Alle Orte"
-
-#: includes/register/taxonomies/taxonomy-location.php:33
-msgid "Edit Location"
-msgstr "Ort bearbeiten"
-
-#: includes/register/taxonomies/taxonomy-location.php:34
-msgid "View Location"
-msgstr "Ort anzeigen"
-
-#: includes/register/taxonomies/taxonomy-location.php:35
-msgid "Update Location"
-msgstr "Ort aktualisieren"
-
-#: includes/register/taxonomies/taxonomy-location.php:36
-msgid "Add New Location"
-msgstr "Neuen Ort hinzufügen"
-
-#: includes/register/taxonomies/taxonomy-location.php:37
-msgid "New Location Title"
-msgstr "Neuer Ortstitel"
-
-#: includes/register/taxonomies/taxonomy-location.php:38
-msgid "No location found"
-msgstr "Keinen Ort gefunden"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/congressomat"
@@ -512,35 +518,29 @@ msgstr "Marco Di Bella"
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
 
-#~ msgid "Show Partners"
+#~ msgid "Partner"
+#~ msgstr "Partner"
+
+#~ msgid "Edit Partner"
+#~ msgstr "Partner bearbeiten"
+
+#~ msgid "New Partner"
+#~ msgstr "Neuer Partner"
+
+#~ msgid "View Partner"
 #~ msgstr "Partner anzeigen"
 
-#~ msgid "Exhibition Spaces"
-#~ msgstr "Ausstellungsflächen"
+#~ msgid "Search Partner"
+#~ msgstr "Partner durchsuchen"
 
-#~ msgid "Add New Exhibition Space"
-#~ msgstr "Neue Ausstellungsfläche hinzufügen"
+#~ msgid "No partner found"
+#~ msgstr "Keinen Partner gefunden"
 
-#~ msgid "Exhibition Space"
-#~ msgstr "Ausstellungsfläche"
+#~ msgid "No deleted partner found"
+#~ msgstr "Keinen gelöschten Partner gefunden"
 
-#~ msgid "Exhibition Package"
-#~ msgstr "Ausstellungspaket"
+#~ msgid "Partner Logo"
+#~ msgstr "Partner-Logo"
 
-#~ msgid "Edit Exhibition Space"
-#~ msgstr "Ausstellungsfläche bearbeiten"
-
-#~ msgid "New Exhibition Space"
-#~ msgstr "Neue Ausstellungsfläche"
-
-#~ msgid "View Exhibition Space"
-#~ msgstr "Ausstellungsflächen anzeigen"
-
-#~ msgid "Search Exhibition Space"
-#~ msgstr "Ausstellungsflächen durchsuchen"
-
-#~ msgid "No exhibition space found"
-#~ msgstr "Keine Ausstellungsfläche gefunden"
-
-#~ msgid "No deleted exhibition space found"
-#~ msgstr "Keine gelöschte Ausstellungsfläche gefunden"
+#~ msgid "Show Partners"
+#~ msgstr "Partner anzeigen"
