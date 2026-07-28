@@ -82,7 +82,7 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
 
                 if ( ! empty( $image ) ) {
                     echo sprintf(
-                        '<a href="%1$s">%2$s</a>',
+                        '<a class="congressomat-location-image" href="%1$s">%2$s</a>',
                         esc_url( sprintf(
                             '%1$sterm.php?taxonomy=location&tag_ID=%2$s&post_type=session',
                             get_admin_url(),

@@ -81,7 +81,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                         $speaker_id      = $speaker_dataset['id'];
 
                         echo sprintf(
-                            '<a href="%1$s">%2$s</a>',
+                            '<a class="congressomat-speaker-image" href="%1$s">%2$s</a>',
                             esc_url( sprintf(
                                 '%1$spost.php?post=%2$s&action=edit',
                                 get_admin_url(),
@@ -89,10 +89,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                             ) ),
                             get_the_post_thumbnail(
                                 $speaker_id,
-                                'thumbnail',
-                                [
-                                    'class' => 'speaker-icon'
-                                ]
+                                'thumbnail'
                             ),
                         );
                     }

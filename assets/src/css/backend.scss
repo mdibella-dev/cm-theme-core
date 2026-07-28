@@ -8,17 +8,6 @@
 
 
 
-.speaker-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
-    border: 2px solid white;
-}
-
-
-
-
 /**
  * General settings
  */
@@ -96,6 +85,37 @@ body.congressomat.admin-color-modern {
 }
 
 
+.congressomat-speaker-image,
+.congressomat-location-image {
+    display: inline-block;
+    line-height: 0;
+    font-size: 0;
+}
+
+
+.congressomat-speaker-image {
+    border-radius: 50% !important;
+
+    & > img {
+        width: 40px;
+        height: 40px;
+        border-radius: inherit;
+        box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
+        border: 2px solid white;
+    }
+}
+
+
+.congressomat-location-image {
+    border-radius: 5px !important;
+
+    & > img {
+        width: 100%;
+        height: auto;
+        border-radius: inherit;
+    }
+}
+
 
 
 /**
@@ -106,11 +126,6 @@ body.congressomat.admin-color-modern {
 
     .column-image {
         width: 60px;
-
-        a {
-            display: inline-block;
-            line-height: 0;
-        }
     }
 }
 
@@ -130,12 +145,6 @@ body.congressomat.admin-color-modern {
             margin: 8px;
         }
     }
-
-    .speaker-icon {
-        width: 40px;
-        height: 40px;
-    }
-
 }
 
 
@@ -226,10 +235,5 @@ body.congressomat.admin-color-modern {
 
     .column-image {
         width: 150px;
-
-        img {
-            width: 150px;
-            height: auto;
-        }
     }
 }
