@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 10:06+0200\n"
-"PO-Revision-Date: 2026-07-28 10:06+0200\n"
+"POT-Creation-Date: 2026-07-28 11:58+0200\n"
+"PO-Revision-Date: 2026-07-28 12:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -21,6 +21,51 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: includes/backend/backend-admin-lists.php:77
+#: includes/backend/backend-menu.php:99
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
+#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
+#: includes/register/post-types/post-type-session.php:28
+#: includes/register/post-types/post-type-session.php:30
+#: includes/register/post-types/post-type-session.php:39
+#: includes/register/post-types/post-type-session.php:46
+msgid "Sessions"
+msgstr "Sessions"
+
+#: includes/backend/backend-admin-lists.php:79
+#: includes/register/post-types/post-type-session.php:31
+#: includes/register/post-types/post-type-session.php:32
+msgid "Add New Session"
+msgstr "Neue Session hinzufügen"
+
+#: includes/backend/backend-admin-lists.php:90
+#: includes/backend/backend-menu.php:102
+#: includes/register/post-types/post-type-partner.php:28
+#: includes/register/post-types/post-type-partner.php:30
+#: includes/register/post-types/post-type-partner.php:40
+msgid "Partners"
+msgstr "Partner"
+
+#: includes/backend/backend-admin-lists.php:92
+#: includes/register/post-types/post-type-partner.php:31
+#: includes/register/post-types/post-type-partner.php:32
+msgid "Add New Partner"
+msgstr "Neuen Partner hinzufügen"
+
+#: includes/backend/backend-admin-lists.php:105
+#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
+#: includes/register/post-types/post-type-exhibition-space.php:29
+#: includes/register/post-types/post-type-exhibition-space.php:41
+msgid "Booth"
+msgstr "Ausstellungsfäche"
+
+#: includes/backend/backend-admin-lists.php:107
+#: includes/register/post-types/post-type-exhibition-space.php:31
+#: includes/register/post-types/post-type-exhibition-space.php:32
+msgid "Add New Booth"
+msgstr "Neue Ausstellungsfläche hinzufügen"
 
 #: includes/backend/backend-datetime.php:34
 #, php-format
@@ -96,17 +141,6 @@ msgstr ""
 msgid "Booth Packages"
 msgstr "Ausstellungspakete"
 
-#: includes/backend/backend-menu.php:99
-#: includes/backend/backend-taxonomy-lists.php:77
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
-#: includes/classes/admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
-#: includes/register/post-types/post-type-session.php:28
-#: includes/register/post-types/post-type-session.php:30
-#: includes/register/post-types/post-type-session.php:39
-#: includes/register/post-types/post-type-session.php:46
-msgid "Sessions"
-msgstr "Sessions"
-
 #: includes/backend/backend-menu.php:100
 #: includes/classes/admin-post-lists/class-admin-post-list-session.php:56
 #: includes/register/post-types/post-type-speaker.php:28
@@ -115,14 +149,6 @@ msgstr "Sessions"
 #: includes/register/post-types/post-type-speaker.php:51
 msgid "Speakers"
 msgstr "Speakers"
-
-#: includes/backend/backend-menu.php:102
-#: includes/backend/backend-taxonomy-lists.php:90
-#: includes/register/post-types/post-type-partner.php:28
-#: includes/register/post-types/post-type-partner.php:30
-#: includes/register/post-types/post-type-partner.php:40
-msgid "Partners"
-msgstr "Partner"
 
 #: includes/backend/backend-menu.php:103
 #: includes/register/taxonomies/taxonomy-partnership.php:28
@@ -138,33 +164,7 @@ msgstr ""
 #: includes/register/post-types/post-type-exhibition-space.php:40
 #: includes/register/post-types/post-type-exhibition-space.php:47
 msgid "Booths"
-msgstr "Ausstellungsfächen"
-
-#: includes/backend/backend-taxonomy-lists.php:79
-#: includes/register/post-types/post-type-session.php:31
-#: includes/register/post-types/post-type-session.php:32
-msgid "Add New Session"
-msgstr "Neue Session hinzufügen"
-
-#: includes/backend/backend-taxonomy-lists.php:92
-#: includes/register/post-types/post-type-partner.php:31
-#: includes/register/post-types/post-type-partner.php:32
-msgid "Add New Partner"
-msgstr "Neuen Partner hinzufügen"
-
-#: includes/backend/backend-taxonomy-lists.php:105
-#: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:48
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:163
-#: includes/register/post-types/post-type-exhibition-space.php:29
-#: includes/register/post-types/post-type-exhibition-space.php:41
-msgid "Booth"
-msgstr "Ausstellungsfäche"
-
-#: includes/backend/backend-taxonomy-lists.php:107
-#: includes/register/post-types/post-type-exhibition-space.php:31
-#: includes/register/post-types/post-type-exhibition-space.php:32
-msgid "Add New Booth"
-msgstr "Neue Ausstellungsfläche hinzufügen"
+msgstr "Ausstellungsflächen"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:49
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:29
@@ -172,6 +172,7 @@ msgid "Booth Package"
 msgstr "Ausstellungspaket"
 
 #: includes/classes/admin-post-lists/class-admin-post-list-exhibition-space.php:50
+#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
 msgid "Booth Location"
 msgstr "Standort"
 
@@ -266,11 +267,6 @@ msgstr "Anzahl"
 msgid "Learn more about %1$s"
 msgstr ""
 
-#: includes/classes/shortcodes/class-shortcode-exhibition-list.php:162
-#: includes/register/taxonomies/taxonomy-location.php:29
-msgid "Location"
-msgstr "Ort"
-
 #: includes/classes/shortcodes/class-shortcode-icon-wall.php:193
 msgid "View details page"
 msgstr ""
@@ -281,7 +277,7 @@ msgstr ""
 
 #: includes/register/post-types/post-type-exhibition-space.php:33
 msgid "Edit Booth"
-msgstr "Ausstellungsfäche bearbeiten"
+msgstr "Ausstellungsfläche bearbeiten"
 
 #: includes/register/post-types/post-type-exhibition-space.php:34
 msgid "New Booth"
@@ -290,19 +286,19 @@ msgstr "Neue Ausstellungsfläche"
 #: includes/register/post-types/post-type-exhibition-space.php:35
 #: includes/register/post-types/post-type-exhibition-space.php:36
 msgid "View Booth"
-msgstr "Ausstellungsfäche anzeigen"
+msgstr "Ausstellungsfläche anzeigen"
 
 #: includes/register/post-types/post-type-exhibition-space.php:37
 msgid "Search Booth"
-msgstr "Ausstellungsfächen durchsuchen"
+msgstr "Ausstellungsflächen durchsuchen"
 
 #: includes/register/post-types/post-type-exhibition-space.php:38
 msgid "No booth found"
-msgstr "Keine Ausstellungsfäche gefunden"
+msgstr "Keine Ausstellungsfläche gefunden"
 
 #: includes/register/post-types/post-type-exhibition-space.php:39
 msgid "No deleted booth found"
-msgstr "Keine gelöschte Ausstellungsfäche gefunden"
+msgstr "Keine gelöschte Ausstellungsfläche gefunden"
 
 #: includes/register/post-types/post-type-partner.php:34
 msgid "New Partner"
@@ -463,6 +459,10 @@ msgstr "Neues Ausstellungspaket hinzufügen"
 #: includes/register/taxonomies/taxonomy-exhibition-package.php:35
 msgid "No booth package found"
 msgstr "Kein Ausstellungspaket gefunden"
+
+#: includes/register/taxonomies/taxonomy-location.php:29
+msgid "Location"
+msgstr "Ort"
 
 #: includes/register/taxonomies/taxonomy-location.php:31
 msgid "Search Locations"
