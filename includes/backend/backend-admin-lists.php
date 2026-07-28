@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions to setup the congressomat menu
+ * Functions to modify taxonomy and post type overview pages
  *
  * @author  Marco Di Bella
  * @package congressomat
@@ -124,3 +124,26 @@ function rewrite_header() {
  }
 
  add_action( 'admin_notices', __NAMESPACE__ . '\rewrite_header' );
+
+
+
+ /**
+  * Remove months dropdown
+  *
+  * @since 3.0.0
+  *
+  * @see https://developer.wordpress.org/reference/hooks/disable_months_dropdown/
+  */
+
+ function disable_months_dropdown( $disable, $type ) {
+     $post_types = [
+          'speaker',
+          'partner',
+          'session',
+          'exhibition-space'
+     ];
+
+    return in_array( $type, $post_types );
+ }
+
+ add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown', 10, 2 );
