@@ -68,11 +68,11 @@ add_action( 'acf/input/admin_head', __NAMESPACE__ . '\adjust_acf_dialog' );
 
 
 
- /**
-  * Adds a CSS class to certain admin pages to show the presence of this plugin.
-  *
-  * @since 3.0.0
-  */
+/**
+ * Adds a CSS class to certain admin pages to show the presence of this plugin.
+ *
+ * @since 3.0.0
+ */
 
 function modify_admin_body_classes( $classes ) {
 

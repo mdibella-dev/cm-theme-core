@@ -36,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove slug column from exhibition_package and location
 - Admin pages: Remove title parameter in anchors
 - Remove post types and taxonomies from Rank Math sitemap
+- Remove unused meta boxes from custom post type screens
 
 <br>
 

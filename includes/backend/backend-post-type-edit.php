@@ -44,3 +44,27 @@ function hide_publishing_actions() {
 
 add_action( 'admin_head-post.php', __NAMESPACE__ . '\hide_publishing_actions' );
 add_action( 'admin_head-post-new.php', __NAMESPACE__ . '\hide_publishing_actions' );
+
+
+
+/**
+ * Removes unused metabox from edit screens.
+ *
+ * @since 3.0.0
+ */
+
+function remove_unused_meta_boxes() {
+    $post_types = [
+        'exhibition_space',
+        'partner',
+        'session',
+        'speaker'
+    ];
+
+    remove_meta_box( 'slugdiv', $post_types, 'normal' );
+    remove_meta_box( 'tagsdiv-event', $post_types, 'normal' );
+    remove_meta_box( 'tagsdiv-location', $post_types, 'normal' );
+    remove_meta_box( 'tagsdiv-exhibition_package', $post_types, 'normal' );
+}
+
+add_action( 'admin_menu', __NAMESPACE__ . '\remove_unused_meta_boxes' );
