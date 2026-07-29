@@ -19,8 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Rename project
 - Folder and file structure
-- Change namespace 'CM_theme' to 'congressomat'
+- Change namespace 'CM_theme' to 'Congressomat'
 - Change namespace structure
+- Change textdomain ro 'congressomat'
 - Hide publishing actions in post types
 - Overhaul labels and german translation
 - Changelog style
