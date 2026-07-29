@@ -32,7 +32,6 @@ function exclude_taxonomy( $exclude, $type ) {
     return $exclude;
 }
 
-
 add_filter( 'rank_math/sitemap/exclude_taxonomy', __NAMESPACE__ . '\exclude_taxonomy', 10, 2 );
 
 
@@ -57,6 +56,6 @@ function exclude_post_type( $exclude, $type ) {
     }
 
     return $exclude;
-},
+}
 
 add_filter( 'rank_math/sitemap/exclude_post_type', __NAMESPACE__ . '\exclude_post_type', 10, 2 );
