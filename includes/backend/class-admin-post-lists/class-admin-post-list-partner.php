@@ -50,7 +50,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
             'cb'                   => $default['cb'],
             'image'                => __( 'Exhibitor Logo', 'congressomat' ),
             'title'                => __( 'Exhibitor', 'congressomat' ),
-            'taxonomy-partnership' => __( 'Partnership', 'congressomat' ),
+            'taxonomy-partnership' => __( 'Exhibitor Roles', 'congressomat' ),
             'exhibition'           => __( 'Booths', 'congressomat' ),
             'update'               => __( 'Last Update', 'congressomat' ),
         ];
