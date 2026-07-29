@@ -76,6 +76,15 @@ function setup_menu() {
         '',
         0,
     );
+
+    add_submenu_page(
+        $admin_menu_slug,
+        '',
+        '-',
+        'manage_options',
+        'submenu-separator',
+        '__return_null'
+    );
 }
 
 add_action( 'admin_menu', __NAMESPACE__ . '\setup_menu', 999 );
@@ -99,6 +108,7 @@ function setup_menu_order( $menu_order ) {
         __( 'Sessions', 'congressomat' ),
         __( 'Speakers', 'congressomat' ),
         __( 'Locations', 'congressomat' ),
+        '-',
         __( 'Exhibitors', 'congressomat' ),
         __( 'Booths', 'congressomat' ),
         __( 'Booth Packages', 'congressomat' ),
@@ -121,3 +131,21 @@ function setup_menu_order( $menu_order ) {
 
 add_filter( 'custom_menu_order', '__return_true' );
 add_filter( 'menu_order', __NAMESPACE__ . '\setup_menu_order' );
+
+
+
+
+
+function style_custom_submenu_separator() {
+    echo '<style>
+        #adminmenu .wp-submenu a[href*="submenu-separator"] {
+            pointer-events: none;
+            line-height: 0;
+            font-size: 0;
+            color: transparent;
+        }
+    </style>';
+}
+
+
+add_action( 'admin_head', __NAMESPACE__ . '\style_custom_submenu_separator' );
