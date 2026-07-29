@@ -52,7 +52,8 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
             'taxonomy-event'    => __( 'Event', 'congressomat' ),
             'taxonomy-location' => __( 'Event Location', 'congressomat' ),
             'event-date'        => __( 'Event Date', 'congressomat' ),
-            'event-time'        => __( 'Time Slot', 'congressomat' ),
+            'session-timeframe' => __( 'Time Frame', 'congressomat' ),
+            'session-duration'  => __( 'Duration', 'congressomat' ),
             'speaker'           => __( 'Speakers', 'congressomat' ),
         ];
 
@@ -102,26 +103,35 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                 echo get_field( 'programmpunkt-datum', $post_id );
                 break;
 
-            case 'event-time':
-                $time = get_field( 'programmpunkt-alternative-zeitangabe', $post_id );
+            case 'session-timeframe':
+                $time_begin = get_field( 'programmpunkt-von', $post_id );
+                $time_end   = get_field( 'programmpunkt-bis', $post_id );
 
-                if ( empty( $time ) ) {
-                    $time = sprintf(
-                        __( '%1$s to %2$s', 'congressomat' ),
-                        get_field( 'programmpunkt-von', $post_id ),
-                        get_field( 'programmpunkt-bis', $post_id )
+                if ( ! empty( $time_begin ) and ! empty( $time_end ) ) {
+                    echo sprintf(
+                        '<div class="congressomat-session-timeframe"><div>%1$s</div><div>&rarr;</div><div>%2$s</div></div>',
+                        $time_begin,
+                        $time_end
                     );
+                } else {
+                    echo __( 'N/A', 'congressomat' );
                 }
-
-                echo $time;
                 break;
 
-            case 'update':
-                echo sprintf(
-                    __( '%1$s at %2$s', 'congressomat' ),
-                    get_the_modified_date( 'd.m.Y', $post_id ),
-                    get_the_modified_date( 'H:i', $post_id ),
-                );
+            case 'session-duration':
+                $time_begin = get_field( 'programmpunkt-von', $post_id );
+                $time_end   = get_field( 'programmpunkt-bis', $post_id );
+
+                if ( ! empty( $time_begin ) and ! empty( $time_end ) ) {
+                    $origin = new \DateTimeImmutable( $time_begin );
+                    $target = new \DateTimeImmutable( $time_end );
+
+                    $duration = $origin->diff( $target );
+
+                    echo $duration->format('%H:%I');
+                } else {
+                    echo '&mdash;';
+                }
                 break;
         }
     }

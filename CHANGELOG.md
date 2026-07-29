@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add more labels to post types and taxonomies
 - Add more CSS to backend tables and pages
 - Add escaping to internal link generation
+- Add new columns for session timeframe and duration
 
 ### Changed
 - Rename project

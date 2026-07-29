@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-29 08:44+0200\n"
-"PO-Revision-Date: 2026-07-29 08:46+0200\n"
+"POT-Creation-Date: 2026-07-29 13:50+0200\n"
+"PO-Revision-Date: 2026-07-29 13:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -129,6 +129,7 @@ msgid "Exhibitor Role"
 msgstr "Ausstellerrolle"
 
 #: includes/backend/backend-menu.php:63 includes/backend/backend-menu.php:113
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
 #: includes/core/taxonomies/taxonomy-partnership.php:28
 #: includes/core/taxonomies/taxonomy-partnership.php:30
 #: includes/core/taxonomies/taxonomy-partnership.php:42
@@ -144,7 +145,7 @@ msgid "Booth Packages"
 msgstr "Ausstellungspakete"
 
 #: includes/backend/backend-menu.php:109
-#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:56
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:57
 #: includes/core/post-types/post-type-speaker.php:28
 #: includes/core/post-types/post-type-speaker.php:30
 #: includes/core/post-types/post-type-speaker.php:40
@@ -197,10 +198,6 @@ msgstr "Ausstellerlogo"
 msgid "Exhibitor"
 msgstr "Aussteller"
 
-#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
-msgid "Partnership"
-msgstr ""
-
 #: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:52
 #: includes/core/taxonomies/taxonomy-event.php:29
 msgid "Event"
@@ -215,19 +212,16 @@ msgid "Event Date"
 msgstr "Veranstaltungsdatum"
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:55
-msgid "Time Slot"
-msgstr "Zeitfenster"
+msgid "Time Frame"
+msgstr "Zeitrahmen"
 
-#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:110
-#: includes/shortcodes/class-shortcode-event-table.php:237
-#, php-format
-msgid "%1$s to %2$s"
-msgstr ""
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:56
+msgid "Duration"
+msgstr "Dauer"
 
-#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:121
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:117
+msgid "N/A"
+msgstr "N/A"
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:49
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
@@ -511,14 +505,17 @@ msgid "Add New Exhibitor Role"
 msgstr "Neue Ausstellerrolle hinzufügen"
 
 #: includes/core/taxonomies/taxonomy-partnership.php:37
-#, fuzzy
-#| msgid "New Exhibitor"
 msgid "New Exhibitor Role Title"
-msgstr "Neuen Aussteller"
+msgstr "Neuer Ausstellerrollentitel"
 
 #: includes/core/taxonomies/taxonomy-partnership.php:38
 msgid "No Exhibitor Role found"
 msgstr "Keine Ausstellerrolle gefunden"
+
+#: includes/shortcodes/class-shortcode-event-table.php:237
+#, php-format
+msgid "%1$s to %2$s"
+msgstr ""
 
 #: includes/shortcodes/class-shortcode-event-table.php:287
 #: includes/shortcodes/class-shortcode-speaker-grid.php:180
@@ -549,6 +546,9 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Time Slot"
+#~ msgstr "Zeitfenster"
 
 #~ msgid "Add New Partner"
 #~ msgstr "Neuen Partner hinzufügen"

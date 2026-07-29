@@ -129,6 +129,13 @@ body.congressomat.admin-color-modern {
 }
 
 
+.congressomat-session-timeframe {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
 
 /**
  * wp-admin/edit.php?post_type=speaker
