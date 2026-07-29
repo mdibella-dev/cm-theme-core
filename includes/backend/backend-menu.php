@@ -148,7 +148,7 @@ function style_custom_submenu_separator() {
             line-height: 0;
             font-size: 0;
             color: transparent;
-            padding: 6px 12px 0;
+            padding: 8px 12px 0;
         }
     </style>';
 }
