@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Overhaul labels and german translation
 - Changelog style
 - Reorder admin menu and add separator between event and exhibition settings
+- Make sorting by event_date in session post type as default
 
 ### Fixed
 - Fix partnership filter in exhibtion list 

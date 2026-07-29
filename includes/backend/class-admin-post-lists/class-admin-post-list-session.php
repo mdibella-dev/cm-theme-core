@@ -168,6 +168,7 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
         $order   = $query->get( 'order' );
 
         switch ( $orderby ) {
+            case '':
             case 'event-date':
                 $query->set( 'orderby', 'meta_value' );
                 $query->set( 'meta_key', 'CONGRESSOMAT_SESSION_DATE_SORTKEY' );
