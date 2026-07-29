@@ -6,7 +6,7 @@
  * @package congressomat
  */
 
-namespace Congressomat\Third-Party;
+namespace Congressomat\Third_Party;
 
 
 
