@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hide publishing actions in post types
 - Overhaul labels and german translation
 - Changelog style
+- Reorder admin menu and add separator between event and exhibition settings
 
 ### Fixed
 - Fix partnership filter in exhibtion list 
