@@ -68,3 +68,25 @@ function remove_unused_meta_boxes() {
 }
 
 add_action( 'admin_menu', __NAMESPACE__ . '\remove_unused_meta_boxes' );
+
+
+
+/**
+ * Creates a sortable value for the session post type
+ *
+ * @since 3.0.0
+ */
+
+function make_it_sortable( $post_id, $post, $update ) {
+    $date  = get_field( 'programmpunkt-datum', $post_id );
+    $begin = get_field( 'programmpunkt-von', $post_id );
+    $time  = '';
+
+    if ( !empty( $date ) and !empty( $begin ) ) {
+        $time = strtotime( $date . ' ' . $begin );
+    }
+
+    add_post_meta( $post_id, 'CONGRESSOMAT_SESSION_DATE_SORTKEY', $time );
+}
+
+add_action( 'save_post_session', __NAMESPACE__ . '\make_it_sortable', 10, 3 );

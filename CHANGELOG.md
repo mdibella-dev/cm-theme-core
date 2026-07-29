@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix partnership filter in exhibtion list 
 - Fix not working links to edit pages
+- Fix session sorting
 
 ### Removed
 - setup.php (code merged into plugin.php)
