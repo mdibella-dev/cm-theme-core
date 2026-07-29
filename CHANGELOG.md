@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add plugin's CSS class to admin body 
 - Add more labels to post types and taxonomies
 - Add more CSS to backend tables and pages
+- Add escaping to internal link generation
 
 ### Changed
 - Rename project
