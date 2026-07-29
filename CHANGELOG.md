@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Folder and file structure
 - Change namespace 'CM_theme' to 'Congressomat'
 - Change namespace structure
-- Change textdomain ro 'congressomat'
+- Change textdomain to 'congressomat'
 - Hide publishing actions in post types
 - Overhaul labels and german translation
 - Changelog style
@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - setup.php (code merged into plugin.php)
 - Remove slug column from exhibition_package and location
+- Admin pages: Remove title parameter in anchors
 
 <br>
 
