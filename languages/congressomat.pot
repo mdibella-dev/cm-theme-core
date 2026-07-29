@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-28 16:20+0200\n"
+"POT-Creation-Date: 2026-07-29 08:47+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: vendor\n"
 
 #: includes/backend/backend-admin-lists.php:77
-#: includes/backend/backend-menu.php:99
+#: includes/backend/backend-menu.php:108
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:52
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:53
 #: includes/core/post-types/post-type-session.php:28
@@ -42,7 +42,9 @@ msgid "Partners"
 msgstr ""
 
 #: includes/backend/backend-admin-lists.php:92
-msgid "Add New Partner"
+#: includes/core/post-types/post-type-partner.php:31
+#: includes/core/post-types/post-type-partner.php:32
+msgid "Add New Exhibitor"
 msgstr ""
 
 #: includes/backend/backend-admin-lists.php:105
@@ -104,7 +106,7 @@ msgid "Congressomat"
 msgstr ""
 
 #: includes/backend/backend-menu.php:42 includes/backend/backend-menu.php:43
-#: includes/backend/backend-menu.php:98
+#: includes/backend/backend-menu.php:107
 #: includes/core/taxonomies/taxonomy-event.php:28
 #: includes/core/taxonomies/taxonomy-event.php:30
 #: includes/core/taxonomies/taxonomy-event.php:42
@@ -112,28 +114,34 @@ msgid "Events"
 msgstr ""
 
 #: includes/backend/backend-menu.php:52 includes/backend/backend-menu.php:53
-#: includes/backend/backend-menu.php:101
+#: includes/backend/backend-menu.php:110
 #: includes/core/taxonomies/taxonomy-location.php:28
 #: includes/core/taxonomies/taxonomy-location.php:30
 #: includes/core/taxonomies/taxonomy-location.php:42
 msgid "Locations"
 msgstr ""
 
-#: includes/backend/backend-menu.php:62 includes/backend/backend-menu.php:63
-#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
+#: includes/backend/backend-menu.php:62
 #: includes/core/taxonomies/taxonomy-partnership.php:29
-msgid "Partnership"
+msgid "Exhibitor Role"
+msgstr ""
+
+#: includes/backend/backend-menu.php:63 includes/backend/backend-menu.php:113
+#: includes/core/taxonomies/taxonomy-partnership.php:28
+#: includes/core/taxonomies/taxonomy-partnership.php:30
+#: includes/core/taxonomies/taxonomy-partnership.php:42
+msgid "Exhibitor Roles"
 msgstr ""
 
 #: includes/backend/backend-menu.php:72 includes/backend/backend-menu.php:73
-#: includes/backend/backend-menu.php:105
+#: includes/backend/backend-menu.php:115
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:28
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:31
 #: includes/core/taxonomies/taxonomy-exhibition-package.php:39
 msgid "Booth Packages"
 msgstr ""
 
-#: includes/backend/backend-menu.php:100
+#: includes/backend/backend-menu.php:109
 #: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:56
 #: includes/core/post-types/post-type-speaker.php:28
 #: includes/core/post-types/post-type-speaker.php:30
@@ -142,7 +150,7 @@ msgstr ""
 msgid "Speakers"
 msgstr ""
 
-#: includes/backend/backend-menu.php:102
+#: includes/backend/backend-menu.php:112
 #: includes/core/post-types/post-type-partner.php:28
 #: includes/core/post-types/post-type-partner.php:30
 #: includes/core/post-types/post-type-partner.php:40
@@ -150,13 +158,7 @@ msgstr ""
 msgid "Exhibitors"
 msgstr ""
 
-#: includes/backend/backend-menu.php:103
-#: includes/core/taxonomies/taxonomy-partnership.php:28
-#: includes/core/taxonomies/taxonomy-partnership.php:33
-msgid "Partnerships"
-msgstr ""
-
-#: includes/backend/backend-menu.php:104
+#: includes/backend/backend-menu.php:114
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:54
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:54
 #: includes/core/post-types/post-type-exhibition-space.php:28
@@ -191,6 +193,10 @@ msgstr ""
 #: includes/core/post-types/post-type-partner.php:29
 #: includes/core/post-types/post-type-partner.php:41
 msgid "Exhibitor"
+msgstr ""
+
+#: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
+msgid "Partnership"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:52
@@ -276,11 +282,6 @@ msgstr ""
 
 #: includes/core/post-types/post-type-exhibition-space.php:39
 msgid "No deleted booth found"
-msgstr ""
-
-#: includes/core/post-types/post-type-partner.php:31
-#: includes/core/post-types/post-type-partner.php:32
-msgid "Add New Exhibitor"
 msgstr ""
 
 #: includes/core/post-types/post-type-partner.php:33
@@ -481,6 +482,38 @@ msgstr ""
 
 #: includes/core/taxonomies/taxonomy-location.php:38
 msgid "No location found"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:31
+msgid "Search Exhibitor Roles"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:32
+msgid "All Exhibitor Roles"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:33
+msgid "Edit Exhibitor Role"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:34
+msgid "View Exhibitor Role"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:35
+msgid "Update Exhibitor Role"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:36
+msgid "Add New Exhibitor Role"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:37
+msgid "New Exhibitor Role Title"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:38
+msgid "No Exhibitor Role found"
 msgstr ""
 
 #: includes/shortcodes/class-shortcode-event-table.php:287

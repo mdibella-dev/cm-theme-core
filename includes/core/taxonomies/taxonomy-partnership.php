@@ -25,21 +25,21 @@ defined( 'ABSPATH' ) or exit;
 function register() {
 
     $labels = [
-        'name'          => __( 'Partnerships', 'congressomat' ),
-        'singular_name' => __( 'Partnership', 'congressomat' ),
-        'menu_name'     => __( 'Partnerships', 'congressomat' ),
-        'search_items'  => __( 'Search Partnerships', 'congressomat' ),
-        'all_items'     => __( 'All Partnerships', 'congressomat' ),
-        'edit_item'     => __( 'Edit Partnership', 'congressomat' ),
-        'view_item'     => __( 'View Partnership', 'congressomat' ),
-        'update_item'   => __( 'Update Partnership', 'congressomat' ),
-        'add_new_item'  => __( 'Add New Partnership', 'congressomat' ),
-        'new_item_name' => __( 'New Partnership Title', 'congressomat' ),
-        'not_found'     => __( 'No Partnership found', 'congressomat' ),
+        'name'          => __( 'Exhibitor Roles', 'congressomat' ),
+        'singular_name' => __( 'Exhibitor Role', 'congressomat' ),
+        'menu_name'     => __( 'Exhibitor Roles', 'congressomat' ),
+        'search_items'  => __( 'Search Exhibitor Roles', 'congressomat' ),
+        'all_items'     => __( 'All Exhibitor Roles', 'congressomat' ),
+        'edit_item'     => __( 'Edit Exhibitor Role', 'congressomat' ),
+        'view_item'     => __( 'View Exhibitor Role', 'congressomat' ),
+        'update_item'   => __( 'Update Exhibitor Role', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Exhibitor Role', 'congressomat' ),
+        'new_item_name' => __( 'New Exhibitor Role Title', 'congressomat' ),
+        'not_found'     => __( 'No Exhibitor Role found', 'congressomat' ),
     ];
 
     $args = [
-        'label'                 => __( 'Partnerships', 'congressomat' ),
+        'label'                 => __( 'Exhibitor Roles', 'congressomat' ),
         'labels'                => $labels,
         'public'                => true,
         'publicly_queryable'    => true,

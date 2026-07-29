@@ -59,8 +59,8 @@ function setup_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Partnership', 'congressomat' ),
-        __( 'Partnerships', 'congressomat' ),
+        __( 'Exhibitor Role', 'congressomat' ),
+        __( 'Exhibitor Roles', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
         '',
@@ -100,20 +100,20 @@ add_action( 'admin_menu', __NAMESPACE__ . '\setup_menu', 999 );
 function setup_menu_order( $menu_order ) {
 
     global $submenu;
-           $admin_menu_slug = 'edit.php?post_type=session';
-           $sorted          = [];
+    $admin_menu_slug = 'edit.php?post_type=session';
 
-    $sort_order = array(
+    $sorted     = [];
+    $sort_order = [
         __( 'Events', 'congressomat' ),
         __( 'Sessions', 'congressomat' ),
         __( 'Speakers', 'congressomat' ),
         __( 'Locations', 'congressomat' ),
         '-',
         __( 'Exhibitors', 'congressomat' ),
+        __( 'Exhibitor Roles', 'congressomat' ),
         __( 'Booths', 'congressomat' ),
         __( 'Booth Packages', 'congressomat' ),
-        __( 'Partnerships', 'congressomat' ),
-    );
+    ];
 
     for ( $i = 0; $i != sizeof( $sort_order ); $i++ ) {
         foreach ( $submenu[$admin_menu_slug] as $submenu_item ) {
@@ -135,6 +135,11 @@ add_filter( 'menu_order', __NAMESPACE__ . '\setup_menu_order' );
 
 
 
+/**
+ * Styles the custom submenu separator
+ *
+ * @since 3.0.0
+ */
 
 function style_custom_submenu_separator() {
     echo '<style>
@@ -143,6 +148,7 @@ function style_custom_submenu_separator() {
             line-height: 0;
             font-size: 0;
             color: transparent;
+            padding: 6px 12px 0;
         }
     </style>';
 }
