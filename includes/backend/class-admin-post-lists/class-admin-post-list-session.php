@@ -151,7 +151,6 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
         $columns['taxonomy-event']    = 'taxonomy-event';
         $columns['taxonomy-location'] = 'taxonomy-location';
         $columns['event-date']        = 'event-date';
-        $columns['update']            = 'update';
 
         return $columns;
     }
