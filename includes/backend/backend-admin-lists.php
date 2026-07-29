@@ -136,14 +136,19 @@ function rewrite_header() {
   */
 
  function disable_months_dropdown( $disable, $type ) {
-     $post_types = [
+    $post_types = [
           'speaker',
           'partner',
           'session',
           'exhibition-space'
-     ];
+    ];
 
-    return in_array( $type, $post_types );
- }
 
- add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown', 10, 2 );
+    if ( in_array( $type, $post_types ) ) {
+        $disable = true;
+    }
+
+     return $disable;
+}
+
+add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown', 10, 2 );
