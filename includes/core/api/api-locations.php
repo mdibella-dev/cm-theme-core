@@ -1,0 +1,40 @@
+<?php
+/**
+ * CM core functions.
+ *
+ * @author  Marco Di Bella
+ * @package congressomat
+ */
+
+namespace Congressomat\Core\API;
+
+
+
+/** Prevent direct access */
+
+defined( 'ABSPATH' ) or exit;
+
+
+
+/**
+ * Determines the name of a location.
+ *
+ * @since 1.0.0
+ *
+ * @param int $location
+ *
+ * @return string
+ */
+
+function get_location( $location ) {
+
+    if ( ! empty( $location ) ) {
+        $term = get_term_by( 'term_taxonomy_id', $location, 'location' );
+
+        if ( false != $term ) {
+            return $term->name;
+        }
+    }
+
+    return null;
+}

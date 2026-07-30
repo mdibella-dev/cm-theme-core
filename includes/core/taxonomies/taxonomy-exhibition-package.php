@@ -1,0 +1,66 @@
+<?php
+/**
+ * Custom taxonomy: exhibition_package
+ *
+ * @author  Marco Di Bella
+ * @package congressomat
+ */
+
+namespace Congressomat\Core\Taxonomies\Exhibtition_Package;
+
+
+
+/** Prevent direct access */
+
+defined( 'ABSPATH' ) or exit;
+
+
+
+/**
+ * Registers the exhibition package taxonomy.
+ *
+ * @since 1.0.0
+ */
+
+function register() {
+
+    $labels = [
+        'name'          => __( 'Booth Packages', 'congressomat' ),
+        'singular_name' => __( 'Booth Package', 'congressomat' ),
+        'search_items'  => __( 'Search Booth Package', 'congressomat' ),
+        'all_items'     => __( 'Booth Packages', 'congressomat' ),
+        'edit_item'     => __( 'Edit Booth Package', 'congressomat' ),
+        'update_item'   => __( 'Update Booth Package', 'congressomat' ),
+        'add_new_item'  => __( 'Add New Booth Package', 'congressomat' ),
+        'not_found'     => __( 'No booth package found', 'congressomat' ),
+    ];
+
+    $args = [
+        'label'                 => __( 'Booth Packages', 'congressomat' ),
+        'labels'                => $labels,
+        'public'                => true,
+        'publicly_queryable'    => true,
+        'hierarchical'          => false,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'show_in_nav_menus'     => false,
+        'query_var'             => true,
+        'rewrite'               => [
+            'slug'       => 'exhibition_package',
+            'with_front' => true,
+        ],
+        'show_admin_column'     => true,
+        'show_in_rest'          => true,
+        'show_tagcloud'         => true,
+        'rest_base'             => 'exhibition_package',
+        'rest_controller_class' => 'WP_REST_Terms_Controller',
+        'rest_namespace'        => 'wp/v2',
+        'show_in_quick_edit'    => false,
+        'sort'                  => false,
+        'show_in_graphql'       => false,
+    ];
+
+    register_taxonomy( 'exhibition_package', ['exhibition_space'], $args );
+}
+
+add_action( 'init', __NAMESPACE__ . '\register' );

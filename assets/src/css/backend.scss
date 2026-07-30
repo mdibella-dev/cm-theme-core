@@ -7,12 +7,12 @@
 
 
 
+
 /**
  * General settings
  */
 
-.widefat {
-
+ body.congressomat .widefat {
     td,
     th,
     th.sortable,
@@ -29,38 +29,128 @@
     th.sorted a span:not(.sorting-indicator) {
         font-weight: bold;
     }
+
+    td a img {
+        line-height: 0;
+        font-size: 0;
+    }
 }
 
 
+body.congressomat table.widefat,
+body.congressomat .postbox {
+    box-shadow: 0 5px 20px -8px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+
+body.congressomat .postbox .inside,
+body.congressomat #major-publishing-actions {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+body.congressomat .tablenav {
+
+    &.top {
+        margin: 1rem 0 2rem;
+    }
+
+    &.bottom {
+        margin: 2rem 0 1rem;
+    }
+}
+
+
+body.congressomat p.search-box {
+    margin: 11px 0 1rem;
+}
+
+
+body.congressomat.admin-color-modern {
+    & .striped > tbody > :nth-child(2n+1),
+    & ul.striped > :nth-child(2n+1),
+    & .alternate {
+        background-color: hsl(228.9, 79.4%, 98%);
+    }
+
+    & .postbox#acf-group_5c335ed9c412e .inside,
+    & .postbox#acf-group_5c3472f9224b7 .inside,
+    & .postbox#acf-group_5c45b8906f884 .inside,
+    & .postbox#acf-group_5f27d2d118cca .inside {
+        background-color: hsl(228.9, 79.4%, 98%);
+
+    }
+}
+
+
+.congressomat-speaker-image,
+.congressomat-location-image,
+.congressomat-exhibitor-image {
+    display: inline-block;
+    line-height: 0;
+    font-size: 0;
+}
+
+
+.congressomat-speaker-image {
+    border-radius: 50% !important;
+
+    & > img {
+        width: 40px;
+        height: 40px;
+        border-radius: inherit;
+        box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
+        border: 2px solid white;
+    }
+}
+
+
+.congressomat-location-image {
+    border-radius: 5px !important;
+
+    & > img {
+        width: 100%;
+        height: auto;
+        border-radius: inherit;
+    }
+}
+
+
+.congressomat-exhibitor-image {
+    width: 60px;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.congressomat-session-timeframe {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
 
 /**
- * Overview of the speakers
  * wp-admin/edit.php?post_type=speaker
  */
 
 .post-type-speaker .wp-list-table {
 
     .column-image {
-        width: 10%;
-
-        a {
-            display: inline-block;
-        }
-
-        img {
-            width: 60px;
-            height: 60px;
-            line-height: 0;
-            font-size: 0;
-        }
-
+        width: 60px;
     }
-
 }
 
 
+
 /**
- * Overview of the sessions
  * wp-admin/edit.php?post_type=session
  */
 
@@ -70,44 +160,22 @@
 
         a {
             display: inline-block;
+            line-height:0;
             margin: 8px;
         }
-
-        a img {
-            width: 40px;
-            height: 40px;
-            line-height: 0;
-            font-size: 0;
-        }
-
     }
-
 }
 
 
 /**
- * Overview of the partners
  * wp-admin/edit.php?post_type=partner
  */
 
 .post-type-partner .wp-list-table {
 
     .column-image {
-        width: 10%;
-
-        a {
-            display: inline-block;
-        }
-
-        img {
-            width: 80px;
-            height: auto;
-            line-height: 0;
-            font-size: 0;
-        }
-
+        width: 150px;
     }
-
 }
 
 
@@ -135,7 +203,6 @@
 
 
 /**
- * Overview of the events
  * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
  */
 
@@ -165,7 +232,6 @@
 
 
 /**
- * Overview of the locations
  * /wp-admin/edit-tags.php?taxonomy=event&post_type=session
  */
 
@@ -173,10 +239,5 @@
 
     .column-image {
         width: 150px;
-
-        img {
-            width: 150px;
-            height: auto;
-        }
     }
 }

@@ -1,5 +1,7 @@
 # Congressomat
-Core functions of CM Theme. Originally an integral part of the theme, now outsourced in a plugin.
+A simple event managing tool.
+
+ Originally an integral part of the CM theme, now outsourced in a plugin.
 
 <br>
 
