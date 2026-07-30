@@ -9,7 +9,7 @@
  * Requires at least:   6
  * Tested up to:        7.0
  * Requires PHP:        7
- * Version:             3.0.0
+ * Version:             3.1.0-develop
  * Text Domain:         congressomat
  * Domain Path:         /languages
  *
@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) or exit;
 
 /** Variables and definitions */
 
-define( __NAMESPACE__ . '\PLUGIN_VERSION', '3.0.0' );
+define( __NAMESPACE__ . '\PLUGIN_VERSION', '3.1.0-develop' );
 define( __NAMESPACE__ . '\PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
