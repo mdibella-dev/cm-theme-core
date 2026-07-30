@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<br>
+
+## [3.0.0] - 2026-07-29
+
 ### Added
 - Add more human readable time in column 'last modified'
 - Add plugin's CSS class to admin body 
