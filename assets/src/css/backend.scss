@@ -85,6 +85,28 @@ body.congressomat.admin-color-modern {
 }
 
 
+
+// Fix WordPress anomaly
+
+/*
+body.congressomat #poststuff {
+    padding-top: 20px;
+}
+
+
+body.congressomat #post-body-content {
+    margin-bottom: unset;
+}
+
+
+body.congressomat #titlediv {
+    padding-bottom: 20px;
+}
+*/
+
+
+// Some custom classes
+
 .congressomat-speaker-image,
 .congressomat-location-image,
 .congressomat-exhibitor-image {
