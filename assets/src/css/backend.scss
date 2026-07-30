@@ -68,7 +68,9 @@ body.congressomat p.search-box {
 }
 
 
-body.congressomat.admin-color-modern {
+// Color schemes
+
+body.congressomat {
     & .striped > tbody > :nth-child(2n+1),
     & ul.striped > :nth-child(2n+1),
     & .alternate {
