@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-07-29 13:50+0200\n"
+"POT-Creation-Date: 2026-07-31 09:06+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -121,12 +121,8 @@ msgstr ""
 msgid "Locations"
 msgstr ""
 
-#: includes/backend/backend-menu.php:62
-#: includes/core/taxonomies/taxonomy-partnership.php:29
-msgid "Exhibitor Role"
-msgstr ""
-
-#: includes/backend/backend-menu.php:63 includes/backend/backend-menu.php:113
+#: includes/backend/backend-menu.php:62 includes/backend/backend-menu.php:63
+#: includes/backend/backend-menu.php:113
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:53
 #: includes/core/taxonomies/taxonomy-partnership.php:28
 #: includes/core/taxonomies/taxonomy-partnership.php:30
@@ -476,6 +472,10 @@ msgstr ""
 
 #: includes/core/taxonomies/taxonomy-location.php:38
 msgid "No location found"
+msgstr ""
+
+#: includes/core/taxonomies/taxonomy-partnership.php:29
+msgid "Exhibitor Role"
 msgstr ""
 
 #: includes/core/taxonomies/taxonomy-partnership.php:31

@@ -59,7 +59,7 @@ function setup_menu() {
 
     add_submenu_page(
         $admin_menu_slug,
-        __( 'Exhibitor Role', 'congressomat' ),
+        __( 'Exhibitor Roles', 'congressomat' ),
         __( 'Exhibitor Roles', 'congressomat' ),
         'manage_options',
         'edit-tags.php?taxonomy=partnership&post_type=session',
