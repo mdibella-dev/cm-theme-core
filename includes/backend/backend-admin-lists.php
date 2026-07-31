@@ -143,7 +143,6 @@ function rewrite_header() {
           'exhibition_space'
     ];
 
-
     if ( in_array( $type, $post_types ) ) {
         $disable = true;
     }
@@ -152,3 +151,29 @@ function rewrite_header() {
 }
 
 add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown', 10, 2 );
+
+
+
+/**
+ * Remove view link in row actions
+ *
+ * @since 3.1.0
+ *
+ * @see https://developer.wordpress.org/reference/hooks/post_row_actions/
+ */
+
+function modify_list_row_actions( $actions, $post ) {
+    $post_types = [
+        'speaker',
+        'partner',
+        'session',
+        'exhibition_space'
+    ];
+
+    if ( in_array( $post->post_type, $post_types ) ) {
+        unset( $actions['view'] );
+    }
+    return $actions;
+}
+
+add_filter( 'post_row_actions', __NAMESPACE__ . '\modify_list_row_actions', 10, 2 );
