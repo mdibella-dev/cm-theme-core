@@ -182,3 +182,34 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
 
 
 new Admin_Post_List_Session();
+
+
+
+// Filter the CPT views to display your link
+
+function my_callback( $views ) {
+
+    // Remove unused filter options
+    unset( $views['mine'] );
+
+    // Add event filter options
+    $events = API\get_active_events();
+
+    foreach( $events as $id ) {
+        $term = get_term( $id, 'event' );
+
+        $views[$term->slug] = sprintf(
+            '<a href="%1$s">%2$s</a>',
+            esc_url( sprintf(
+                '%1$sedit.php?post_type=session&event=%2$s',
+                get_admin_url(),
+                $term->slug
+            ) ),
+            $term->name
+        );
+    }
+
+    return $views;
+}
+
+add_filter( 'views_edit-session', __NAMESPACE__ . '\my_callback', 10, 1 );
