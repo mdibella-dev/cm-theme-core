@@ -51,7 +51,7 @@ function register() {
         ],
         'show_admin_column'     => true,
         'show_in_rest'          => true,
-        'show_tagcloud'         => true,
+        'show_tagcloud'         => false,
         'rest_base'             => 'exhibition_package',
         'rest_controller_class' => 'WP_REST_Terms_Controller',
         'rest_namespace'        => 'wp/v2',
