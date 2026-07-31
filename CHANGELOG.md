@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix removal of monthly filter dropdown on exhibitions_space
+
 <br>
 
 ## [3.0.0] - 2026-07-29

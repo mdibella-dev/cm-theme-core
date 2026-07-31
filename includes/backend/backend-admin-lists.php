@@ -140,7 +140,7 @@ function rewrite_header() {
           'speaker',
           'partner',
           'session',
-          'exhibition-space'
+          'exhibition_space'
     ];
 
 
