@@ -47,11 +47,27 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
         $columns = [
             'cb'          => $default['cb'],
             'id'          => 'ID',
-            'name'        => $default['name'],
-            'description' => $default['description'],
+            'name'        => __( 'Title', 'congressomat' ),
+            'description' => __( 'Short Description', 'congressomat' ),
             'sessions'    => __( 'Sessions', 'congressomat' ),
             'status'      => __( 'Status', 'congressomat' ),
         ];
+
+        return $columns;
+    }
+
+
+
+    /**
+     * Registers sortable columns (by assigning appropriate orderby parameters).
+     *
+     * @param array columns The columns
+     *
+     * @return array An associative array
+     */
+
+    public function manage_sortable_columns( $columns ) {
+        unset( $columns['description'] );
 
         return $columns;
     }
