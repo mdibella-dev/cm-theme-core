@@ -26,7 +26,6 @@ function default_hidden_columns( $hidden, $screen ) {
 
     if ( isset( $screen->id ) ) {
         switch ( $screen->id ) {
-
             case 'edit-event':
                 $hidden[] = 'slug' ;
                 break;
