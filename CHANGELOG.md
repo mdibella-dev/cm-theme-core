@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix removal of monthly filter dropdown on exhibitions_space
 - View link in row quick actions ([#6](https://github.com/mdibella-dev/congressomat/issues/6))
+- Fix error message "failed to open stream: no suitable wrapper could be found"
+- Fix path in case plugin base folder has different names
 
 ### Removed
 - Remove global constants PLUGIN_DIR and PLUGIN_URL

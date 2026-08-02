@@ -27,9 +27,12 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function admin_enqueue_scripts( $hook ) {
+    $parts       = explode( '/', plugin_basename( __FILE__ ) );
+    $plugin_base = $parts[0];
+
     wp_enqueue_style(
-        'cm-theme-core-backend-style',
-        esc_url( plugins_url( 'congressomat/assets/build/css/backend.min.css' ) ),
+        'congressomat-backend-style',
+        esc_url( plugins_url( $plugin_base . '/assets/build/css/backend.min.css' ) ),
         [],
         Core\PLUGIN_VERSION
     );
