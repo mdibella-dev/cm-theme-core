@@ -30,19 +30,17 @@ defined( 'ABSPATH' ) or exit;
 /** Variables and definitions */
 
 define( __NAMESPACE__ . '\PLUGIN_VERSION', '3.1.0-develop' );
-define( __NAMESPACE__ . '\PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 
 
 /** Include files */
 
-require_once PLUGIN_DIR . 'vendor/autoload.php';
+require_once plugin_dir_url( __FILE__ ) . 'vendor/autoload.php';
 
-require_once PLUGIN_DIR . 'includes/core/index.php';
-require_once PLUGIN_DIR . 'includes/backend/index.php';
-require_once PLUGIN_DIR . 'includes/shortcodes/index.php';
-require_once PLUGIN_DIR . 'includes/third-party/index.php';
+require_once plugin_dir_url( __FILE__ ). 'includes/core/index.php';
+require_once plugin_dir_url( __FILE__ ) . 'includes/backend/index.php';
+require_once plugin_dir_url( __FILE__ ) . 'includes/shortcodes/index.php';
+require_once plugin_dir_url( __FILE__ ) . 'includes/third-party/index.php';
 
 
 
@@ -54,7 +52,7 @@ require_once PLUGIN_DIR . 'includes/third-party/index.php';
 
 function plugin_init() {
     // Load text domain, use relative path to the plugin's language folder
-    load_plugin_textdomain( 'congressomat', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
+    load_plugin_textdomain( 'congressomat', false, plugin_basename( __FILE__ ) . '/languages' );
 }
 
 add_action( 'init', __NAMESPACE__ . '\plugin_init' );

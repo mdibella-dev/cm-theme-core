@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix removal of monthly filter dropdown on exhibitions_space
 - View link in row quick actions ([#6](https://github.com/mdibella-dev/congressomat/issues/6))
 
+### Removed
+- Remove global constants PLUGIN_DIR and PLUGIN_URL
+
 <br>
 
 ## [3.0.0] - 2026-07-29
