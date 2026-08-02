@@ -35,12 +35,12 @@ define( __NAMESPACE__ . '\PLUGIN_VERSION', '3.1.0-develop' );
 
 /** Include files */
 
-require_once plugin_dir_url( __FILE__ ) . 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
-require_once plugin_dir_url( __FILE__ ). 'includes/core/index.php';
-require_once plugin_dir_url( __FILE__ ) . 'includes/backend/index.php';
-require_once plugin_dir_url( __FILE__ ) . 'includes/shortcodes/index.php';
-require_once plugin_dir_url( __FILE__ ) . 'includes/third-party/index.php';
+require_once 'includes/core/index.php';
+require_once 'includes/backend/index.php';
+require_once 'includes/shortcodes/index.php';
+require_once 'includes/third-party/index.php';
 
 
 
