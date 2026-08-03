@@ -7,15 +7,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mdibella-dev/wordpress-helper.git",
-                "reference": "de42ee74f3cf47213bf88b2d413b9233ab5fa84c"
+                "reference": "52630a9f36cd79729f69161c6a826acf4ce4e01e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mdibella-dev/wordpress-helper/zipball/de42ee74f3cf47213bf88b2d413b9233ab5fa84c",
-                "reference": "de42ee74f3cf47213bf88b2d413b9233ab5fa84c",
+                "url": "https://api.github.com/repos/mdibella-dev/wordpress-helper/zipball/52630a9f36cd79729f69161c6a826acf4ce4e01e",
+                "reference": "52630a9f36cd79729f69161c6a826acf4ce4e01e",
                 "shasum": ""
             },
-            "time": "2025-11-03T20:07:47+00:00",
+            "time": "2026-08-03T16:17:49+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",

@@ -7,7 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'WordPress_Helper\\Admin_Post_List' => $vendorDir . '/mdibella-dev/wordpress-helper/includes/Admin_Post_List.php',
-    'WordPress_Helper\\Admin_Taxonomy_List' => $vendorDir . '/mdibella-dev/wordpress-helper/includes/Admin_Taxonomy_List.php',
-    'WordPress_Helper\\Shortcode' => $vendorDir . '/mdibella-dev/wordpress-helper/includes/Shortcode.php',
 );
