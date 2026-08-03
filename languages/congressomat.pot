@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-08-02 13:59+0200\n"
+"POT-Creation-Date: 2026-08-03 17:18+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -229,12 +229,15 @@ msgid "Speaker"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:51
-#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:51
 msgid "Short Description"
 msgstr ""
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:50
-msgid "Event Title"
+msgid "Title"
+msgstr ""
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:51
+msgid "Description"
 msgstr ""
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
@@ -249,9 +252,25 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:50
+msgid "Package Name"
+msgstr ""
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:51
+msgid "Package Description"
+msgstr ""
+
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
-#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:52
 msgid "Count"
+msgstr ""
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:50
+msgid "Role Name"
+msgstr ""
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:51
+msgid "Role Description"
 msgstr ""
 
 #: includes/core/register/post-types/post-type-exhibition-space.php:33

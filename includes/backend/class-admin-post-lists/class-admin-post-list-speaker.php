@@ -45,11 +45,11 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
 
     public function manage_columns( $default ) {
         $columns = [
-            'cb'               => $default['cb'],
-            'image'            => __( 'Image', 'congressomat' ),
-            'title'            => __( 'Speaker', 'congressomat' ),
-            'shortdescription' => __( 'Short Description', 'congressomat' ),
-            'update'           => __( 'Last Update', 'congressomat' ),
+            'cb'          => $default['cb'],
+            'image'       => __( 'Image', 'congressomat' ),
+            'title'       => __( 'Speaker', 'congressomat' ),
+            'description' => __( 'Short Description', 'congressomat' ),
+            'update'      => __( 'Last Update', 'congressomat' ),
         ];
 
         return $columns;
@@ -86,7 +86,7 @@ class Admin_Post_List_Speaker extends \WordPress_Helper\Admin_Post_List {
                 }
                 break;
 
-            case 'shortdescription':
+            case 'description':
                 echo trim( implode( ' ', array(
                     get_field( 'referent-titel', $post_id ),
                     get_field( 'referent-vorname', $post_id ),

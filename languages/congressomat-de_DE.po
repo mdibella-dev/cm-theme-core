@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-08-02 13:59+0200\n"
-"PO-Revision-Date: 2026-08-02 13:59+0200\n"
+"POT-Creation-Date: 2026-08-03 17:18+0200\n"
+"PO-Revision-Date: 2026-08-03 17:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -55,7 +55,7 @@ msgstr "Neuen Aussteller hinzufügen"
 #: includes/core/register/post-types/post-type-exhibition-space.php:41
 #: includes/shortcodes/class-shortcode-exhibition-list.php:163
 msgid "Booth"
-msgstr "Ausstellungsfäche"
+msgstr "Ausstellungsfläche"
 
 #: includes/backend/backend-admin-lists.php:106
 #: includes/core/register/post-types/post-type-exhibition-space.php:31
@@ -231,13 +231,16 @@ msgid "Speaker"
 msgstr "Speaker"
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:51
-#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:51
 msgid "Short Description"
 msgstr "Kurzbeschreibung"
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:50
 msgid "Title"
 msgstr "Titel"
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:51
+msgid "Description"
+msgstr "Beschreibung"
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-event.php:53
 msgid "Status"
@@ -251,10 +254,26 @@ msgstr "Aktiv"
 msgid "Inactive"
 msgstr "Inaktiv"
 
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:50
+msgid "Package Name"
+msgstr ""
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:51
+msgid "Package Description"
+msgstr "Paketbeschreibung"
+
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:52
-#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:53
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:52
 msgid "Count"
 msgstr "Anzahl"
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:50
+msgid "Role Name"
+msgstr "Rollenname"
+
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-partnership.php:51
+msgid "Role Description"
+msgstr "Rollenbeschreibung"
 
 #: includes/core/register/post-types/post-type-exhibition-space.php:33
 msgid "Edit Booth"

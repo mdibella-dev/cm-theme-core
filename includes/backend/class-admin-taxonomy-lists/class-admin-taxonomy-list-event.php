@@ -48,7 +48,7 @@ class Admin_Taxonomy_List_Event extends \WordPress_Helper\Admin_Taxonomy_List {
             'cb'          => $default['cb'],
             'id'          => 'ID',
             'name'        => __( 'Title', 'congressomat' ),
-            'description' => __( 'Short Description', 'congressomat' ),
+            'description' => __( 'Description', 'congressomat' ),
             'sessions'    => __( 'Sessions', 'congressomat' ),
             'status'      => __( 'Status', 'congressomat' ),
         ];

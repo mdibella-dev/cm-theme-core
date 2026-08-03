@@ -47,9 +47,8 @@ class Admin_Taxonomy_List_Partnership extends \WordPress_Helper\Admin_Taxonomy_L
         $columns = [
             'cb'          => $default['cb'],
             'id'          => 'ID',
-            'name'        => $default['name'],
-            'description' => $default['description'],
-            'slug'        => $default['slug'],
+            'name'        => __( 'Role Name', 'congressomat' ),
+            'description' => __( 'Role Description', 'congressomat' ),
             'count'       => __( 'Count', 'congressomat' ),
         ];
 
