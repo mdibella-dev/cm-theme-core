@@ -178,38 +178,48 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
         // Default
         $query->set( 'order', ( '' === $order )? 'ASC' : $order );
     }
+
+
+
+    /**
+     * Filters the list of views.
+     *
+     * @param string[] $views An array of available list table views.
+     */
+
+    public function filter_views( $views ) {
+        // Remove unused default filter options
+        unset( $views['mine'] );
+        unset( $views['publish'] );
+        unset( $views['draft'] );
+
+        // Add event filter options
+        $events = API\get_active_events();
+
+        foreach( $events as $id ) {
+            $term    = get_term( $id, 'event' );
+            $current = '';
+
+            if ( ( isset( $_GET['event'] ) ) and ( $term->slug == $_GET['event'] ) ) {
+                $current = 'current';
+            }
+
+            $views[$term->slug] = sprintf(
+                '<a class="%4$s" href="%1$s">%2$s <span class="count">(%3$s)</span></a>',
+                esc_url( sprintf(
+                    '%1$sedit.php?post_type=session&event=%2$s',
+                    get_admin_url(),
+                    $term->slug
+                ) ),
+                $term->name,
+                $term->count,
+                $current
+            );
+        }
+
+        return $views;
+    }
 }
 
 
 new Admin_Post_List_Session();
-
-
-
-// Filter the CPT views to display your link
-
-function my_callback( $views ) {
-
-    // Remove unused filter options
-    unset( $views['mine'] );
-
-    // Add event filter options
-    $events = API\get_active_events();
-
-    foreach( $events as $id ) {
-        $term = get_term( $id, 'event' );
-
-        $views[$term->slug] = sprintf(
-            '<a href="%1$s">%2$s</a>',
-            esc_url( sprintf(
-                '%1$sedit.php?post_type=session&event=%2$s',
-                get_admin_url(),
-                $term->slug
-            ) ),
-            $term->name
-        );
-    }
-
-    return $views;
-}
-
-add_filter( 'views_edit-session', __NAMESPACE__ . '\my_callback', 10, 1 );
