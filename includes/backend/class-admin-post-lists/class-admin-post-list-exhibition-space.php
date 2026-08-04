@@ -118,6 +118,23 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
         // Default
         $query->set( 'order', ( '' === $order )? 'ASC' : $order );
     }
+
+
+
+    /**
+     * Filters the list of views.
+     *
+     * @param string[] $views An array of available list table views.
+     */
+
+    public function filter_views( $views ) {
+        // Remove unused default filter options
+        unset( $views['mine'] );
+        unset( $views['publish'] );
+        unset( $views['draft'] );
+
+        return $views;
+    }
 }
 
 
