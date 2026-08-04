@@ -77,10 +77,16 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
 
                 if ( null != $speakers ) {
 
+                    echo '<div class="congressomat-speaker-grid">';
                     foreach ( $speakers as $speaker ) {
                         $speaker_dataset = API\get_speaker_dataset( $speaker );
                         $speaker_id      = $speaker_dataset['id'];
+                        $speaker_name    = trim( implode( ' ', [
+                            $speaker_dataset['firstname'],
+                            $speaker_dataset['lastname']
+                        ] ) );
 
+                        echo '<div>';
                         echo sprintf(
                             '<a class="congressomat-speaker-image" href="%1$s">%2$s</a>',
                             esc_url( sprintf(
@@ -93,7 +99,20 @@ class Admin_Post_List_Session extends \WordPress_Helper\Admin_Post_List {
                                 'thumbnail'
                             ),
                         );
+                        echo '</div>';
+                        echo '<div>';
+                        echo sprintf(
+                            '<a href="%1$s">%2$s</a>',
+                            esc_url( sprintf(
+                                '%1$spost.php?post=%2$s&action=edit',
+                                get_admin_url(),
+                                $speaker_id,
+                            ) ),
+                            $speaker_name
+                        );
+                        echo '</div>';
                     }
+                    echo '</div>';
                 } else {
                     echo '&mdash;';
                 }

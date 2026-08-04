@@ -88,24 +88,6 @@ body.congressomat {
 
 
 
-// Fix WordPress anomaly
-
-/*
-body.congressomat #poststuff {
-    padding-top: 20px;
-}
-
-
-body.congressomat #post-body-content {
-    margin-bottom: unset;
-}
-
-
-body.congressomat #titlediv {
-    padding-bottom: 20px;
-}
-*/
-
 
 // Some custom classes
 
@@ -161,6 +143,14 @@ body.congressomat #titlediv {
 }
 
 
+.congressomat-speaker-grid {
+    display: grid;
+    gap: .75rem .125rem;
+    grid-template-columns: 60px auto;
+    align-items: center;
+}
+
+
 /**
  * wp-admin/edit.php?post_type=speaker
  */
@@ -173,22 +163,6 @@ body.congressomat #titlediv {
 }
 
 
-
-/**
- * wp-admin/edit.php?post_type=session
- */
-
-.post-type-session .wp-list-table {
-
-    .column-speaker {
-
-        a {
-            display: inline-block;
-            line-height:0;
-            margin: 8px;
-        }
-    }
-}
 
 
 /**
