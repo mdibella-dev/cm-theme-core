@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-08-03 17:18+0200\n"
-"PO-Revision-Date: 2026-08-03 17:19+0200\n"
+"POT-Creation-Date: 2026-08-04 11:20+0200\n"
+"PO-Revision-Date: 2026-08-04 11:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -215,7 +215,7 @@ msgstr "Zeitrahmen"
 msgid "Duration"
 msgstr "Dauer"
 
-#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:117
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:136
 msgid "N/A"
 msgstr "N/A"
 
@@ -256,7 +256,7 @@ msgstr "Inaktiv"
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:50
 msgid "Package Name"
-msgstr ""
+msgstr "Paketname"
 
 #: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-exhibition-package.php:51
 msgid "Package Description"
