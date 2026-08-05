@@ -108,8 +108,8 @@ class Admin_Post_List_Exhibition_Space extends \WordPress_Helper\Admin_Post_List
                 $query->set( 'orderby', 'modified' );
                 break;
 
-            default :
             case '':
+            default :
                 $query->set( 'orderby', 'title' );
                 $query->set( 'order', 'asc' );
                 break;

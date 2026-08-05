@@ -101,10 +101,10 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     'post_type'   => 'session',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [ [
+                    'tax_query'   => [[
                         'taxonomy' => 'location',
                         'terms'    => $term_id,
-                    ] ],
+                    ]],
                 ] );
                 $count = sizeof( $posts );
 
@@ -128,10 +128,10 @@ class Admin_Taxonomy_List_Location extends \WordPress_Helper\Admin_Taxonomy_List
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [ [
+                    'tax_query'   => [[
                         'taxonomy' => 'location',
                         'terms'    => $term_id,
-                    ] ],
+                    ]],
                 ] );
                 $term  = get_term( $term_id, 'location' );
                 $count = sizeof( $posts );

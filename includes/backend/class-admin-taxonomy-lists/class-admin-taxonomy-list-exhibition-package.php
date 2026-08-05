@@ -80,10 +80,10 @@ class Admin_Taxonomy_List_Exhibition_Package extends \WordPress_Helper\Admin_Tax
                     'post_type'   => 'exhibition_space',
                     'post_status' => 'any',
                     'numberposts' => -1,
-                    'tax_query'   => [ [
+                    'tax_query'   => [[
                         'taxonomy' => 'exhibition_package',
                         'terms'    => $term_id,
-                    ] ],
+                    ]],
                 ] );
                 $count = sizeof( $posts );
 
