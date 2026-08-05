@@ -48,7 +48,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
     public function manage_columns( $default ) {
         $columns = [
             'cb'                   => $default['cb'],
-            'image'                => __( 'Exhibitor Logo', 'congressomat' ),
+            'image'                => __( 'Image', 'congressomat' ),
             'title'                => __( 'Exhibitor', 'congressomat' ),
             'taxonomy-partnership' => __( 'Exhibitor Roles', 'congressomat' ),
             'exhibition'           => __( 'Booths', 'congressomat' ),
@@ -73,7 +73,7 @@ class Admin_Post_List_Partner extends \WordPress_Helper\Admin_Post_List {
                 if ( true === has_post_thumbnail( $post_id ) ) {
 
                     echo sprintf(
-                        '<a class="congressomat-exhibitor-image" href="%1$s">%2$s</a>',
+                        '<a class="congressomat-exhibitor-image" href="%1$s"><span>%2$s</span></a>',
                         esc_url( sprintf(
                             '%1$spost.php?post=%2$s&action=edit',
                             get_admin_url(),

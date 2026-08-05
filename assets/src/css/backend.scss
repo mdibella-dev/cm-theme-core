@@ -97,18 +97,24 @@ body.congressomat {
     display: inline-block;
     line-height: 0;
     font-size: 0;
+    box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.05);
+    padding: 3px;
 }
 
 
 .congressomat-speaker-image {
+    --dim: 45px;
+    width: var(--dim);
+    height: var(--dim);
     border-radius: 50% !important;
 
     & > img {
-        width: 40px;
-        height: 40px;
         border-radius: inherit;
-        box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
-        border: 2px solid white;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -125,12 +131,23 @@ body.congressomat {
 
 
 .congressomat-exhibitor-image {
-    width: 60px;
+    --dim: 45px;
+    width: var(--dim);
+    height: var(--dim);
+    border-radius: 5px !important;
 
-    & > img {
+    & > span {
+        display: inline-flex;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        align-items: center;
+        align-content: center;
+    }
+
+    & > span > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
@@ -172,7 +189,7 @@ body.congressomat {
 .post-type-partner .wp-list-table {
 
     .column-image {
-        width: 150px;
+        width: 75px;
     }
 }
 

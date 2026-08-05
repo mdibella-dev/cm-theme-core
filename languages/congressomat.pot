@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Congressomat\n"
-"POT-Creation-Date: 2026-08-03 17:18+0200\n"
+"POT-Creation-Date: 2026-08-05 13:47+0200\n"
 "PO-Revision-Date: 2026-07-21 11:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -182,8 +182,9 @@ msgid "Last Update"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:51
-#: includes/core/register/post-types/post-type-partner.php:42
-msgid "Exhibitor Logo"
+#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:49
+#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
+msgid "Image"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-partner.php:52
@@ -213,13 +214,8 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:117
+#: includes/backend/class-admin-post-lists/class-admin-post-list-session.php:136
 msgid "N/A"
-msgstr ""
-
-#: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:49
-#: includes/backend/class-admin-taxonomy-lists/class-admin-taxonomy-list-location.php:50
-msgid "Image"
 msgstr ""
 
 #: includes/backend/class-admin-post-lists/class-admin-post-list-speaker.php:50
@@ -321,6 +317,10 @@ msgstr ""
 
 #: includes/core/register/post-types/post-type-partner.php:39
 msgid "No deleted exhibitor found"
+msgstr ""
+
+#: includes/core/register/post-types/post-type-partner.php:42
+msgid "Exhibitor Logo"
 msgstr ""
 
 #: includes/core/register/post-types/post-type-partner.php:43
