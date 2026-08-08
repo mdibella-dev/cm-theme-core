@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Sessions: Add the speaker's name as a link behind the thumbnail ([#8](https://github.com/mdibella-dev/congressomat/issues/8))
+- get_post_types() 
 
 ### Fixed
 - Fix removal of monthly filter dropdown on exhibitions_space
