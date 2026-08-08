@@ -4,7 +4,6 @@
 defined( 'ABSPATH' ) or exit;
 
 
-require_once 'api-helpers.php';
 require_once 'api-events.php';
 require_once 'api-locations.php';
 require_once 'api-partners.php';

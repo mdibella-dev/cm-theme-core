@@ -8,8 +8,6 @@
 
 namespace Congressomat\Backend;
 
-use \Congressomat\Core\API as API;
-
 
 
 /** Prevent direct access */
@@ -137,7 +135,14 @@ function rewrite_header() {
   */
 
  function disable_months_dropdown( $disable, $type ) {
-    if ( in_array( $type, API\get_post_types() ) ) {
+    $post_types = [
+          'speaker',
+          'partner',
+          'session',
+          'exhibition_space'
+    ];
+
+    if ( in_array( $type, $post_types ) ) {
         $disable = true;
     }
 
@@ -157,7 +162,14 @@ add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown
  */
 
 function modify_list_row_actions( $actions, $post ) {
-    if ( in_array( $post->post_type, API\get_post_types() ) ) {
+    $post_types = [
+        'speaker',
+        'partner',
+        'session',
+        'exhibition_space'
+    ];
+
+    if ( in_array( $post->post_type, $post_types ) ) {
         unset( $actions['view'] );
     }
     return $actions;
