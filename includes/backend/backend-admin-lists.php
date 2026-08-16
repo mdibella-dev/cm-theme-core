@@ -1,11 +1,4 @@
 <?php
-/**
- * Functions to modify taxonomy and post type overview pages
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 

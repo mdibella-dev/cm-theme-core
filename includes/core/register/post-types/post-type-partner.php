@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom post type: partner
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Post_Types\Partner;
 
 

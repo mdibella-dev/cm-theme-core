@@ -1,12 +1,4 @@
 <?php
-/**
- * Class Admin_Post_List_Session
- *
- * @author  Marco Di Bella
- * @package congressomat
- * @uses    ACF
- */
-
 namespace Congressomat\Backend;
 
 use \Congressomat\Core\API as API;
@@ -21,6 +13,8 @@ defined( 'ABSPATH' ) or exit;
 
 /**
  * A class for the implementation of the admin post list for post type "session".
+ *
+ * @uses ACF
  *
  * @since 2.1.0
  */

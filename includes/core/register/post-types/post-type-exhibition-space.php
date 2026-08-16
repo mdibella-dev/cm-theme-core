@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom post type: exhibition_space
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Post_Types\Exhibition_Space;
 
 

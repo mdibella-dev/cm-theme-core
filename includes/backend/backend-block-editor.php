@@ -1,11 +1,4 @@
 <?php
-/**
- * Block Editor (aka Gutenberg).
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 

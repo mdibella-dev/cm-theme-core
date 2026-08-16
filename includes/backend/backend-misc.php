@@ -1,11 +1,4 @@
 <?php
-/**
- * Functions to handle the backend.
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 use \Congressomat as Core;

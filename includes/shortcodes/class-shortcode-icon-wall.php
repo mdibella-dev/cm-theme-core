@@ -1,11 +1,4 @@
 <?php
-/**
- * Shortcode [icon-wall].
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Shortcodes;
 
 use \Congressomat\Core\API as API;
@@ -19,7 +12,8 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * Creates a "wall" with the logos of the cooperation partners.
+ * Shortcode [icon-wall],
+ * creates a "wall" with the logos of the cooperation partners.
  *
  * @since 2.0.0
  *

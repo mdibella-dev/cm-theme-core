@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom post type: session
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Post_Types\Session;
 
 

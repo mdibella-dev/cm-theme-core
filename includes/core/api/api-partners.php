@@ -1,11 +1,4 @@
 <?php
-/**
- * CM core functions.
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\API;
 
 

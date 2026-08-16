@@ -14,7 +14,6 @@
  * Domain Path:         /languages
  *
  * @author  Marco Di Bella
- * @package congressomat
  */
 
 namespace Congressomat;

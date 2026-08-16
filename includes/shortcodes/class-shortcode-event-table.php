@@ -1,11 +1,4 @@
 <?php
-/**
- * Shortcode [event-table].
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Shortcodes;
 
 use \Congressomat\Core\API as API;
@@ -19,7 +12,8 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * Generates a table with the schedule of a specific event.
+ * Shortcode [event-table],
+ * generates a table with the schedule of a specific event.
  *
  * @since 2.0.0
  *

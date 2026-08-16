@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom taxonomy: partnership
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Taxonomies\Partnership;
 
 

@@ -1,11 +1,4 @@
 <?php
-/**
- * Class Admin_Post_List_Exhibition_Space
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 

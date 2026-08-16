@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom taxonomy: exhibition_package
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Taxonomies\Exhibtition_Package;
 
 

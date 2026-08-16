@@ -1,12 +1,4 @@
 <?php
-/**
- * Class Admin_Taxonomy_List_Location
- *
- * @author  Marco Di Bella
- * @package congressomat
- * @uses    ACF
- */
-
 namespace Congressomat\Backend;
 
 
@@ -19,6 +11,8 @@ defined( 'ABSPATH' ) or exit;
 
 /**
  * A class for the implementation of the admin taxonomy list for taxonomy "location".
+ *
+ * @uses ACF
  *
  * @since 2.1.0
  */

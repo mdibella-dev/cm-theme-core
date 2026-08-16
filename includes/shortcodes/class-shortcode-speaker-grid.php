@@ -1,11 +1,4 @@
 <?php
-/**
- * Shortcode [speaker-grid].
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Shortcodes;
 
 use \Congressomat\Core\API as API;
@@ -19,7 +12,8 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * Generates a grid view with the images, names and position descriptions of the speakers of one or more events
+ * Shortcode [speaker-grid],
+ * generates a grid view with the images, names and position descriptions of the speakers of one or more events
  * If no information is given about the events, the events marked as active in the backend are used as a basis.
  *
  * @since 2.0.0

@@ -1,11 +1,4 @@
 <?php
-/**
- * Shortcode [event-table].
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Third_Party;
 
 

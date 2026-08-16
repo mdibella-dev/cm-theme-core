@@ -1,12 +1,4 @@
 <?php
-/**
- * Class Admin_Taxonomy_List_Exhibition_Package
- *
- * @author  Marco Di Bella
- * @package congressomat
- * @uses    ACF
- */
-
 namespace Congressomat\Backend;
 
 
@@ -19,6 +11,8 @@ defined( 'ABSPATH' ) or exit;
 
 /**
  * A class for the implementation of the admin taxonomy list for taxonomy "exhibition_package".
+ *
+ * @uses ACF
  *
  * @since 2.1.0
  */

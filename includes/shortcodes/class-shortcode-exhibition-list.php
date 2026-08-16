@@ -1,6 +1,6 @@
 <?php
 /**
- * Shortcode [exhibition-list].
+ *
  *
  * @author  Marco Di Bella
  * @package congressomat
@@ -19,7 +19,8 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
-* Generates an (exhibitor) list with the cooperation partners.
+ * Shortcode [exhibition-list],
+ * generates an (exhibitor) list with the cooperation partners.
  *
  * @since 2.0.0
  *

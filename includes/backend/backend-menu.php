@@ -1,11 +1,4 @@
 <?php
-/**
- * Functions to setup the congressomat menu
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 

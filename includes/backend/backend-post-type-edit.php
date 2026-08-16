@@ -1,11 +1,4 @@
 <?php
-/**
- * Functions to setup the congressomat menu
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 
@@ -17,8 +10,7 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * Creates the CM menu.
- * Note: Menu items for posttypes are created when they are registered.
+ * Hides the publishing actions.
  *
  * @since 3.0.0
  */

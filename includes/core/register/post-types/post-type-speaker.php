@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom post type: speaker
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Post_Types\Speaker;
 
 

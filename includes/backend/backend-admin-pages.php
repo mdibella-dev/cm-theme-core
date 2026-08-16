@@ -1,8 +1,8 @@
 <?php
-
 namespace Congressomat\Backend;
 
 use \Congressomat as Core;
+
 
 
 /** Prevent direct access */

@@ -1,11 +1,4 @@
 <?php
-/**
- * CM core functions.
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\API;
 
 
@@ -20,6 +13,7 @@ defined( 'ABSPATH' ) or exit;
  * Determines the currently active events.
  *
  * @since  1.0.0
+ *
  * @return array
  */
 

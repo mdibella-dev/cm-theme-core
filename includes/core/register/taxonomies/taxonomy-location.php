@@ -1,11 +1,4 @@
 <?php
-/**
- * Custom taxonomy: location
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Core\Taxonomies\Location;
 
 

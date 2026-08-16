@@ -1,11 +1,4 @@
 <?php
-/**
- * Functions to handle date and time
- *
- * @author  Marco Di Bella
- * @package congressomat
- */
-
 namespace Congressomat\Backend;
 
 
@@ -16,12 +9,11 @@ defined( 'ABSPATH' ) or exit;
 
 
 
-
 /**
-  * Echo the modified date time of a post object in a more human form
-  *
-  * @since 3.0.0
-  */
+ * Echo the modified date time of a post object in a more human form
+ *
+ * @since 3.0.0
+ */
 
 function show_modified_date( $post_id ) {
 
@@ -43,5 +35,4 @@ function show_modified_date( $post_id ) {
     } else {
         echo __( 'just now', 'congressomat' );
     }
-
 }
