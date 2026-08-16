@@ -59,3 +59,24 @@ function exclude_post_type( $exclude, $type ) {
 }
 
 add_filter( 'rank_math/sitemap/exclude_post_type', __NAMESPACE__ . '\exclude_post_type', 10, 2 );
+
+
+
+/**
+ * Filter to exclude post types from Analytics Index.
+ *
+ * @see https://rankmath.com/kb/filters-hooks-api-developer/
+ */
+
+function exclude_post_type_from_analytics( $post_types = [] ) {
+    $excludes = [
+        'speaker',
+        'partner',
+        'session',
+        'exhibition-space'
+    ];
+
+    return array_diff_key( $post_types, array_flip( $excludes ) );
+}
+
+add_filter( 'rank_math/analytics/post_types', __NAMESPACE__ . '\exclude_post_type_from_analytics', 10, 1 );
