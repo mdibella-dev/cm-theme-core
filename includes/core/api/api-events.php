@@ -56,10 +56,10 @@ function get_speaker_datasets( $event_list_string = '' ) {
         'posts_per_page' => -1,
         'post_status'    => 'publish',
         'post_type'      => 'session',
-        'meta_query'     => [ [
+        'meta_query'     => [[
             'key'     => 'programmpunkt-referenten',
             'compare' => 'EXISTS',
-        ] ],
+        ]],
         'tax_query' => [
             'relation' => 'OR'
         ]
@@ -81,7 +81,6 @@ function get_speaker_datasets( $event_list_string = '' ) {
 
     $sessions = get_posts( $query );
 
-
     // Identification of the affected speakers.
     if ( $sessions ) {
         $finds_list   = [];
@@ -101,11 +100,9 @@ function get_speaker_datasets( $event_list_string = '' ) {
             }
         }
 
-
         // Sorting the found speakers by first and last name.
         return sort_speaker_datasets( $speaker_list );
     }
-
     return null;
 }
 
@@ -129,6 +126,5 @@ function get_event( $event ) {
             return $term->name;
         }
     }
-
     return null;
 }
