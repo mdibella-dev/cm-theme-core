@@ -4,13 +4,18 @@ namespace Congressomat\Third_Party;
 
 
 /**
+ * Plugin Rank Math
  * Filter decision if taxonomy is excluded from the XML sitemap.
  *
- * @param bool   $exclude Default false.
- * @param string $type    Taxonomy name.
+ * @see https://rankmath.com/kb/filters-hooks-api-developer/
+ *
+ * @param bool   $exclude Default false
+ * @param string $type    Taxonomy name
+ *
+ * @return bool
  */
 
-function exclude_taxonomy( $exclude, $type ) {
+add_filter( 'rank_math/sitemap/exclude_taxonomy', function( $exclude, $type) {
     $taxonomies = [
         'event',
         'exhibition-package',
@@ -23,20 +28,23 @@ function exclude_taxonomy( $exclude, $type ) {
     }
 
     return $exclude;
-}
-
-add_filter( 'rank_math/sitemap/exclude_taxonomy', __NAMESPACE__ . '\exclude_taxonomy', 10, 2 );
+ } );
 
 
 
 /**
+ * Plugin Rank Math
  * Filter decision if post type is excluded from the XML sitemap.
  *
- * @param bool   $exclude Default false.
- * @param string $type    Post type name.
+ * @see https://rankmath.com/kb/filters-hooks-api-developer/
+ *
+ * @param bool   $exclude Default false
+ * @param string $type    Post type name
+ *
+ * @return bool
  */
 
-function exclude_post_type( $exclude, $type ) {
+add_filter( 'rank_math/sitemap/exclude_post_type', function( $exclude, $type ) {
     $post_types = [
         'speaker',
         'partner',
@@ -49,19 +57,22 @@ function exclude_post_type( $exclude, $type ) {
     }
 
     return $exclude;
-}
-
-add_filter( 'rank_math/sitemap/exclude_post_type', __NAMESPACE__ . '\exclude_post_type', 10, 2 );
+} );
 
 
 
 /**
+ * Plugin Rank Math
  * Filter to exclude post types from Analytics Index.
  *
  * @see https://rankmath.com/kb/filters-hooks-api-developer/
+ *
+ * @param array $post_types List of post types
+ *
+ * @return array
  */
 
-function exclude_post_type_from_analytics( $post_types = [] ) {
+add_filter( 'rank_math/analytics/post_types', function( $post_types = [] ) {
     $excludes = [
         'speaker',
         'partner',
@@ -70,6 +81,4 @@ function exclude_post_type_from_analytics( $post_types = [] ) {
     ];
 
     return array_diff_key( $post_types, array_flip( $excludes ) );
-}
-
-add_filter( 'rank_math/analytics/post_types', __NAMESPACE__ . '\exclude_post_type_from_analytics', 10, 1 );
+} );
