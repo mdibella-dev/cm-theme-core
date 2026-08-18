@@ -113,33 +113,33 @@ function rewrite_header() {
 </style>
 <?php
     }
- }
+}
 
- add_action( 'admin_notices', __NAMESPACE__ . '\rewrite_header' );
+add_action( 'admin_notices', __NAMESPACE__ . '\rewrite_header' );
 
 
 
- /**
-  * Remove months dropdown
-  *
-  * @since 3.0.0
-  *
-  * @see https://developer.wordpress.org/reference/hooks/disable_months_dropdown/
-  */
+/**
+ * Remove months dropdown
+ *
+ * @since 3.0.0
+ *
+ * @see https://developer.wordpress.org/reference/hooks/disable_months_dropdown/
+ */
 
- function disable_months_dropdown( $disable, $type ) {
+function disable_months_dropdown( $disable, $type ) {
     $post_types = [
-          'speaker',
-          'partner',
-          'session',
-          'exhibition_space'
+        'speaker',
+        'partner',
+        'session',
+        'exhibition_space'
     ];
 
     if ( in_array( $type, $post_types ) ) {
         $disable = true;
     }
 
-     return $disable;
+    return $disable;
 }
 
 add_filter( 'disable_months_dropdown', __NAMESPACE__ . '\disable_months_dropdown', 10, 2 );
