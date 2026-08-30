@@ -58,7 +58,7 @@ function register() {
         'hierarchical'          => false,
         'can_export'            => true,
         'rewrite'               => [
-            'slug'       => 'exhibition_space',
+            'slug'       => 'booth',
             'with_front' => true
         ],
         'query_var'             => true,
