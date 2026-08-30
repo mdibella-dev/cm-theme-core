@@ -54,6 +54,7 @@ function register() {
         'has_archive'           => false,
         'show_in_menu'          => $menu,
         'show_in_nav_menus'     => false,
+        'show_in_admin_bar'     => false,
         'delete_with_user'      => false,
         'exclude_from_search'   => false,
         'capability_type'       => 'post',
