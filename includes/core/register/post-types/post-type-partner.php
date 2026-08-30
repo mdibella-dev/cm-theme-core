@@ -60,9 +60,9 @@ function register() {
         'capability_type'       => 'post',
         'map_meta_cap'          => true,
         'hierarchical'          => false,
-        'can_export'            => false,
+        'can_export'            => true,
         'rewrite'               => [
-            'slug'       => 'partner',
+            'slug'       => 'exhibitor',
             'with_front' => true
         ],
         'query_var'             => true,
